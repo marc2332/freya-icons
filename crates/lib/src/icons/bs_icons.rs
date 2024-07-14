@@ -1,5 +1,4 @@
 use super::super::IconShape;
-use freya::prelude::*;
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct Bs123;
