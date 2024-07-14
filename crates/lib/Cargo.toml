@@ -1,15 +1,16 @@
 [package]
-name = "dioxus-free-icons"
-version = "0.8.5"
+name = "freya-icons"
+version = "0.1.0"
 edition = "2021"
-authors = ["Daiki Nishikawa <nd.12021218@gmail.com>", "Marc Espín <mespinsanz@gmail.com>"]
-description = "Use free svg icons in your Dioxus projects easily with dioxus-free-icons."
+authors = ["Marc Espín <mespinsanz@gmail.com>"]
+description = "Easily use icons in your Freya apps."
 license = "MIT"
-repository = "https://github.com/dioxus-community/dioxus-free-icons"
+repository = "https://github.com/dioxus-community/freya-icons"
 readme = "../../README.md"
 
 [dependencies]
 dioxus = { workspace = true }
+freya = { workspace = true }
 
 [features]
 font-awesome-brands = []

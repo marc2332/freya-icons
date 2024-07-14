@@ -1,12 +1,21 @@
-# monorepo only work when using virtual manifest
-# see: https://github.com/rust-lang/cargo/issues/7467#issuecomment-867632379
+[package]
+name = "freya-icons-example"
+publish = false
+version = "0.0.0"
+edition = "2021"
+
 [workspace]
 resolver = "2"
 members = [
-    "packages/codegen",
-    "packages/example",
-    "packages/lib",
+    "crates/codegen",
+    "crates/lib",
 ]
 
 [workspace.dependencies]
-dioxus = "0.5"
+dioxus = { version = "0.5", features = ["macro", "hooks"], default-features = false }
+freya = { git = "https://github.com/marc2332/freya", rev = "1cd1d2cb16a1f94a8a3633e2287f846f463a92b3" }
+
+[dev-dependencies]
+freya-icons = { path = "./crates/lib"}
+dioxus = { workspace = true }
+freya = { workspace = true }
