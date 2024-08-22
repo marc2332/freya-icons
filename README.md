@@ -9,7 +9,7 @@ Easily use icons in your [Freya](https://freyaui.dev/) apps. Forked from [dioxus
 
 ### Why a fork instead of adding support to dioxus-free-icons?
 
-Adding support for freya in dioxus-free-icons would have required to duplicate all the codegen as Dreya and HTML Dioxus renderers have different APIs for SVG. This would have been a pain in the ass to work with.
+Adding support for freya in dioxus-free-icons would have required to duplicate all the codegen as Freya and HTML Dioxus renderers have different APIs for SVG. This would have been a pain in the ass to work with.
 
 ### Support features (not really yet)
 
