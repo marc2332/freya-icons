@@ -8,10 +8,18 @@ fn main() {
 }
 
 fn app() -> Element {
-    rsx!(Icon {
-        width: 200,
-        height: 200,
-        fill: "#007FFF",
-        icon: BsAlarm,
-    })
+    rsx!(
+        rect {
+            width: "fill",
+            height: "fill",
+            main_align: "center",
+            cross_align: "center",
+            Icon {
+                width: 200,
+                height: 200,
+                fill: "#007FFF",
+                icon: BsAlarm,
+            }
+        }
+    )
 }
