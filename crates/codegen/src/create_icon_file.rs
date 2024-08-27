@@ -4,10 +4,8 @@ use std::io::Write;
 use std::path::PathBuf;
 use std::{ffi::OsStr, path::Path};
 
-use heck::ToSnakeCase;
 use heck::ToUpperCamelCase;
 use regex::Regex;
-use scraper::node::Element;
 use walkdir::WalkDir;
 
 const ICON_TEMPLATE: &str = r#"#[derive(Copy, Clone, Debug, PartialEq)]
@@ -27,24 +25,33 @@ pub fn create_icon_file(svg_path: &str, output_path: &str, icon_prefix: &str) {
         .map(|file| {
             let svg_str = fs::read_to_string(&file).unwrap();
             let icon_name = icon_name(&file, icon_prefix);
+            let mut icon_content = svg_str
+                .replace("width=\"16\"", "")
+                .replace("height=\"16\"", "")
+                .replace("width=\"24\"", "")
+                .replace("height=\"24\"", "")
+                .replace("#4A5568", "currentColor")
+                .replace("#374151", "currentColor")
+                .replace("#4B5563", "currentColor")
+                .replace("#111827", "currentColor")
+                .replace("#000", "currentColor");
+
+            if icon_prefix == "Md" {
+                icon_content =
+                    icon_content.replace("2000/svg\" ", "2000/svg\" fill=\"currentColor\"");
+            }
 
             ICON_TEMPLATE
                 .replace("{ICON_NAME}", &format!("{}{}", icon_prefix, &icon_name))
-                .replace("{ICON_CONTENT}", &format!("r#\"{svg_str}\"#"))
+                .replace("{ICON_CONTENT}", &format!("r#\"{icon_content}\"#"))
         })
         .collect::<Vec<_>>()
         .join("\n");
 
     // write to file
     let mut file = File::create(output_path).unwrap();
-    file.write_all(
-        format!(
-            "{}\n\n{}",
-            "use super::super::IconShape;\nuse freya::prelude::*;", icon_file
-        )
-        .as_bytes(),
-    )
-    .unwrap();
+    file.write_all(format!("{}\n\n{}", "use super::super::IconShape;", icon_file).as_bytes())
+        .unwrap();
     file.flush().unwrap();
 }
 

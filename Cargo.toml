@@ -16,6 +16,6 @@ dioxus = { version = "0.5", features = ["macro", "hooks"], default-features = fa
 freya = { git = "https://github.com/marc2332/freya", rev = "1cd1d2cb16a1f94a8a3633e2287f846f463a92b3" }
 
 [dev-dependencies]
-freya-icons = { path = "./crates/lib"}
+freya-icons = { path = "./crates/lib", features = ["bootstrap"]}
 dioxus = { workspace = true }
 freya = { workspace = true }

@@ -6,8 +6,8 @@
 //! Basic usage:
 //! ```ignore
 //! use dioxus::prelude::*;
-//! use dioxus_free_icons::icons::fa_brands_icons::FaRust;
-//! use dioxus_free_icons::Icon;
+//! use freya_icons::icons::fa_brands_icons::FaRust;
+//! use freya_icons::Icon;
 //!
 //! fn RustIcon() -> Element {
 //!     rsx!(
