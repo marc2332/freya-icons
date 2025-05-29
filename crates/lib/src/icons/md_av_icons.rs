@@ -191,14 +191,6 @@ impl Into<&'static str> for MdArtTrack {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdAudioFile;
-impl Into<&'static str> for MdAudioFile {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M14,2H6C4.9,2,4.01,2.9,4.01,4L4,20c0,1.1,0.89,2,1.99,2H18c1.1,0,2-0.9,2-2V8L14,2z M16,13h-3v3.75 c0,1.24-1.01,2.25-2.25,2.25S8.5,17.99,8.5,16.75c0-1.24,1.01-2.25,2.25-2.25c0.46,0,0.89,0.14,1.25,0.38V11h4V13z M13,9V3.5 L18.5,9H13z"/></g></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct MdAvTimer;
 impl Into<&'static str> for MdAvTimer {
     fn into(self) -> &'static str {
@@ -407,14 +399,6 @@ impl Into<&'static str> for MdHighQuality {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdInterpreterMode;
-impl Into<&'static str> for MdInterpreterMode {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><rect fill="none"  /><path d="M20.5,16.5c-0.83,0-1.5-0.67-1.5-1.5v-2.5c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5V15C22,15.83,21.33,16.5,20.5,16.5z M20,20h1c0,0,0-1.54,0-1.54c1.69-0.24,3-1.7,3-3.46h-1c0,1.38-1.12,2.5-2.5,2.5S18,16.38,18,15h-1c0,1.76,1.31,3.22,3,3.46 C20,18.46,20,20,20,20z M9,12c-2.21,0-4-1.79-4-4c0-2.21,1.79-4,4-4c0.47,0,0.92,0.08,1.34,0.23C9.5,5.26,9,6.57,9,8 c0,1.43,0.5,2.74,1.34,3.77C9.92,11.92,9.47,12,9,12z M7.11,13.13C5.79,14.05,5,15.57,5,17.22V20H1v-2.78 c0-1.12,0.61-2.15,1.61-2.66C3.85,13.92,5.37,13.37,7.11,13.13z M11,8c0-2.21,1.79-4,4-4s4,1.79,4,4c0,2.21-1.79,4-4,4 S11,10.21,11,8z M18.32,20c-1.67-0.81-2.82-2.52-2.82-4.5c0-0.89,0.23-1.73,0.64-2.45C15.77,13.02,15.39,13,15,13 c-2.53,0-4.71,0.7-6.39,1.56C7.61,15.07,7,16.1,7,17.22V20L18.32,20z"/></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct MdLibraryAdd;
 impl Into<&'static str> for MdLibraryAdd {
     fn into(self) -> &'static str {
@@ -535,14 +519,6 @@ impl Into<&'static str> for MdPause {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdPauseCircle;
-impl Into<&'static str> for MdPauseCircle {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M11,16H9V8h2V16z M15,16h-2V8h2V16z"/></g></g></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct MdPauseCircleFilled;
 impl Into<&'static str> for MdPauseCircleFilled {
     fn into(self) -> &'static str {
@@ -563,14 +539,6 @@ pub struct MdPlayArrow;
 impl Into<&'static str> for MdPlayArrow {
     fn into(self) -> &'static str {
         r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdPlayCircle;
-impl Into<&'static str> for MdPlayCircle {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,16.5v-9l7,4.5L9.5,16.5z"/></g></svg>"#
     }
 }
 
@@ -602,7 +570,7 @@ impl Into<&'static str> for MdPlayDisabled {
 pub struct MdPlaylistAdd;
 impl Into<&'static str> for MdPlaylistAdd {
     fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M14,10H3v2h11V10z M14,6H3v2h11V6z M18,14v-4h-2v4h-4v2h4v4h2v-4h4v-2H18z M3,16h7v-2H3V16z"/></g></svg>"#
+        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"/></svg>"#
     }
 }
 
@@ -610,23 +578,7 @@ impl Into<&'static str> for MdPlaylistAdd {
 pub struct MdPlaylistAddCheck;
 impl Into<&'static str> for MdPlaylistAddCheck {
     fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><g><rect height="2" width="11" x="3" y="10"/><rect height="2" width="11" x="3" y="6"/><rect height="2" width="7" x="3" y="14"/><polygon points="20.59,11.93 16.34,16.17 14.22,14.05 12.81,15.46 16.34,19 22,13.34"/></g></g></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdPlaylistAddCheckCircle;
-impl Into<&'static str> for MdPlaylistAddCheckCircle {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><rect fill="none"  /><path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10c5.52,0,10-4.48,10-10C22,6.48,17.52,2,12,2z M7,7h7v2H7V7z M7,10h7v2H7V10z M10,15H7v-2h3V15z M14.05,18.36l-2.83-2.83l1.41-1.41l1.41,1.41L17.59,12L19,13.41L14.05,18.36z"/></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdPlaylistAddCircle;
-impl Into<&'static str> for MdPlaylistAddCircle {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><rect fill="none"  /><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M7,7h7v2H7V7z M10,15H7v-2h3V15z M7,12v-2h7v2H7z M19,15h-2v2h-2v-2h-2v-2h2v-2h2v2h2V15z"/></svg>"#
+        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><g><g><path d="M14,10H2v2h12V10z M14,6H2v2h12V6z M2,16h8v-2H2V16z M21.5,11.5L23,13l-6.99,7l-4.51-4.5L13,14l3.01,3L21.5,11.5z"/></g></g></g></svg>"#
     }
 }
 
@@ -634,15 +586,7 @@ impl Into<&'static str> for MdPlaylistAddCircle {
 pub struct MdPlaylistPlay;
 impl Into<&'static str> for MdPlaylistPlay {
     fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><g><rect height="2" width="11" x="3" y="10"/><rect height="2" width="11" x="3" y="6"/><rect height="2" width="7" x="3" y="14"/><polygon points="16,13 16,21 22,17"/></g></g></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdPlaylistRemove;
-impl Into<&'static str> for MdPlaylistRemove {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M14,10H3v2h11V10z M14,6H3v2h11V6z M3,16h7v-2H3V16z M14.41,22L17,19.41L19.59,22L21,20.59L18.41,18L21,15.41L19.59,14 L17,16.59L14.41,14L13,15.41L15.59,18L13,20.59L14.41,22z"/></g></svg>"#
+        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 10h12v2H4zm0-4h12v2H4zm0 8h8v2H4zm10 0v6l5-3z"/></svg>"#
     }
 }
 
@@ -658,7 +602,7 @@ impl Into<&'static str> for MdQueue {
 pub struct MdQueueMusic;
 impl Into<&'static str> for MdQueueMusic {
     fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M15,6H3v2h12V6z M15,10H3v2h12V10z M3,16h8v-2H3V16z M17,6v8.18C16.69,14.07,16.35,14,16,14c-1.66,0-3,1.34-3,3s1.34,3,3,3 s3-1.34,3-3V8h3V6H17z"/></g></svg>"#
+        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18c-.31-.11-.65-.18-1-.18-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3V8h3V6h-5z"/></svg>"#
     }
 }
 
@@ -850,7 +794,7 @@ impl Into<&'static str> for MdStop {
 pub struct MdStopCircle;
 impl Into<&'static str> for MdStopCircle {
     fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><rect fill="none"  /><path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M16,16H8V8h8V16z"/></svg>"#
+        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M8,16h8V8H8V16z M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2L12,2z" fill-rule="evenodd"/></g></svg>"#
     }
 }
 
@@ -858,7 +802,7 @@ impl Into<&'static str> for MdStopCircle {
 pub struct MdSubscriptions;
 impl Into<&'static str> for MdSubscriptions {
     fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z"/></svg>"#
+        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z"/><path d="M0 0h24v24H0z" fill="none"/></svg>"#
     }
 }
 
@@ -883,14 +827,6 @@ pub struct MdVideoCall;
 impl Into<&'static str> for MdVideoCall {
     fn into(self) -> &'static str {
         r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdVideoFile;
-impl Into<&'static str> for MdVideoFile {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><g><rect fill="none"  /></g><g><path d="M14,2H6.01c-1.1,0-2,0.89-2,2L4,20c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8L14,2z M13,9V3.5L18.5,9H13z M14,14l2-1.06v4.12 L14,16v1c0,0.55-0.45,1-1,1H9c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V14z"/></g></svg>"#
     }
 }
 
@@ -943,14 +879,6 @@ impl Into<&'static str> for MdVolumeDown {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdVolumeDownAlt;
-impl Into<&'static str> for MdVolumeDownAlt {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><rect fill="none"  /><path d="M14,7.97v8.05c1.48-0.73,2.5-2.25,2.5-4.02S15.48,8.71,14,7.97z M3,9v6h4l5,5V4L7,9H3z"/></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct MdVolumeMute;
 impl Into<&'static str> for MdVolumeMute {
     fn into(self) -> &'static str {
@@ -987,13 +915,5 @@ pub struct MdWebAsset;
 impl Into<&'static str> for MdWebAsset {
     fn into(self) -> &'static str {
         r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm0 14H5V8h14v10z"/></svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct MdWebAssetOff;
-impl Into<&'static str> for MdWebAssetOff {
-    fn into(self) -> &'static str {
-        r#"<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"enable-background="new 0 0 24 24"  viewBox="0 0 24 24" ><rect fill="none"  /><path d="M6.83,4H20c1.11,0,2,0.9,2,2v12c0,0.34-0.09,0.66-0.23,0.94L20,17.17V8h-9.17L6.83,4z M20.49,23.31L17.17,20H4 c-1.11,0-2-0.9-2-2V6c0-0.34,0.08-0.66,0.23-0.94L0.69,3.51L2.1,2.1l19.8,19.8L20.49,23.31z M15.17,18l-10-10H4v10H15.17z"/></svg>"#
     }
 }

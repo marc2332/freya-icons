@@ -3274,10 +3274,10 @@ impl Into<&'static str> for LdBatteryCharging {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
+  <path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1" />
   <path d="m11 7-3 5h4l-3 5" />
-  <path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935" />
-  <path d="M22 14v-4" />
-  <path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936" />
+  <line x1="22" x2="22" y1="11" y2="13" />
 </svg>
 "#
     }
@@ -3298,11 +3298,11 @@ impl Into<&'static str> for LdBatteryFull {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 10v4" />
-  <path d="M14 10v4" />
-  <path d="M22 14v-4" />
-  <path d="M6 10v4" />
-  <rect x="2" y="6"  height="12" rx="2" />
+  <rect  height="10" x="2" y="7" rx="2" ry="2" />
+  <line x1="22" x2="22" y1="11" y2="13" />
+  <line x1="6" x2="6" y1="11" y2="13" />
+  <line x1="10" x2="10" y1="11" y2="13" />
+  <line x1="14" x2="14" y1="11" y2="13" />
 </svg>
 "#
     }
@@ -3323,9 +3323,9 @@ impl Into<&'static str> for LdBatteryLow {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M22 14v-4" />
-  <path d="M6 14v-4" />
-  <rect x="2" y="6"  height="12" rx="2" />
+  <rect  height="10" x="2" y="7" rx="2" ry="2" />
+  <line x1="22" x2="22" y1="11" y2="13" />
+  <line x1="6" x2="6" y1="11" y2="13" />
 </svg>
 "#
     }
@@ -3346,10 +3346,10 @@ impl Into<&'static str> for LdBatteryMedium {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 14v-4" />
-  <path d="M22 14v-4" />
-  <path d="M6 14v-4" />
-  <rect x="2" y="6"  height="12" rx="2" />
+  <rect  height="10" x="2" y="7" rx="2" ry="2" />
+  <line x1="22" x2="22" y1="11" y2="13" />
+  <line x1="6" x2="6" y1="11" y2="13" />
+  <line x1="10" x2="10" y1="11" y2="13" />
 </svg>
 "#
     }
@@ -3371,10 +3371,10 @@ impl Into<&'static str> for LdBatteryPlus {
   stroke-linejoin="round"
 >
   <path d="M10 9v6" />
-  <path d="M12.543 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.605" />
-  <path d="M22 14v-4" />
+  <path d="M13.5 7H16a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2.5" />
+  <path d="M22 11v2" />
+  <path d="M6.5 17H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2.5" />
   <path d="M7 12h6" />
-  <path d="M7.606 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.606" />
 </svg>
 "#
     }
@@ -3397,9 +3397,9 @@ impl Into<&'static str> for LdBatteryWarning {
 >
   <path d="M10 17h.01" />
   <path d="M10 7v6" />
-  <path d="M14 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2" />
-  <path d="M22 14v-4" />
-  <path d="M6 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2" />
+  <path d="M14 7h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
+  <path d="M22 11v2" />
+  <path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
 </svg>
 "#
     }
@@ -3420,8 +3420,8 @@ impl Into<&'static str> for LdBattery {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M 22 14 L 22 10" />
-  <rect x="2" y="6"  height="12" rx="2" />
+  <rect  height="10" x="2" y="7" rx="2" ry="2" />
+  <line x1="22" x2="22" y1="11" y2="13" />
 </svg>
 "#
     }
@@ -8865,30 +8865,6 @@ impl Into<&'static str> for LdCirclePlus {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdCirclePoundSterling;
-impl Into<&'static str> for LdCirclePoundSterling {
-    fn into(self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M10 16V9.5a1 1 0 0 1 5 0" />
-  <path d="M8 12h4" />
-  <path d="M8 16h7" />
-  <circle cx="12" cy="12" r="10" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCirclePower;
 impl Into<&'static str> for LdCirclePower {
     fn into(self) -> &'static str {
@@ -9853,28 +9829,6 @@ impl Into<&'static str> for LdCloudAlert {
   <path d="M12 12v4" />
   <path d="M12 20h.01" />
   <path d="M17 18h.5a1 1 0 0 0 0-9h-1.79A7 7 0 1 0 7 17.708" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdCloudCheck;
-impl Into<&'static str> for LdCloudCheck {
-    fn into(self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m17 15-5.5 5.5L9 18" />
-  <path d="M5 17.743A7 7 0 1 1 15.71 10h1.79a4.5 4.5 0 0 1 1.5 8.742" />
 </svg>
 "#
     }
@@ -13049,8 +13003,9 @@ impl Into<&'static str> for LdEraser {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21" />
-  <path d="m5.082 11.09 8.828 8.828" />
+  <path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21" />
+  <path d="M22 21H7" />
+  <path d="m5 11 9 9" />
 </svg>
 "#
     }
@@ -18828,30 +18783,6 @@ impl Into<&'static str> for LdIceCreamCone {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdIdCardLanyard;
-impl Into<&'static str> for LdIdCardLanyard {
-    fn into(self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M13.5 8h-3" />
-  <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
-  <path d="M16.899 22A5 5 0 0 0 7.1 22" />
-  <path d="m9 2 3 6" />
-  <circle cx="12" cy="15" r="3" />
-</svg>"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIdCard;
 impl Into<&'static str> for LdIdCard {
     fn into(self) -> &'static str {
@@ -20536,11 +20467,11 @@ impl Into<&'static str> for LdListCollapse {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m3 10 2.5-2.5L3 5" />
+  <path d="m3 19 2.5-2.5L3 14" />
+  <path d="M10 6h11" />
   <path d="M10 12h11" />
   <path d="M10 18h11" />
-  <path d="M10 6h11" />
-  <path d="m3 10 3-3-3-3" />
-  <path d="m3 20 3-3-3-3" />
 </svg>
 "#
     }
@@ -25482,7 +25413,8 @@ impl Into<&'static str> for LdPaperclip {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551" />
+  <path d="M13.234 20.252 21 12.3" />
+  <path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486" />
 </svg>
 "#
     }
@@ -31786,7 +31718,7 @@ impl Into<&'static str> for LdSquareCheckBig {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344" />
+  <path d="M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.5" />
   <path d="m9 11 3 3L22 4" />
 </svg>
 "#
