@@ -1,9 +1,7 @@
-use super::super::IconShape;
-
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAArrowDown;
-impl IconShape for LdAArrowDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAArrowDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25,8 +23,8 @@ impl IconShape for LdAArrowDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAArrowUp;
-impl IconShape for LdAArrowUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAArrowUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -48,8 +46,8 @@ impl IconShape for LdAArrowUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdALargeSmall;
-impl IconShape for LdALargeSmall {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdALargeSmall {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -71,8 +69,8 @@ impl IconShape for LdALargeSmall {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAccessibility;
-impl IconShape for LdAccessibility {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAccessibility {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -96,8 +94,8 @@ impl IconShape for LdAccessibility {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdActivity;
-impl IconShape for LdActivity {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdActivity {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -109,7 +107,7 @@ impl IconShape for LdActivity {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+  <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
 </svg>
 "#
     }
@@ -117,8 +115,8 @@ impl IconShape for LdActivity {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAirVent;
-impl IconShape for LdAirVent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAirVent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -130,10 +128,10 @@ impl IconShape for LdAirVent {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M18 17.5a2.5 2.5 0 1 1-4 2.03V12" />
   <path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
   <path d="M6 8h12" />
-  <path d="M18.3 17.7a2.5 2.5 0 0 1-3.16 3.83 2.53 2.53 0 0 1-1.14-2V12" />
-  <path d="M6.6 15.6A2 2 0 1 0 10 17v-5" />
+  <path d="M6.6 15.572A2 2 0 1 0 10 17v-5" />
 </svg>
 "#
     }
@@ -141,8 +139,8 @@ impl IconShape for LdAirVent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAirplay;
-impl IconShape for LdAirplay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAirplay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -163,8 +161,8 @@ impl IconShape for LdAirplay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlarmClockCheck;
-impl IconShape for LdAlarmClockCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlarmClockCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -189,8 +187,8 @@ impl IconShape for LdAlarmClockCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlarmClockMinus;
-impl IconShape for LdAlarmClockMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlarmClockMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -215,8 +213,8 @@ impl IconShape for LdAlarmClockMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlarmClockOff;
-impl IconShape for LdAlarmClockOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlarmClockOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -241,8 +239,8 @@ impl IconShape for LdAlarmClockOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlarmClockPlus;
-impl IconShape for LdAlarmClockPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlarmClockPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -268,8 +266,8 @@ impl IconShape for LdAlarmClockPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlarmClock;
-impl IconShape for LdAlarmClock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlarmClock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -294,8 +292,8 @@ impl IconShape for LdAlarmClock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlarmSmoke;
-impl IconShape for LdAlarmSmoke {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlarmSmoke {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -307,10 +305,10 @@ impl IconShape for LdAlarmSmoke {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 8a2 2 0 0 1-2-2V3h20v3a2 2 0 0 1-2 2Z" />
-  <path d="m19 8-.8 3c-.1.6-.6 1-1.2 1H7c-.6 0-1.1-.4-1.2-1L5 8" />
-  <path d="M16 21c0-2.5 2-2.5 2-5" />
   <path d="M11 21c0-2.5 2-2.5 2-5" />
+  <path d="M16 21c0-2.5 2-2.5 2-5" />
+  <path d="m19 8-.8 3a1.25 1.25 0 0 1-1.2 1H7a1.25 1.25 0 0 1-1.2-1L5 8" />
+  <path d="M21 3a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a1 1 0 0 1 1-1z" />
   <path d="M6 21c0-2.5 2-2.5 2-5" />
 </svg>
 "#
@@ -319,8 +317,8 @@ impl IconShape for LdAlarmSmoke {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlbum;
-impl IconShape for LdAlbum {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlbum {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -341,8 +339,8 @@ impl IconShape for LdAlbum {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignCenterHorizontal;
-impl IconShape for LdAlignCenterHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignCenterHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -366,8 +364,8 @@ impl IconShape for LdAlignCenterHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignCenterVertical;
-impl IconShape for LdAlignCenterVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignCenterVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -391,8 +389,8 @@ impl IconShape for LdAlignCenterVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignCenter;
-impl IconShape for LdAlignCenter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignCenter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -404,9 +402,9 @@ impl IconShape for LdAlignCenter {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="21" x2="3" y1="6" y2="6" />
-  <line x1="17" x2="7" y1="12" y2="12" />
-  <line x1="19" x2="5" y1="18" y2="18" />
+  <path d="M17 12H7" />
+  <path d="M19 18H5" />
+  <path d="M21 6H3" />
 </svg>
 "#
     }
@@ -414,8 +412,8 @@ impl IconShape for LdAlignCenter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignEndHorizontal;
-impl IconShape for LdAlignEndHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignEndHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -437,8 +435,8 @@ impl IconShape for LdAlignEndHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignEndVertical;
-impl IconShape for LdAlignEndVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignEndVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -460,8 +458,8 @@ impl IconShape for LdAlignEndVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalDistributeCenter;
-impl IconShape for LdAlignHorizontalDistributeCenter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalDistributeCenter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -486,8 +484,8 @@ impl IconShape for LdAlignHorizontalDistributeCenter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalDistributeEnd;
-impl IconShape for LdAlignHorizontalDistributeEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalDistributeEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -510,8 +508,8 @@ impl IconShape for LdAlignHorizontalDistributeEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalDistributeStart;
-impl IconShape for LdAlignHorizontalDistributeStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalDistributeStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -534,8 +532,8 @@ impl IconShape for LdAlignHorizontalDistributeStart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalJustifyCenter;
-impl IconShape for LdAlignHorizontalJustifyCenter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalJustifyCenter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -557,8 +555,8 @@ impl IconShape for LdAlignHorizontalJustifyCenter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalJustifyEnd;
-impl IconShape for LdAlignHorizontalJustifyEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalJustifyEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -580,8 +578,8 @@ impl IconShape for LdAlignHorizontalJustifyEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalJustifyStart;
-impl IconShape for LdAlignHorizontalJustifyStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalJustifyStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -603,8 +601,8 @@ impl IconShape for LdAlignHorizontalJustifyStart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalSpaceAround;
-impl IconShape for LdAlignHorizontalSpaceAround {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalSpaceAround {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -626,8 +624,8 @@ impl IconShape for LdAlignHorizontalSpaceAround {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignHorizontalSpaceBetween;
-impl IconShape for LdAlignHorizontalSpaceBetween {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignHorizontalSpaceBetween {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -650,8 +648,8 @@ impl IconShape for LdAlignHorizontalSpaceBetween {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignJustify;
-impl IconShape for LdAlignJustify {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignJustify {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -663,9 +661,9 @@ impl IconShape for LdAlignJustify {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="3" x2="21" y1="6" y2="6" />
-  <line x1="3" x2="21" y1="12" y2="12" />
-  <line x1="3" x2="21" y1="18" y2="18" />
+  <path d="M3 12h18" />
+  <path d="M3 18h18" />
+  <path d="M3 6h18" />
 </svg>
 "#
     }
@@ -673,8 +671,8 @@ impl IconShape for LdAlignJustify {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignLeft;
-impl IconShape for LdAlignLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -686,9 +684,9 @@ impl IconShape for LdAlignLeft {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="21" x2="3" y1="6" y2="6" />
-  <line x1="15" x2="3" y1="12" y2="12" />
-  <line x1="17" x2="3" y1="18" y2="18" />
+  <path d="M15 12H3" />
+  <path d="M17 18H3" />
+  <path d="M21 6H3" />
 </svg>
 "#
     }
@@ -696,8 +694,8 @@ impl IconShape for LdAlignLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignRight;
-impl IconShape for LdAlignRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -709,9 +707,9 @@ impl IconShape for LdAlignRight {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="21" x2="3" y1="6" y2="6" />
-  <line x1="21" x2="9" y1="12" y2="12" />
-  <line x1="21" x2="7" y1="18" y2="18" />
+  <path d="M21 12H9" />
+  <path d="M21 18H7" />
+  <path d="M21 6H3" />
 </svg>
 "#
     }
@@ -719,8 +717,8 @@ impl IconShape for LdAlignRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignStartHorizontal;
-impl IconShape for LdAlignStartHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignStartHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -742,8 +740,8 @@ impl IconShape for LdAlignStartHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignStartVertical;
-impl IconShape for LdAlignStartVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignStartVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -765,8 +763,8 @@ impl IconShape for LdAlignStartVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalDistributeCenter;
-impl IconShape for LdAlignVerticalDistributeCenter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalDistributeCenter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -791,8 +789,8 @@ impl IconShape for LdAlignVerticalDistributeCenter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalDistributeEnd;
-impl IconShape for LdAlignVerticalDistributeEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalDistributeEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -815,8 +813,8 @@ impl IconShape for LdAlignVerticalDistributeEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalDistributeStart;
-impl IconShape for LdAlignVerticalDistributeStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalDistributeStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -839,8 +837,8 @@ impl IconShape for LdAlignVerticalDistributeStart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalJustifyCenter;
-impl IconShape for LdAlignVerticalJustifyCenter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalJustifyCenter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -862,8 +860,8 @@ impl IconShape for LdAlignVerticalJustifyCenter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalJustifyEnd;
-impl IconShape for LdAlignVerticalJustifyEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalJustifyEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -885,8 +883,8 @@ impl IconShape for LdAlignVerticalJustifyEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalJustifyStart;
-impl IconShape for LdAlignVerticalJustifyStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalJustifyStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -908,8 +906,8 @@ impl IconShape for LdAlignVerticalJustifyStart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalSpaceAround;
-impl IconShape for LdAlignVerticalSpaceAround {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalSpaceAround {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -931,8 +929,8 @@ impl IconShape for LdAlignVerticalSpaceAround {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAlignVerticalSpaceBetween;
-impl IconShape for LdAlignVerticalSpaceBetween {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAlignVerticalSpaceBetween {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -955,8 +953,8 @@ impl IconShape for LdAlignVerticalSpaceBetween {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAmbulance;
-impl IconShape for LdAmbulance {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAmbulance {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -982,8 +980,8 @@ impl IconShape for LdAmbulance {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAmpersand;
-impl IconShape for LdAmpersand {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAmpersand {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1004,8 +1002,8 @@ impl IconShape for LdAmpersand {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAmpersands;
-impl IconShape for LdAmpersands {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAmpersands {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1025,9 +1023,35 @@ impl IconShape for LdAmpersands {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdAmphora;
+impl Into<&'static str> for LdAmphora {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 2v5.632c0 .424-.272.795-.653.982A6 6 0 0 0 6 14c.006 4 3 7 5 8" />
+  <path d="M10 5H8a2 2 0 0 0 0 4h.68" />
+  <path d="M14 2v5.632c0 .424.272.795.652.982A6 6 0 0 1 18 14c0 4-3 7-5 8" />
+  <path d="M14 5h2a2 2 0 0 1 0 4h-.68" />
+  <path d="M18 22H6" />
+  <path d="M9 2h6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAnchor;
-impl IconShape for LdAnchor {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAnchor {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1049,8 +1073,8 @@ impl IconShape for LdAnchor {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAngry;
-impl IconShape for LdAngry {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAngry {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1066,8 +1090,8 @@ impl IconShape for LdAngry {
   <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
   <path d="M7.5 8 10 9" />
   <path d="m14 9 2.5-1" />
-  <path d="M9 10h0" />
-  <path d="M15 10h0" />
+  <path d="M9 10h.01" />
+  <path d="M15 10h.01" />
 </svg>
 "#
     }
@@ -1075,8 +1099,8 @@ impl IconShape for LdAngry {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAnnoyed;
-impl IconShape for LdAnnoyed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAnnoyed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1099,8 +1123,8 @@ impl IconShape for LdAnnoyed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAntenna;
-impl IconShape for LdAntenna {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAntenna {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1125,8 +1149,8 @@ impl IconShape for LdAntenna {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAnvil;
-impl IconShape for LdAnvil {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAnvil {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1150,8 +1174,8 @@ impl IconShape for LdAnvil {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAperture;
-impl IconShape for LdAperture {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAperture {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1177,8 +1201,8 @@ impl IconShape for LdAperture {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAppWindowMac;
-impl IconShape for LdAppWindowMac {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAppWindowMac {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1201,8 +1225,8 @@ impl IconShape for LdAppWindowMac {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAppWindow;
-impl IconShape for LdAppWindow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAppWindow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1225,8 +1249,8 @@ impl IconShape for LdAppWindow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdApple;
-impl IconShape for LdApple {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdApple {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1247,8 +1271,8 @@ impl IconShape for LdApple {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArchiveRestore;
-impl IconShape for LdArchiveRestore {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArchiveRestore {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1272,8 +1296,8 @@ impl IconShape for LdArchiveRestore {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArchiveX;
-impl IconShape for LdArchiveX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArchiveX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1296,8 +1320,8 @@ impl IconShape for LdArchiveX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArchive;
-impl IconShape for LdArchive {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArchive {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1318,31 +1342,9 @@ impl IconShape for LdArchive {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdAreaChart;
-impl IconShape for LdAreaChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <path d="M7 12v5h12V8l-5 5-4-4Z" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArmchair;
-impl IconShape for LdArmchair {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArmchair {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1355,7 +1357,7 @@ impl IconShape for LdArmchair {
   stroke-linejoin="round"
 >
   <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3" />
-  <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z" />
+  <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" />
   <path d="M5 18v2" />
   <path d="M19 18v2" />
 </svg>
@@ -1365,8 +1367,8 @@ impl IconShape for LdArmchair {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigDownDash;
-impl IconShape for LdArrowBigDownDash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigDownDash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1387,8 +1389,8 @@ impl IconShape for LdArrowBigDownDash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigDown;
-impl IconShape for LdArrowBigDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1408,8 +1410,8 @@ impl IconShape for LdArrowBigDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigLeftDash;
-impl IconShape for LdArrowBigLeftDash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigLeftDash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1430,8 +1432,8 @@ impl IconShape for LdArrowBigLeftDash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigLeft;
-impl IconShape for LdArrowBigLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1451,8 +1453,8 @@ impl IconShape for LdArrowBigLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigRightDash;
-impl IconShape for LdArrowBigRightDash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigRightDash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1473,8 +1475,8 @@ impl IconShape for LdArrowBigRightDash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigRight;
-impl IconShape for LdArrowBigRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1494,8 +1496,8 @@ impl IconShape for LdArrowBigRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigUpDash;
-impl IconShape for LdArrowBigUpDash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigUpDash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1516,8 +1518,8 @@ impl IconShape for LdArrowBigUpDash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowBigUp;
-impl IconShape for LdArrowBigUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowBigUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1537,8 +1539,8 @@ impl IconShape for LdArrowBigUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDown01;
-impl IconShape for LdArrowDown01 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDown01 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1562,8 +1564,8 @@ impl IconShape for LdArrowDown01 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDown10;
-impl IconShape for LdArrowDown10 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDown10 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1587,8 +1589,8 @@ impl IconShape for LdArrowDown10 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownAZ;
-impl IconShape for LdArrowDownAZ {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownAZ {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1612,8 +1614,8 @@ impl IconShape for LdArrowDownAZ {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownFromLine;
-impl IconShape for LdArrowDownFromLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownFromLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1635,8 +1637,8 @@ impl IconShape for LdArrowDownFromLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownLeft;
-impl IconShape for LdArrowDownLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1657,8 +1659,8 @@ impl IconShape for LdArrowDownLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownNarrowWide;
-impl IconShape for LdArrowDownNarrowWide {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownNarrowWide {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1682,8 +1684,8 @@ impl IconShape for LdArrowDownNarrowWide {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownRight;
-impl IconShape for LdArrowDownRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1704,8 +1706,8 @@ impl IconShape for LdArrowDownRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownToDot;
-impl IconShape for LdArrowDownToDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownToDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1727,8 +1729,8 @@ impl IconShape for LdArrowDownToDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownToLine;
-impl IconShape for LdArrowDownToLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownToLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1750,8 +1752,8 @@ impl IconShape for LdArrowDownToLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownUp;
-impl IconShape for LdArrowDownUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1774,8 +1776,8 @@ impl IconShape for LdArrowDownUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownWideNarrow;
-impl IconShape for LdArrowDownWideNarrow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownWideNarrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1799,8 +1801,8 @@ impl IconShape for LdArrowDownWideNarrow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDownZA;
-impl IconShape for LdArrowDownZA {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDownZA {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1824,8 +1826,8 @@ impl IconShape for LdArrowDownZA {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowDown;
-impl IconShape for LdArrowDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1846,8 +1848,8 @@ impl IconShape for LdArrowDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowLeftFromLine;
-impl IconShape for LdArrowLeftFromLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowLeftFromLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1869,8 +1871,8 @@ impl IconShape for LdArrowLeftFromLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowLeftRight;
-impl IconShape for LdArrowLeftRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowLeftRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1893,8 +1895,8 @@ impl IconShape for LdArrowLeftRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowLeftToLine;
-impl IconShape for LdArrowLeftToLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowLeftToLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1916,8 +1918,8 @@ impl IconShape for LdArrowLeftToLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowLeft;
-impl IconShape for LdArrowLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1938,8 +1940,8 @@ impl IconShape for LdArrowLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowRightFromLine;
-impl IconShape for LdArrowRightFromLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowRightFromLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1961,8 +1963,8 @@ impl IconShape for LdArrowRightFromLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowRightLeft;
-impl IconShape for LdArrowRightLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowRightLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -1985,8 +1987,8 @@ impl IconShape for LdArrowRightLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowRightToLine;
-impl IconShape for LdArrowRightToLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowRightToLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2008,8 +2010,8 @@ impl IconShape for LdArrowRightToLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowRight;
-impl IconShape for LdArrowRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2030,8 +2032,8 @@ impl IconShape for LdArrowRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUp01;
-impl IconShape for LdArrowUp01 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUp01 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2055,8 +2057,8 @@ impl IconShape for LdArrowUp01 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUp10;
-impl IconShape for LdArrowUp10 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUp10 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2080,8 +2082,8 @@ impl IconShape for LdArrowUp10 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpAZ;
-impl IconShape for LdArrowUpAZ {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpAZ {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2105,8 +2107,8 @@ impl IconShape for LdArrowUpAZ {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpDown;
-impl IconShape for LdArrowUpDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2129,8 +2131,8 @@ impl IconShape for LdArrowUpDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpFromDot;
-impl IconShape for LdArrowUpFromDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpFromDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2152,8 +2154,8 @@ impl IconShape for LdArrowUpFromDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpFromLine;
-impl IconShape for LdArrowUpFromLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpFromLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2175,8 +2177,8 @@ impl IconShape for LdArrowUpFromLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpLeft;
-impl IconShape for LdArrowUpLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2197,8 +2199,8 @@ impl IconShape for LdArrowUpLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpNarrowWide;
-impl IconShape for LdArrowUpNarrowWide {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpNarrowWide {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2222,8 +2224,8 @@ impl IconShape for LdArrowUpNarrowWide {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpRight;
-impl IconShape for LdArrowUpRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2244,8 +2246,8 @@ impl IconShape for LdArrowUpRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpToLine;
-impl IconShape for LdArrowUpToLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpToLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2267,8 +2269,8 @@ impl IconShape for LdArrowUpToLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpWideNarrow;
-impl IconShape for LdArrowUpWideNarrow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpWideNarrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2292,8 +2294,8 @@ impl IconShape for LdArrowUpWideNarrow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUpZA;
-impl IconShape for LdArrowUpZA {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUpZA {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2317,8 +2319,8 @@ impl IconShape for LdArrowUpZA {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowUp;
-impl IconShape for LdArrowUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2339,8 +2341,8 @@ impl IconShape for LdArrowUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdArrowsUpFromLine;
-impl IconShape for LdArrowsUpFromLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdArrowsUpFromLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2364,8 +2366,8 @@ impl IconShape for LdArrowsUpFromLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAsterisk;
-impl IconShape for LdAsterisk {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAsterisk {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2387,8 +2389,8 @@ impl IconShape for LdAsterisk {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAtSign;
-impl IconShape for LdAtSign {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAtSign {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2409,8 +2411,8 @@ impl IconShape for LdAtSign {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAtom;
-impl IconShape for LdAtom {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAtom {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2432,8 +2434,8 @@ impl IconShape for LdAtom {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAudioLines;
-impl IconShape for LdAudioLines {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAudioLines {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2458,8 +2460,8 @@ impl IconShape for LdAudioLines {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAudioWaveform;
-impl IconShape for LdAudioWaveform {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAudioWaveform {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2479,8 +2481,8 @@ impl IconShape for LdAudioWaveform {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAward;
-impl IconShape for LdAward {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAward {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2492,8 +2494,8 @@ impl IconShape for LdAward {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
   <circle cx="12" cy="8" r="6" />
-  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
 </svg>
 "#
     }
@@ -2501,8 +2503,8 @@ impl IconShape for LdAward {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAxe;
-impl IconShape for LdAxe {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAxe {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2514,8 +2516,8 @@ impl IconShape for LdAxe {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9" />
-  <path d="M15 13 9 7l4-4 6 6h3a8 8 0 0 1-7 7z" />
+  <path d="m14 12-8.381 8.38a1 1 0 0 1-3.001-3L11 9" />
+  <path d="M15 15.5a.5.5 0 0 0 .5.5A6.5 6.5 0 0 0 22 9.5a.5.5 0 0 0-.5-.5h-1.672a2 2 0 0 1-1.414-.586l-5.062-5.062a1.205 1.205 0 0 0-1.704 0L9.352 5.648a1.205 1.205 0 0 0 0 1.704l5.062 5.062A2 2 0 0 1 15 13.828z" />
 </svg>
 "#
     }
@@ -2523,8 +2525,8 @@ impl IconShape for LdAxe {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdAxis3d;
-impl IconShape for LdAxis3d {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdAxis3d {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2536,8 +2538,10 @@ impl IconShape for LdAxis3d {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 4v16h16" />
-  <path d="m4 20 7-7" />
+  <path d="M13.5 10.5 15 9" />
+  <path d="M4 4v15a1 1 0 0 0 1 1h15" />
+  <path d="M4.293 19.707 6 18" />
+  <path d="m9 15 1.5-1.5" />
 </svg>
 "#
     }
@@ -2545,8 +2549,8 @@ impl IconShape for LdAxis3d {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBaby;
-impl IconShape for LdBaby {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBaby {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2558,10 +2562,10 @@ impl IconShape for LdBaby {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9 12h.01" />
-  <path d="M15 12h.01" />
   <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" />
-  <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" />
+  <path d="M15 12h.01" />
+  <path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" />
+  <path d="M9 12h.01" />
 </svg>
 "#
     }
@@ -2569,8 +2573,8 @@ impl IconShape for LdBaby {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBackpack;
-impl IconShape for LdBackpack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBackpack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2582,11 +2586,11 @@ impl IconShape for LdBackpack {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" />
-  <path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
-  <path d="M8 21v-5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5" />
+  <path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
   <path d="M8 10h8" />
   <path d="M8 18h8" />
+  <path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6" />
+  <path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
 </svg>
 "#
     }
@@ -2594,8 +2598,8 @@ impl IconShape for LdBackpack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeAlert;
-impl IconShape for LdBadgeAlert {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeAlert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2617,8 +2621,8 @@ impl IconShape for LdBadgeAlert {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeCent;
-impl IconShape for LdBadgeCent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeCent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2640,8 +2644,8 @@ impl IconShape for LdBadgeCent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeCheck;
-impl IconShape for LdBadgeCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2662,8 +2666,8 @@ impl IconShape for LdBadgeCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeDollarSign;
-impl IconShape for LdBadgeDollarSign {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeDollarSign {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2685,8 +2689,8 @@ impl IconShape for LdBadgeDollarSign {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeEuro;
-impl IconShape for LdBadgeEuro {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeEuro {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2708,8 +2712,8 @@ impl IconShape for LdBadgeEuro {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeHelp;
-impl IconShape for LdBadgeHelp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeHelp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2731,8 +2735,8 @@ impl IconShape for LdBadgeHelp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeIndianRupee;
-impl IconShape for LdBadgeIndianRupee {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeIndianRupee {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2755,8 +2759,8 @@ impl IconShape for LdBadgeIndianRupee {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeInfo;
-impl IconShape for LdBadgeInfo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeInfo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2778,8 +2782,8 @@ impl IconShape for LdBadgeInfo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeJapaneseYen;
-impl IconShape for LdBadgeJapaneseYen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeJapaneseYen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2803,8 +2807,8 @@ impl IconShape for LdBadgeJapaneseYen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeMinus;
-impl IconShape for LdBadgeMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2825,8 +2829,8 @@ impl IconShape for LdBadgeMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgePercent;
-impl IconShape for LdBadgePercent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgePercent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2849,8 +2853,8 @@ impl IconShape for LdBadgePercent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgePlus;
-impl IconShape for LdBadgePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2872,8 +2876,8 @@ impl IconShape for LdBadgePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgePoundSterling;
-impl IconShape for LdBadgePoundSterling {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgePoundSterling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2896,8 +2900,8 @@ impl IconShape for LdBadgePoundSterling {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeRussianRuble;
-impl IconShape for LdBadgeRussianRuble {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeRussianRuble {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2919,8 +2923,8 @@ impl IconShape for LdBadgeRussianRuble {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeSwissFranc;
-impl IconShape for LdBadgeSwissFranc {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeSwissFranc {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2943,8 +2947,8 @@ impl IconShape for LdBadgeSwissFranc {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadgeX;
-impl IconShape for LdBadgeX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadgeX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2966,8 +2970,8 @@ impl IconShape for LdBadgeX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBadge;
-impl IconShape for LdBadge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBadge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -2987,8 +2991,8 @@ impl IconShape for LdBadge {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBaggageClaim;
-impl IconShape for LdBaggageClaim {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBaggageClaim {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3012,8 +3016,8 @@ impl IconShape for LdBaggageClaim {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBan;
-impl IconShape for LdBan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3034,8 +3038,8 @@ impl IconShape for LdBan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBanana;
-impl IconShape for LdBanana {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBanana {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3055,9 +3059,114 @@ impl IconShape for LdBanana {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBandage;
+impl Into<&'static str> for LdBandage {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 10.01h.01" />
+  <path d="M10 14.01h.01" />
+  <path d="M14 10.01h.01" />
+  <path d="M14 14.01h.01" />
+  <path d="M18 6v11.5" />
+  <path d="M6 6v12" />
+  <rect x="2" y="6" width="20" height="12" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBanknoteArrowDown;
+impl Into<&'static str> for LdBanknoteArrowDown {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5" />
+  <path d="m16 19 3 3 3-3" />
+  <path d="M18 12h.01" />
+  <path d="M19 16v6" />
+  <path d="M6 12h.01" />
+  <circle cx="12" cy="12" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBanknoteArrowUp;
+impl Into<&'static str> for LdBanknoteArrowUp {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5" />
+  <path d="M18 12h.01" />
+  <path d="M19 22v-6" />
+  <path d="m22 19-3-3-3 3" />
+  <path d="M6 12h.01" />
+  <circle cx="12" cy="12" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBanknoteX;
+impl Into<&'static str> for LdBanknoteX {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5" />
+  <path d="m17 17 5 5" />
+  <path d="M18 12h.01" />
+  <path d="m22 17-5 5" />
+  <path d="M6 12h.01" />
+  <circle cx="12" cy="12" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBanknote;
-impl IconShape for LdBanknote {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBanknote {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3078,173 +3187,9 @@ impl IconShape for LdBanknote {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChart2;
-impl IconShape for LdBarChart2 {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <line x1="18" x2="18" y1="20" y2="10" />
-  <line x1="12" x2="12" y1="20" y2="4" />
-  <line x1="6" x2="6" y1="20" y2="14" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChart3;
-impl IconShape for LdBarChart3 {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <path d="M18 17V9" />
-  <path d="M13 17V5" />
-  <path d="M8 17v-3" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChart4;
-impl IconShape for LdBarChart4 {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <path d="M13 17V9" />
-  <path d="M18 17V5" />
-  <path d="M8 17v-3" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChartBig;
-impl IconShape for LdBarChartBig {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <rect width="4" height="7" x="7" y="10" rx="1" />
-  <rect width="4" height="12" x="15" y="5" rx="1" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChartHorizontalBig;
-impl IconShape for LdBarChartHorizontalBig {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <rect width="12" height="4" x="7" y="5" rx="1" />
-  <rect width="7" height="4" x="7" y="13" rx="1" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChartHorizontal;
-impl IconShape for LdBarChartHorizontal {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <path d="M7 16h8" />
-  <path d="M7 11h12" />
-  <path d="M7 6h3" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBarChart;
-impl IconShape for LdBarChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <line x1="12" x2="12" y1="20" y2="10" />
-  <line x1="18" x2="18" y1="20" y2="4" />
-  <line x1="6" x2="6" y1="20" y2="16" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBarcode;
-impl IconShape for LdBarcode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBarcode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3268,8 +3213,8 @@ impl IconShape for LdBarcode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBaseline;
-impl IconShape for LdBaseline {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBaseline {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3291,8 +3236,8 @@ impl IconShape for LdBaseline {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBath;
-impl IconShape for LdBath {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBath {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3304,11 +3249,11 @@ impl IconShape for LdBath {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
-  <line x1="10" x2="8" y1="5" y2="7" />
-  <line x1="2" x2="22" y1="12" y2="12" />
-  <line x1="7" x2="7" y1="19" y2="21" />
-  <line x1="17" x2="17" y1="19" y2="21" />
+  <path d="M10 4 8 6" />
+  <path d="M17 19v2" />
+  <path d="M2 12h20" />
+  <path d="M7 19v2" />
+  <path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
 </svg>
 "#
     }
@@ -3316,8 +3261,8 @@ impl IconShape for LdBath {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBatteryCharging;
-impl IconShape for LdBatteryCharging {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBatteryCharging {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3329,10 +3274,10 @@ impl IconShape for LdBatteryCharging {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
-  <path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1" />
   <path d="m11 7-3 5h4l-3 5" />
-  <line x1="22" x2="22" y1="11" y2="13" />
+  <path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935" />
+  <path d="M22 14v-4" />
+  <path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936" />
 </svg>
 "#
     }
@@ -3340,8 +3285,8 @@ impl IconShape for LdBatteryCharging {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBatteryFull;
-impl IconShape for LdBatteryFull {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBatteryFull {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3353,11 +3298,11 @@ impl IconShape for LdBatteryFull {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect  height="10" x="2" y="7" rx="2" ry="2" />
-  <line x1="22" x2="22" y1="11" y2="13" />
-  <line x1="6" x2="6" y1="11" y2="13" />
-  <line x1="10" x2="10" y1="11" y2="13" />
-  <line x1="14" x2="14" y1="11" y2="13" />
+  <path d="M10 10v4" />
+  <path d="M14 10v4" />
+  <path d="M22 14v-4" />
+  <path d="M6 10v4" />
+  <rect x="2" y="6"  height="12" rx="2" />
 </svg>
 "#
     }
@@ -3365,8 +3310,8 @@ impl IconShape for LdBatteryFull {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBatteryLow;
-impl IconShape for LdBatteryLow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBatteryLow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3378,9 +3323,9 @@ impl IconShape for LdBatteryLow {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect  height="10" x="2" y="7" rx="2" ry="2" />
-  <line x1="22" x2="22" y1="11" y2="13" />
-  <line x1="6" x2="6" y1="11" y2="13" />
+  <path d="M22 14v-4" />
+  <path d="M6 14v-4" />
+  <rect x="2" y="6"  height="12" rx="2" />
 </svg>
 "#
     }
@@ -3388,8 +3333,8 @@ impl IconShape for LdBatteryLow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBatteryMedium;
-impl IconShape for LdBatteryMedium {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBatteryMedium {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3401,10 +3346,35 @@ impl IconShape for LdBatteryMedium {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect  height="10" x="2" y="7" rx="2" ry="2" />
-  <line x1="22" x2="22" y1="11" y2="13" />
-  <line x1="6" x2="6" y1="11" y2="13" />
-  <line x1="10" x2="10" y1="11" y2="13" />
+  <path d="M10 14v-4" />
+  <path d="M22 14v-4" />
+  <path d="M6 14v-4" />
+  <rect x="2" y="6"  height="12" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBatteryPlus;
+impl Into<&'static str> for LdBatteryPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 9v6" />
+  <path d="M12.543 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.605" />
+  <path d="M22 14v-4" />
+  <path d="M7 12h6" />
+  <path d="M7.606 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.606" />
 </svg>
 "#
     }
@@ -3412,8 +3382,8 @@ impl IconShape for LdBatteryMedium {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBatteryWarning;
-impl IconShape for LdBatteryWarning {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBatteryWarning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3425,11 +3395,11 @@ impl IconShape for LdBatteryWarning {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 7h2a2 2 0 0 1 2 2v6c0 1-1 2-2 2h-2" />
-  <path d="M6 7H4a2 2 0 0 0-2 2v6c0 1 1 2 2 2h2" />
-  <line x1="22" x2="22" y1="11" y2="13" />
-  <line x1="10" x2="10" y1="7" y2="13" />
-  <line x1="10" x2="10" y1="17" y2="17.01" />
+  <path d="M10 17h.01" />
+  <path d="M10 7v6" />
+  <path d="M14 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2" />
+  <path d="M22 14v-4" />
+  <path d="M6 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2" />
 </svg>
 "#
     }
@@ -3437,8 +3407,8 @@ impl IconShape for LdBatteryWarning {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBattery;
-impl IconShape for LdBattery {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBattery {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3450,8 +3420,8 @@ impl IconShape for LdBattery {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect  height="10" x="2" y="7" rx="2" ry="2" />
-  <line x1="22" x2="22" y1="11" y2="13" />
+  <path d="M 22 14 L 22 10" />
+  <rect x="2" y="6"  height="12" rx="2" />
 </svg>
 "#
     }
@@ -3459,8 +3429,8 @@ impl IconShape for LdBattery {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBeaker;
-impl IconShape for LdBeaker {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBeaker {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3482,8 +3452,8 @@ impl IconShape for LdBeaker {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBeanOff;
-impl IconShape for LdBeanOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBeanOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3506,8 +3476,8 @@ impl IconShape for LdBeanOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBean;
-impl IconShape for LdBean {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBean {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3528,8 +3498,8 @@ impl IconShape for LdBean {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBedDouble;
-impl IconShape for LdBedDouble {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBedDouble {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3552,8 +3522,8 @@ impl IconShape for LdBedDouble {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBedSingle;
-impl IconShape for LdBedSingle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBedSingle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3575,8 +3545,8 @@ impl IconShape for LdBedSingle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBed;
-impl IconShape for LdBed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3599,8 +3569,8 @@ impl IconShape for LdBed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBeef;
-impl IconShape for LdBeef {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBeef {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3612,9 +3582,9 @@ impl IconShape for LdBeef {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M16.4 13.7A6.5 6.5 0 1 0 6.28 6.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3" />
+  <path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1-2.29 7.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5" />
   <circle cx="12.5" cy="8.5" r="2.5" />
-  <path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2Z" />
-  <path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5" />
 </svg>
 "#
     }
@@ -3622,8 +3592,8 @@ impl IconShape for LdBeef {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBeerOff;
-impl IconShape for LdBeerOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBeerOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3650,8 +3620,8 @@ impl IconShape for LdBeerOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBeer;
-impl IconShape for LdBeer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBeer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3675,8 +3645,8 @@ impl IconShape for LdBeer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBellDot;
-impl IconShape for LdBellDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBellDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3688,8 +3658,8 @@ impl IconShape for LdBellDot {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M19.4 14.9C20.2 16.4 21 17 21 17H3s3-2 3-9c0-3.3 2.7-6 6-6 .7 0 1.3.1 1.9.3" />
-  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+  <path d="M13.916 2.314A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.74 7.327A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673 9 9 0 0 1-.585-.665" />
   <circle cx="18" cy="8" r="3" />
 </svg>
 "#
@@ -3698,8 +3668,8 @@ impl IconShape for LdBellDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBellElectric;
-impl IconShape for LdBellElectric {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBellElectric {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3711,12 +3681,12 @@ impl IconShape for LdBellElectric {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18.8 4A6.3 8.7 0 0 1 20 9" />
+  <path d="M18.518 17.347A7 7 0 0 1 14 19" />
+  <path d="M18.8 4A11 11 0 0 1 20 9" />
   <path d="M9 9h.01" />
-  <circle cx="9" cy="9" r="7" />
-  <rect width="10" height="6" x="4" y="16" rx="2" />
-  <path d="M14 19c3 0 4.6-1.6 4.6-1.6" />
   <circle cx="20" cy="16" r="2" />
+  <circle cx="9" cy="9" r="7" />
+  <rect x="4" y="16" width="10" height="6" rx="2" />
 </svg>
 "#
     }
@@ -3724,8 +3694,8 @@ impl IconShape for LdBellElectric {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBellMinus;
-impl IconShape for LdBellMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBellMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3737,9 +3707,9 @@ impl IconShape for LdBellMinus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18.4 12c.8 3.8 2.6 5 2.6 5H3s3-2 3-9c0-3.3 2.7-6 6-6 1.8 0 3.4.8 4.5 2" />
-  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
   <path d="M15 8h6" />
+  <path d="M16.243 3.757A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673A9.4 9.4 0 0 1 18.667 12" />
 </svg>
 "#
     }
@@ -3747,8 +3717,8 @@ impl IconShape for LdBellMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBellOff;
-impl IconShape for LdBellOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBellOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3760,10 +3730,10 @@ impl IconShape for LdBellOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8.7 3A6 6 0 0 1 18 8a21.3 21.3 0 0 0 .6 5" />
-  <path d="M17 17H3s3-2 3-9a4.67 4.67 0 0 1 .3-1.7" />
-  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+  <path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" />
   <path d="m2 2 20 20" />
+  <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" />
 </svg>
 "#
     }
@@ -3771,8 +3741,8 @@ impl IconShape for LdBellOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBellPlus;
-impl IconShape for LdBellPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBellPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3784,10 +3754,10 @@ impl IconShape for LdBellPlus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M19.3 14.8C20.1 16.4 21 17 21 17H3s3-2 3-9c0-3.3 2.7-6 6-6 1 0 1.9.2 2.8.7" />
-  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
   <path d="M15 8h6" />
   <path d="M18 5v6" />
+  <path d="M20.002 14.464a9 9 0 0 0 .738.863A1 1 0 0 1 20 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 8.75-5.332" />
 </svg>
 "#
     }
@@ -3795,8 +3765,8 @@ impl IconShape for LdBellPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBellRing;
-impl IconShape for LdBellRing {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBellRing {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3808,10 +3778,10 @@ impl IconShape for LdBellRing {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
-  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
-  <path d="M4 2C2.8 3.7 2 5.7 2 8" />
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
   <path d="M22 8c0-2.3-.8-4.3-2-6" />
+  <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+  <path d="M4 2C2.8 3.7 2 5.7 2 8" />
 </svg>
 "#
     }
@@ -3819,8 +3789,8 @@ impl IconShape for LdBellRing {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBell;
-impl IconShape for LdBell {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBell {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3832,8 +3802,8 @@ impl IconShape for LdBell {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
-  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+  <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
 </svg>
 "#
     }
@@ -3841,8 +3811,8 @@ impl IconShape for LdBell {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBetweenHorizontalEnd;
-impl IconShape for LdBetweenHorizontalEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBetweenHorizontalEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3864,8 +3834,8 @@ impl IconShape for LdBetweenHorizontalEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBetweenHorizontalStart;
-impl IconShape for LdBetweenHorizontalStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBetweenHorizontalStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3887,8 +3857,8 @@ impl IconShape for LdBetweenHorizontalStart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBetweenVerticalEnd;
-impl IconShape for LdBetweenVerticalEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBetweenVerticalEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3910,8 +3880,8 @@ impl IconShape for LdBetweenVerticalEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBetweenVerticalStart;
-impl IconShape for LdBetweenVerticalStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBetweenVerticalStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3932,9 +3902,32 @@ impl IconShape for LdBetweenVerticalStart {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBicepsFlexed;
+impl Into<&'static str> for LdBicepsFlexed {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.409 13.017A5 5 0 0 1 22 15c0 3.866-4 7-9 7-4.077 0-8.153-.82-10.371-2.462-.426-.316-.631-.832-.62-1.362C2.118 12.723 2.627 2 10 2a3 3 0 0 1 3 3 2 2 0 0 1-2 2c-1.105 0-1.64-.444-2-1" />
+  <path d="M15 14a5 5 0 0 0-7.584 2" />
+  <path d="M9.964 6.825C8.019 7.977 9.5 13 8 15" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBike;
-impl IconShape for LdBike {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBike {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3957,8 +3950,8 @@ impl IconShape for LdBike {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBinary;
-impl IconShape for LdBinary {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBinary {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -3982,9 +3975,35 @@ impl IconShape for LdBinary {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBinoculars;
+impl Into<&'static str> for LdBinoculars {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 10h4" />
+  <path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" />
+  <path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z" />
+  <path d="M 22 16 L 2 16" />
+  <path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z" />
+  <path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBiohazard;
-impl IconShape for LdBiohazard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBiohazard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4013,8 +4032,8 @@ impl IconShape for LdBiohazard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBird;
-impl IconShape for LdBird {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBird {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4039,8 +4058,8 @@ impl IconShape for LdBird {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBitcoin;
-impl IconShape for LdBitcoin {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBitcoin {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4060,8 +4079,8 @@ impl IconShape for LdBitcoin {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBlend;
-impl IconShape for LdBlend {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBlend {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4082,8 +4101,8 @@ impl IconShape for LdBlend {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBlinds;
-impl IconShape for LdBlinds {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBlinds {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4109,8 +4128,8 @@ impl IconShape for LdBlinds {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBlocks;
-impl IconShape for LdBlocks {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBlocks {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4131,8 +4150,8 @@ impl IconShape for LdBlocks {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBluetoothConnected;
-impl IconShape for LdBluetoothConnected {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBluetoothConnected {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4154,8 +4173,8 @@ impl IconShape for LdBluetoothConnected {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBluetoothOff;
-impl IconShape for LdBluetoothOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBluetoothOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4177,8 +4196,8 @@ impl IconShape for LdBluetoothOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBluetoothSearching;
-impl IconShape for LdBluetoothSearching {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBluetoothSearching {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4200,8 +4219,8 @@ impl IconShape for LdBluetoothSearching {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBluetooth;
-impl IconShape for LdBluetooth {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBluetooth {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4221,8 +4240,8 @@ impl IconShape for LdBluetooth {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBold;
-impl IconShape for LdBold {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBold {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4234,8 +4253,7 @@ impl IconShape for LdBold {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 12a4 4 0 0 0 0-8H6v8" />
-  <path d="M15 20a4 4 0 0 0 0-8H6v8Z" />
+  <path d="M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8" />
 </svg>
 "#
     }
@@ -4243,8 +4261,8 @@ impl IconShape for LdBold {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBolt;
-impl IconShape for LdBolt {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBolt {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4265,8 +4283,8 @@ impl IconShape for LdBolt {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBomb;
-impl IconShape for LdBomb {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBomb {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4288,8 +4306,8 @@ impl IconShape for LdBomb {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBone;
-impl IconShape for LdBone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4309,8 +4327,8 @@ impl IconShape for LdBone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookA;
-impl IconShape for LdBookA {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookA {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4322,7 +4340,7 @@ impl IconShape for LdBookA {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="m8 13 4-7 4 7" />
   <path d="M9.1 11h5.7" />
 </svg>
@@ -4332,8 +4350,8 @@ impl IconShape for LdBookA {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookAudio;
-impl IconShape for LdBookAudio {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookAudio {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4345,10 +4363,10 @@ impl IconShape for LdBookAudio {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <path d="M8 8v3" />
   <path d="M12 6v7" />
   <path d="M16 8v3" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+  <path d="M8 8v3" />
 </svg>
 "#
     }
@@ -4356,8 +4374,8 @@ impl IconShape for LdBookAudio {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookCheck;
-impl IconShape for LdBookCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4369,7 +4387,7 @@ impl IconShape for LdBookCheck {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="m9 9.5 2 2 4-4" />
 </svg>
 "#
@@ -4378,8 +4396,8 @@ impl IconShape for LdBookCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookCopy;
-impl IconShape for LdBookCopy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookCopy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4392,8 +4410,8 @@ impl IconShape for LdBookCopy {
   stroke-linejoin="round"
 >
   <path d="M2 16V4a2 2 0 0 1 2-2h11" />
+  <path d="M22 18H11a2 2 0 1 0 0 4h10.5a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5H11a2 2 0 0 0-2 2v12" />
   <path d="M5 14H4a2 2 0 1 0 0 4h1" />
-  <path d="M22 18H11a2 2 0 1 0 0 4h11V6H11a2 2 0 0 0-2 2v12" />
 </svg>
 "#
     }
@@ -4401,8 +4419,8 @@ impl IconShape for LdBookCopy {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookDashed;
-impl IconShape for LdBookDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4414,17 +4432,17 @@ impl IconShape for LdBookDashed {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M20 22h-2" />
-  <path d="M20 15v2h-2" />
-  <path d="M4 19.5V15" />
-  <path d="M20 8v3" />
-  <path d="M18 2h2v2" />
-  <path d="M4 11V9" />
-  <path d="M12 2h2" />
-  <path d="M12 22h2" />
-  <path d="M12 17h2" />
-  <path d="M8 22H6.5a2.5 2.5 0 0 1 0-5H8" />
-  <path d="M4 5v-.5A2.5 2.5 0 0 1 6.5 2H8" />
+  <path d="M12 17h1.5" />
+  <path d="M12 22h1.5" />
+  <path d="M12 2h1.5" />
+  <path d="M17.5 22H19a1 1 0 0 0 1-1" />
+  <path d="M17.5 2H19a1 1 0 0 1 1 1v1.5" />
+  <path d="M20 14v3h-2.5" />
+  <path d="M20 8.5V10" />
+  <path d="M4 10V8.5" />
+  <path d="M4 19.5V14" />
+  <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H8" />
+  <path d="M8 22H6.5a1 1 0 0 1 0-5H8" />
 </svg>
 "#
     }
@@ -4432,8 +4450,8 @@ impl IconShape for LdBookDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookDown;
-impl IconShape for LdBookDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4445,8 +4463,8 @@ impl IconShape for LdBookDown {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
   <path d="M12 13V7" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="m9 10 3 3 3-3" />
 </svg>
 "#
@@ -4455,8 +4473,8 @@ impl IconShape for LdBookDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookHeadphones;
-impl IconShape for LdBookHeadphones {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookHeadphones {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4468,10 +4486,10 @@ impl IconShape for LdBookHeadphones {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <circle cx="9" cy="12" r="1" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="M8 12v-2a4 4 0 0 1 8 0v2" />
   <circle cx="15" cy="12" r="1" />
+  <circle cx="9" cy="12" r="1" />
 </svg>
 "#
     }
@@ -4479,8 +4497,8 @@ impl IconShape for LdBookHeadphones {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookHeart;
-impl IconShape for LdBookHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4492,8 +4510,8 @@ impl IconShape for LdBookHeart {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <path d="M16 8.2C16 7 15 6 13.8 6c-.8 0-1.4.3-1.8.9-.4-.6-1-.9-1.8-.9C9 6 8 7 8 8.2c0 .6.3 1.2.7 1.6h0C10 11.1 12 13 12 13s2-1.9 3.3-3.1h0c.4-.4.7-1 .7-1.7z" />
+  <path d="M16 8.2A2.22 2.22 0 0 0 13.8 6c-.8 0-1.4.3-1.8.9-.4-.6-1-.9-1.8-.9A2.22 2.22 0 0 0 8 8.2c0 .6.3 1.2.7 1.6A226.652 226.652 0 0 0 12 13a404 404 0 0 0 3.3-3.1 2.413 2.413 0 0 0 .7-1.7" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
 </svg>
 "#
     }
@@ -4501,8 +4519,8 @@ impl IconShape for LdBookHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookImage;
-impl IconShape for LdBookImage {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookImage {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4514,9 +4532,9 @@ impl IconShape for LdBookImage {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+  <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <circle cx="10" cy="8" r="2" />
-  <path d="m20 13.7-2.1-2.1c-.8-.8-2-.8-2.8 0L9.7 17" />
 </svg>
 "#
     }
@@ -4524,8 +4542,8 @@ impl IconShape for LdBookImage {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookKey;
-impl IconShape for LdBookKey {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookKey {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4537,11 +4555,11 @@ impl IconShape for LdBookKey {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H14" />
-  <path d="M20 8v14H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <circle cx="14" cy="8" r="2" />
-  <path d="m20 2-4.5 4.5" />
   <path d="m19 3 1 1" />
+  <path d="m20 2-4.5 4.5" />
+  <path d="M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844" />
+  <circle cx="14" cy="8" r="2" />
 </svg>
 "#
     }
@@ -4549,8 +4567,8 @@ impl IconShape for LdBookKey {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookLock;
-impl IconShape for LdBookLock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookLock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4562,10 +4580,10 @@ impl IconShape for LdBookLock {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H10" />
-  <path d="M20 15v7H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <rect width="8" height="5" x="12" y="6" rx="1" />
   <path d="M18 6V4a2 2 0 1 0-4 0v2" />
+  <path d="M20 15v6a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H10" />
+  <rect x="12" y="6" width="8" height="5" rx="1" />
 </svg>
 "#
     }
@@ -4573,8 +4591,8 @@ impl IconShape for LdBookLock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookMarked;
-impl IconShape for LdBookMarked {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookMarked {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4586,8 +4604,8 @@ impl IconShape for LdBookMarked {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <polyline points="10 2 10 10 13 7 16 10 16 2" />
+  <path d="M10 2v8l3-3 3 3V2" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
 </svg>
 "#
     }
@@ -4595,8 +4613,8 @@ impl IconShape for LdBookMarked {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookMinus;
-impl IconShape for LdBookMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4608,7 +4626,7 @@ impl IconShape for LdBookMinus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="M9 10h6" />
 </svg>
 "#
@@ -4617,8 +4635,8 @@ impl IconShape for LdBookMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookOpenCheck;
-impl IconShape for LdBookOpenCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookOpenCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4630,9 +4648,9 @@ impl IconShape for LdBookOpenCheck {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z" />
+  <path d="M12 21V7" />
   <path d="m16 12 2 2 4-4" />
-  <path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3" />
+  <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
 </svg>
 "#
     }
@@ -4640,8 +4658,8 @@ impl IconShape for LdBookOpenCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookOpenText;
-impl IconShape for LdBookOpenText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookOpenText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4653,12 +4671,12 @@ impl IconShape for LdBookOpenText {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-  <path d="M6 8h2" />
-  <path d="M6 12h2" />
-  <path d="M16 8h2" />
+  <path d="M12 7v14" />
   <path d="M16 12h2" />
+  <path d="M16 8h2" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+  <path d="M6 12h2" />
+  <path d="M6 8h2" />
 </svg>
 "#
     }
@@ -4666,8 +4684,8 @@ impl IconShape for LdBookOpenText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookOpen;
-impl IconShape for LdBookOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4679,8 +4697,8 @@ impl IconShape for LdBookOpen {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+  <path d="M12 7v14" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
 </svg>
 "#
     }
@@ -4688,8 +4706,8 @@ impl IconShape for LdBookOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookPlus;
-impl IconShape for LdBookPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4701,9 +4719,9 @@ impl IconShape for LdBookPlus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <path d="M9 10h6" />
   <path d="M12 7v6" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+  <path d="M9 10h6" />
 </svg>
 "#
     }
@@ -4711,8 +4729,8 @@ impl IconShape for LdBookPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookText;
-impl IconShape for LdBookText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4724,9 +4742,9 @@ impl IconShape for LdBookText {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <path d="M8 7h6" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="M8 11h8" />
+  <path d="M8 7h6" />
 </svg>
 "#
     }
@@ -4734,8 +4752,8 @@ impl IconShape for LdBookText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookType;
-impl IconShape for LdBookType {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookType {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4747,10 +4765,10 @@ impl IconShape for LdBookType {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <path d="M16 8V6H8v2" />
-  <path d="M12 6v7" />
   <path d="M10 13h4" />
+  <path d="M12 6v7" />
+  <path d="M16 8V6H8v2" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
 </svg>
 "#
     }
@@ -4758,8 +4776,8 @@ impl IconShape for LdBookType {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookUp2;
-impl IconShape for LdBookUp2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookUp2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4771,9 +4789,9 @@ impl IconShape for LdBookUp2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2" />
-  <path d="M18 2h2v20H6.5a2.5 2.5 0 0 1 0-5H20" />
   <path d="M12 13V7" />
+  <path d="M18 2h1a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2" />
   <path d="m9 10 3-3 3 3" />
   <path d="m9 5 3-3 3 3" />
 </svg>
@@ -4783,8 +4801,8 @@ impl IconShape for LdBookUp2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookUp;
-impl IconShape for LdBookUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4796,8 +4814,8 @@ impl IconShape for LdBookUp {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
   <path d="M12 13V7" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="m9 10 3-3 3 3" />
 </svg>
 "#
@@ -4806,8 +4824,8 @@ impl IconShape for LdBookUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookUser;
-impl IconShape for LdBookUser {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookUser {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4819,9 +4837,9 @@ impl IconShape for LdBookUser {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-  <circle cx="12" cy="8" r="2" />
   <path d="M15 13a3 3 0 1 0-6 0" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+  <circle cx="12" cy="8" r="2" />
 </svg>
 "#
     }
@@ -4829,8 +4847,8 @@ impl IconShape for LdBookUser {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookX;
-impl IconShape for LdBookX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4842,8 +4860,8 @@ impl IconShape for LdBookX {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
   <path d="m14.5 7-5 5" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
   <path d="m9.5 7 5 5" />
 </svg>
 "#
@@ -4852,8 +4870,8 @@ impl IconShape for LdBookX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBook;
-impl IconShape for LdBook {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBook {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4865,7 +4883,7 @@ impl IconShape for LdBook {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
 </svg>
 "#
     }
@@ -4873,8 +4891,8 @@ impl IconShape for LdBook {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookmarkCheck;
-impl IconShape for LdBookmarkCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookmarkCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4895,8 +4913,8 @@ impl IconShape for LdBookmarkCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookmarkMinus;
-impl IconShape for LdBookmarkMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookmarkMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4917,8 +4935,8 @@ impl IconShape for LdBookmarkMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookmarkPlus;
-impl IconShape for LdBookmarkPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookmarkPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4940,8 +4958,8 @@ impl IconShape for LdBookmarkPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookmarkX;
-impl IconShape for LdBookmarkX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookmarkX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4963,8 +4981,8 @@ impl IconShape for LdBookmarkX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBookmark;
-impl IconShape for LdBookmark {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBookmark {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -4984,8 +5002,8 @@ impl IconShape for LdBookmark {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBoomBox;
-impl IconShape for LdBoomBox {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBoomBox {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5011,8 +5029,8 @@ impl IconShape for LdBoomBox {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBotMessageSquare;
-impl IconShape for LdBotMessageSquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBotMessageSquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5037,8 +5055,8 @@ impl IconShape for LdBotMessageSquare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBotOff;
-impl IconShape for LdBotOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBotOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5063,8 +5081,8 @@ impl IconShape for LdBotOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBot;
-impl IconShape for LdBot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5088,9 +5106,9 @@ impl IconShape for LdBot {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBoxSelect;
-impl IconShape for LdBoxSelect {
-    fn content(&self) -> &'static str {
+pub struct LdBowArrow;
+impl Into<&'static str> for LdBowArrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5102,18 +5120,11 @@ impl IconShape for LdBoxSelect {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M5 3a2 2 0 0 0-2 2" />
-  <path d="M19 3a2 2 0 0 1 2 2" />
-  <path d="M21 19a2 2 0 0 1-2 2" />
-  <path d="M5 21a2 2 0 0 1-2-2" />
-  <path d="M9 3h1" />
-  <path d="M9 21h1" />
-  <path d="M14 3h1" />
-  <path d="M14 21h1" />
-  <path d="M3 9v1" />
-  <path d="M21 9v1" />
-  <path d="M3 14v1" />
-  <path d="M21 14v1" />
+  <path d="M17 3h4v4" />
+  <path d="M18.575 11.082a13 13 0 0 1 1.048 9.027 1.17 1.17 0 0 1-1.914.597L14 17" />
+  <path d="M7 10 3.29 6.29a1.17 1.17 0 0 1 .6-1.91 13 13 0 0 1 9.03 1.05" />
+  <path d="M7 14a1.7 1.7 0 0 0-1.207.5l-2.646 2.646A.5.5 0 0 0 3.5 18H5a1 1 0 0 1 1 1v1.5a.5.5 0 0 0 .854.354L9.5 18.207A1.7 1.7 0 0 0 10 17v-2a1 1 0 0 0-1-1z" />
+  <path d="M9.707 14.293 21 3" />
 </svg>
 "#
     }
@@ -5121,8 +5132,8 @@ impl IconShape for LdBoxSelect {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBox;
-impl IconShape for LdBox {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBox {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5144,8 +5155,8 @@ impl IconShape for LdBox {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBoxes;
-impl IconShape for LdBoxes {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBoxes {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5176,8 +5187,8 @@ impl IconShape for LdBoxes {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBraces;
-impl IconShape for LdBraces {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBraces {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5198,8 +5209,8 @@ impl IconShape for LdBraces {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBrackets;
-impl IconShape for LdBrackets {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBrackets {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5211,8 +5222,8 @@ impl IconShape for LdBrackets {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M16 3h3v18h-3" />
-  <path d="M8 21H5V3h3" />
+  <path d="M16 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3" />
+  <path d="M8 21H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h3" />
 </svg>
 "#
     }
@@ -5220,8 +5231,8 @@ impl IconShape for LdBrackets {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBrainCircuit;
-impl IconShape for LdBrainCircuit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBrainCircuit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5253,8 +5264,8 @@ impl IconShape for LdBrainCircuit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBrainCog;
-impl IconShape for LdBrainCog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBrainCog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5266,22 +5277,21 @@ impl IconShape for LdBrainCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 5a3 3 0 1 0-5.997.142 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588 4 4 0 0 0 7.636 2.106 3.2 3.2 0 0 0 .164-.546c.028-.13.306-.13.335 0a3.2 3.2 0 0 0 .163.546 4 4 0 0 0 7.636-2.106 4 4 0 0 0 .556-6.588 4 4 0 0 0-2.526-5.77A3 3 0 1 0 12 5" />
-  <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
-  <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
-  <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
-  <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
-  <path d="M6 18a4 4 0 0 1-1.967-.516" />
-  <path d="M19.967 17.484A4 4 0 0 1 18 18" />
+  <path d="m10.852 14.772-.383.923" />
+  <path d="m10.852 9.228-.383-.923" />
+  <path d="m13.148 14.772.382.924" />
+  <path d="m13.531 8.305-.383.923" />
+  <path d="m14.772 10.852.923-.383" />
+  <path d="m14.772 13.148.923.383" />
+  <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 0 0-5.63-1.446 3 3 0 0 0-.368 1.571 4 4 0 0 0-2.525 5.771" />
+  <path d="M17.998 5.125a4 4 0 0 1 2.525 5.771" />
+  <path d="M19.505 10.294a4 4 0 0 1-1.5 7.706" />
+  <path d="M4.032 17.483A4 4 0 0 0 11.464 20c.18-.311.892-.311 1.072 0a4 4 0 0 0 7.432-2.516" />
+  <path d="M4.5 10.291A4 4 0 0 0 6 18" />
+  <path d="M6.002 5.125a3 3 0 0 0 .4 1.375" />
+  <path d="m9.228 10.852-.923-.383" />
+  <path d="m9.228 13.148-.923.383" />
   <circle cx="12" cy="12" r="3" />
-  <path d="m15.7 10.4-.9.4" />
-  <path d="m9.2 13.2-.9.4" />
-  <path d="m13.6 15.7-.4-.9" />
-  <path d="m10.8 9.2-.4-.9" />
-  <path d="m15.7 13.5-.9-.4" />
-  <path d="m9.2 10.9-.9-.4" />
-  <path d="m10.5 15.7.4-.9" />
-  <path d="m13.1 9.2.4-.9" />
 </svg>
 "#
     }
@@ -5289,8 +5299,8 @@ impl IconShape for LdBrainCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBrain;
-impl IconShape for LdBrain {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBrain {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5317,9 +5327,36 @@ impl IconShape for LdBrain {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBrickWallFire;
+impl Into<&'static str> for LdBrickWallFire {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 3v2.107" />
+  <path d="M17 9c1 3 2.5 3.5 3.5 4.5A5 5 0 0 1 22 17a5 5 0 0 1-10 0c0-.3 0-.6.1-.9a2 2 0 1 0 3.3-2C13 11.5 16 9 17 9" />
+  <path d="M21 8.274V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.938" />
+  <path d="M3 15h5.253" />
+  <path d="M3 9h8.228" />
+  <path d="M8 15v6" />
+  <path d="M8 3v6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBrickWall;
-impl IconShape for LdBrickWall {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBrickWall {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5346,8 +5383,8 @@ impl IconShape for LdBrickWall {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBriefcaseBusiness;
-impl IconShape for LdBriefcaseBusiness {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBriefcaseBusiness {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5369,9 +5406,36 @@ impl IconShape for LdBriefcaseBusiness {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBriefcaseConveyorBelt;
+impl Into<&'static str> for LdBriefcaseConveyorBelt {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 20v2" />
+  <path d="M14 20v2" />
+  <path d="M18 20v2" />
+  <path d="M21 20H3" />
+  <path d="M6 20v2" />
+  <path d="M8 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12" />
+  <rect x="4" y="6"  height="10" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBriefcaseMedical;
-impl IconShape for LdBriefcaseMedical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBriefcaseMedical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5396,8 +5460,8 @@ impl IconShape for LdBriefcaseMedical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBriefcase;
-impl IconShape for LdBriefcase {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBriefcase {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5418,8 +5482,8 @@ impl IconShape for LdBriefcase {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBringToFront;
-impl IconShape for LdBringToFront {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBringToFront {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5440,9 +5504,9 @@ impl IconShape for LdBringToFront {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdBrush;
-impl IconShape for LdBrush {
-    fn content(&self) -> &'static str {
+pub struct LdBrushCleaning;
+impl Into<&'static str> for LdBrushCleaning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5454,8 +5518,57 @@ impl IconShape for LdBrush {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08" />
-  <path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z" />
+  <path d="m16 22-1-4" />
+  <path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1" />
+  <path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z" />
+  <path d="m8 22 1-4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBrush;
+impl Into<&'static str> for LdBrush {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m11 10 3 3" />
+  <path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" />
+  <path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdBubbles;
+impl Into<&'static str> for LdBubbles {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7.2 14.8a2 2 0 0 1 2 2" />
+  <circle cx="18.5" cy="8.5" r="3.5" />
+  <circle cx="7.5" cy="16.5" r="5.5" />
+  <circle cx="7.5" cy="4.5" r="2.5" />
 </svg>
 "#
     }
@@ -5463,8 +5576,8 @@ impl IconShape for LdBrush {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBugOff;
-impl IconShape for LdBugOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBugOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5492,8 +5605,8 @@ impl IconShape for LdBugOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBugPlay;
-impl IconShape for LdBugPlay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBugPlay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5521,8 +5634,8 @@ impl IconShape for LdBugPlay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBug;
-impl IconShape for LdBug {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBug {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5552,8 +5665,8 @@ impl IconShape for LdBug {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBuilding2;
-impl IconShape for LdBuilding2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBuilding2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5579,8 +5692,8 @@ impl IconShape for LdBuilding2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBuilding;
-impl IconShape for LdBuilding {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBuilding {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5610,8 +5723,8 @@ impl IconShape for LdBuilding {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBusFront;
-impl IconShape for LdBusFront {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBusFront {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5639,8 +5752,8 @@ impl IconShape for LdBusFront {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdBus;
-impl IconShape for LdBus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdBus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5666,8 +5779,8 @@ impl IconShape for LdBus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCableCar;
-impl IconShape for LdCableCar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCableCar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5694,8 +5807,8 @@ impl IconShape for LdCableCar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCable;
-impl IconShape for LdCable {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCable {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5719,8 +5832,8 @@ impl IconShape for LdCable {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCakeSlice;
-impl IconShape for LdCakeSlice {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCakeSlice {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5743,8 +5856,8 @@ impl IconShape for LdCakeSlice {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCake;
-impl IconShape for LdCake {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCake {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5762,9 +5875,9 @@ impl IconShape for LdCake {
   <path d="M7 8v3" />
   <path d="M12 8v3" />
   <path d="M17 8v3" />
-  <path d="M7 4h0.01" />
-  <path d="M12 4h0.01" />
-  <path d="M17 4h0.01" />
+  <path d="M7 4h.01" />
+  <path d="M12 4h.01" />
+  <path d="M17 4h.01" />
 </svg>
 "#
     }
@@ -5772,8 +5885,8 @@ impl IconShape for LdCake {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalculator;
-impl IconShape for LdCalculator {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalculator {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5801,9 +5914,86 @@ impl IconShape for LdCalculator {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCalendar1;
+impl Into<&'static str> for LdCalendar1 {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 14h1v4" />
+  <path d="M16 2v4" />
+  <path d="M3 10h18" />
+  <path d="M8 2v4" />
+  <rect x="3" y="4" width="18" height="18" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCalendarArrowDown;
+impl Into<&'static str> for LdCalendarArrowDown {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m14 18 4 4 4-4" />
+  <path d="M16 2v4" />
+  <path d="M18 14v8" />
+  <path d="M21 11.354V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.343" />
+  <path d="M3 10h18" />
+  <path d="M8 2v4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCalendarArrowUp;
+impl Into<&'static str> for LdCalendarArrowUp {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m14 18 4-4 4 4" />
+  <path d="M16 2v4" />
+  <path d="M18 22v-8" />
+  <path d="M21 11.343V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9" />
+  <path d="M3 10h18" />
+  <path d="M8 2v4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarCheck2;
-impl IconShape for LdCalendarCheck2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarCheck2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5827,8 +6017,8 @@ impl IconShape for LdCalendarCheck2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarCheck;
-impl IconShape for LdCalendarCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5852,8 +6042,8 @@ impl IconShape for LdCalendarCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarClock;
-impl IconShape for LdCalendarClock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarClock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5877,9 +6067,42 @@ impl IconShape for LdCalendarClock {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCalendarCog;
+impl Into<&'static str> for LdCalendarCog {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m15.228 16.852-.923-.383" />
+  <path d="m15.228 19.148-.923.383" />
+  <path d="M16 2v4" />
+  <path d="m16.47 14.305.382.923" />
+  <path d="m16.852 20.772-.383.924" />
+  <path d="m19.148 15.228.383-.923" />
+  <path d="m19.53 21.696-.382-.924" />
+  <path d="m20.772 16.852.924-.383" />
+  <path d="m20.772 19.148.924.383" />
+  <path d="M21 11V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6" />
+  <path d="M3 10h18" />
+  <path d="M8 2v4" />
+  <circle cx="18" cy="18" r="3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarDays;
-impl IconShape for LdCalendarDays {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarDays {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5908,8 +6131,8 @@ impl IconShape for LdCalendarDays {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarFold;
-impl IconShape for LdCalendarFold {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarFold {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5933,8 +6156,8 @@ impl IconShape for LdCalendarFold {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarHeart;
-impl IconShape for LdCalendarHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5957,8 +6180,8 @@ impl IconShape for LdCalendarHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarMinus2;
-impl IconShape for LdCalendarMinus2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarMinus2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5982,8 +6205,8 @@ impl IconShape for LdCalendarMinus2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarMinus;
-impl IconShape for LdCalendarMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -5995,11 +6218,11 @@ impl IconShape for LdCalendarMinus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8 2v4" />
-  <path d="M16 2v4" />
-  <path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" />
-  <path d="M3 10h18" />
   <path d="M16 19h6" />
+  <path d="M16 2v4" />
+  <path d="M21 15V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5" />
+  <path d="M3 10h18" />
+  <path d="M8 2v4" />
 </svg>
 "#
     }
@@ -6007,8 +6230,8 @@ impl IconShape for LdCalendarMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarOff;
-impl IconShape for LdCalendarOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6033,8 +6256,8 @@ impl IconShape for LdCalendarOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarPlus2;
-impl IconShape for LdCalendarPlus2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarPlus2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6059,8 +6282,8 @@ impl IconShape for LdCalendarPlus2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarPlus;
-impl IconShape for LdCalendarPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6072,12 +6295,12 @@ impl IconShape for LdCalendarPlus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8 2v4" />
-  <path d="M16 2v4" />
-  <path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" />
-  <path d="M3 10h18" />
   <path d="M16 19h6" />
+  <path d="M16 2v4" />
   <path d="M19 16v6" />
+  <path d="M21 12.598V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5" />
+  <path d="M3 10h18" />
+  <path d="M8 2v4" />
 </svg>
 "#
     }
@@ -6085,8 +6308,8 @@ impl IconShape for LdCalendarPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarRange;
-impl IconShape for LdCalendarRange {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarRange {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6113,8 +6336,8 @@ impl IconShape for LdCalendarRange {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarSearch;
-impl IconShape for LdCalendarSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6126,12 +6349,40 @@ impl IconShape for LdCalendarSearch {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M21 12V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.5" />
   <path d="M16 2v4" />
-  <path d="M8 2v4" />
+  <path d="M21 11.75V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.25" />
+  <path d="m22 22-1.875-1.875" />
   <path d="M3 10h18" />
+  <path d="M8 2v4" />
   <circle cx="18" cy="18" r="3" />
-  <path d="m22 22-1.5-1.5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCalendarSync;
+impl Into<&'static str> for LdCalendarSync {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 10v4h4" />
+  <path d="m11 14 1.535-1.605a5 5 0 0 1 8 1.5" />
+  <path d="M16 2v4" />
+  <path d="m21 18-1.535 1.605a5 5 0 0 1-8-1.5" />
+  <path d="M21 22v-4h-4" />
+  <path d="M21 8.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4.3" />
+  <path d="M3 10h4" />
+  <path d="M8 2v4" />
 </svg>
 "#
     }
@@ -6139,8 +6390,8 @@ impl IconShape for LdCalendarSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarX2;
-impl IconShape for LdCalendarX2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarX2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6165,8 +6416,8 @@ impl IconShape for LdCalendarX2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendarX;
-impl IconShape for LdCalendarX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendarX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6191,8 +6442,8 @@ impl IconShape for LdCalendarX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCalendar;
-impl IconShape for LdCalendar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCalendar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6215,8 +6466,8 @@ impl IconShape for LdCalendar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCameraOff;
-impl IconShape for LdCameraOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCameraOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6239,8 +6490,8 @@ impl IconShape for LdCameraOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCamera;
-impl IconShape for LdCamera {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCamera {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6260,36 +6511,9 @@ impl IconShape for LdCamera {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdCandlestickChart;
-impl IconShape for LdCandlestickChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M9 5v4" />
-  <rect width="4" height="6" x="7" y="9" rx="1" />
-  <path d="M9 15v2" />
-  <path d="M17 3v2" />
-  <rect width="4" height="8" x="15" y="5" rx="1" />
-  <path d="M17 13v3" />
-  <path d="M3 3v18h18" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCandyCane;
-impl IconShape for LdCandyCane {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCandyCane {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6313,8 +6537,8 @@ impl IconShape for LdCandyCane {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCandyOff;
-impl IconShape for LdCandyOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCandyOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6326,14 +6550,13 @@ impl IconShape for LdCandyOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m8.5 8.5-1 1a4.95 4.95 0 0 0 7 7l1-1" />
-  <path d="M11.843 6.187A4.947 4.947 0 0 1 16.5 7.5a4.947 4.947 0 0 1 1.313 4.657" />
-  <path d="M14 16.5V14" />
-  <path d="M14 6.5v1.843" />
-  <path d="M10 10v7.5" />
-  <path d="m16 7 1-5 1.367.683A3 3 0 0 0 19.708 3H21v1.292a3 3 0 0 0 .317 1.341L22 7l-5 1" />
-  <path d="m8 17-1 5-1.367-.683A3 3 0 0 0 4.292 21H3v-1.292a3 3 0 0 0-.317-1.341L2 17l5-1" />
-  <line x1="2" x2="22" y1="2" y2="22" />
+  <path d="M10 10v7.9" />
+  <path d="M11.802 6.145a5 5 0 0 1 6.053 6.053" />
+  <path d="M14 6.1v2.243" />
+  <path d="m15.5 15.571-.964.964a5 5 0 0 1-7.071 0 5 5 0 0 1 0-7.07l.964-.965" />
+  <path d="M16 7V3a1 1 0 0 1 1.707-.707 2.5 2.5 0 0 0 2.152.717 1 1 0 0 1 1.131 1.131 2.5 2.5 0 0 0 .717 2.152A1 1 0 0 1 21 8h-4" />
+  <path d="m2 2 20 20" />
+  <path d="M8 17v4a1 1 0 0 1-1.707.707 2.5 2.5 0 0 0-2.152-.717 1 1 0 0 1-1.131-1.131 2.5 2.5 0 0 0-.717-2.152A1 1 0 0 1 3 16h4" />
 </svg>
 "#
     }
@@ -6341,8 +6564,8 @@ impl IconShape for LdCandyOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCandy;
-impl IconShape for LdCandy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCandy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6354,11 +6577,11 @@ impl IconShape for LdCandy {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m9.5 7.5-2 2a4.95 4.95 0 1 0 7 7l2-2a4.95 4.95 0 1 0-7-7Z" />
-  <path d="M14 6.5v10" />
-  <path d="M10 7.5v10" />
-  <path d="m16 7 1-5 1.37.68A3 3 0 0 0 19.7 3H21v1.3c0 .46.1.92.32 1.33L22 7l-5 1" />
-  <path d="m8 17-1 5-1.37-.68A3 3 0 0 0 4.3 21H3v-1.3a3 3 0 0 0-.32-1.33L2 17l5-1" />
+  <path d="M10 7v10.9" />
+  <path d="M14 6.1V17" />
+  <path d="M16 7V3a1 1 0 0 1 1.707-.707 2.5 2.5 0 0 0 2.152.717 1 1 0 0 1 1.131 1.131 2.5 2.5 0 0 0 .717 2.152A1 1 0 0 1 21 8h-4" />
+  <path d="M16.536 7.465a5 5 0 0 0-7.072 0l-2 2a5 5 0 0 0 0 7.07 5 5 0 0 0 7.072 0l2-2a5 5 0 0 0 0-7.07" />
+  <path d="M8 17v4a1 1 0 0 1-1.707.707 2.5 2.5 0 0 0-2.152-.717 1 1 0 0 1-1.131-1.131 2.5 2.5 0 0 0-.717-2.152A1 1 0 0 1 3 16h4" />
 </svg>
 "#
     }
@@ -6366,8 +6589,8 @@ impl IconShape for LdCandy {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCannabis;
-impl IconShape for LdCannabis {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCannabis {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6388,8 +6611,8 @@ impl IconShape for LdCannabis {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCaptionsOff;
-impl IconShape for LdCaptionsOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCaptionsOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6414,8 +6637,8 @@ impl IconShape for LdCaptionsOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCaptions;
-impl IconShape for LdCaptions {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCaptions {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6435,8 +6658,8 @@ impl IconShape for LdCaptions {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCarFront;
-impl IconShape for LdCarFront {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCarFront {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6461,8 +6684,8 @@ impl IconShape for LdCarFront {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCarTaxiFront;
-impl IconShape for LdCarTaxiFront {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCarTaxiFront {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6488,8 +6711,8 @@ impl IconShape for LdCarTaxiFront {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCar;
-impl IconShape for LdCar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6512,8 +6735,8 @@ impl IconShape for LdCar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCaravan;
-impl IconShape for LdCaravan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCaravan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6525,11 +6748,10 @@ impl IconShape for LdCaravan {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="4" height="4" x="2" y="9" />
-  <rect width="4" height="10" x="10" y="9" />
   <path d="M18 19V9a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v8a2 2 0 0 0 2 2h2" />
+  <path d="M2 9h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2" />
+  <path d="M22 17v1a1 1 0 0 1-1 1H10v-9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9" />
   <circle cx="8" cy="19" r="2" />
-  <path d="M10 19h12v-2" />
 </svg>
 "#
     }
@@ -6537,8 +6759,8 @@ impl IconShape for LdCaravan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCarrot;
-impl IconShape for LdCarrot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCarrot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6560,8 +6782,8 @@ impl IconShape for LdCarrot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCaseLower;
-impl IconShape for LdCaseLower {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCaseLower {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6584,8 +6806,8 @@ impl IconShape for LdCaseLower {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCaseSensitive;
-impl IconShape for LdCaseSensitive {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCaseSensitive {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6608,8 +6830,8 @@ impl IconShape for LdCaseSensitive {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCaseUpper;
-impl IconShape for LdCaseUpper {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCaseUpper {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6631,8 +6853,8 @@ impl IconShape for LdCaseUpper {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCassetteTape;
-impl IconShape for LdCassetteTape {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCassetteTape {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6656,8 +6878,8 @@ impl IconShape for LdCassetteTape {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCast;
-impl IconShape for LdCast {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCast {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6680,8 +6902,8 @@ impl IconShape for LdCast {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCastle;
-impl IconShape for LdCastle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCastle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6695,7 +6917,7 @@ impl IconShape for LdCastle {
 >
   <path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z" />
   <path d="M18 11V4H6v7" />
-  <path d="M15 22v-4a3 3 0 0 0-3-3v0a3 3 0 0 0-3 3v4" />
+  <path d="M15 22v-4a3 3 0 0 0-3-3a3 3 0 0 0-3 3v4" />
   <path d="M22 11V9" />
   <path d="M2 11V9" />
   <path d="M6 4V2" />
@@ -6709,8 +6931,8 @@ impl IconShape for LdCastle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCat;
-impl IconShape for LdCat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6733,8 +6955,8 @@ impl IconShape for LdCat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCctv;
-impl IconShape for LdCctv {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCctv {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6757,9 +6979,559 @@ impl IconShape for LdCctv {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartArea;
+impl Into<&'static str> for LdChartArea {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M7 11.207a.5.5 0 0 1 .146-.353l2-2a.5.5 0 0 1 .708 0l3.292 3.292a.5.5 0 0 0 .708 0l4.292-4.292a.5.5 0 0 1 .854.353V16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartBarBig;
+impl Into<&'static str> for LdChartBarBig {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <rect x="7" y="13" width="9" height="4" rx="1" />
+  <rect x="7" y="5" width="12" height="4" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartBarDecreasing;
+impl Into<&'static str> for LdChartBarDecreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M7 11h8" />
+  <path d="M7 16h3" />
+  <path d="M7 6h12" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartBarIncreasing;
+impl Into<&'static str> for LdChartBarIncreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M7 11h8" />
+  <path d="M7 16h12" />
+  <path d="M7 6h3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartBarStacked;
+impl Into<&'static str> for LdChartBarStacked {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 13v4" />
+  <path d="M15 5v4" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <rect x="7" y="13" width="9" height="4" rx="1" />
+  <rect x="7" y="5" width="12" height="4" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartBar;
+impl Into<&'static str> for LdChartBar {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M7 16h8" />
+  <path d="M7 11h12" />
+  <path d="M7 6h3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartCandlestick;
+impl Into<&'static str> for LdChartCandlestick {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9 5v4" />
+  <rect width="4" height="6" x="7" y="9" rx="1" />
+  <path d="M9 15v2" />
+  <path d="M17 3v2" />
+  <rect width="4" height="8" x="15" y="5" rx="1" />
+  <path d="M17 13v3" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartColumnBig;
+impl Into<&'static str> for LdChartColumnBig {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <rect x="15" y="5" width="4" height="12" rx="1" />
+  <rect x="7" y="8" width="4" height="9" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartColumnDecreasing;
+impl Into<&'static str> for LdChartColumnDecreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 17V9" />
+  <path d="M18 17v-3" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M8 17V5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartColumnIncreasing;
+impl Into<&'static str> for LdChartColumnIncreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 17V9" />
+  <path d="M18 17V5" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M8 17v-3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartColumnStacked;
+impl Into<&'static str> for LdChartColumnStacked {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 13H7" />
+  <path d="M19 9h-4" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <rect x="15" y="5" width="4" height="12" rx="1" />
+  <rect x="7" y="8" width="4" height="9" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartColumn;
+impl Into<&'static str> for LdChartColumn {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartGantt;
+impl Into<&'static str> for LdChartGantt {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 6h8" />
+  <path d="M12 16h6" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M8 11h7" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartLine;
+impl Into<&'static str> for LdChartLine {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="m19 9-5 5-4-4-3 3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartNetwork;
+impl Into<&'static str> for LdChartNetwork {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m13.11 7.664 1.78 2.672" />
+  <path d="m14.162 12.788-3.324 1.424" />
+  <path d="m20 4-6.06 1.515" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartNoAxesColumnDecreasing;
+impl Into<&'static str> for LdChartNoAxesColumnDecreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 20V10" />
+  <path d="M18 20v-4" />
+  <path d="M6 20V4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartNoAxesColumnIncreasing;
+impl Into<&'static str> for LdChartNoAxesColumnIncreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="12" x2="12" y1="20" y2="10" />
+  <line x1="18" x2="18" y1="20" y2="4" />
+  <line x1="6" x2="6" y1="20" y2="16" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartNoAxesColumn;
+impl Into<&'static str> for LdChartNoAxesColumn {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="18" x2="18" y1="20" y2="10" />
+  <line x1="12" x2="12" y1="20" y2="4" />
+  <line x1="6" x2="6" y1="20" y2="14" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartNoAxesCombined;
+impl Into<&'static str> for LdChartNoAxesCombined {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 16v5" />
+  <path d="M16 14v7" />
+  <path d="M20 10v11" />
+  <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
+  <path d="M4 18v3" />
+  <path d="M8 14v7" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartNoAxesGantt;
+impl Into<&'static str> for LdChartNoAxesGantt {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 6h10" />
+  <path d="M6 12h9" />
+  <path d="M11 18h7" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartPie;
+impl Into<&'static str> for LdChartPie {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" />
+  <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartScatter;
+impl Into<&'static str> for LdChartScatter {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+  <circle cx="18.5" cy="5.5" r=".5" fill="currentColor" />
+  <circle cx="11.5" cy="11.5" r=".5" fill="currentColor" />
+  <circle cx="7.5" cy="16.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="14.5" r=".5" fill="currentColor" />
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChartSpline;
+impl Into<&'static str> for LdChartSpline {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCheckCheck;
-impl IconShape for LdCheckCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCheckCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6779,9 +7551,32 @@ impl IconShape for LdCheckCheck {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCheckLine;
+impl Into<&'static str> for LdCheckLine {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 4L9 15" />
+  <path d="M21 19L3 19" />
+  <path d="M9 15L4 10" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCheck;
-impl IconShape for LdCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6801,8 +7596,8 @@ impl IconShape for LdCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChefHat;
-impl IconShape for LdChefHat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChefHat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6823,8 +7618,8 @@ impl IconShape for LdChefHat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCherry;
-impl IconShape for LdCherry {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCherry {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6847,8 +7642,8 @@ impl IconShape for LdCherry {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronDown;
-impl IconShape for LdChevronDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6868,8 +7663,8 @@ impl IconShape for LdChevronDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronFirst;
-impl IconShape for LdChevronFirst {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronFirst {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6890,8 +7685,8 @@ impl IconShape for LdChevronFirst {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronLast;
-impl IconShape for LdChevronLast {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronLast {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6912,8 +7707,8 @@ impl IconShape for LdChevronLast {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronLeft;
-impl IconShape for LdChevronLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6933,8 +7728,8 @@ impl IconShape for LdChevronLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronRight;
-impl IconShape for LdChevronRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6954,8 +7749,8 @@ impl IconShape for LdChevronRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronUp;
-impl IconShape for LdChevronUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6975,8 +7770,8 @@ impl IconShape for LdChevronUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsDownUp;
-impl IconShape for LdChevronsDownUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsDownUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -6997,8 +7792,8 @@ impl IconShape for LdChevronsDownUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsDown;
-impl IconShape for LdChevronsDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7018,9 +7813,34 @@ impl IconShape for LdChevronsDown {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdChevronsLeftRightEllipsis;
+impl Into<&'static str> for LdChevronsLeftRightEllipsis {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 12h.01" />
+  <path d="M16 12h.01" />
+  <path d="m17 7 5 5-5 5" />
+  <path d="m7 7-5 5 5 5" />
+  <path d="M8 12h.01" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsLeftRight;
-impl IconShape for LdChevronsLeftRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsLeftRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7041,8 +7861,8 @@ impl IconShape for LdChevronsLeftRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsLeft;
-impl IconShape for LdChevronsLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7063,8 +7883,8 @@ impl IconShape for LdChevronsLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsRightLeft;
-impl IconShape for LdChevronsRightLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsRightLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7085,8 +7905,8 @@ impl IconShape for LdChevronsRightLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsRight;
-impl IconShape for LdChevronsRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7107,8 +7927,8 @@ impl IconShape for LdChevronsRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsUpDown;
-impl IconShape for LdChevronsUpDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsUpDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7129,8 +7949,8 @@ impl IconShape for LdChevronsUpDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChevronsUp;
-impl IconShape for LdChevronsUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChevronsUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7151,8 +7971,8 @@ impl IconShape for LdChevronsUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChrome;
-impl IconShape for LdChrome {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChrome {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7176,8 +7996,8 @@ impl IconShape for LdChrome {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdChurch;
-impl IconShape for LdChurch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdChurch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7189,11 +8009,11 @@ impl IconShape for LdChurch {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m18 7 4 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9l4-2" />
-  <path d="M14 22v-4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4" />
-  <path d="M18 22V5l-6-3-6 3v17" />
-  <path d="M12 7v5" />
   <path d="M10 9h4" />
+  <path d="M12 7v5" />
+  <path d="M14 22v-4a2 2 0 0 0-4 0v4" />
+  <path d="M18 22V5.618a1 1 0 0 0-.553-.894l-4.553-2.277a2 2 0 0 0-1.788 0L6.553 4.724A1 1 0 0 0 6 5.618V22" />
+  <path d="m18 7 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.618a1 1 0 0 1 .553-.894L6 7" />
 </svg>
 "#
     }
@@ -7201,8 +8021,8 @@ impl IconShape for LdChurch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCigaretteOff;
-impl IconShape for LdCigaretteOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCigaretteOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7214,13 +8034,12 @@ impl IconShape for LdCigaretteOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="2" x2="22" y1="2" y2="22" />
-  <path d="M12 12H2v4h14" />
-  <path d="M22 12v4" />
-  <path d="M18 12h-.5" />
-  <path d="M7 12v4" />
+  <path d="M12 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h13" />
   <path d="M18 8c0-2.5-2-2.5-2-5" />
+  <path d="m2 2 20 20" />
+  <path d="M21 12a1 1 0 0 1 1 1v2a1 1 0 0 1-.5.866" />
   <path d="M22 8c0-2.5-2-2.5-2-5" />
+  <path d="M7 12v4" />
 </svg>
 "#
     }
@@ -7228,8 +8047,8 @@ impl IconShape for LdCigaretteOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCigarette;
-impl IconShape for LdCigarette {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCigarette {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7241,11 +8060,11 @@ impl IconShape for LdCigarette {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 12H2v4h16" />
-  <path d="M22 12v4" />
-  <path d="M7 12v4" />
+  <path d="M17 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14" />
   <path d="M18 8c0-2.5-2-2.5-2-5" />
+  <path d="M21 16a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
   <path d="M22 8c0-2.5-2-2.5-2-5" />
+  <path d="M7 12v4" />
 </svg>
 "#
     }
@@ -7253,8 +8072,8 @@ impl IconShape for LdCigarette {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleAlert;
-impl IconShape for LdCircleAlert {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleAlert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7276,8 +8095,8 @@ impl IconShape for LdCircleAlert {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowDown;
-impl IconShape for LdCircleArrowDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7299,8 +8118,8 @@ impl IconShape for LdCircleArrowDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowLeft;
-impl IconShape for LdCircleArrowLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7322,8 +8141,8 @@ impl IconShape for LdCircleArrowLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowOutDownLeft;
-impl IconShape for LdCircleArrowOutDownLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowOutDownLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7345,8 +8164,8 @@ impl IconShape for LdCircleArrowOutDownLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowOutDownRight;
-impl IconShape for LdCircleArrowOutDownRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowOutDownRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7368,8 +8187,8 @@ impl IconShape for LdCircleArrowOutDownRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowOutUpLeft;
-impl IconShape for LdCircleArrowOutUpLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowOutUpLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7391,8 +8210,8 @@ impl IconShape for LdCircleArrowOutUpLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowOutUpRight;
-impl IconShape for LdCircleArrowOutUpRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowOutUpRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7414,8 +8233,8 @@ impl IconShape for LdCircleArrowOutUpRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowRight;
-impl IconShape for LdCircleArrowRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7437,8 +8256,8 @@ impl IconShape for LdCircleArrowRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleArrowUp;
-impl IconShape for LdCircleArrowUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleArrowUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7460,8 +8279,8 @@ impl IconShape for LdCircleArrowUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleCheckBig;
-impl IconShape for LdCircleCheckBig {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleCheckBig {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7473,7 +8292,7 @@ impl IconShape for LdCircleCheckBig {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
   <path d="m9 11 3 3L22 4" />
 </svg>
 "#
@@ -7482,8 +8301,8 @@ impl IconShape for LdCircleCheckBig {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleCheck;
-impl IconShape for LdCircleCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7504,8 +8323,8 @@ impl IconShape for LdCircleCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleChevronDown;
-impl IconShape for LdCircleChevronDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleChevronDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7526,8 +8345,8 @@ impl IconShape for LdCircleChevronDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleChevronLeft;
-impl IconShape for LdCircleChevronLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleChevronLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7548,8 +8367,8 @@ impl IconShape for LdCircleChevronLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleChevronRight;
-impl IconShape for LdCircleChevronRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleChevronRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7570,8 +8389,8 @@ impl IconShape for LdCircleChevronRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleChevronUp;
-impl IconShape for LdCircleChevronUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleChevronUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7592,8 +8411,8 @@ impl IconShape for LdCircleChevronUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleDashed;
-impl IconShape for LdCircleDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7620,8 +8439,8 @@ impl IconShape for LdCircleDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleDivide;
-impl IconShape for LdCircleDivide {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleDivide {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7644,8 +8463,8 @@ impl IconShape for LdCircleDivide {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleDollarSign;
-impl IconShape for LdCircleDollarSign {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleDollarSign {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7667,8 +8486,8 @@ impl IconShape for LdCircleDollarSign {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleDotDashed;
-impl IconShape for LdCircleDotDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleDotDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7696,8 +8515,8 @@ impl IconShape for LdCircleDotDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleDot;
-impl IconShape for LdCircleDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7718,8 +8537,8 @@ impl IconShape for LdCircleDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleEllipsis;
-impl IconShape for LdCircleEllipsis {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleEllipsis {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7742,8 +8561,8 @@ impl IconShape for LdCircleEllipsis {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleEqual;
-impl IconShape for LdCircleEqual {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleEqual {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7764,9 +8583,36 @@ impl IconShape for LdCircleEqual {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCircleFadingArrowUp;
+impl Into<&'static str> for LdCircleFadingArrowUp {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2a10 10 0 0 1 7.38 16.75" />
+  <path d="m16 12-4-4-4 4" />
+  <path d="M12 16V8" />
+  <path d="M2.5 8.875a10 10 0 0 0-.5 3" />
+  <path d="M2.83 16a10 10 0 0 0 2.43 3.4" />
+  <path d="M4.636 5.235a10 10 0 0 1 .891-.857" />
+  <path d="M8.644 21.42a10 10 0 0 0 7.631-.38" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleFadingPlus;
-impl IconShape for LdCircleFadingPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleFadingPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7791,8 +8637,8 @@ impl IconShape for LdCircleFadingPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleGauge;
-impl IconShape for LdCircleGauge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleGauge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7814,8 +8660,8 @@ impl IconShape for LdCircleGauge {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleHelp;
-impl IconShape for LdCircleHelp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleHelp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7837,8 +8683,8 @@ impl IconShape for LdCircleHelp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleMinus;
-impl IconShape for LdCircleMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7859,8 +8705,8 @@ impl IconShape for LdCircleMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleOff;
-impl IconShape for LdCircleOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7882,8 +8728,8 @@ impl IconShape for LdCircleOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleParkingOff;
-impl IconShape for LdCircleParkingOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleParkingOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7906,8 +8752,8 @@ impl IconShape for LdCircleParkingOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleParking;
-impl IconShape for LdCircleParking {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleParking {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7928,8 +8774,8 @@ impl IconShape for LdCircleParking {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCirclePause;
-impl IconShape for LdCirclePause {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCirclePause {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7951,8 +8797,8 @@ impl IconShape for LdCirclePause {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCirclePercent;
-impl IconShape for LdCirclePercent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCirclePercent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7975,8 +8821,8 @@ impl IconShape for LdCirclePercent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCirclePlay;
-impl IconShape for LdCirclePlay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCirclePlay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -7997,8 +8843,8 @@ impl IconShape for LdCirclePlay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCirclePlus;
-impl IconShape for LdCirclePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCirclePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8019,9 +8865,9 @@ impl IconShape for LdCirclePlus {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdCirclePower;
-impl IconShape for LdCirclePower {
-    fn content(&self) -> &'static str {
+pub struct LdCirclePoundSterling;
+impl Into<&'static str> for LdCirclePoundSterling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8033,9 +8879,33 @@ impl IconShape for LdCirclePower {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10 16V9.5a1 1 0 0 1 5 0" />
+  <path d="M8 12h4" />
+  <path d="M8 16h7" />
   <circle cx="12" cy="12" r="10" />
-  <path d="M12 12V7" />
-  <path d="M16 9a5 5 0 1 1-8 0" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCirclePower;
+impl Into<&'static str> for LdCirclePower {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 7v4" />
+  <path d="M7.998 9.003a5 5 0 1 0 8-.005" />
+  <circle cx="12" cy="12" r="10" />
 </svg>
 "#
     }
@@ -8043,8 +8913,8 @@ impl IconShape for LdCirclePower {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleSlash2;
-impl IconShape for LdCircleSlash2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleSlash2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8056,8 +8926,8 @@ impl IconShape for LdCircleSlash2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="12" cy="12" r="10" />
   <path d="M22 2 2 22" />
+  <circle cx="12" cy="12" r="10" />
 </svg>
 "#
     }
@@ -8065,8 +8935,8 @@ impl IconShape for LdCircleSlash2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleSlash;
-impl IconShape for LdCircleSlash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleSlash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8078,8 +8948,29 @@ impl IconShape for LdCircleSlash {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="9" x2="15" y1="15" y2="9" />
   <circle cx="12" cy="12" r="10" />
+  <line x1="9" x2="15" y1="15" y2="9" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCircleSmall;
+impl Into<&'static str> for LdCircleSmall {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="6" />
 </svg>
 "#
     }
@@ -8087,8 +8978,8 @@ impl IconShape for LdCircleSlash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleStop;
-impl IconShape for LdCircleStop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleStop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8101,7 +8992,7 @@ impl IconShape for LdCircleStop {
   stroke-linejoin="round"
 >
   <circle cx="12" cy="12" r="10" />
-  <rect width="6" height="6" x="9" y="9" />
+  <rect x="9" y="9" width="6" height="6" rx="1" />
 </svg>
 "#
     }
@@ -8109,8 +9000,8 @@ impl IconShape for LdCircleStop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleUserRound;
-impl IconShape for LdCircleUserRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleUserRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8132,8 +9023,8 @@ impl IconShape for LdCircleUserRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleUser;
-impl IconShape for LdCircleUser {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleUser {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8155,8 +9046,8 @@ impl IconShape for LdCircleUser {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircleX;
-impl IconShape for LdCircleX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircleX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8178,8 +9069,8 @@ impl IconShape for LdCircleX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircle;
-impl IconShape for LdCircle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8199,8 +9090,8 @@ impl IconShape for LdCircle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCircuitBoard;
-impl IconShape for LdCircuitBoard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCircuitBoard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8224,8 +9115,8 @@ impl IconShape for LdCircuitBoard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCitrus;
-impl IconShape for LdCitrus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCitrus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8248,8 +9139,8 @@ impl IconShape for LdCitrus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClapperboard;
-impl IconShape for LdClapperboard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClapperboard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8272,8 +9163,8 @@ impl IconShape for LdClapperboard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardCheck;
-impl IconShape for LdClipboardCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8295,8 +9186,8 @@ impl IconShape for LdClipboardCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardCopy;
-impl IconShape for LdClipboardCopy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardCopy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8320,8 +9211,8 @@ impl IconShape for LdClipboardCopy {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardList;
-impl IconShape for LdClipboardList {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardList {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8346,8 +9237,8 @@ impl IconShape for LdClipboardList {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardMinus;
-impl IconShape for LdClipboardMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8369,8 +9260,8 @@ impl IconShape for LdClipboardMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardPaste;
-impl IconShape for LdClipboardPaste {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardPaste {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8382,9 +9273,11 @@ impl IconShape for LdClipboardPaste {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 2H9a1 1 0 0 0-1 1v2c0 .6.4 1 1 1h6c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1Z" />
-  <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M16 4h2a2 2 0 0 1 2 2v2M11 14h10" />
-  <path d="m17 10 4 4-4 4" />
+  <path d="M11 14h10" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v1.344" />
+  <path d="m17 18 4-4-4-4" />
+  <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 1.793-1.113" />
+  <rect x="8" y="2" width="8" height="4" rx="1" />
 </svg>
 "#
     }
@@ -8392,8 +9285,8 @@ impl IconShape for LdClipboardPaste {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardPenLine;
-impl IconShape for LdClipboardPenLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardPenLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8409,7 +9302,7 @@ impl IconShape for LdClipboardPenLine {
   <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.5" />
   <path d="M16 4h2a2 2 0 0 1 1.73 1" />
   <path d="M8 18h1" />
-  <path d="M18.4 9.6a2 2 0 0 1 3 3L17 17l-4 1 1-4Z" />
+  <path d="M21.378 12.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
 </svg>
 "#
     }
@@ -8417,8 +9310,8 @@ impl IconShape for LdClipboardPenLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardPen;
-impl IconShape for LdClipboardPen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardPen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8431,9 +9324,9 @@ impl IconShape for LdClipboardPen {
   stroke-linejoin="round"
 >
   <rect width="8" height="4" x="8" y="2" rx="1" />
-  <path d="M10.4 12.6a2 2 0 0 1 3 3L8 21l-4 1 1-4Z" />
   <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5.5" />
   <path d="M4 13.5V6a2 2 0 0 1 2-2h2" />
+  <path d="M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
 </svg>
 "#
     }
@@ -8441,8 +9334,8 @@ impl IconShape for LdClipboardPen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardPlus;
-impl IconShape for LdClipboardPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8465,8 +9358,8 @@ impl IconShape for LdClipboardPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardType;
-impl IconShape for LdClipboardType {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardType {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8490,8 +9383,8 @@ impl IconShape for LdClipboardType {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboardX;
-impl IconShape for LdClipboardX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboardX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8514,8 +9407,8 @@ impl IconShape for LdClipboardX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClipboard;
-impl IconShape for LdClipboard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClipboard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8536,8 +9429,8 @@ impl IconShape for LdClipboard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock1;
-impl IconShape for LdClock1 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock1 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8558,8 +9451,8 @@ impl IconShape for LdClock1 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock10;
-impl IconShape for LdClock10 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock10 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8580,8 +9473,8 @@ impl IconShape for LdClock10 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock11;
-impl IconShape for LdClock11 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock11 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8602,8 +9495,8 @@ impl IconShape for LdClock11 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock12;
-impl IconShape for LdClock12 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock12 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8624,8 +9517,8 @@ impl IconShape for LdClock12 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock2;
-impl IconShape for LdClock2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8646,8 +9539,8 @@ impl IconShape for LdClock2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock3;
-impl IconShape for LdClock3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8668,8 +9561,8 @@ impl IconShape for LdClock3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock4;
-impl IconShape for LdClock4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8690,8 +9583,8 @@ impl IconShape for LdClock4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock5;
-impl IconShape for LdClock5 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock5 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8712,8 +9605,8 @@ impl IconShape for LdClock5 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock6;
-impl IconShape for LdClock6 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock6 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8725,8 +9618,8 @@ impl IconShape for LdClock6 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 16.5V6" />
   <circle cx="12" cy="12" r="10" />
-  <polyline points="12 6 12 12 12 16.5" />
 </svg>
 "#
     }
@@ -8734,8 +9627,8 @@ impl IconShape for LdClock6 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock7;
-impl IconShape for LdClock7 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock7 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8756,8 +9649,8 @@ impl IconShape for LdClock7 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock8;
-impl IconShape for LdClock8 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock8 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8778,8 +9671,8 @@ impl IconShape for LdClock8 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock9;
-impl IconShape for LdClock9 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock9 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8799,9 +9692,131 @@ impl IconShape for LdClock9 {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdClockAlert;
+impl Into<&'static str> for LdClockAlert {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6v6l4 2" />
+  <path d="M16 21.16a10 10 0 1 1 5-13.516" />
+  <path d="M20 11.5v6" />
+  <path d="M20 21.5h.01" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdClockArrowDown;
+impl Into<&'static str> for LdClockArrowDown {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.338 21.994A10 10 0 1 1 21.925 13.227" />
+  <path d="M12 6v6l2 1" />
+  <path d="m14 18 4 4 4-4" />
+  <path d="M18 14v8" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdClockArrowUp;
+impl Into<&'static str> for LdClockArrowUp {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13.228 21.925A10 10 0 1 1 21.994 12.338" />
+  <path d="M12 6v6l1.562.781" />
+  <path d="m14 18 4-4 4 4" />
+  <path d="M18 22v-8" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdClockFading;
+impl Into<&'static str> for LdClockFading {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2a10 10 0 0 1 7.38 16.75" />
+  <path d="M12 6v6l4 2" />
+  <path d="M2.5 8.875a10 10 0 0 0-.5 3" />
+  <path d="M2.83 16a10 10 0 0 0 2.43 3.4" />
+  <path d="M4.636 5.235a10 10 0 0 1 .891-.857" />
+  <path d="M8.644 21.42a10 10 0 0 0 7.631-.38" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdClockPlus;
+impl Into<&'static str> for LdClockPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 6v6l3.644 1.822" />
+  <path d="M16 19h6" />
+  <path d="M19 16v6" />
+  <path d="M21.92 13.267a10 10 0 1 0-8.653 8.653" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClock;
-impl IconShape for LdClock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8821,9 +9836,9 @@ impl IconShape for LdClock {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdCloudCog;
-impl IconShape for LdCloudCog {
-    fn content(&self) -> &'static str {
+pub struct LdCloudAlert;
+impl Into<&'static str> for LdCloudAlert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8835,16 +9850,60 @@ impl IconShape for LdCloudCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="12" cy="17" r="3" />
-  <path d="M4.2 15.1A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.2" />
-  <path d="m15.7 18.4-.9-.3" />
-  <path d="m9.2 15.9-.9-.3" />
-  <path d="m10.6 20.7.3-.9" />
-  <path d="m13.1 14.2.3-.9" />
-  <path d="m13.6 20.7-.4-1" />
-  <path d="m10.8 14.3-.4-1" />
-  <path d="m8.3 18.6 1-.4" />
-  <path d="m14.7 15.8 1-.4" />
+  <path d="M12 12v4" />
+  <path d="M12 20h.01" />
+  <path d="M17 18h.5a1 1 0 0 0 0-9h-1.79A7 7 0 1 0 7 17.708" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCloudCheck;
+impl Into<&'static str> for LdCloudCheck {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m17 15-5.5 5.5L9 18" />
+  <path d="M5 17.743A7 7 0 1 1 15.71 10h1.79a4.5 4.5 0 0 1 1.5 8.742" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdCloudCog;
+impl Into<&'static str> for LdCloudCog {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m10.852 19.772-.383.924" />
+  <path d="m13.148 14.228.383-.923" />
+  <path d="M13.148 19.772a3 3 0 1 0-2.296-5.544l-.383-.923" />
+  <path d="m13.53 20.696-.382-.924a3 3 0 1 1-2.296-5.544" />
+  <path d="m14.772 15.852.923-.383" />
+  <path d="m14.772 18.148.923.383" />
+  <path d="M4.2 15.1a7 7 0 1 1 9.93-9.858A7 7 0 0 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.2" />
+  <path d="m9.228 15.852-.923-.383" />
+  <path d="m9.228 18.148-.923.383" />
 </svg>
 "#
     }
@@ -8852,8 +9911,8 @@ impl IconShape for LdCloudCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudDownload;
-impl IconShape for LdCloudDownload {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudDownload {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8865,9 +9924,9 @@ impl IconShape for LdCloudDownload {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
-  <path d="M12 12v9" />
-  <path d="m8 17 4 4 4-4" />
+  <path d="M12 13v8l-4-4" />
+  <path d="m12 21 4-4" />
+  <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284" />
 </svg>
 "#
     }
@@ -8875,8 +9934,8 @@ impl IconShape for LdCloudDownload {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudDrizzle;
-impl IconShape for LdCloudDrizzle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudDrizzle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8902,8 +9961,8 @@ impl IconShape for LdCloudDrizzle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudFog;
-impl IconShape for LdCloudFog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudFog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8925,8 +9984,8 @@ impl IconShape for LdCloudFog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudHail;
-impl IconShape for LdCloudHail {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudHail {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8952,8 +10011,8 @@ impl IconShape for LdCloudHail {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudLightning;
-impl IconShape for LdCloudLightning {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudLightning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8974,8 +10033,8 @@ impl IconShape for LdCloudLightning {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudMoonRain;
-impl IconShape for LdCloudMoonRain {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudMoonRain {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -8987,9 +10046,9 @@ impl IconShape for LdCloudMoonRain {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10.083 9A6.002 6.002 0 0 1 16 4a4.243 4.243 0 0 0 6 6c0 2.22-1.206 4.16-3 5.197" />
-  <path d="M3 20a5 5 0 1 1 8.9-4H13a3 3 0 0 1 2 5.24" />
+  <path d="M10.188 8.5A6 6 0 0 1 16 4a1 1 0 0 0 6 6 6 6 0 0 1-3 5.197" />
   <path d="M11 20v2" />
+  <path d="M3 20a5 5 0 1 1 8.9-4H13a3 3 0 0 1 2 5.24" />
   <path d="M7 19v2" />
 </svg>
 "#
@@ -8998,8 +10057,8 @@ impl IconShape for LdCloudMoonRain {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudMoon;
-impl IconShape for LdCloudMoon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudMoon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9011,8 +10070,8 @@ impl IconShape for LdCloudMoon {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10.188 8.5A6 6 0 0 1 16 4a1 1 0 0 0 6 6 6 6 0 0 1-3 5.197" />
   <path d="M13 16a3 3 0 1 1 0 6H7a5 5 0 1 1 4.9-6Z" />
-  <path d="M10.1 9A6 6 0 0 1 16 4a4.24 4.24 0 0 0 6 6 6 6 0 0 1-3 5.197" />
 </svg>
 "#
     }
@@ -9020,8 +10079,8 @@ impl IconShape for LdCloudMoon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudOff;
-impl IconShape for LdCloudOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9043,8 +10102,8 @@ impl IconShape for LdCloudOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudRainWind;
-impl IconShape for LdCloudRainWind {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudRainWind {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9067,8 +10126,8 @@ impl IconShape for LdCloudRainWind {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudRain;
-impl IconShape for LdCloudRain {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudRain {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9091,8 +10150,8 @@ impl IconShape for LdCloudRain {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudSnow;
-impl IconShape for LdCloudSnow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudSnow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9118,8 +10177,8 @@ impl IconShape for LdCloudSnow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudSunRain;
-impl IconShape for LdCloudSunRain {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudSunRain {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9146,8 +10205,8 @@ impl IconShape for LdCloudSunRain {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudSun;
-impl IconShape for LdCloudSun {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudSun {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9172,8 +10231,8 @@ impl IconShape for LdCloudSun {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudUpload;
-impl IconShape for LdCloudUpload {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudUpload {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9185,9 +10244,9 @@ impl IconShape for LdCloudUpload {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 13v8" />
   <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
-  <path d="M12 12v9" />
-  <path d="m16 16-4-4-4 4" />
+  <path d="m8 17 4-4 4 4" />
 </svg>
 "#
     }
@@ -9195,8 +10254,8 @@ impl IconShape for LdCloudUpload {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloud;
-impl IconShape for LdCloud {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloud {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9216,8 +10275,8 @@ impl IconShape for LdCloud {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCloudy;
-impl IconShape for LdCloudy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCloudy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9238,8 +10297,8 @@ impl IconShape for LdCloudy {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClover;
-impl IconShape for LdClover {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClover {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9261,8 +10320,8 @@ impl IconShape for LdClover {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdClub;
-impl IconShape for LdClub {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdClub {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9283,8 +10342,8 @@ impl IconShape for LdClub {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCodeXml;
-impl IconShape for LdCodeXml {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCodeXml {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9306,8 +10365,8 @@ impl IconShape for LdCodeXml {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCode;
-impl IconShape for LdCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9319,8 +10378,8 @@ impl IconShape for LdCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="16 18 22 12 16 6" />
-  <polyline points="8 6 2 12 8 18" />
+  <path d="m16 18 6-6-6-6" />
+  <path d="m8 6-6 6 6 6" />
 </svg>
 "#
     }
@@ -9328,8 +10387,8 @@ impl IconShape for LdCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCodepen;
-impl IconShape for LdCodepen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCodepen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9353,8 +10412,8 @@ impl IconShape for LdCodepen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCodesandbox;
-impl IconShape for LdCodesandbox {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCodesandbox {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9379,8 +10438,8 @@ impl IconShape for LdCodesandbox {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCoffee;
-impl IconShape for LdCoffee {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCoffee {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9403,8 +10462,8 @@ impl IconShape for LdCoffee {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCog;
-impl IconShape for LdCog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9437,8 +10496,8 @@ impl IconShape for LdCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCoins;
-impl IconShape for LdCoins {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCoins {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9461,8 +10520,8 @@ impl IconShape for LdCoins {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdColumns2;
-impl IconShape for LdColumns2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdColumns2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9482,9 +10541,40 @@ impl IconShape for LdColumns2 {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdColumns3Cog;
+impl Into<&'static str> for LdColumns3Cog {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5" />
+  <path d="m14.3 19.6 1-.4" />
+  <path d="M15 3v7.5" />
+  <path d="m15.2 16.9-.9-.3" />
+  <path d="m16.6 21.7.3-.9" />
+  <path d="m16.8 15.3-.4-1" />
+  <path d="m19.1 15.2.3-.9" />
+  <path d="m19.6 21.7-.4-1" />
+  <path d="m20.7 16.8 1-.4" />
+  <path d="m21.7 19.4-.9-.3" />
+  <path d="M9 3v18" />
+  <circle cx="18" cy="18" r="3" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdColumns3;
-impl IconShape for LdColumns3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdColumns3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9506,8 +10596,8 @@ impl IconShape for LdColumns3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdColumns4;
-impl IconShape for LdColumns4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdColumns4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9530,8 +10620,8 @@ impl IconShape for LdColumns4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCombine;
-impl IconShape for LdCombine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCombine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9543,12 +10633,12 @@ impl IconShape for LdCombine {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="8" height="8" x="2" y="2" rx="2" />
-  <path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
-  <path d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
-  <path d="M10 18H5c-1.7 0-3-1.3-3-3v-1" />
-  <polyline points="7 21 10 18 7 15" />
-  <rect width="8" height="8" x="14" y="14" rx="2" />
+  <path d="M10 18H5a3 3 0 0 1-3-3v-1" />
+  <path d="M14 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
+  <path d="M20 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
+  <path d="m7 21 3-3-3-3" />
+  <rect x="14" y="14" width="8" height="8" rx="2" />
+  <rect x="2" y="2" width="8" height="8" rx="2" />
 </svg>
 "#
     }
@@ -9556,8 +10646,8 @@ impl IconShape for LdCombine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCommand;
-impl IconShape for LdCommand {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCommand {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9577,8 +10667,8 @@ impl IconShape for LdCommand {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCompass;
-impl IconShape for LdCompass {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCompass {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9590,8 +10680,8 @@ impl IconShape for LdCompass {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
   <circle cx="12" cy="12" r="10" />
-  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
 </svg>
 "#
     }
@@ -9599,8 +10689,8 @@ impl IconShape for LdCompass {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdComponent;
-impl IconShape for LdComponent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdComponent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9612,10 +10702,10 @@ impl IconShape for LdComponent {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z" />
-  <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z" />
-  <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z" />
-  <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z" />
+  <path d="M15.536 11.293a1 1 0 0 0 0 1.414l2.376 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z" />
+  <path d="M2.297 11.293a1 1 0 0 0 0 1.414l2.377 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414L6.088 8.916a1 1 0 0 0-1.414 0z" />
+  <path d="M8.916 17.912a1 1 0 0 0 0 1.415l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.415l-2.377-2.376a1 1 0 0 0-1.414 0z" />
+  <path d="M8.916 4.674a1 1 0 0 0 0 1.414l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z" />
 </svg>
 "#
     }
@@ -9623,8 +10713,8 @@ impl IconShape for LdComponent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdComputer;
-impl IconShape for LdComputer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdComputer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9647,8 +10737,8 @@ impl IconShape for LdComputer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdConciergeBell;
-impl IconShape for LdConciergeBell {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdConciergeBell {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9671,8 +10761,8 @@ impl IconShape for LdConciergeBell {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCone;
-impl IconShape for LdCone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9693,8 +10783,8 @@ impl IconShape for LdCone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdConstruction;
-impl IconShape for LdConstruction {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdConstruction {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9721,8 +10811,8 @@ impl IconShape for LdConstruction {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdContactRound;
-impl IconShape for LdContactRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdContactRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9734,11 +10824,11 @@ impl IconShape for LdContactRound {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M16 18a4 4 0 0 0-8 0" />
-  <circle cx="12" cy="11" r="3" />
-  <rect width="18" height="18" x="3" y="4" rx="2" />
-  <line x1="8" x2="8" y1="2" y2="4" />
-  <line x1="16" x2="16" y1="2" y2="4" />
+  <path d="M16 2v2" />
+  <path d="M17.915 22a6 6 0 0 0-12 0" />
+  <path d="M8 2v2" />
+  <circle cx="12" cy="12" r="4" />
+  <rect x="3" y="4" width="18" height="18" rx="2" />
 </svg>
 "#
     }
@@ -9746,8 +10836,8 @@ impl IconShape for LdContactRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdContact;
-impl IconShape for LdContact {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdContact {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9759,11 +10849,11 @@ impl IconShape for LdContact {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2" />
-  <rect width="18" height="18" x="3" y="4" rx="2" />
-  <circle cx="12" cy="10" r="2" />
-  <line x1="8" x2="8" y1="2" y2="4" />
-  <line x1="16" x2="16" y1="2" y2="4" />
+  <path d="M16 2v2" />
+  <path d="M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
+  <path d="M8 2v2" />
+  <circle cx="12" cy="11" r="3" />
+  <rect x="3" y="4" width="18" height="18" rx="2" />
 </svg>
 "#
     }
@@ -9771,8 +10861,8 @@ impl IconShape for LdContact {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdContainer;
-impl IconShape for LdContainer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdContainer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9796,8 +10886,8 @@ impl IconShape for LdContainer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdContrast;
-impl IconShape for LdContrast {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdContrast {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9818,8 +10908,8 @@ impl IconShape for LdContrast {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCookie;
-impl IconShape for LdCookie {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCookie {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9844,8 +10934,8 @@ impl IconShape for LdCookie {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCookingPot;
-impl IconShape for LdCookingPot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCookingPot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9868,8 +10958,8 @@ impl IconShape for LdCookingPot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopyCheck;
-impl IconShape for LdCopyCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopyCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9891,8 +10981,8 @@ impl IconShape for LdCopyCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopyMinus;
-impl IconShape for LdCopyMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopyMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9914,8 +11004,8 @@ impl IconShape for LdCopyMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopyPlus;
-impl IconShape for LdCopyPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopyPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9938,8 +11028,8 @@ impl IconShape for LdCopyPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopySlash;
-impl IconShape for LdCopySlash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopySlash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9961,8 +11051,8 @@ impl IconShape for LdCopySlash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopyX;
-impl IconShape for LdCopyX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopyX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -9985,8 +11075,8 @@ impl IconShape for LdCopyX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopy;
-impl IconShape for LdCopy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10007,8 +11097,8 @@ impl IconShape for LdCopy {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopyleft;
-impl IconShape for LdCopyleft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopyleft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10029,8 +11119,8 @@ impl IconShape for LdCopyleft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCopyright;
-impl IconShape for LdCopyright {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCopyright {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10051,8 +11141,8 @@ impl IconShape for LdCopyright {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerDownLeft;
-impl IconShape for LdCornerDownLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerDownLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10064,8 +11154,8 @@ impl IconShape for LdCornerDownLeft {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="9 10 4 15 9 20" />
   <path d="M20 4v7a4 4 0 0 1-4 4H4" />
+  <path d="m9 10-5 5 5 5" />
 </svg>
 "#
     }
@@ -10073,8 +11163,8 @@ impl IconShape for LdCornerDownLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerDownRight;
-impl IconShape for LdCornerDownRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerDownRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10086,7 +11176,7 @@ impl IconShape for LdCornerDownRight {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="15 10 20 15 15 20" />
+  <path d="m15 10 5 5-5 5" />
   <path d="M4 4v7a4 4 0 0 0 4 4h12" />
 </svg>
 "#
@@ -10095,8 +11185,8 @@ impl IconShape for LdCornerDownRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerLeftDown;
-impl IconShape for LdCornerLeftDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerLeftDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10108,7 +11198,7 @@ impl IconShape for LdCornerLeftDown {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="14 15 9 20 4 15" />
+  <path d="m14 15-5 5-5-5" />
   <path d="M20 4h-7a4 4 0 0 0-4 4v12" />
 </svg>
 "#
@@ -10117,8 +11207,8 @@ impl IconShape for LdCornerLeftDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerLeftUp;
-impl IconShape for LdCornerLeftUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerLeftUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10130,7 +11220,7 @@ impl IconShape for LdCornerLeftUp {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="14 9 9 4 4 9" />
+  <path d="M14 9 9 4 4 9" />
   <path d="M20 20h-7a4 4 0 0 1-4-4V4" />
 </svg>
 "#
@@ -10139,8 +11229,8 @@ impl IconShape for LdCornerLeftUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerRightDown;
-impl IconShape for LdCornerRightDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerRightDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10152,7 +11242,7 @@ impl IconShape for LdCornerRightDown {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="10 15 15 20 20 15" />
+  <path d="m10 15 5 5 5-5" />
   <path d="M4 4h7a4 4 0 0 1 4 4v12" />
 </svg>
 "#
@@ -10161,8 +11251,8 @@ impl IconShape for LdCornerRightDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerRightUp;
-impl IconShape for LdCornerRightUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerRightUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10174,7 +11264,7 @@ impl IconShape for LdCornerRightUp {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="10 9 15 4 20 9" />
+  <path d="m10 9 5-5 5 5" />
   <path d="M4 20h7a4 4 0 0 0 4-4V4" />
 </svg>
 "#
@@ -10183,8 +11273,8 @@ impl IconShape for LdCornerRightUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerUpLeft;
-impl IconShape for LdCornerUpLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerUpLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10196,8 +11286,8 @@ impl IconShape for LdCornerUpLeft {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="9 14 4 9 9 4" />
   <path d="M20 20v-7a4 4 0 0 0-4-4H4" />
+  <path d="M9 14 4 9l5-5" />
 </svg>
 "#
     }
@@ -10205,8 +11295,8 @@ impl IconShape for LdCornerUpLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCornerUpRight;
-impl IconShape for LdCornerUpRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCornerUpRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10218,7 +11308,7 @@ impl IconShape for LdCornerUpRight {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="15 14 20 9 15 4" />
+  <path d="m15 14 5-5-5-5" />
   <path d="M4 20v-7a4 4 0 0 1 4-4h12" />
 </svg>
 "#
@@ -10227,8 +11317,8 @@ impl IconShape for LdCornerUpRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCpu;
-impl IconShape for LdCpu {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCpu {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10240,16 +11330,20 @@ impl IconShape for LdCpu {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect   x="4" y="4" rx="2" />
-  <rect width="6" height="6" x="9" y="9" rx="1" />
-  <path d="M15 2v2" />
-  <path d="M15 20v2" />
-  <path d="M2 15h2" />
-  <path d="M2 9h2" />
-  <path d="M20 15h2" />
-  <path d="M20 9h2" />
-  <path d="M9 2v2" />
-  <path d="M9 20v2" />
+  <path d="M12 20v2" />
+  <path d="M12 2v2" />
+  <path d="M17 20v2" />
+  <path d="M17 2v2" />
+  <path d="M2 12h2" />
+  <path d="M2 17h2" />
+  <path d="M2 7h2" />
+  <path d="M20 12h2" />
+  <path d="M20 17h2" />
+  <path d="M20 7h2" />
+  <path d="M7 20v2" />
+  <path d="M7 2v2" />
+  <rect x="4" y="4"   rx="2" />
+  <rect x="8" y="8" width="8" height="8" rx="1" />
 </svg>
 "#
     }
@@ -10257,8 +11351,8 @@ impl IconShape for LdCpu {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCreativeCommons;
-impl IconShape for LdCreativeCommons {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCreativeCommons {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10280,8 +11374,8 @@ impl IconShape for LdCreativeCommons {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCreditCard;
-impl IconShape for LdCreditCard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCreditCard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10302,8 +11396,8 @@ impl IconShape for LdCreditCard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCroissant;
-impl IconShape for LdCroissant {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCroissant {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10327,8 +11421,8 @@ impl IconShape for LdCroissant {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCrop;
-impl IconShape for LdCrop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCrop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10349,8 +11443,8 @@ impl IconShape for LdCrop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCross;
-impl IconShape for LdCross {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCross {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10362,7 +11456,7 @@ impl IconShape for LdCross {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z" />
+  <path d="M4 9a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1V4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4a1 1 0 0 1-1 1z" />
 </svg>
 "#
     }
@@ -10370,8 +11464,8 @@ impl IconShape for LdCross {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCrosshair;
-impl IconShape for LdCrosshair {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCrosshair {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10395,8 +11489,8 @@ impl IconShape for LdCrosshair {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCrown;
-impl IconShape for LdCrown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCrown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10417,8 +11511,8 @@ impl IconShape for LdCrown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCuboid;
-impl IconShape for LdCuboid {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCuboid {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10440,8 +11534,8 @@ impl IconShape for LdCuboid {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCupSoda;
-impl IconShape for LdCupSoda {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCupSoda {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10464,8 +11558,8 @@ impl IconShape for LdCupSoda {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCurrency;
-impl IconShape for LdCurrency {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCurrency {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10489,8 +11583,8 @@ impl IconShape for LdCurrency {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdCylinder;
-impl IconShape for LdCylinder {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdCylinder {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10510,9 +11604,36 @@ impl IconShape for LdCylinder {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdDam;
+impl Into<&'static str> for LdDam {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 11.31c1.17.56 1.54 1.69 3.5 1.69 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+  <path d="M11.75 18c.35.5 1.45 1 2.75 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+  <path d="M2 10h4" />
+  <path d="M2 14h4" />
+  <path d="M2 18h4" />
+  <path d="M2 6h4" />
+  <path d="M7 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1L10 4a1 1 0 0 0-1-1z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDatabaseBackup;
-impl IconShape for LdDatabaseBackup {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDatabaseBackup {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10537,8 +11658,8 @@ impl IconShape for LdDatabaseBackup {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDatabaseZap;
-impl IconShape for LdDatabaseZap {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDatabaseZap {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10562,8 +11683,8 @@ impl IconShape for LdDatabaseZap {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDatabase;
-impl IconShape for LdDatabase {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDatabase {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10584,9 +11705,9 @@ impl IconShape for LdDatabase {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdDelete;
-impl IconShape for LdDelete {
-    fn content(&self) -> &'static str {
+pub struct LdDecimalsArrowLeft;
+impl Into<&'static str> for LdDecimalsArrowLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10598,9 +11719,58 @@ impl IconShape for LdDelete {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M20 5H9l-7 7 7 7h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z" />
-  <line x1="18" x2="12" y1="9" y2="15" />
-  <line x1="12" x2="18" y1="9" y2="15" />
+  <path d="m13 21-3-3 3-3" />
+  <path d="M20 18H10" />
+  <path d="M3 11h.01" />
+  <rect x="6" y="3" width="5" height="8" rx="2.5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdDecimalsArrowRight;
+impl Into<&'static str> for LdDecimalsArrowRight {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 18h10" />
+  <path d="m17 21 3-3-3-3" />
+  <path d="M3 11h.01" />
+  <rect x="15" y="3" width="5" height="8" rx="2.5" />
+  <rect x="6" y="3" width="5" height="8" rx="2.5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdDelete;
+impl Into<&'static str> for LdDelete {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" />
+  <path d="m12 9 6 6" />
+  <path d="m18 9-6 6" />
 </svg>
 "#
     }
@@ -10608,8 +11778,8 @@ impl IconShape for LdDelete {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDessert;
-impl IconShape for LdDessert {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDessert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10631,8 +11801,8 @@ impl IconShape for LdDessert {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiameter;
-impl IconShape for LdDiameter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiameter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10656,8 +11826,8 @@ impl IconShape for LdDiameter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiamondMinus;
-impl IconShape for LdDiamondMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiamondMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10677,8 +11847,8 @@ impl IconShape for LdDiamondMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiamondPercent;
-impl IconShape for LdDiamondPercent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiamondPercent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10701,8 +11871,8 @@ impl IconShape for LdDiamondPercent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiamondPlus;
-impl IconShape for LdDiamondPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiamondPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10723,8 +11893,8 @@ impl IconShape for LdDiamondPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiamond;
-impl IconShape for LdDiamond {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiamond {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10744,8 +11914,8 @@ impl IconShape for LdDiamond {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDice1;
-impl IconShape for LdDice1 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDice1 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10766,8 +11936,8 @@ impl IconShape for LdDice1 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDice2;
-impl IconShape for LdDice2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDice2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10789,8 +11959,8 @@ impl IconShape for LdDice2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDice3;
-impl IconShape for LdDice3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDice3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10813,8 +11983,8 @@ impl IconShape for LdDice3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDice4;
-impl IconShape for LdDice4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDice4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10838,8 +12008,8 @@ impl IconShape for LdDice4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDice5;
-impl IconShape for LdDice5 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDice5 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10864,8 +12034,8 @@ impl IconShape for LdDice5 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDice6;
-impl IconShape for LdDice6 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDice6 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10891,8 +12061,8 @@ impl IconShape for LdDice6 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDices;
-impl IconShape for LdDices {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDices {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10917,8 +12087,8 @@ impl IconShape for LdDices {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiff;
-impl IconShape for LdDiff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10940,8 +12110,8 @@ impl IconShape for LdDiff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDisc2;
-impl IconShape for LdDisc2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDisc2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10963,8 +12133,8 @@ impl IconShape for LdDisc2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDisc3;
-impl IconShape for LdDisc3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDisc3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -10987,8 +12157,8 @@ impl IconShape for LdDisc3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDiscAlbum;
-impl IconShape for LdDiscAlbum {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDiscAlbum {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11010,8 +12180,8 @@ impl IconShape for LdDiscAlbum {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDisc;
-impl IconShape for LdDisc {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDisc {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11032,8 +12202,8 @@ impl IconShape for LdDisc {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDivide;
-impl IconShape for LdDivide {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDivide {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11055,8 +12225,8 @@ impl IconShape for LdDivide {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDnaOff;
-impl IconShape for LdDnaOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDnaOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11068,17 +12238,16 @@ impl IconShape for LdDnaOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 2c-1.35 1.5-2.092 3-2.5 4.5M9 22c1.35-1.5 2.092-3 2.5-4.5" />
-  <path d="M2 15c3.333-3 6.667-3 10-3m10-3c-1.5 1.35-3 2.092-4.5 2.5" />
-  <path d="m17 6-2.5-2.5" />
-  <path d="m14 8-1.5-1.5" />
-  <path d="m7 18 2.5 2.5" />
-  <path d="m3.5 14.5.5.5" />
-  <path d="m20 9 .5.5" />
+  <path d="M15 2c-1.35 1.5-2.092 3-2.5 4.5L14 8" />
+  <path d="m17 6-2.891-2.891" />
+  <path d="M2 15c3.333-3 6.667-3 10-3" />
+  <path d="m2 2 20 20" />
+  <path d="m20 9 .891.891" />
+  <path d="M22 9c-1.5 1.35-3 2.092-4.5 2.5l-1-1" />
+  <path d="M3.109 14.109 4 15" />
   <path d="m6.5 12.5 1 1" />
-  <path d="m16.5 10.5 1 1" />
-  <path d="m10 16 1.5 1.5" />
-  <line x1="2" x2="22" y1="2" y2="22" />
+  <path d="m7 18 2.891 2.891" />
+  <path d="M9 22c1.35-1.5 2.092-3 2.5-4.5L10 16" />
 </svg>
 "#
     }
@@ -11086,8 +12255,8 @@ impl IconShape for LdDnaOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDna;
-impl IconShape for LdDna {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDna {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11099,17 +12268,17 @@ impl IconShape for LdDna {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 15c6.667-6 13.333 0 20-6" />
-  <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
-  <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
-  <path d="m17 6-2.5-2.5" />
-  <path d="m14 8-1-1" />
-  <path d="m7 18 2.5 2.5" />
-  <path d="m3.5 14.5.5.5" />
-  <path d="m20 9 .5.5" />
-  <path d="m6.5 12.5 1 1" />
-  <path d="m16.5 10.5 1 1" />
   <path d="m10 16 1.5 1.5" />
+  <path d="m14 8-1.5-1.5" />
+  <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
+  <path d="m16.5 10.5 1 1" />
+  <path d="m17 6-2.891-2.891" />
+  <path d="M2 15c6.667-6 13.333 0 20-6" />
+  <path d="m20 9 .891.891" />
+  <path d="M3.109 14.109 4 15" />
+  <path d="m6.5 12.5 1 1" />
+  <path d="m7 18 2.891 2.891" />
+  <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
 </svg>
 "#
     }
@@ -11117,8 +12286,8 @@ impl IconShape for LdDna {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDock;
-impl IconShape for LdDock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11140,8 +12309,8 @@ impl IconShape for LdDock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDog;
-impl IconShape for LdDog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11153,12 +12322,11 @@ impl IconShape for LdDog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5" />
-  <path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5" />
-  <path d="M8 14v.5" />
+  <path d="M11.25 16.25h1.5L12 17z" />
   <path d="M16 14v.5" />
-  <path d="M11.25 16.25h1.5L12 17l-.75-.75Z" />
-  <path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309m-9.243-6.082A8.801 8.801 0 0 1 12 5c.78 0 1.5.108 2.161.306" />
+  <path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309" />
+  <path d="M8 14v.5" />
+  <path d="M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5" />
 </svg>
 "#
     }
@@ -11166,8 +12334,8 @@ impl IconShape for LdDog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDollarSign;
-impl IconShape for LdDollarSign {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDollarSign {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11188,8 +12356,8 @@ impl IconShape for LdDollarSign {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDonut;
-impl IconShape for LdDonut {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDonut {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11209,9 +12377,9 @@ impl IconShape for LdDonut {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdDoorClosed;
-impl IconShape for LdDoorClosed {
-    fn content(&self) -> &'static str {
+pub struct LdDoorClosedLocked;
+impl Into<&'static str> for LdDoorClosedLocked {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11223,9 +12391,34 @@ impl IconShape for LdDoorClosed {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10 12h.01" />
+  <path d="M18 9V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14" />
+  <path d="M2 20h8" />
+  <path d="M20 17v-2a2 2 0 1 0-4 0v2" />
+  <rect x="14" y="17" width="8" height="5" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdDoorClosed;
+impl Into<&'static str> for LdDoorClosed {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 12h.01" />
   <path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14" />
   <path d="M2 20h20" />
-  <path d="M14 12v.01" />
 </svg>
 "#
     }
@@ -11233,8 +12426,8 @@ impl IconShape for LdDoorClosed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDoorOpen;
-impl IconShape for LdDoorOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDoorOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11246,11 +12439,11 @@ impl IconShape for LdDoorOpen {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M13 4h3a2 2 0 0 1 2 2v14" />
-  <path d="M2 20h3" />
-  <path d="M13 20h9" />
-  <path d="M10 12v.01" />
-  <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z" />
+  <path d="M11 20H2" />
+  <path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z" />
+  <path d="M11 4H8a2 2 0 0 0-2 2v14" />
+  <path d="M14 12h.01" />
+  <path d="M22 20h-3" />
 </svg>
 "#
     }
@@ -11258,8 +12451,8 @@ impl IconShape for LdDoorOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDot;
-impl IconShape for LdDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11279,8 +12472,8 @@ impl IconShape for LdDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDownload;
-impl IconShape for LdDownload {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDownload {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11292,9 +12485,9 @@ impl IconShape for LdDownload {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 15V3" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <polyline points="7 10 12 15 17 10" />
-  <line x1="12" x2="12" y1="15" y2="3" />
+  <path d="m7 10 5 5 5-5" />
 </svg>
 "#
     }
@@ -11302,8 +12495,8 @@ impl IconShape for LdDownload {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDraftingCompass;
-impl IconShape for LdDraftingCompass {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDraftingCompass {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11315,11 +12508,11 @@ impl IconShape for LdDraftingCompass {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="12" cy="5" r="2" />
-  <path d="m3 21 8.02-14.26" />
   <path d="m12.99 6.74 1.93 3.44" />
-  <path d="M19 12c-3.87 4-10.13 4-14 0" />
+  <path d="M19.136 12a10 10 0 0 1-14.271 0" />
   <path d="m21 21-2.16-3.84" />
+  <path d="m3 21 8.02-14.26" />
+  <circle cx="12" cy="5" r="2" />
 </svg>
 "#
     }
@@ -11327,8 +12520,8 @@ impl IconShape for LdDraftingCompass {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDrama;
-impl IconShape for LdDrama {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDrama {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11355,8 +12548,8 @@ impl IconShape for LdDrama {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDribbble;
-impl IconShape for LdDribbble {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDribbble {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11379,8 +12572,8 @@ impl IconShape for LdDribbble {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDrill;
-impl IconShape for LdDrill {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDrill {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11392,13 +12585,35 @@ impl IconShape for LdDrill {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 9c0 .6-.4 1-1 1H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9c.6 0 1 .4 1 1Z" />
-  <path d="M18 6h4" />
+  <path d="M10 18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3 1 1 0 0 1 1-1z" />
+  <path d="M13 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1l-.81 3.242a1 1 0 0 1-.97.758H8" />
   <path d="M14 4h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3" />
+  <path d="M18 6h4" />
   <path d="m5 10-2 8" />
-  <path d="M12 10v3c0 .6-.4 1-1 1H8" />
   <path d="m7 18 2-8" />
-  <path d="M5 22c-1.7 0-3-1.3-3-3 0-.6.4-1 1-1h7c.6 0 1 .4 1 1v2c0 .6-.4 1-1 1Z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdDropletOff;
+impl Into<&'static str> for LdDropletOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18.715 13.186C18.29 11.858 17.384 10.607 16 9.5c-2-1.6-3.5-4-4-6.5a10.7 10.7 0 0 1-.884 2.586" />
+  <path d="m2 2 20 20" />
+  <path d="M8.795 8.797A11 11 0 0 1 8 9.5C6 11.1 5 13 5 15a7 7 0 0 0 13.222 3.208" />
 </svg>
 "#
     }
@@ -11406,8 +12621,8 @@ impl IconShape for LdDrill {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDroplet;
-impl IconShape for LdDroplet {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDroplet {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11427,8 +12642,8 @@ impl IconShape for LdDroplet {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDroplets;
-impl IconShape for LdDroplets {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDroplets {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11449,8 +12664,8 @@ impl IconShape for LdDroplets {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDrum;
-impl IconShape for LdDrum {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDrum {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11476,8 +12691,8 @@ impl IconShape for LdDrum {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDrumstick;
-impl IconShape for LdDrumstick {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDrumstick {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11498,8 +12713,8 @@ impl IconShape for LdDrumstick {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdDumbbell;
-impl IconShape for LdDumbbell {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdDumbbell {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11511,11 +12726,11 @@ impl IconShape for LdDumbbell {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.4 14.4 9.6 9.6" />
-  <path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z" />
-  <path d="m21.5 21.5-1.4-1.4" />
-  <path d="M3.9 3.9 2.5 2.5" />
-  <path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z" />
+  <path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z" />
+  <path d="m2.5 21.5 1.4-1.4" />
+  <path d="m20.1 3.9 1.4-1.4" />
+  <path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z" />
+  <path d="m9.6 14.4 4.8-4.8" />
 </svg>
 "#
     }
@@ -11523,8 +12738,8 @@ impl IconShape for LdDumbbell {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEarOff;
-impl IconShape for LdEarOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEarOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11548,8 +12763,8 @@ impl IconShape for LdEarOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEar;
-impl IconShape for LdEar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11570,8 +12785,8 @@ impl IconShape for LdEar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEarthLock;
-impl IconShape for LdEarthLock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEarthLock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11596,8 +12811,8 @@ impl IconShape for LdEarthLock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEarth;
-impl IconShape for LdEarth {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEarth {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11610,8 +12825,8 @@ impl IconShape for LdEarth {
   stroke-linejoin="round"
 >
   <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
-  <path d="M7 3.34V5a3 3 0 0 0 3 3v0a2 2 0 0 1 2 2v0c0 1.1.9 2 2 2v0a2 2 0 0 0 2-2v0c0-1.1.9-2 2-2h3.17" />
-  <path d="M11 21.95V18a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
   <circle cx="12" cy="12" r="10" />
 </svg>
 "#
@@ -11620,8 +12835,8 @@ impl IconShape for LdEarth {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEclipse;
-impl IconShape for LdEclipse {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEclipse {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11642,8 +12857,8 @@ impl IconShape for LdEclipse {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEggFried;
-impl IconShape for LdEggFried {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEggFried {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11664,8 +12879,8 @@ impl IconShape for LdEggFried {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEggOff;
-impl IconShape for LdEggOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEggOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11687,8 +12902,8 @@ impl IconShape for LdEggOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEgg;
-impl IconShape for LdEgg {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEgg {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11708,8 +12923,8 @@ impl IconShape for LdEgg {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEllipsisVertical;
-impl IconShape for LdEllipsisVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEllipsisVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11731,8 +12946,8 @@ impl IconShape for LdEllipsisVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEllipsis;
-impl IconShape for LdEllipsis {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEllipsis {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11753,9 +12968,31 @@ impl IconShape for LdEllipsis {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdEqualApproximately;
+impl Into<&'static str> for LdEqualApproximately {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 15a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
+  <path d="M5 9a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEqualNot;
-impl IconShape for LdEqualNot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEqualNot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11777,8 +13014,8 @@ impl IconShape for LdEqualNot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEqual;
-impl IconShape for LdEqual {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEqual {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11799,8 +13036,8 @@ impl IconShape for LdEqual {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEraser;
-impl IconShape for LdEraser {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEraser {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11812,9 +13049,33 @@ impl IconShape for LdEraser {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21" />
-  <path d="M22 21H7" />
-  <path d="m5 11 9 9" />
+  <path d="M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21" />
+  <path d="m5.082 11.09 8.828 8.828" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdEthernetPort;
+impl Into<&'static str> for LdEthernetPort {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z" />
+  <path d="M6 8v1" />
+  <path d="M10 8v1" />
+  <path d="M14 8v1" />
+  <path d="M18 8v1" />
 </svg>
 "#
     }
@@ -11822,8 +13083,8 @@ impl IconShape for LdEraser {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEuro;
-impl IconShape for LdEuro {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEuro {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11845,8 +13106,8 @@ impl IconShape for LdEuro {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdExpand;
-impl IconShape for LdExpand {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdExpand {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11858,10 +13119,14 @@ impl IconShape for LdExpand {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
-  <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
-  <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
-  <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
+  <path d="m15 15 6 6" />
+  <path d="m15 9 6-6" />
+  <path d="M21 16v5h-5" />
+  <path d="M21 8V3h-5" />
+  <path d="M3 16v5h5" />
+  <path d="m3 21 6-6" />
+  <path d="M3 8V3h5" />
+  <path d="M9 9 3 3" />
 </svg>
 "#
     }
@@ -11869,8 +13134,8 @@ impl IconShape for LdExpand {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdExternalLink;
-impl IconShape for LdExternalLink {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdExternalLink {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11891,9 +13156,9 @@ impl IconShape for LdExternalLink {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdEyeOff;
-impl IconShape for LdEyeOff {
-    fn content(&self) -> &'static str {
+pub struct LdEyeClosed;
+impl Into<&'static str> for LdEyeClosed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11905,10 +13170,35 @@ impl IconShape for LdEyeOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
-  <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68" />
-  <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61" />
-  <line x1="2" x2="22" y1="2" y2="22" />
+  <path d="m15 18-.722-3.25" />
+  <path d="M2 8a10.645 10.645 0 0 0 20 0" />
+  <path d="m20 15-1.726-2.05" />
+  <path d="m4 15 1.726-2.05" />
+  <path d="m9 18 .722-3.25" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdEyeOff;
+impl Into<&'static str> for LdEyeOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+  <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+  <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+  <path d="m2 2 20 20" />
 </svg>
 "#
     }
@@ -11916,8 +13206,8 @@ impl IconShape for LdEyeOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdEye;
-impl IconShape for LdEye {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdEye {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11929,7 +13219,7 @@ impl IconShape for LdEye {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+  <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
   <circle cx="12" cy="12" r="3" />
 </svg>
 "#
@@ -11938,8 +13228,8 @@ impl IconShape for LdEye {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFacebook;
-impl IconShape for LdFacebook {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFacebook {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11959,8 +13249,8 @@ impl IconShape for LdFacebook {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFactory;
-impl IconShape for LdFactory {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFactory {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -11972,10 +13262,10 @@ impl IconShape for LdFactory {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-  <path d="M17 18h1" />
-  <path d="M12 18h1" />
-  <path d="M7 18h1" />
+  <path d="M12 16h.01" />
+  <path d="M16 16h.01" />
+  <path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" />
+  <path d="M8 16h.01" />
 </svg>
 "#
     }
@@ -11983,8 +13273,8 @@ impl IconShape for LdFactory {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFan;
-impl IconShape for LdFan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12005,8 +13295,8 @@ impl IconShape for LdFan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFastForward;
-impl IconShape for LdFastForward {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFastForward {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12027,8 +13317,8 @@ impl IconShape for LdFastForward {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFeather;
-impl IconShape for LdFeather {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFeather {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12050,8 +13340,8 @@ impl IconShape for LdFeather {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFence;
-impl IconShape for LdFence {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFence {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12077,8 +13367,8 @@ impl IconShape for LdFence {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFerrisWheel;
-impl IconShape for LdFerrisWheel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFerrisWheel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12106,8 +13396,8 @@ impl IconShape for LdFerrisWheel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFigma;
-impl IconShape for LdFigma {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFigma {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12131,8 +13421,8 @@ impl IconShape for LdFigma {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileArchive;
-impl IconShape for LdFileArchive {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileArchive {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12144,12 +13434,12 @@ impl IconShape for LdFileArchive {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v18" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <circle cx="10" cy="20" r="2" />
-  <path d="M10 7V6" />
   <path d="M10 12v-1" />
   <path d="M10 18v-2" />
+  <path d="M10 7V6" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M15.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v16a2 2 0 0 0 .274 1.01" />
+  <circle cx="10" cy="20" r="2" />
 </svg>
 "#
     }
@@ -12157,8 +13447,8 @@ impl IconShape for LdFileArchive {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileAudio2;
-impl IconShape for LdFileAudio2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileAudio2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12182,8 +13472,8 @@ impl IconShape for LdFileAudio2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileAudio;
-impl IconShape for LdFileAudio {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileAudio {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12205,8 +13495,8 @@ impl IconShape for LdFileAudio {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileAxis3d;
-impl IconShape for LdFileAxis3d {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileAxis3d {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12229,8 +13519,8 @@ impl IconShape for LdFileAxis3d {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileBadge2;
-impl IconShape for LdFileBadge2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileBadge2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12242,10 +13532,9 @@ impl IconShape for LdFileBadge2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="m13.69 12.479 1.29 4.88a.5.5 0 0 1-.697.591l-1.844-.849a1 1 0 0 0-.88.001l-1.846.85a.5.5 0 0 1-.693-.593l1.29-4.88" />
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
   <circle cx="12" cy="10" r="3" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="m14 12.5 1 5.5-3-1-3 1 1-5.5" />
 </svg>
 "#
     }
@@ -12253,8 +13542,8 @@ impl IconShape for LdFileBadge2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileBadge;
-impl IconShape for LdFileBadge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileBadge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12276,59 +13565,9 @@ impl IconShape for LdFileBadge {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFileBarChart2;
-impl IconShape for LdFileBarChart2 {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="M8 18v-1" />
-  <path d="M12 18v-6" />
-  <path d="M16 18v-3" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFileBarChart;
-impl IconShape for LdFileBarChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="M8 18v-2" />
-  <path d="M12 18v-4" />
-  <path d="M16 18v-6" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileBox;
-impl IconShape for LdFileBox {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileBox {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12351,9 +13590,106 @@ impl IconShape for LdFileBox {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFileChartColumnIncreasing;
+impl Into<&'static str> for LdFileChartColumnIncreasing {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M8 18v-2" />
+  <path d="M12 18v-4" />
+  <path d="M16 18v-6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFileChartColumn;
+impl Into<&'static str> for LdFileChartColumn {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M8 18v-1" />
+  <path d="M12 18v-6" />
+  <path d="M16 18v-3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFileChartLine;
+impl Into<&'static str> for LdFileChartLine {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="m16 13-3.5 3.5-2-2L8 17" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFileChartPie;
+impl Into<&'static str> for LdFileChartPie {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5" />
+  <path d="M4.017 11.512a6 6 0 1 0 8.466 8.475" />
+  <path d="M9 16a1 1 0 0 1-1-1v-4c0-.552.45-1.008.995-.917a6 6 0 0 1 4.922 4.922c.091.544-.365.995-.917.995z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileCheck2;
-impl IconShape for LdFileCheck2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileCheck2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12375,8 +13711,8 @@ impl IconShape for LdFileCheck2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileCheck;
-impl IconShape for LdFileCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12398,8 +13734,8 @@ impl IconShape for LdFileCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileClock;
-impl IconShape for LdFileClock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileClock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12422,8 +13758,8 @@ impl IconShape for LdFileClock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileCode2;
-impl IconShape for LdFileCode2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileCode2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12446,8 +13782,8 @@ impl IconShape for LdFileCode2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileCode;
-impl IconShape for LdFileCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12459,10 +13795,10 @@ impl IconShape for LdFileCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M10 12.5 8 15l2 2.5" />
+  <path d="m14 12.5 2 2.5-2 2.5" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="m10 13-2 2 2 2" />
-  <path d="m14 17 2-2-2-2" />
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
 </svg>
 "#
     }
@@ -12470,8 +13806,8 @@ impl IconShape for LdFileCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileCog;
-impl IconShape for LdFileCog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileCog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12483,17 +13819,17 @@ impl IconShape for LdFileCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v2" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="m2.305 15.53.923-.382" />
+  <path d="m3.228 12.852-.924-.383" />
+  <path d="M4.677 21.5a2 2 0 0 0 1.313.5H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v2.5" />
+  <path d="m4.852 11.228-.383-.923" />
+  <path d="m4.852 16.772-.383.924" />
+  <path d="m7.148 11.228.383-.923" />
+  <path d="m7.53 17.696-.382-.924" />
+  <path d="m8.772 12.852.923-.383" />
+  <path d="m8.772 15.148.923.383" />
   <circle cx="6" cy="14" r="3" />
-  <path d="M6 10v1" />
-  <path d="M6 17v1" />
-  <path d="M10 14H9" />
-  <path d="M3 14H2" />
-  <path d="m9 11-.88.88" />
-  <path d="M3.88 16.12 3 17" />
-  <path d="m9 17-.88-.88" />
-  <path d="M3.88 11.88 3 11" />
 </svg>
 "#
     }
@@ -12501,8 +13837,8 @@ impl IconShape for LdFileCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileDiff;
-impl IconShape for LdFileDiff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileDiff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12525,8 +13861,8 @@ impl IconShape for LdFileDiff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileDigit;
-impl IconShape for LdFileDigit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileDigit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12550,8 +13886,8 @@ impl IconShape for LdFileDigit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileDown;
-impl IconShape for LdFileDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12574,8 +13910,8 @@ impl IconShape for LdFileDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileHeart;
-impl IconShape for LdFileHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12597,8 +13933,8 @@ impl IconShape for LdFileHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileImage;
-impl IconShape for LdFileImage {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileImage {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12621,8 +13957,8 @@ impl IconShape for LdFileImage {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileInput;
-impl IconShape for LdFileInput {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileInput {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12645,8 +13981,8 @@ impl IconShape for LdFileInput {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileJson2;
-impl IconShape for LdFileJson2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileJson2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12669,8 +14005,8 @@ impl IconShape for LdFileJson2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileJson;
-impl IconShape for LdFileJson {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileJson {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12693,8 +14029,8 @@ impl IconShape for LdFileJson {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileKey2;
-impl IconShape for LdFileKey2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileKey2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12718,8 +14054,8 @@ impl IconShape for LdFileKey2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileKey;
-impl IconShape for LdFileKey {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileKey {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12741,32 +14077,9 @@ impl IconShape for LdFileKey {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFileLineChart;
-impl IconShape for LdFileLineChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="m16 13-3.5 3.5-2-2L8 17" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileLock2;
-impl IconShape for LdFileLock2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileLock2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12789,8 +14102,8 @@ impl IconShape for LdFileLock2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileLock;
-impl IconShape for LdFileLock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileLock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12812,8 +14125,8 @@ impl IconShape for LdFileLock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileMinus2;
-impl IconShape for LdFileMinus2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileMinus2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12835,8 +14148,8 @@ impl IconShape for LdFileMinus2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileMinus;
-impl IconShape for LdFileMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12858,8 +14171,8 @@ impl IconShape for LdFileMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileMusic;
-impl IconShape for LdFileMusic {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileMusic {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12871,10 +14184,10 @@ impl IconShape for LdFileMusic {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v8.4" />
+  <path d="M8 18v-7.7L16 9v7" />
   <circle cx="14" cy="16" r="2" />
   <circle cx="6" cy="18" r="2" />
-  <path d="M4 12.4V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-7.5" />
-  <path d="M8 18v-7.7L16 9v7" />
 </svg>
 "#
     }
@@ -12882,8 +14195,8 @@ impl IconShape for LdFileMusic {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileOutput;
-impl IconShape for LdFileOutput {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileOutput {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12907,8 +14220,8 @@ impl IconShape for LdFileOutput {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFilePenLine;
-impl IconShape for LdFilePenLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFilePenLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12920,9 +14233,9 @@ impl IconShape for LdFilePenLine {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m18 5-3-3H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2" />
+  <path d="m18 5-2.414-2.414A2 2 0 0 0 14.172 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2" />
+  <path d="M21.378 12.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
   <path d="M8 18h1" />
-  <path d="M18.4 9.6a2 2 0 1 1 3 3L17 17l-4 1 1-4Z" />
 </svg>
 "#
     }
@@ -12930,8 +14243,8 @@ impl IconShape for LdFilePenLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFilePen;
-impl IconShape for LdFilePen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFilePen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -12943,33 +14256,9 @@ impl IconShape for LdFilePen {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10" />
+  <path d="M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFilePieChart;
-impl IconShape for LdFilePieChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5" />
-  <path d="M4.017 11.512a6 6 0 1 0 8.466 8.475" />
-  <path d="M8 16v-6a6 6 0 0 1 6 6z" />
+  <path d="M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
 </svg>
 "#
     }
@@ -12977,8 +14266,8 @@ impl IconShape for LdFilePieChart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFilePlus2;
-impl IconShape for LdFilePlus2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFilePlus2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13001,8 +14290,8 @@ impl IconShape for LdFilePlus2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFilePlus;
-impl IconShape for LdFilePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFilePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13025,8 +14314,8 @@ impl IconShape for LdFilePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileQuestion;
-impl IconShape for LdFileQuestion {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileQuestion {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13048,8 +14337,8 @@ impl IconShape for LdFileQuestion {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileScan;
-impl IconShape for LdFileScan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileScan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13074,8 +14363,8 @@ impl IconShape for LdFileScan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileSearch2;
-impl IconShape for LdFileSearch2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileSearch2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13098,8 +14387,8 @@ impl IconShape for LdFileSearch2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileSearch;
-impl IconShape for LdFileSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13122,8 +14411,8 @@ impl IconShape for LdFileSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileSliders;
-impl IconShape for LdFileSliders {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileSliders {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13148,8 +14437,8 @@ impl IconShape for LdFileSliders {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileSpreadsheet;
-impl IconShape for LdFileSpreadsheet {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileSpreadsheet {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13174,8 +14463,8 @@ impl IconShape for LdFileSpreadsheet {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileStack;
-impl IconShape for LdFileStack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileStack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13198,8 +14487,8 @@ impl IconShape for LdFileStack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileSymlink;
-impl IconShape for LdFileSymlink {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileSymlink {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13221,8 +14510,8 @@ impl IconShape for LdFileSymlink {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileTerminal;
-impl IconShape for LdFileTerminal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileTerminal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13245,8 +14534,8 @@ impl IconShape for LdFileTerminal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileText;
-impl IconShape for LdFileText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13270,8 +14559,8 @@ impl IconShape for LdFileText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileType2;
-impl IconShape for LdFileType2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileType2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13295,8 +14584,8 @@ impl IconShape for LdFileType2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileType;
-impl IconShape for LdFileType {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileType {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13320,8 +14609,8 @@ impl IconShape for LdFileType {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileUp;
-impl IconShape for LdFileUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13343,9 +14632,33 @@ impl IconShape for LdFileUp {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFileUser;
+impl Into<&'static str> for LdFileUser {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M15 18a3 3 0 1 0-6 0" />
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+  <circle cx="12" cy="13" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileVideo2;
-impl IconShape for LdFileVideo2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileVideo2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13368,8 +14681,8 @@ impl IconShape for LdFileVideo2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileVideo;
-impl IconShape for LdFileVideo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileVideo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13391,8 +14704,8 @@ impl IconShape for LdFileVideo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileVolume2;
-impl IconShape for LdFileVolume2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileVolume2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13416,8 +14729,8 @@ impl IconShape for LdFileVolume2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileVolume;
-impl IconShape for LdFileVolume {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileVolume {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13431,8 +14744,8 @@ impl IconShape for LdFileVolume {
 >
   <path d="M11 11a5 5 0 0 1 0 6" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="M4.268 21A2 2 0 0 0 6 22h12a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
-  <path d="m7 10-3 2H2v4h2l3 2z" />
+  <path d="M4 6.765V4a2 2 0 0 1 2-2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-.93-.23" />
+  <path d="M7 10.51a.5.5 0 0 0-.826-.38l-1.893 1.628A1 1 0 0 1 3.63 12H2.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h1.129a1 1 0 0 1 .652.242l1.893 1.63a.5.5 0 0 0 .826-.38z" />
 </svg>
 "#
     }
@@ -13440,8 +14753,8 @@ impl IconShape for LdFileVolume {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileWarning;
-impl IconShape for LdFileWarning {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileWarning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13463,8 +14776,8 @@ impl IconShape for LdFileWarning {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileX2;
-impl IconShape for LdFileX2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileX2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13487,8 +14800,8 @@ impl IconShape for LdFileX2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFileX;
-impl IconShape for LdFileX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFileX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13511,8 +14824,8 @@ impl IconShape for LdFileX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFile;
-impl IconShape for LdFile {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFile {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13533,8 +14846,8 @@ impl IconShape for LdFile {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFiles;
-impl IconShape for LdFiles {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFiles {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13556,8 +14869,8 @@ impl IconShape for LdFiles {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFilm;
-impl IconShape for LdFilm {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFilm {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13583,53 +14896,9 @@ impl IconShape for LdFilm {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFilterX;
-impl IconShape for LdFilterX {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M13.013 3H2l8 9.46V19l4 2v-8.54l.9-1.055" />
-  <path d="m22 3-5 5" />
-  <path d="m17 3 5 5" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFilter;
-impl IconShape for LdFilter {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFingerprint;
-impl IconShape for LdFingerprint {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFingerprint {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13657,8 +14926,8 @@ impl IconShape for LdFingerprint {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFireExtinguisher;
-impl IconShape for LdFireExtinguisher {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFireExtinguisher {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13683,8 +14952,8 @@ impl IconShape for LdFireExtinguisher {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFishOff;
-impl IconShape for LdFishOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFishOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13706,8 +14975,8 @@ impl IconShape for LdFishOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFishSymbol;
-impl IconShape for LdFishSymbol {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFishSymbol {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13727,8 +14996,8 @@ impl IconShape for LdFishSymbol {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFish;
-impl IconShape for LdFish {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFish {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13753,8 +15022,8 @@ impl IconShape for LdFish {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlagOff;
-impl IconShape for LdFlagOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlagOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13777,8 +15046,8 @@ impl IconShape for LdFlagOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlagTriangleLeft;
-impl IconShape for LdFlagTriangleLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlagTriangleLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13798,8 +15067,8 @@ impl IconShape for LdFlagTriangleLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlagTriangleRight;
-impl IconShape for LdFlagTriangleRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlagTriangleRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13819,8 +15088,8 @@ impl IconShape for LdFlagTriangleRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlag;
-impl IconShape for LdFlag {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlag {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13841,8 +15110,8 @@ impl IconShape for LdFlag {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlameKindling;
-impl IconShape for LdFlameKindling {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlameKindling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13864,8 +15133,8 @@ impl IconShape for LdFlameKindling {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlame;
-impl IconShape for LdFlame {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlame {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13885,8 +15154,8 @@ impl IconShape for LdFlame {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlashlightOff;
-impl IconShape for LdFlashlightOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlashlightOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13909,8 +15178,8 @@ impl IconShape for LdFlashlightOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlashlight;
-impl IconShape for LdFlashlight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlashlight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13932,8 +15201,8 @@ impl IconShape for LdFlashlight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlaskConicalOff;
-impl IconShape for LdFlaskConicalOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlaskConicalOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13945,12 +15214,12 @@ impl IconShape for LdFlaskConicalOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 10 4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-1.272-2.542" />
   <path d="M10 2v2.343" />
   <path d="M14 2v6.343" />
+  <path d="m2 2 20 20" />
+  <path d="M20 20a2 2 0 0 1-2 2H6a2 2 0 0 1-1.755-2.96l5.227-9.563" />
+  <path d="M6.453 15H15" />
   <path d="M8.5 2h7" />
-  <path d="M7 16h9" />
-  <line x1="2" x2="22" y1="2" y2="22" />
 </svg>
 "#
     }
@@ -13958,8 +15227,8 @@ impl IconShape for LdFlaskConicalOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlaskConical;
-impl IconShape for LdFlaskConical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlaskConical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13971,9 +15240,9 @@ impl IconShape for LdFlaskConical {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2" />
+  <path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" />
+  <path d="M6.453 15h11.094" />
   <path d="M8.5 2h7" />
-  <path d="M7 16h10" />
 </svg>
 "#
     }
@@ -13981,8 +15250,8 @@ impl IconShape for LdFlaskConical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlaskRound;
-impl IconShape for LdFlaskRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlaskRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -13994,11 +15263,9 @@ impl IconShape for LdFlaskRound {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 2v7.31" />
-  <path d="M14 9.3V1.99" />
+  <path d="M10 2v6.292a7 7 0 1 0 4 0V2" />
+  <path d="M5 15h14" />
   <path d="M8.5 2h7" />
-  <path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
-  <path d="M5.52 16h12.96" />
 </svg>
 "#
     }
@@ -14006,8 +15273,8 @@ impl IconShape for LdFlaskRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlipHorizontal2;
-impl IconShape for LdFlipHorizontal2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlipHorizontal2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14032,8 +15299,8 @@ impl IconShape for LdFlipHorizontal2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlipHorizontal;
-impl IconShape for LdFlipHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlipHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14058,8 +15325,8 @@ impl IconShape for LdFlipHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlipVertical2;
-impl IconShape for LdFlipVertical2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlipVertical2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14084,8 +15351,8 @@ impl IconShape for LdFlipVertical2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlipVertical;
-impl IconShape for LdFlipVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlipVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14110,8 +15377,8 @@ impl IconShape for LdFlipVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlower2;
-impl IconShape for LdFlower2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlower2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14135,8 +15402,8 @@ impl IconShape for LdFlower2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFlower;
-impl IconShape for LdFlower {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFlower {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14165,8 +15432,8 @@ impl IconShape for LdFlower {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFocus;
-impl IconShape for LdFocus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFocus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14190,8 +15457,8 @@ impl IconShape for LdFocus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFoldHorizontal;
-impl IconShape for LdFoldHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFoldHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14218,8 +15485,8 @@ impl IconShape for LdFoldHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFoldVertical;
-impl IconShape for LdFoldVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFoldVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14246,8 +15513,8 @@ impl IconShape for LdFoldVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderArchive;
-impl IconShape for LdFolderArchive {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderArchive {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14270,8 +15537,8 @@ impl IconShape for LdFolderArchive {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderCheck;
-impl IconShape for LdFolderCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14292,8 +15559,8 @@ impl IconShape for LdFolderCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderClock;
-impl IconShape for LdFolderClock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderClock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14315,8 +15582,8 @@ impl IconShape for LdFolderClock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderClosed;
-impl IconShape for LdFolderClosed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderClosed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14336,9 +15603,9 @@ impl IconShape for LdFolderClosed {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdFolderCog;
-impl IconShape for LdFolderCog {
-    fn content(&self) -> &'static str {
+pub struct LdFolderCode;
+impl Into<&'static str> for LdFolderCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14350,16 +15617,39 @@ impl IconShape for LdFolderCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10 10.5 8 13l2 2.5" />
+  <path d="m14 10.5 2 2.5-2 2.5" />
+  <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFolderCog;
+impl Into<&'static str> for LdFolderCog {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.3 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.98a2 2 0 0 1 1.69.9l.66 1.2A2 2 0 0 0 12 6h8a2 2 0 0 1 2 2v3.3" />
+  <path d="m14.305 19.53.923-.382" />
+  <path d="m15.228 16.852-.923-.383" />
+  <path d="m16.852 15.228-.383-.923" />
+  <path d="m16.852 20.772-.383.924" />
+  <path d="m19.148 15.228.383-.923" />
+  <path d="m19.53 21.696-.382-.924" />
+  <path d="m20.772 16.852.924-.383" />
+  <path d="m20.772 19.148.924.383" />
   <circle cx="18" cy="18" r="3" />
-  <path d="M10.3 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v3.3" />
-  <path d="m21.7 19.4-.9-.3" />
-  <path d="m15.2 16.9-.9-.3" />
-  <path d="m16.6 21.7.3-.9" />
-  <path d="m19.1 15.2.3-.9" />
-  <path d="m19.6 21.7-.4-1" />
-  <path d="m16.8 15.3-.4-1" />
-  <path d="m14.3 19.6 1-.4" />
-  <path d="m20.7 16.8 1-.4" />
 </svg>
 "#
     }
@@ -14367,8 +15657,8 @@ impl IconShape for LdFolderCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderDot;
-impl IconShape for LdFolderDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14389,8 +15679,8 @@ impl IconShape for LdFolderDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderDown;
-impl IconShape for LdFolderDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14412,8 +15702,8 @@ impl IconShape for LdFolderDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderGit2;
-impl IconShape for LdFolderGit2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderGit2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14436,8 +15726,8 @@ impl IconShape for LdFolderGit2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderGit;
-impl IconShape for LdFolderGit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderGit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14460,8 +15750,8 @@ impl IconShape for LdFolderGit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderHeart;
-impl IconShape for LdFolderHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14474,7 +15764,7 @@ impl IconShape for LdFolderHeart {
   stroke-linejoin="round"
 >
   <path d="M11 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v1.5" />
-  <path d="M13.9 17.45c-1.2-1.2-1.14-2.8-.2-3.73a2.43 2.43 0 0 1 3.44 0l.36.34.34-.34a2.43 2.43 0 0 1 3.45-.01v0c.95.95 1 2.53-.2 3.74L17.5 21Z" />
+  <path d="M13.9 17.45c-1.2-1.2-1.14-2.8-.2-3.73a2.43 2.43 0 0 1 3.44 0l.36.34.34-.34a2.43 2.43 0 0 1 3.45-.01c.95.95 1 2.53-.2 3.74L17.5 21Z" />
 </svg>
 "#
     }
@@ -14482,8 +15772,8 @@ impl IconShape for LdFolderHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderInput;
-impl IconShape for LdFolderInput {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderInput {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14505,8 +15795,8 @@ impl IconShape for LdFolderInput {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderKanban;
-impl IconShape for LdFolderKanban {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderKanban {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14529,8 +15819,8 @@ impl IconShape for LdFolderKanban {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderKey;
-impl IconShape for LdFolderKey {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderKey {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14553,8 +15843,8 @@ impl IconShape for LdFolderKey {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderLock;
-impl IconShape for LdFolderLock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderLock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14576,8 +15866,8 @@ impl IconShape for LdFolderLock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderMinus;
-impl IconShape for LdFolderMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14598,8 +15888,8 @@ impl IconShape for LdFolderMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderOpenDot;
-impl IconShape for LdFolderOpenDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderOpenDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14620,8 +15910,8 @@ impl IconShape for LdFolderOpenDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderOpen;
-impl IconShape for LdFolderOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14641,8 +15931,8 @@ impl IconShape for LdFolderOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderOutput;
-impl IconShape for LdFolderOutput {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderOutput {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14664,8 +15954,8 @@ impl IconShape for LdFolderOutput {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderPen;
-impl IconShape for LdFolderPen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderPen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14677,8 +15967,8 @@ impl IconShape for LdFolderPen {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8.4 10.6a2 2 0 0 1 3 3L6 19l-4 1 1-4Z" />
   <path d="M2 11.5V5a2 2 0 0 1 2-2h3.9c.7 0 1.3.3 1.7.9l.8 1.2c.4.6 1 .9 1.7.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-9.5" />
+  <path d="M11.378 13.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
 </svg>
 "#
     }
@@ -14686,8 +15976,8 @@ impl IconShape for LdFolderPen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderPlus;
-impl IconShape for LdFolderPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14709,8 +15999,8 @@ impl IconShape for LdFolderPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderRoot;
-impl IconShape for LdFolderRoot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderRoot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14732,8 +16022,8 @@ impl IconShape for LdFolderRoot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderSearch2;
-impl IconShape for LdFolderSearch2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderSearch2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14755,8 +16045,8 @@ impl IconShape for LdFolderSearch2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderSearch;
-impl IconShape for LdFolderSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14768,9 +16058,9 @@ impl IconShape for LdFolderSearch {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="17" cy="17" r="3" />
   <path d="M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1" />
-  <path d="m21 21-1.5-1.5" />
+  <path d="m21 21-1.9-1.9" />
+  <circle cx="17" cy="17" r="3" />
 </svg>
 "#
     }
@@ -14778,8 +16068,8 @@ impl IconShape for LdFolderSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderSymlink;
-impl IconShape for LdFolderSymlink {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderSymlink {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14800,8 +16090,8 @@ impl IconShape for LdFolderSymlink {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderSync;
-impl IconShape for LdFolderSync {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderSync {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14825,8 +16115,8 @@ impl IconShape for LdFolderSync {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderTree;
-impl IconShape for LdFolderTree {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderTree {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14849,8 +16139,8 @@ impl IconShape for LdFolderTree {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderUp;
-impl IconShape for LdFolderUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14872,8 +16162,8 @@ impl IconShape for LdFolderUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolderX;
-impl IconShape for LdFolderX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolderX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14895,8 +16185,8 @@ impl IconShape for LdFolderX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolder;
-impl IconShape for LdFolder {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolder {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14916,8 +16206,8 @@ impl IconShape for LdFolder {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFolders;
-impl IconShape for LdFolders {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFolders {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14938,8 +16228,8 @@ impl IconShape for LdFolders {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFootprints;
-impl IconShape for LdFootprints {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFootprints {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14962,8 +16252,8 @@ impl IconShape for LdFootprints {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdForklift;
-impl IconShape for LdForklift {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdForklift {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14986,8 +16276,8 @@ impl IconShape for LdForklift {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdForward;
-impl IconShape for LdForward {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdForward {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -14999,7 +16289,7 @@ impl IconShape for LdForward {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="15 17 20 12 15 7" />
+  <path d="m15 17 5-5-5-5" />
   <path d="M4 18v-2a4 4 0 0 1 4-4h12" />
 </svg>
 "#
@@ -15008,8 +16298,8 @@ impl IconShape for LdForward {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFrame;
-impl IconShape for LdFrame {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFrame {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15032,8 +16322,8 @@ impl IconShape for LdFrame {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFramer;
-impl IconShape for LdFramer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFramer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15053,8 +16343,8 @@ impl IconShape for LdFramer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFrown;
-impl IconShape for LdFrown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFrown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15077,8 +16367,8 @@ impl IconShape for LdFrown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFuel;
-impl IconShape for LdFuel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFuel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15093,7 +16383,7 @@ impl IconShape for LdFuel {
   <line x1="3" x2="15" y1="22" y2="22" />
   <line x1="4" x2="14" y1="9" y2="9" />
   <path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18" />
-  <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5" />
+  <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5" />
 </svg>
 "#
     }
@@ -15101,8 +16391,8 @@ impl IconShape for LdFuel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdFullscreen;
-impl IconShape for LdFullscreen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdFullscreen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15125,9 +16415,76 @@ impl IconShape for LdFullscreen {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFunnelPlus;
+impl Into<&'static str> for LdFunnelPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13.354 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341l1.218-1.348" />
+  <path d="M16 6h6" />
+  <path d="M19 3v6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFunnelX;
+impl Into<&'static str> for LdFunnelX {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.531 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341l.427-.473" />
+  <path d="m16.5 3.5 5 5" />
+  <path d="m21.5 3.5-5 5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdFunnel;
+impl Into<&'static str> for LdFunnel {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGalleryHorizontalEnd;
-impl IconShape for LdGalleryHorizontalEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGalleryHorizontalEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15149,8 +16506,8 @@ impl IconShape for LdGalleryHorizontalEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGalleryHorizontal;
-impl IconShape for LdGalleryHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGalleryHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15172,8 +16529,8 @@ impl IconShape for LdGalleryHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGalleryThumbnails;
-impl IconShape for LdGalleryThumbnails {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGalleryThumbnails {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15197,8 +16554,8 @@ impl IconShape for LdGalleryThumbnails {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGalleryVerticalEnd;
-impl IconShape for LdGalleryVerticalEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGalleryVerticalEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15220,8 +16577,8 @@ impl IconShape for LdGalleryVerticalEnd {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGalleryVertical;
-impl IconShape for LdGalleryVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGalleryVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15243,8 +16600,8 @@ impl IconShape for LdGalleryVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGamepad2;
-impl IconShape for LdGamepad2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGamepad2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15268,8 +16625,8 @@ impl IconShape for LdGamepad2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGamepad;
-impl IconShape for LdGamepad {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGamepad {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15292,32 +16649,9 @@ impl IconShape for LdGamepad {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdGanttChart;
-impl IconShape for LdGanttChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M8 6h10" />
-  <path d="M6 12h9" />
-  <path d="M11 18h7" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGauge;
-impl IconShape for LdGauge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGauge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15338,8 +16672,8 @@ impl IconShape for LdGauge {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGavel;
-impl IconShape for LdGavel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGavel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15363,8 +16697,8 @@ impl IconShape for LdGavel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGem;
-impl IconShape for LdGem {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGem {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15386,8 +16720,8 @@ impl IconShape for LdGem {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGhost;
-impl IconShape for LdGhost {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGhost {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15409,8 +16743,8 @@ impl IconShape for LdGhost {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGift;
-impl IconShape for LdGift {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGift {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15433,8 +16767,8 @@ impl IconShape for LdGift {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitBranchPlus;
-impl IconShape for LdGitBranchPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitBranchPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15459,8 +16793,8 @@ impl IconShape for LdGitBranchPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitBranch;
-impl IconShape for LdGitBranch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitBranch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15483,8 +16817,8 @@ impl IconShape for LdGitBranch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitCommitHorizontal;
-impl IconShape for LdGitCommitHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitCommitHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15506,8 +16840,8 @@ impl IconShape for LdGitCommitHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitCommitVertical;
-impl IconShape for LdGitCommitVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitCommitVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15529,8 +16863,8 @@ impl IconShape for LdGitCommitVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitCompareArrows;
-impl IconShape for LdGitCompareArrows {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitCompareArrows {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15555,8 +16889,8 @@ impl IconShape for LdGitCompareArrows {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitCompare;
-impl IconShape for LdGitCompare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitCompare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15579,8 +16913,8 @@ impl IconShape for LdGitCompare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitFork;
-impl IconShape for LdGitFork {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitFork {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15604,8 +16938,8 @@ impl IconShape for LdGitFork {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitGraph;
-impl IconShape for LdGitGraph {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitGraph {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15630,8 +16964,8 @@ impl IconShape for LdGitGraph {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitMerge;
-impl IconShape for LdGitMerge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitMerge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15653,8 +16987,8 @@ impl IconShape for LdGitMerge {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitPullRequestArrow;
-impl IconShape for LdGitPullRequestArrow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitPullRequestArrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15678,8 +17012,8 @@ impl IconShape for LdGitPullRequestArrow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitPullRequestClosed;
-impl IconShape for LdGitPullRequestClosed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitPullRequestClosed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15704,8 +17038,8 @@ impl IconShape for LdGitPullRequestClosed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitPullRequestCreateArrow;
-impl IconShape for LdGitPullRequestCreateArrow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitPullRequestCreateArrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15730,8 +17064,8 @@ impl IconShape for LdGitPullRequestCreateArrow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitPullRequestCreate;
-impl IconShape for LdGitPullRequestCreate {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitPullRequestCreate {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15755,8 +17089,8 @@ impl IconShape for LdGitPullRequestCreate {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitPullRequestDraft;
-impl IconShape for LdGitPullRequestDraft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitPullRequestDraft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15780,8 +17114,8 @@ impl IconShape for LdGitPullRequestDraft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitPullRequest;
-impl IconShape for LdGitPullRequest {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitPullRequest {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15804,8 +17138,8 @@ impl IconShape for LdGitPullRequest {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGithub;
-impl IconShape for LdGithub {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGithub {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15826,8 +17160,8 @@ impl IconShape for LdGithub {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGitlab;
-impl IconShape for LdGitlab {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGitlab {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15847,8 +17181,8 @@ impl IconShape for LdGitlab {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGlassWater;
-impl IconShape for LdGlassWater {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGlassWater {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15860,7 +17194,7 @@ impl IconShape for LdGlassWater {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15.2 22H8.8a2 2 0 0 1-2-1.79L5 3h14l-1.81 17.21A2 2 0 0 1 15.2 22Z" />
+  <path d="M5.116 4.104A1 1 0 0 1 6.11 3h11.78a1 1 0 0 1 .994 1.105L17.19 20.21A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.79z" />
   <path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0" />
 </svg>
 "#
@@ -15869,8 +17203,8 @@ impl IconShape for LdGlassWater {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGlasses;
-impl IconShape for LdGlasses {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGlasses {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15894,8 +17228,8 @@ impl IconShape for LdGlasses {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGlobeLock;
-impl IconShape for LdGlobeLock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGlobeLock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15918,8 +17252,8 @@ impl IconShape for LdGlobeLock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGlobe;
-impl IconShape for LdGlobe {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGlobe {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15941,8 +17275,8 @@ impl IconShape for LdGlobe {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGoal;
-impl IconShape for LdGoal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGoal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15963,9 +17297,9 @@ impl IconShape for LdGoal {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdGrab;
-impl IconShape for LdGrab {
-    fn content(&self) -> &'static str {
+pub struct LdGpu;
+impl Into<&'static str> for LdGpu {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -15977,11 +17311,35 @@ impl IconShape for LdGrab {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 11.5V9a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v1.4" />
-  <path d="M14 10V8a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2" />
-  <path d="M10 9.9V9a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5" />
-  <path d="M6 14v0a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-  <path d="M18 11v0a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8 2 2 0 1 1 4 0" />
+  <path d="M2 21V3" />
+  <path d="M2 5h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.26" />
+  <path d="M7 17v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3" />
+  <circle cx="16" cy="11" r="2" />
+  <circle cx="8" cy="11" r="2" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdGrab;
+impl Into<&'static str> for LdGrab {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 11.5V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" />
+  <path d="M14 10V8a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+  <path d="M10 9.9V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5" />
+  <path d="M6 14a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+  <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8 2 2 0 1 1 4 0" />
 </svg>
 "#
     }
@@ -15989,8 +17347,8 @@ impl IconShape for LdGrab {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGraduationCap;
-impl IconShape for LdGraduationCap {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGraduationCap {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16012,8 +17370,8 @@ impl IconShape for LdGraduationCap {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGrape;
-impl IconShape for LdGrape {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGrape {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16040,9 +17398,9 @@ impl IconShape for LdGrape {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdGrid2x2;
-impl IconShape for LdGrid2x2 {
-    fn content(&self) -> &'static str {
+pub struct LdGrid2x2Check;
+impl Into<&'static str> for LdGrid2x2Check {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16054,9 +17412,77 @@ impl IconShape for LdGrid2x2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="18" height="18" x="3" y="3" rx="2" />
-  <path d="M3 12h18" />
+  <path d="M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3" />
+  <path d="m16 19 2 2 4-4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdGrid2x2Plus;
+impl Into<&'static str> for LdGrid2x2Plus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3" />
+  <path d="M16 19h6" />
+  <path d="M19 22v-6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdGrid2x2X;
+impl Into<&'static str> for LdGrid2x2X {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3" />
+  <path d="m16 16 5 5" />
+  <path d="m16 21 5-5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdGrid2x2;
+impl Into<&'static str> for LdGrid2x2 {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
   <path d="M12 3v18" />
+  <path d="M3 12h18" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
 </svg>
 "#
     }
@@ -16064,8 +17490,8 @@ impl IconShape for LdGrid2x2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGrid3x3;
-impl IconShape for LdGrid3x3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGrid3x3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16089,8 +17515,8 @@ impl IconShape for LdGrid3x3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGripHorizontal;
-impl IconShape for LdGripHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGripHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16115,8 +17541,8 @@ impl IconShape for LdGripHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGripVertical;
-impl IconShape for LdGripVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGripVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16141,8 +17567,8 @@ impl IconShape for LdGripVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGrip;
-impl IconShape for LdGrip {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGrip {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16170,8 +17596,8 @@ impl IconShape for LdGrip {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGroup;
-impl IconShape for LdGroup {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGroup {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16196,8 +17622,8 @@ impl IconShape for LdGroup {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdGuitar;
-impl IconShape for LdGuitar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdGuitar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16209,11 +17635,10 @@ impl IconShape for LdGuitar {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m20 7 1.7-1.7a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0L17 4v3Z" />
-  <path d="m17 7-5.1 5.1" />
-  <circle cx="11.5" cy="12.5" r=".5" fill="currentColor" />
-  <path d="M6 12a2 2 0 0 0 1.8-1.2l.4-.9C8.7 8.8 9.8 8 11 8c2.8 0 5 2.2 5 5 0 1.2-.8 2.3-1.9 2.8l-.9.4A2 2 0 0 0 12 18a4 4 0 0 1-4 4c-3.3 0-6-2.7-6-6a4 4 0 0 1 4-4" />
+  <path d="m11.9 12.1 4.514-4.514" />
+  <path d="M20.1 2.3a1 1 0 0 0-1.4 0l-1.114 1.114A2 2 0 0 0 17 4.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 17.828 7h1.344a2 2 0 0 0 1.414-.586L21.7 5.3a1 1 0 0 0 0-1.4z" />
   <path d="m6 16 2 2" />
+  <path d="M8.23 9.85A3 3 0 0 1 11 8a5 5 0 0 1 5 5 3 3 0 0 1-1.85 2.77l-.92.38A2 2 0 0 0 12 18a4 4 0 0 1-4 4 6 6 0 0 1-6-6 4 4 0 0 1 4-4 2 2 0 0 0 1.85-1.23z" />
 </svg>
 "#
     }
@@ -16221,8 +17646,8 @@ impl IconShape for LdGuitar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHam;
-impl IconShape for LdHam {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHam {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16244,9 +17669,33 @@ impl IconShape for LdHam {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHamburger;
+impl Into<&'static str> for LdHamburger {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25" />
+  <path d="M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2" />
+  <path d="M5 16a2 2 0 0 0-2 2 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 2 2 0 0 0-2-2q0 0 0 0" />
+  <path d="m6.67 12 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHammer;
-impl IconShape for LdHammer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHammer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16268,8 +17717,8 @@ impl IconShape for LdHammer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHandCoins;
-impl IconShape for LdHandCoins {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHandCoins {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16293,8 +17742,8 @@ impl IconShape for LdHandCoins {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHandHeart;
-impl IconShape for LdHandHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHandHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16317,8 +17766,8 @@ impl IconShape for LdHandHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHandHelping;
-impl IconShape for LdHandHelping {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHandHelping {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16340,8 +17789,8 @@ impl IconShape for LdHandHelping {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHandMetal;
-impl IconShape for LdHandMetal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHandMetal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16353,7 +17802,7 @@ impl IconShape for LdHandMetal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 12.5V10a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v1.4" />
+  <path d="M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" />
   <path d="M14 11V9a2 2 0 1 0-4 0v2" />
   <path d="M10 10.5V5a2 2 0 1 0-4 0v9" />
   <path d="m7 15-1.76-1.76a2 2 0 0 0-2.83 2.82l3.6 3.6C7.5 21.14 9.2 22 12 22h2a8 8 0 0 0 8-8V7a2 2 0 1 0-4 0v5" />
@@ -16364,8 +17813,8 @@ impl IconShape for LdHandMetal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHandPlatter;
-impl IconShape for LdHandPlatter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHandPlatter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16378,11 +17827,11 @@ impl IconShape for LdHandPlatter {
   stroke-linejoin="round"
 >
   <path d="M12 3V2" />
-  <path d="M5 10a7.1 7.1 0 0 1 14 0" />
+  <path d="m15.4 17.4 3.2-2.8a2 2 0 1 1 2.8 2.9l-3.6 3.3c-.7.8-1.7 1.2-2.8 1.2h-4c-1.1 0-2.1-.4-2.8-1.2l-1.302-1.464A1 1 0 0 0 6.151 19H5" />
+  <path d="M2 14h12a2 2 0 0 1 0 4h-2" />
   <path d="M4 10h16" />
-  <path d="M2 14h12a2 2 0 1 1 0 4h-2" />
-  <path d="m15.4 17.4 3.2-2.8a2 2 0 0 1 2.8 2.9l-3.6 3.3c-.7.8-1.7 1.2-2.8 1.2h-4c-1.1 0-2.1-.4-2.8-1.2L5 18" />
-  <path d="M5 14v7H2" />
+  <path d="M5 10a7 7 0 0 1 14 0" />
+  <path d="M5 14v6a1 1 0 0 1-1 1H2" />
 </svg>
 "#
     }
@@ -16390,8 +17839,8 @@ impl IconShape for LdHandPlatter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHand;
-impl IconShape for LdHand {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHand {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16403,9 +17852,9 @@ impl IconShape for LdHand {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-  <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2" />
-  <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
+  <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+  <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+  <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
   <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
 </svg>
 "#
@@ -16414,8 +17863,8 @@ impl IconShape for LdHand {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHandshake;
-impl IconShape for LdHandshake {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHandshake {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16439,8 +17888,8 @@ impl IconShape for LdHandshake {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHardDriveDownload;
-impl IconShape for LdHardDriveDownload {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHardDriveDownload {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16464,8 +17913,8 @@ impl IconShape for LdHardDriveDownload {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHardDriveUpload;
-impl IconShape for LdHardDriveUpload {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHardDriveUpload {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16489,8 +17938,8 @@ impl IconShape for LdHardDriveUpload {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHardDrive;
-impl IconShape for LdHardDrive {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHardDrive {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16513,8 +17962,8 @@ impl IconShape for LdHardDrive {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHardHat;
-impl IconShape for LdHardHat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHardHat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16526,10 +17975,10 @@ impl IconShape for LdHardHat {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z" />
   <path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" />
-  <path d="M4 15v-3a6 6 0 0 1 6-6h0" />
-  <path d="M14 6h0a6 6 0 0 1 6 6v3" />
+  <path d="M14 6a6 6 0 0 1 6 6v3" />
+  <path d="M4 15v-3a6 6 0 0 1 6-6" />
+  <rect x="2" y="15" width="20" height="4" rx="1" />
 </svg>
 "#
     }
@@ -16537,8 +17986,8 @@ impl IconShape for LdHardHat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHash;
-impl IconShape for LdHash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16561,8 +18010,8 @@ impl IconShape for LdHash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHaze;
-impl IconShape for LdHaze {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHaze {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16589,8 +18038,8 @@ impl IconShape for LdHaze {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHdmiPort;
-impl IconShape for LdHdmiPort {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHdmiPort {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16611,8 +18060,8 @@ impl IconShape for LdHdmiPort {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading1;
-impl IconShape for LdHeading1 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading1 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16635,8 +18084,8 @@ impl IconShape for LdHeading1 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading2;
-impl IconShape for LdHeading2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16659,8 +18108,8 @@ impl IconShape for LdHeading2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading3;
-impl IconShape for LdHeading3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16684,8 +18133,8 @@ impl IconShape for LdHeading3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading4;
-impl IconShape for LdHeading4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16697,11 +18146,11 @@ impl IconShape for LdHeading4 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 18V6" />
+  <path d="M17 10v3a1 1 0 0 0 1 1h3" />
+  <path d="M21 10v8" />
   <path d="M4 12h8" />
   <path d="M4 18V6" />
-  <path d="M12 18V6" />
-  <path d="M17 10v4h4" />
-  <path d="M21 10v8" />
 </svg>
 "#
     }
@@ -16709,8 +18158,8 @@ impl IconShape for LdHeading4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading5;
-impl IconShape for LdHeading5 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading5 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16734,8 +18183,8 @@ impl IconShape for LdHeading5 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading6;
-impl IconShape for LdHeading6 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading6 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16759,8 +18208,8 @@ impl IconShape for LdHeading6 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeading;
-impl IconShape for LdHeading {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeading {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16781,9 +18230,34 @@ impl IconShape for LdHeading {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHeadphoneOff;
+impl Into<&'static str> for LdHeadphoneOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21 14h-1.343" />
+  <path d="M9.128 3.47A9 9 0 0 1 21 12v3.343" />
+  <path d="m2 2 20 20" />
+  <path d="M20.414 20.414A2 2 0 0 1 19 21h-1a2 2 0 0 1-2-2v-3" />
+  <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 2.636-6.364" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeadphones;
-impl IconShape for LdHeadphones {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeadphones {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16803,8 +18277,8 @@ impl IconShape for LdHeadphones {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeadset;
-impl IconShape for LdHeadset {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeadset {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16825,8 +18299,8 @@ impl IconShape for LdHeadset {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeartCrack;
-impl IconShape for LdHeartCrack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeartCrack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16847,8 +18321,8 @@ impl IconShape for LdHeartCrack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeartHandshake;
-impl IconShape for LdHeartHandshake {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeartHandshake {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16861,7 +18335,7 @@ impl IconShape for LdHeartHandshake {
   stroke-linejoin="round"
 >
   <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-  <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" />
+  <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" />
   <path d="m18 15-2-2" />
   <path d="m15 18-2-2" />
 </svg>
@@ -16870,9 +18344,31 @@ impl IconShape for LdHeartHandshake {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHeartMinus;
+impl Into<&'static str> for LdHeartMinus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13.5 19.5 12 21l-7-7c-1.5-1.45-3-3.2-3-5.5A5.5 5.5 0 0 1 7.5 3c1.76 0 3 .5 4.5 2 1.5-1.5 2.74-2 4.5-2a5.5 5.5 0 0 1 5.402 6.5" />
+  <path d="M15 15h6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeartOff;
-impl IconShape for LdHeartOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeartOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16893,9 +18389,32 @@ impl IconShape for LdHeartOff {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHeartPlus;
+impl Into<&'static str> for LdHeartPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13.5 19.5 12 21l-7-7c-1.5-1.45-3-3.2-3-5.5A5.5 5.5 0 0 1 7.5 3c1.76 0 3 .5 4.5 2 1.5-1.5 2.74-2 4.5-2a5.5 5.5 0 0 1 5.402 6.5" />
+  <path d="M15 15h6" />
+  <path d="M18 12v6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeartPulse;
-impl IconShape for LdHeartPulse {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeartPulse {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16916,8 +18435,8 @@ impl IconShape for LdHeartPulse {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeart;
-impl IconShape for LdHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16937,8 +18456,8 @@ impl IconShape for LdHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHeater;
-impl IconShape for LdHeater {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHeater {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16967,8 +18486,8 @@ impl IconShape for LdHeater {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHexagon;
-impl IconShape for LdHexagon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHexagon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -16988,8 +18507,8 @@ impl IconShape for LdHexagon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHighlighter;
-impl IconShape for LdHighlighter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHighlighter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17010,8 +18529,8 @@ impl IconShape for LdHighlighter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHistory;
-impl IconShape for LdHistory {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHistory {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17032,31 +18551,9 @@ impl IconShape for LdHistory {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdHome;
-impl IconShape for LdHome {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-  <polyline points="9 22 9 12 15 12 15 22" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHopOff;
-impl IconShape for LdHopOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHopOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17084,8 +18581,8 @@ impl IconShape for LdHopOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHop;
-impl IconShape for LdHop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17112,8 +18609,8 @@ impl IconShape for LdHop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHospital;
-impl IconShape for LdHospital {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHospital {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17138,8 +18635,8 @@ impl IconShape for LdHospital {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHotel;
-impl IconShape for LdHotel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHotel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17168,8 +18665,8 @@ impl IconShape for LdHotel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdHourglass;
-impl IconShape for LdHourglass {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdHourglass {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17191,9 +18688,103 @@ impl IconShape for LdHourglass {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHousePlug;
+impl Into<&'static str> for LdHousePlug {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 12V8.964" />
+  <path d="M14 12V8.964" />
+  <path d="M15 12a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z" />
+  <path d="M8.5 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2v-2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHousePlus;
+impl Into<&'static str> for LdHousePlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13.22 2.416a2 2 0 0 0-2.511.057l-7 5.999A2 2 0 0 0 3 10v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.354" />
+  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+  <path d="M15 6h6" />
+  <path d="M18 3v6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHouseWifi;
+impl Into<&'static str> for LdHouseWifi {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9.5 13.866a4 4 0 0 1 5 .01" />
+  <path d="M12 17h.01" />
+  <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+  <path d="M7 10.754a8 8 0 0 1 10 0" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdHouse;
+impl Into<&'static str> for LdHouse {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+  <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIceCreamBowl;
-impl IconShape for LdIceCreamBowl {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIceCreamBowl {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17215,8 +18806,8 @@ impl IconShape for LdIceCreamBowl {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIceCreamCone;
-impl IconShape for LdIceCreamCone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIceCreamCone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17237,9 +18828,58 @@ impl IconShape for LdIceCreamCone {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdIdCardLanyard;
+impl Into<&'static str> for LdIdCardLanyard {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13.5 8h-3" />
+  <path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+  <path d="M16.899 22A5 5 0 0 0 7.1 22" />
+  <path d="m9 2 3 6" />
+  <circle cx="12" cy="15" r="3" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdIdCard;
+impl Into<&'static str> for LdIdCard {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 10h2" />
+  <path d="M16 14h2" />
+  <path d="M6.17 15a3 3 0 0 1 5.66 0" />
+  <circle cx="9" cy="11" r="2" />
+  <rect x="2" y="5" width="20" height="14" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImageDown;
-impl IconShape for LdImageDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImageDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17262,8 +18902,8 @@ impl IconShape for LdImageDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImageMinus;
-impl IconShape for LdImageMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImageMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17286,8 +18926,8 @@ impl IconShape for LdImageMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImageOff;
-impl IconShape for LdImageOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImageOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17312,8 +18952,8 @@ impl IconShape for LdImageOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImagePlay;
-impl IconShape for LdImagePlay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImagePlay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17336,8 +18976,8 @@ impl IconShape for LdImagePlay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImagePlus;
-impl IconShape for LdImagePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImagePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17349,11 +18989,11 @@ impl IconShape for LdImagePlus {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7" />
-  <line x1="16" x2="22" y1="5" y2="5" />
-  <line x1="19" x2="19" y1="2" y2="8" />
-  <circle cx="9" cy="9" r="2" />
+  <path d="M16 5h6" />
+  <path d="M19 2v6" />
+  <path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5" />
   <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+  <circle cx="9" cy="9" r="2" />
 </svg>
 "#
     }
@@ -17361,8 +19001,8 @@ impl IconShape for LdImagePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImageUp;
-impl IconShape for LdImageUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImageUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17384,9 +19024,37 @@ impl IconShape for LdImageUp {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdImageUpscale;
+impl Into<&'static str> for LdImageUpscale {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 3h5v5" />
+  <path d="M17 21h2a2 2 0 0 0 2-2" />
+  <path d="M21 12v3" />
+  <path d="m21 3-5 5" />
+  <path d="M3 7V5a2 2 0 0 1 2-2" />
+  <path d="m5 21 4.144-4.144a1.21 1.21 0 0 1 1.712 0L13 19" />
+  <path d="M9 3h3" />
+  <rect x="3" y="11" width="10" height="10" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImage;
-impl IconShape for LdImage {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImage {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17408,8 +19076,8 @@ impl IconShape for LdImage {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImages;
-impl IconShape for LdImages {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImages {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17432,8 +19100,8 @@ impl IconShape for LdImages {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdImport;
-impl IconShape for LdImport {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdImport {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17455,8 +19123,8 @@ impl IconShape for LdImport {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdInbox;
-impl IconShape for LdInbox {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdInbox {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17477,8 +19145,8 @@ impl IconShape for LdInbox {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIndentDecrease;
-impl IconShape for LdIndentDecrease {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIndentDecrease {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17490,10 +19158,10 @@ impl IconShape for LdIndentDecrease {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="7 8 3 12 7 16" />
-  <line x1="21" x2="11" y1="12" y2="12" />
-  <line x1="21" x2="11" y1="6" y2="6" />
-  <line x1="21" x2="11" y1="18" y2="18" />
+  <path d="M21 12H11" />
+  <path d="M21 18H11" />
+  <path d="M21 6H11" />
+  <path d="m7 8-4 4 4 4" />
 </svg>
 "#
     }
@@ -17501,8 +19169,8 @@ impl IconShape for LdIndentDecrease {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIndentIncrease;
-impl IconShape for LdIndentIncrease {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIndentIncrease {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17514,10 +19182,10 @@ impl IconShape for LdIndentIncrease {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="3 8 7 12 3 16" />
-  <line x1="21" x2="11" y1="12" y2="12" />
-  <line x1="21" x2="11" y1="6" y2="6" />
-  <line x1="21" x2="11" y1="18" y2="18" />
+  <path d="M21 12H11" />
+  <path d="M21 18H11" />
+  <path d="M21 6H11" />
+  <path d="m3 8 4 4-4 4" />
 </svg>
 "#
     }
@@ -17525,8 +19193,8 @@ impl IconShape for LdIndentIncrease {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIndianRupee;
-impl IconShape for LdIndianRupee {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIndianRupee {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17550,8 +19218,8 @@ impl IconShape for LdIndianRupee {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdInfinity;
-impl IconShape for LdInfinity {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdInfinity {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17563,7 +19231,7 @@ impl IconShape for LdInfinity {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" />
+  <path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8" />
 </svg>
 "#
     }
@@ -17571,8 +19239,8 @@ impl IconShape for LdInfinity {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdInfo;
-impl IconShape for LdInfo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdInfo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17594,8 +19262,8 @@ impl IconShape for LdInfo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdInspectionPanel;
-impl IconShape for LdInspectionPanel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdInspectionPanel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17619,8 +19287,8 @@ impl IconShape for LdInspectionPanel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdInstagram;
-impl IconShape for LdInstagram {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdInstagram {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17642,8 +19310,8 @@ impl IconShape for LdInstagram {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdItalic;
-impl IconShape for LdItalic {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdItalic {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17665,8 +19333,8 @@ impl IconShape for LdItalic {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIterationCcw;
-impl IconShape for LdIterationCcw {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIterationCcw {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17678,8 +19346,8 @@ impl IconShape for LdIterationCcw {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8h8" />
-  <polyline points="16 14 20 18 16 22" />
+  <path d="m16 14 4 4-4 4" />
+  <path d="M20 10a8 8 0 1 0-8 8h8" />
 </svg>
 "#
     }
@@ -17687,8 +19355,8 @@ impl IconShape for LdIterationCcw {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdIterationCw;
-impl IconShape for LdIterationCw {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdIterationCw {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17700,8 +19368,8 @@ impl IconShape for LdIterationCw {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8H4" />
-  <polyline points="8 22 4 18 8 14" />
+  <path d="M4 10a8 8 0 1 1 8 8H4" />
+  <path d="m8 22-4-4 4-4" />
 </svg>
 "#
     }
@@ -17709,8 +19377,8 @@ impl IconShape for LdIterationCw {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdJapaneseYen;
-impl IconShape for LdJapaneseYen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdJapaneseYen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17732,8 +19400,8 @@ impl IconShape for LdJapaneseYen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdJoystick;
-impl IconShape for LdJoystick {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdJoystick {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17756,8 +19424,8 @@ impl IconShape for LdJoystick {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKanban;
-impl IconShape for LdKanban {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKanban {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17779,8 +19447,8 @@ impl IconShape for LdKanban {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKeyRound;
-impl IconShape for LdKeyRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKeyRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17792,7 +19460,7 @@ impl IconShape for LdKeyRound {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z" />
+  <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" />
   <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
 </svg>
 "#
@@ -17801,8 +19469,8 @@ impl IconShape for LdKeyRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKeySquare;
-impl IconShape for LdKeySquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKeySquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17814,9 +19482,9 @@ impl IconShape for LdKeySquare {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12.4 2.7c.9-.9 2.5-.9 3.4 0l5.5 5.5c.9.9.9 2.5 0 3.4l-3.7 3.7c-.9.9-2.5.9-3.4 0L8.7 9.8c-.9-.9-.9-2.5 0-3.4Z" />
+  <path d="M12.4 2.7a2.5 2.5 0 0 1 3.4 0l5.5 5.5a2.5 2.5 0 0 1 0 3.4l-3.7 3.7a2.5 2.5 0 0 1-3.4 0L8.7 9.8a2.5 2.5 0 0 1 0-3.4z" />
   <path d="m14 7 3 3" />
-  <path d="M9.4 10.6 2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4" />
+  <path d="m9.4 10.6-6.814 6.814A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814" />
 </svg>
 "#
     }
@@ -17824,8 +19492,8 @@ impl IconShape for LdKeySquare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKey;
-impl IconShape for LdKey {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKey {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17837,9 +19505,9 @@ impl IconShape for LdKey {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="7.5" cy="15.5" r="5.5" />
+  <path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4" />
   <path d="m21 2-9.6 9.6" />
-  <path d="m15.5 7.5 3 3L22 7l-3-3" />
+  <circle cx="7.5" cy="15.5" r="5.5" />
 </svg>
 "#
     }
@@ -17847,8 +19515,8 @@ impl IconShape for LdKey {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKeyboardMusic;
-impl IconShape for LdKeyboardMusic {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKeyboardMusic {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17876,8 +19544,8 @@ impl IconShape for LdKeyboardMusic {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKeyboardOff;
-impl IconShape for LdKeyboardOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKeyboardOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17905,8 +19573,8 @@ impl IconShape for LdKeyboardOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdKeyboard;
-impl IconShape for LdKeyboard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdKeyboard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17934,8 +19602,8 @@ impl IconShape for LdKeyboard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLampCeiling;
-impl IconShape for LdLampCeiling {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLampCeiling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17948,8 +19616,8 @@ impl IconShape for LdLampCeiling {
   stroke-linejoin="round"
 >
   <path d="M12 2v5" />
-  <path d="M6 7h12l4 9H2l4-9Z" />
-  <path d="M9.17 16a3 3 0 1 0 5.66 0" />
+  <path d="M14.829 15.998a3 3 0 1 1-5.658 0" />
+  <path d="M20.92 14.606A1 1 0 0 1 20 16H4a1 1 0 0 1-.92-1.394l3-7A1 1 0 0 1 7 7h10a1 1 0 0 1 .92.606z" />
 </svg>
 "#
     }
@@ -17957,8 +19625,8 @@ impl IconShape for LdLampCeiling {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLampDesk;
-impl IconShape for LdLampDesk {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLampDesk {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17970,10 +19638,10 @@ impl IconShape for LdLampDesk {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m14 5-3 3 2 7 8-8-7-2Z" />
-  <path d="m14 5-3 3-3-3 3-3 3 3Z" />
-  <path d="M9.5 6.5 4 12l3 6" />
-  <path d="M3 22v-2c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2H3Z" />
+  <path d="M10.293 2.293a1 1 0 0 1 1.414 0l2.5 2.5 5.994 1.227a1 1 0 0 1 .506 1.687l-7 7a1 1 0 0 1-1.687-.506l-1.227-5.994-2.5-2.5a1 1 0 0 1 0-1.414z" />
+  <path d="m14.207 4.793-3.414 3.414" />
+  <path d="M3 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+  <path d="m9.086 6.5-4.793 4.793a1 1 0 0 0-.18 1.17L7 18" />
 </svg>
 "#
     }
@@ -17981,8 +19649,8 @@ impl IconShape for LdLampDesk {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLampFloor;
-impl IconShape for LdLampFloor {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLampFloor {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -17994,8 +19662,8 @@ impl IconShape for LdLampFloor {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9 2h6l3 7H6l3-7Z" />
-  <path d="M12 9v13" />
+  <path d="M12 10v12" />
+  <path d="M17.929 7.629A1 1 0 0 1 17 9H7a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 9 2h6a1 1 0 0 1 .928.629z" />
   <path d="M9 22h6" />
 </svg>
 "#
@@ -18004,8 +19672,8 @@ impl IconShape for LdLampFloor {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLampWallDown;
-impl IconShape for LdLampWallDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLampWallDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18017,9 +19685,9 @@ impl IconShape for LdLampWallDown {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M11 13h6l3 7H8l3-7Z" />
-  <path d="M14 13V8a2 2 0 0 0-2-2H8" />
-  <path d="M4 9h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4v6Z" />
+  <path d="M19.929 18.629A1 1 0 0 1 19 20H9a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 11 13h6a1 1 0 0 1 .928.629z" />
+  <path d="M6 3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+  <path d="M8 6h4a2 2 0 0 1 2 2v5" />
 </svg>
 "#
     }
@@ -18027,8 +19695,8 @@ impl IconShape for LdLampWallDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLampWallUp;
-impl IconShape for LdLampWallUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLampWallUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18040,9 +19708,9 @@ impl IconShape for LdLampWallUp {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M11 4h6l3 7H8l3-7Z" />
-  <path d="M14 11v5a2 2 0 0 1-2 2H8" />
-  <path d="M4 15h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4v-6Z" />
+  <path d="M19.929 9.629A1 1 0 0 1 19 11H9a1 1 0 0 1-.928-1.371l2-5A1 1 0 0 1 11 4h6a1 1 0 0 1 .928.629z" />
+  <path d="M6 15a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" />
+  <path d="M8 18h4a2 2 0 0 0 2-2v-5" />
 </svg>
 "#
     }
@@ -18050,8 +19718,8 @@ impl IconShape for LdLampWallUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLamp;
-impl IconShape for LdLamp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLamp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18063,9 +19731,9 @@ impl IconShape for LdLamp {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8 2h8l4 10H4L8 2Z" />
   <path d="M12 12v6" />
-  <path d="M8 22v-2c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2H8Z" />
+  <path d="M4.077 10.615A1 1 0 0 0 5 12h14a1 1 0 0 0 .923-1.385l-3.077-7.384A2 2 0 0 0 15 2H9a2 2 0 0 0-1.846 1.23Z" />
+  <path d="M8 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" />
 </svg>
 "#
     }
@@ -18073,8 +19741,8 @@ impl IconShape for LdLamp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLandPlot;
-impl IconShape for LdLandPlot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLandPlot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18097,8 +19765,8 @@ impl IconShape for LdLandPlot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLandmark;
-impl IconShape for LdLandmark {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLandmark {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18110,12 +19778,12 @@ impl IconShape for LdLandmark {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="3" x2="21" y1="22" y2="22" />
-  <line x1="6" x2="6" y1="18" y2="11" />
-  <line x1="10" x2="10" y1="18" y2="11" />
-  <line x1="14" x2="14" y1="18" y2="11" />
-  <line x1="18" x2="18" y1="18" y2="11" />
-  <polygon points="12 2 20 7 4 7" />
+  <path d="M10 18v-7" />
+  <path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" />
+  <path d="M14 18v-7" />
+  <path d="M18 18v-7" />
+  <path d="M3 22h18" />
+  <path d="M6 18v-7" />
 </svg>
 "#
     }
@@ -18123,8 +19791,8 @@ impl IconShape for LdLandmark {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLanguages;
-impl IconShape for LdLanguages {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLanguages {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18148,9 +19816,32 @@ impl IconShape for LdLanguages {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdLaptopMinimalCheck;
+impl Into<&'static str> for LdLaptopMinimalCheck {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 20h20" />
+  <path d="m9 10 2 2 4-4" />
+  <rect x="3" y="4" width="18" height="12" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLaptopMinimal;
-impl IconShape for LdLaptopMinimal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLaptopMinimal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18171,8 +19862,8 @@ impl IconShape for LdLaptopMinimal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLaptop;
-impl IconShape for LdLaptop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLaptop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18184,7 +19875,8 @@ impl IconShape for LdLaptop {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />
+  <path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
+  <path d="M20.054 15.987H3.946" />
 </svg>
 "#
     }
@@ -18192,8 +19884,8 @@ impl IconShape for LdLaptop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLassoSelect;
-impl IconShape for LdLassoSelect {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLassoSelect {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18209,7 +19901,7 @@ impl IconShape for LdLassoSelect {
   <path d="M7 16.93c.96.43 1.96.74 2.99.91" />
   <path d="M3.34 14A6.8 6.8 0 0 1 2 10c0-4.42 4.48-8 10-8s10 3.58 10 8a7.19 7.19 0 0 1-.33 2" />
   <path d="M5 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
-  <path d="M14.33 22h-.09a.35.35 0 0 1-.24-.32v-10a.34.34 0 0 1 .33-.34c.08 0 .15.03.21.08l7.34 6a.33.33 0 0 1-.21.59h-4.49l-2.57 3.85a.35.35 0 0 1-.28.14v0z" />
+  <path d="M14.33 22h-.09a.35.35 0 0 1-.24-.32v-10a.34.34 0 0 1 .33-.34c.08 0 .15.03.21.08l7.34 6a.33.33 0 0 1-.21.59h-4.49l-2.57 3.85a.35.35 0 0 1-.28.14z" />
 </svg>
 "#
     }
@@ -18217,8 +19909,8 @@ impl IconShape for LdLassoSelect {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLasso;
-impl IconShape for LdLasso {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLasso {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18240,8 +19932,8 @@ impl IconShape for LdLasso {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLaugh;
-impl IconShape for LdLaugh {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLaugh {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18264,8 +19956,8 @@ impl IconShape for LdLaugh {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayers2;
-impl IconShape for LdLayers2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayers2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18277,31 +19969,8 @@ impl IconShape for LdLayers2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m16.02 12 5.48 3.13a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74L7.98 12" />
-  <path d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74Z" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdLayers3;
-impl IconShape for LdLayers3 {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
-  <path d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59" />
-  <path d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59" />
+  <path d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74z" />
+  <path d="m20 14.285 1.5.845a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74l1.5-.845" />
 </svg>
 "#
     }
@@ -18309,8 +19978,8 @@ impl IconShape for LdLayers3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayers;
-impl IconShape for LdLayers {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayers {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18322,9 +19991,9 @@ impl IconShape for LdLayers {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
-  <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
-  <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+  <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+  <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+  <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
 </svg>
 "#
     }
@@ -18332,8 +20001,8 @@ impl IconShape for LdLayers {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayoutDashboard;
-impl IconShape for LdLayoutDashboard {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayoutDashboard {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18356,8 +20025,8 @@ impl IconShape for LdLayoutDashboard {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayoutGrid;
-impl IconShape for LdLayoutGrid {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayoutGrid {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18380,8 +20049,8 @@ impl IconShape for LdLayoutGrid {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayoutList;
-impl IconShape for LdLayoutList {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayoutList {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18406,8 +20075,8 @@ impl IconShape for LdLayoutList {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayoutPanelLeft;
-impl IconShape for LdLayoutPanelLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayoutPanelLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18429,8 +20098,8 @@ impl IconShape for LdLayoutPanelLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayoutPanelTop;
-impl IconShape for LdLayoutPanelTop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayoutPanelTop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18452,8 +20121,8 @@ impl IconShape for LdLayoutPanelTop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLayoutTemplate;
-impl IconShape for LdLayoutTemplate {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLayoutTemplate {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18475,8 +20144,8 @@ impl IconShape for LdLayoutTemplate {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLeaf;
-impl IconShape for LdLeaf {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLeaf {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18497,8 +20166,8 @@ impl IconShape for LdLeaf {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLeafyGreen;
-impl IconShape for LdLeafyGreen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLeafyGreen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18518,9 +20187,57 @@ impl IconShape for LdLeafyGreen {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdLectern;
+impl Into<&'static str> for LdLectern {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 12h3a2 2 0 0 0 1.902-1.38l1.056-3.333A1 1 0 0 0 21 6H3a1 1 0 0 0-.958 1.287l1.056 3.334A2 2 0 0 0 5 12h3" />
+  <path d="M18 6V3a1 1 0 0 0-1-1h-3" />
+  <rect width="8" height="12" x="8" y="10" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdLetterText;
+impl Into<&'static str> for LdLetterText {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 12h6" />
+  <path d="M15 6h6" />
+  <path d="m3 13 3.553-7.724a.5.5 0 0 1 .894 0L11 13" />
+  <path d="M3 18h18" />
+  <path d="M3.92 11h6.16" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLibraryBig;
-impl IconShape for LdLibraryBig {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLibraryBig {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18542,8 +20259,8 @@ impl IconShape for LdLibraryBig {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLibrary;
-impl IconShape for LdLibrary {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLibrary {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18566,8 +20283,8 @@ impl IconShape for LdLibrary {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLifeBuoy;
-impl IconShape for LdLifeBuoy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLifeBuoy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18592,8 +20309,8 @@ impl IconShape for LdLifeBuoy {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLigature;
-impl IconShape for LdLigature {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLigature {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18617,8 +20334,8 @@ impl IconShape for LdLigature {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLightbulbOff;
-impl IconShape for LdLightbulbOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLightbulbOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18642,8 +20359,8 @@ impl IconShape for LdLightbulbOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLightbulb;
-impl IconShape for LdLightbulb {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLightbulb {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18664,31 +20381,9 @@ impl IconShape for LdLightbulb {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdLineChart;
-impl IconShape for LdLineChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 3v18h18" />
-  <path d="m19 9-5 5-4-4-3 3" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLink2Off;
-impl IconShape for LdLink2Off {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLink2Off {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18711,8 +20406,8 @@ impl IconShape for LdLink2Off {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLink2;
-impl IconShape for LdLink2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLink2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18734,8 +20429,8 @@ impl IconShape for LdLink2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLink;
-impl IconShape for LdLink {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLink {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18756,8 +20451,8 @@ impl IconShape for LdLink {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLinkedin;
-impl IconShape for LdLinkedin {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLinkedin {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18778,9 +20473,33 @@ impl IconShape for LdLinkedin {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdListCheck;
+impl Into<&'static str> for LdListCheck {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 18H3" />
+  <path d="m15 18 2 2 4-4" />
+  <path d="M16 12H3" />
+  <path d="M16 6H3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListChecks;
-impl IconShape for LdListChecks {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListChecks {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18804,8 +20523,8 @@ impl IconShape for LdListChecks {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListCollapse;
-impl IconShape for LdListCollapse {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListCollapse {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18817,11 +20536,11 @@ impl IconShape for LdListCollapse {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m3 10 2.5-2.5L3 5" />
-  <path d="m3 19 2.5-2.5L3 14" />
-  <path d="M10 6h11" />
   <path d="M10 12h11" />
   <path d="M10 18h11" />
+  <path d="M10 6h11" />
+  <path d="m3 10 3-3-3-3" />
+  <path d="m3 20 3-3-3-3" />
 </svg>
 "#
     }
@@ -18829,8 +20548,8 @@ impl IconShape for LdListCollapse {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListEnd;
-impl IconShape for LdListEnd {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListEnd {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18853,9 +20572,34 @@ impl IconShape for LdListEnd {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdListFilterPlus;
+impl Into<&'static str> for LdListFilterPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 18h4" />
+  <path d="M11 6H3" />
+  <path d="M15 6h6" />
+  <path d="M18 9V3" />
+  <path d="M7 12h8" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListFilter;
-impl IconShape for LdListFilter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListFilter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18877,8 +20621,8 @@ impl IconShape for LdListFilter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListMinus;
-impl IconShape for LdListMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18901,8 +20645,8 @@ impl IconShape for LdListMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListMusic;
-impl IconShape for LdListMusic {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListMusic {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18926,8 +20670,8 @@ impl IconShape for LdListMusic {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListOrdered;
-impl IconShape for LdListOrdered {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListOrdered {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18939,11 +20683,11 @@ impl IconShape for LdListOrdered {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="10" x2="21" y1="6" y2="6" />
-  <line x1="10" x2="21" y1="12" y2="12" />
-  <line x1="10" x2="21" y1="18" y2="18" />
-  <path d="M4 6h1v4" />
+  <path d="M10 12h11" />
+  <path d="M10 18h11" />
+  <path d="M10 6h11" />
   <path d="M4 10h2" />
+  <path d="M4 6h1v4" />
   <path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1" />
 </svg>
 "#
@@ -18952,8 +20696,8 @@ impl IconShape for LdListOrdered {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListPlus;
-impl IconShape for LdListPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -18977,8 +20721,8 @@ impl IconShape for LdListPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListRestart;
-impl IconShape for LdListRestart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListRestart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19002,8 +20746,8 @@ impl IconShape for LdListRestart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListStart;
-impl IconShape for LdListStart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListStart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19027,8 +20771,8 @@ impl IconShape for LdListStart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListTodo;
-impl IconShape for LdListTodo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListTodo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19052,8 +20796,8 @@ impl IconShape for LdListTodo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListTree;
-impl IconShape for LdListTree {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListTree {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19077,8 +20821,8 @@ impl IconShape for LdListTree {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListVideo;
-impl IconShape for LdListVideo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListVideo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19101,8 +20845,8 @@ impl IconShape for LdListVideo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdListX;
-impl IconShape for LdListX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdListX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19126,8 +20870,8 @@ impl IconShape for LdListX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdList;
-impl IconShape for LdList {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdList {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19139,12 +20883,12 @@ impl IconShape for LdList {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="8" x2="21" y1="6" y2="6" />
-  <line x1="8" x2="21" y1="12" y2="12" />
-  <line x1="8" x2="21" y1="18" y2="18" />
-  <line x1="3" x2="3.01" y1="6" y2="6" />
-  <line x1="3" x2="3.01" y1="12" y2="12" />
-  <line x1="3" x2="3.01" y1="18" y2="18" />
+  <path d="M3 12h.01" />
+  <path d="M3 18h.01" />
+  <path d="M3 6h.01" />
+  <path d="M8 12h13" />
+  <path d="M8 18h13" />
+  <path d="M8 6h13" />
 </svg>
 "#
     }
@@ -19152,8 +20896,8 @@ impl IconShape for LdList {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLoaderCircle;
-impl IconShape for LdLoaderCircle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLoaderCircle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19172,9 +20916,9 @@ impl IconShape for LdLoaderCircle {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdLoader;
-impl IconShape for LdLoader {
-    fn content(&self) -> &'static str {
+pub struct LdLoaderPinwheel;
+impl Into<&'static str> for LdLoaderPinwheel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19186,14 +20930,38 @@ impl IconShape for LdLoader {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="12" x2="12" y1="2" y2="6" />
-  <line x1="12" x2="12" y1="18" y2="22" />
-  <line x1="4.93" x2="7.76" y1="4.93" y2="7.76" />
-  <line x1="16.24" x2="19.07" y1="16.24" y2="19.07" />
-  <line x1="2" x2="6" y1="12" y2="12" />
-  <line x1="18" x2="22" y1="12" y2="12" />
-  <line x1="4.93" x2="7.76" y1="19.07" y2="16.24" />
-  <line x1="16.24" x2="19.07" y1="7.76" y2="4.93" />
+  <path d="M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0" />
+  <path d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6" />
+  <path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6" />
+  <circle cx="12" cy="12" r="10" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdLoader;
+impl Into<&'static str> for LdLoader {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2v4" />
+  <path d="m16.2 7.8 2.9-2.9" />
+  <path d="M18 12h4" />
+  <path d="m16.2 16.2 2.9 2.9" />
+  <path d="M12 18v4" />
+  <path d="m4.9 19.1 2.9-2.9" />
+  <path d="M2 12h4" />
+  <path d="m4.9 4.9 2.9 2.9" />
 </svg>
 "#
     }
@@ -19201,8 +20969,8 @@ impl IconShape for LdLoader {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLocateFixed;
-impl IconShape for LdLocateFixed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLocateFixed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19227,8 +20995,8 @@ impl IconShape for LdLocateFixed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLocateOff;
-impl IconShape for LdLocateOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLocateOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19240,13 +21008,13 @@ impl IconShape for LdLocateOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="2" x2="5" y1="12" y2="12" />
-  <line x1="19" x2="22" y1="12" y2="12" />
-  <line x1="12" x2="12" y1="2" y2="5" />
-  <line x1="12" x2="12" y1="19" y2="22" />
-  <path d="M7.11 7.11C5.83 8.39 5 10.1 5 12c0 3.87 3.13 7 7 7 1.9 0 3.61-.83 4.89-2.11" />
-  <path d="M18.71 13.96c.19-.63.29-1.29.29-1.96 0-3.87-3.13-7-7-7-.67 0-1.33.1-1.96.29" />
-  <line x1="2" x2="22" y1="2" y2="22" />
+  <path d="M12 19v3" />
+  <path d="M12 2v3" />
+  <path d="M18.89 13.24a7 7 0 0 0-8.13-8.13" />
+  <path d="M19 12h3" />
+  <path d="M2 12h3" />
+  <path d="m2 2 20 20" />
+  <path d="M7.05 7.05a7 7 0 0 0 9.9 9.9" />
 </svg>
 "#
     }
@@ -19254,8 +21022,8 @@ impl IconShape for LdLocateOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLocate;
-impl IconShape for LdLocate {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLocate {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19278,9 +21046,32 @@ impl IconShape for LdLocate {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdLocationEdit;
+impl Into<&'static str> for LdLocationEdit {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468" />
+  <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+  <circle cx="10" cy="10" r="3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLockKeyholeOpen;
-impl IconShape for LdLockKeyholeOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLockKeyholeOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19302,8 +21093,8 @@ impl IconShape for LdLockKeyholeOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLockKeyhole;
-impl IconShape for LdLockKeyhole {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLockKeyhole {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19325,8 +21116,8 @@ impl IconShape for LdLockKeyhole {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLockOpen;
-impl IconShape for LdLockOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLockOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19347,8 +21138,8 @@ impl IconShape for LdLockOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLock;
-impl IconShape for LdLock {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLock {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19369,8 +21160,8 @@ impl IconShape for LdLock {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLogIn;
-impl IconShape for LdLogIn {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLogIn {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19382,9 +21173,9 @@ impl IconShape for LdLogIn {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m10 17 5-5-5-5" />
+  <path d="M15 12H3" />
   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-  <polyline points="10 17 15 12 10 7" />
-  <line x1="15" x2="3" y1="12" y2="12" />
 </svg>
 "#
     }
@@ -19392,8 +21183,8 @@ impl IconShape for LdLogIn {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLogOut;
-impl IconShape for LdLogOut {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLogOut {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19405,9 +21196,38 @@ impl IconShape for LdLogOut {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m16 17 5-5-5-5" />
+  <path d="M21 12H9" />
   <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-  <polyline points="16 17 21 12 16 7" />
-  <line x1="21" x2="9" y1="12" y2="12" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdLogs;
+impl Into<&'static str> for LdLogs {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 12h8" />
+  <path d="M13 18h8" />
+  <path d="M13 6h8" />
+  <path d="M3 12h1" />
+  <path d="M3 18h1" />
+  <path d="M3 6h1" />
+  <path d="M8 12h1" />
+  <path d="M8 18h1" />
+  <path d="M8 6h1" />
 </svg>
 "#
     }
@@ -19415,8 +21235,8 @@ impl IconShape for LdLogOut {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLollipop;
-impl IconShape for LdLollipop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLollipop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19438,8 +21258,8 @@ impl IconShape for LdLollipop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdLuggage;
-impl IconShape for LdLuggage {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdLuggage {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19451,7 +21271,7 @@ impl IconShape for LdLuggage {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0" />
+  <path d="M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2" />
   <path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14" />
   <path d="M10 20h4" />
   <circle cx="16" cy="20" r="2" />
@@ -19463,8 +21283,8 @@ impl IconShape for LdLuggage {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMagnet;
-impl IconShape for LdMagnet {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMagnet {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19486,8 +21306,8 @@ impl IconShape for LdMagnet {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailCheck;
-impl IconShape for LdMailCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19509,8 +21329,8 @@ impl IconShape for LdMailCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailMinus;
-impl IconShape for LdMailMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19532,8 +21352,8 @@ impl IconShape for LdMailMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailOpen;
-impl IconShape for LdMailOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19554,8 +21374,8 @@ impl IconShape for LdMailOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailPlus;
-impl IconShape for LdMailPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19578,8 +21398,8 @@ impl IconShape for LdMailPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailQuestion;
-impl IconShape for LdMailQuestion {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailQuestion {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19602,8 +21422,8 @@ impl IconShape for LdMailQuestion {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailSearch;
-impl IconShape for LdMailSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19617,7 +21437,7 @@ impl IconShape for LdMailSearch {
 >
   <path d="M22 12.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h7.5" />
   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-  <path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6v0Z" />
+  <path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
   <circle cx="18" cy="18" r="3" />
   <path d="m22 22-1.5-1.5" />
 </svg>
@@ -19627,8 +21447,8 @@ impl IconShape for LdMailSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailWarning;
-impl IconShape for LdMailWarning {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailWarning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19651,8 +21471,8 @@ impl IconShape for LdMailWarning {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailX;
-impl IconShape for LdMailX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19675,8 +21495,8 @@ impl IconShape for LdMailX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMail;
-impl IconShape for LdMail {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMail {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19688,8 +21508,8 @@ impl IconShape for LdMail {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="20"  x="2" y="4" rx="2" />
-  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20"  rx="2" />
 </svg>
 "#
     }
@@ -19697,8 +21517,8 @@ impl IconShape for LdMail {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMailbox;
-impl IconShape for LdMailbox {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMailbox {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19712,7 +21532,7 @@ impl IconShape for LdMailbox {
 >
   <path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z" />
   <polyline points="15,9 18,9 18,11" />
-  <path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2v0" />
+  <path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2" />
   <line x1="6" x2="7" y1="10" y2="10" />
 </svg>
 "#
@@ -19721,8 +21541,8 @@ impl IconShape for LdMailbox {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMails;
-impl IconShape for LdMails {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMails {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19743,9 +21563,9 @@ impl IconShape for LdMails {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdMapPinOff;
-impl IconShape for LdMapPinOff {
-    fn content(&self) -> &'static str {
+pub struct LdMapPinCheckInside;
+impl Into<&'static str> for LdMapPinCheckInside {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19757,11 +21577,219 @@ impl IconShape for LdMapPinOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M5.43 5.43A8.06 8.06 0 0 0 4 10c0 6 8 12 8 12a29.94 29.94 0 0 0 5-5" />
-  <path d="M19.18 13.52A8.66 8.66 0 0 0 20 10a8 8 0 0 0-8-8 7.88 7.88 0 0 0-3.52.82" />
-  <path d="M9.13 9.13A2.78 2.78 0 0 0 9 10a3 3 0 0 0 3 3 2.78 2.78 0 0 0 .87-.13" />
-  <path d="M14.9 9.25a3 3 0 0 0-2.15-2.16" />
-  <line x1="2" x2="22" y1="2" y2="22" />
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <path d="m9 10 2 2 4-4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinCheck;
+impl Into<&'static str> for LdMapPinCheck {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19.43 12.935c.357-.967.57-1.955.57-2.935a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32.197 32.197 0 0 0 .813-.728" />
+  <circle cx="12" cy="10" r="3" />
+  <path d="m16 18 2 2 4-4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinHouse;
+impl Into<&'static str> for LdMapPinHouse {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z" />
+  <path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2" />
+  <path d="M18 22v-3" />
+  <circle cx="10" cy="10" r="3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinMinusInside;
+impl Into<&'static str> for LdMapPinMinusInside {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <path d="M9 10h6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinMinus;
+impl Into<&'static str> for LdMapPinMinus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18.977 14C19.6 12.701 20 11.343 20 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32 32 0 0 0 .824-.738" />
+  <circle cx="12" cy="10" r="3" />
+  <path d="M16 18h6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinOff;
+impl Into<&'static str> for LdMapPinOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.75 7.09a3 3 0 0 1 2.16 2.16" />
+  <path d="M17.072 17.072c-1.634 2.17-3.527 3.912-4.471 4.727a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 1.432-4.568" />
+  <path d="m2 2 20 20" />
+  <path d="M8.475 2.818A8 8 0 0 1 20 10c0 1.183-.31 2.377-.81 3.533" />
+  <path d="M9.13 9.13a3 3 0 0 0 3.74 3.74" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinPlusInside;
+impl Into<&'static str> for LdMapPinPlusInside {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <path d="M12 7v6" />
+  <path d="M9 10h6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinPlus;
+impl Into<&'static str> for LdMapPinPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19.914 11.105A7.298 7.298 0 0 0 20 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32 32 0 0 0 .824-.738" />
+  <circle cx="12" cy="10" r="3" />
+  <path d="M16 18h6" />
+  <path d="M19 15v6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinXInside;
+impl Into<&'static str> for LdMapPinXInside {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <path d="m14.5 7.5-5 5" />
+  <path d="m9.5 7.5 5 5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPinX;
+impl Into<&'static str> for LdMapPinX {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19.752 11.901A7.78 7.78 0 0 0 20 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 19 19 0 0 0 .09-.077" />
+  <circle cx="12" cy="10" r="3" />
+  <path d="m21.5 15.5-5 5" />
+  <path d="m21.5 20.5-5-5" />
 </svg>
 "#
     }
@@ -19769,8 +21797,8 @@ impl IconShape for LdMapPinOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMapPin;
-impl IconShape for LdMapPin {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMapPin {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19782,7 +21810,7 @@ impl IconShape for LdMapPin {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
   <circle cx="12" cy="10" r="3" />
 </svg>
 "#
@@ -19791,8 +21819,8 @@ impl IconShape for LdMapPin {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMapPinned;
-impl IconShape for LdMapPinned {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMapPinned {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19804,9 +21832,34 @@ impl IconShape for LdMapPinned {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0" />
+  <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
   <circle cx="12" cy="8" r="2" />
-  <path d="M8.835 14H5a1 1 0 0 0-.9.7l-2 6c-.1.1-.1.2-.1.3 0 .6.4 1 1 1h18c.6 0 1-.4 1-1 0-.1 0-.2-.1-.3l-2-6a1 1 0 0 0-.9-.7h-3.835" />
+  <path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMapPlus;
+impl Into<&'static str> for LdMapPlus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m11 19-1.106-.552a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0l4.212 2.106a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619V12" />
+  <path d="M15 5.764V12" />
+  <path d="M18 15v6" />
+  <path d="M21 18h-6" />
+  <path d="M9 3.236v15" />
 </svg>
 "#
     }
@@ -19814,8 +21867,8 @@ impl IconShape for LdMapPinned {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMap;
-impl IconShape for LdMap {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMap {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19836,9 +21889,56 @@ impl IconShape for LdMap {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMarsStroke;
+impl Into<&'static str> for LdMarsStroke {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m14 6 4 4" />
+  <path d="M17 3h4v4" />
+  <path d="m21 3-7.75 7.75" />
+  <circle cx="9" cy="15" r="6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMars;
+impl Into<&'static str> for LdMars {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 3h5v5" />
+  <path d="m21 3-6.75 6.75" />
+  <circle cx="10" cy="14" r="6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMartini;
-impl IconShape for LdMartini {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMartini {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19860,8 +21960,8 @@ impl IconShape for LdMartini {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMaximize2;
-impl IconShape for LdMaximize2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMaximize2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19873,10 +21973,10 @@ impl IconShape for LdMaximize2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="15 3 21 3 21 9" />
-  <polyline points="9 21 3 21 3 15" />
-  <line x1="21" x2="14" y1="3" y2="10" />
-  <line x1="3" x2="10" y1="21" y2="14" />
+  <path d="M15 3h6v6" />
+  <path d="m21 3-7 7" />
+  <path d="m3 21 7-7" />
+  <path d="M9 21H3v-6" />
 </svg>
 "#
     }
@@ -19884,8 +21984,8 @@ impl IconShape for LdMaximize2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMaximize;
-impl IconShape for LdMaximize {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMaximize {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19908,8 +22008,8 @@ impl IconShape for LdMaximize {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMedal;
-impl IconShape for LdMedal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMedal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19934,8 +22034,8 @@ impl IconShape for LdMedal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMegaphoneOff;
-impl IconShape for LdMegaphoneOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMegaphoneOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19958,8 +22058,8 @@ impl IconShape for LdMegaphoneOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMegaphone;
-impl IconShape for LdMegaphone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMegaphone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -19980,8 +22080,8 @@ impl IconShape for LdMegaphone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMeh;
-impl IconShape for LdMeh {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMeh {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20004,8 +22104,8 @@ impl IconShape for LdMeh {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMemoryStick;
-impl IconShape for LdMemoryStick {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMemoryStick {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20033,8 +22133,8 @@ impl IconShape for LdMemoryStick {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMenu;
-impl IconShape for LdMenu {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMenu {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20046,9 +22146,9 @@ impl IconShape for LdMenu {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="4" x2="20" y1="12" y2="12" />
-  <line x1="4" x2="20" y1="6" y2="6" />
-  <line x1="4" x2="20" y1="18" y2="18" />
+  <path d="M4 12h16" />
+  <path d="M4 18h16" />
+  <path d="M4 6h16" />
 </svg>
 "#
     }
@@ -20056,8 +22156,8 @@ impl IconShape for LdMenu {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMerge;
-impl IconShape for LdMerge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMerge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20079,8 +22179,8 @@ impl IconShape for LdMerge {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleCode;
-impl IconShape for LdMessageCircleCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20092,9 +22192,9 @@ impl IconShape for LdMessageCircleCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-  <path d="m10 10-2 2 2 2" />
-  <path d="m14 10 2 2-2 2" />
+  <path d="M10 9.5 8 12l2 2.5" />
+  <path d="m14 9.5 2 2.5-2 2.5" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z" />
 </svg>
 "#
     }
@@ -20102,8 +22202,8 @@ impl IconShape for LdMessageCircleCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleDashed;
-impl IconShape for LdMessageCircleDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20130,8 +22230,8 @@ impl IconShape for LdMessageCircleDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleHeart;
-impl IconShape for LdMessageCircleHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20152,8 +22252,8 @@ impl IconShape for LdMessageCircleHeart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleMore;
-impl IconShape for LdMessageCircleMore {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleMore {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20176,8 +22276,8 @@ impl IconShape for LdMessageCircleMore {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleOff;
-impl IconShape for LdMessageCircleOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20199,8 +22299,8 @@ impl IconShape for LdMessageCircleOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCirclePlus;
-impl IconShape for LdMessageCirclePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCirclePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20222,8 +22322,8 @@ impl IconShape for LdMessageCirclePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleQuestion;
-impl IconShape for LdMessageCircleQuestion {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleQuestion {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20245,8 +22345,8 @@ impl IconShape for LdMessageCircleQuestion {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleReply;
-impl IconShape for LdMessageCircleReply {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleReply {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20268,8 +22368,8 @@ impl IconShape for LdMessageCircleReply {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleWarning;
-impl IconShape for LdMessageCircleWarning {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleWarning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20291,8 +22391,8 @@ impl IconShape for LdMessageCircleWarning {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircleX;
-impl IconShape for LdMessageCircleX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircleX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20314,8 +22414,8 @@ impl IconShape for LdMessageCircleX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageCircle;
-impl IconShape for LdMessageCircle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageCircle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20335,8 +22435,8 @@ impl IconShape for LdMessageCircle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareCode;
-impl IconShape for LdMessageSquareCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20348,9 +22448,9 @@ impl IconShape for LdMessageSquareCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10 7.5 8 10l2 2.5" />
+  <path d="m14 7.5 2 2.5-2 2.5" />
   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-  <path d="m10 8-2 2 2 2" />
-  <path d="m14 8 2 2-2 2" />
 </svg>
 "#
     }
@@ -20358,8 +22458,8 @@ impl IconShape for LdMessageSquareCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareDashed;
-impl IconShape for LdMessageSquareDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20371,14 +22471,15 @@ impl IconShape for LdMessageSquareDashed {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M3 6V5c0-1.1.9-2 2-2h2" />
-  <path d="M11 3h3" />
-  <path d="M18 3h1c1.1 0 2 .9 2 2" />
-  <path d="M21 9v2" />
-  <path d="M21 15c0 1.1-.9 2-2 2h-1" />
-  <path d="M14 17h-3" />
-  <path d="m7 17-4 4v-5" />
-  <path d="M3 12v-2" />
+  <path d="M10 17H7l-4 4v-7" />
+  <path d="M14 17h1" />
+  <path d="M14 3h1" />
+  <path d="M19 3a2 2 0 0 1 2 2" />
+  <path d="M21 14v1a2 2 0 0 1-2 2" />
+  <path d="M21 9v1" />
+  <path d="M3 9v1" />
+  <path d="M5 3a2 2 0 0 0-2 2" />
+  <path d="M9 3h1" />
 </svg>
 "#
     }
@@ -20386,8 +22487,8 @@ impl IconShape for LdMessageSquareDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareDiff;
-impl IconShape for LdMessageSquareDiff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareDiff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20410,8 +22511,8 @@ impl IconShape for LdMessageSquareDiff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareDot;
-impl IconShape for LdMessageSquareDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20432,8 +22533,8 @@ impl IconShape for LdMessageSquareDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareHeart;
-impl IconShape for LdMessageSquareHeart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareHeart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20453,9 +22554,32 @@ impl IconShape for LdMessageSquareHeart {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMessageSquareLock;
+impl Into<&'static str> for LdMessageSquareLock {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 15v-2a2 2 0 1 0-4 0v2" />
+  <path d="M9 17H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3.5" />
+  <rect x="13" y="15" width="8" height="5" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareMore;
-impl IconShape for LdMessageSquareMore {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareMore {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20478,8 +22602,8 @@ impl IconShape for LdMessageSquareMore {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareOff;
-impl IconShape for LdMessageSquareOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20501,8 +22625,8 @@ impl IconShape for LdMessageSquareOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquarePlus;
-impl IconShape for LdMessageSquarePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquarePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20524,8 +22648,8 @@ impl IconShape for LdMessageSquarePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareQuote;
-impl IconShape for LdMessageSquareQuote {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareQuote {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20547,8 +22671,8 @@ impl IconShape for LdMessageSquareQuote {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareReply;
-impl IconShape for LdMessageSquareReply {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareReply {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20570,8 +22694,8 @@ impl IconShape for LdMessageSquareReply {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareShare;
-impl IconShape for LdMessageSquareShare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareShare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20593,8 +22717,8 @@ impl IconShape for LdMessageSquareShare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareText;
-impl IconShape for LdMessageSquareText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20616,8 +22740,8 @@ impl IconShape for LdMessageSquareText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareWarning;
-impl IconShape for LdMessageSquareWarning {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareWarning {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20639,8 +22763,8 @@ impl IconShape for LdMessageSquareWarning {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquareX;
-impl IconShape for LdMessageSquareX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquareX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20662,8 +22786,8 @@ impl IconShape for LdMessageSquareX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessageSquare;
-impl IconShape for LdMessageSquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessageSquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20683,8 +22807,8 @@ impl IconShape for LdMessageSquare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMessagesSquare;
-impl IconShape for LdMessagesSquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMessagesSquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20696,7 +22820,7 @@ impl IconShape for LdMessagesSquare {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z" />
+  <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" />
   <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
 </svg>
 "#
@@ -20705,8 +22829,8 @@ impl IconShape for LdMessagesSquare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMicOff;
-impl IconShape for LdMicOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMicOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20731,8 +22855,8 @@ impl IconShape for LdMicOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMicVocal;
-impl IconShape for LdMicVocal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMicVocal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20744,8 +22868,9 @@ impl IconShape for LdMicVocal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m12 8-9.04 9.06a2.82 2.82 0 1 0 3.98 3.98L16 12" />
-  <circle cx="17" cy="7" r="5" />
+  <path d="m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12" />
+  <path d="M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928 2.356-6 2-2.072-.356-2.775-3.369-1.5-4.5" />
+  <circle cx="16" cy="7" r="5" />
 </svg>
 "#
     }
@@ -20753,8 +22878,8 @@ impl IconShape for LdMicVocal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMic;
-impl IconShape for LdMic {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMic {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20775,9 +22900,40 @@ impl IconShape for LdMic {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMicrochip;
+impl Into<&'static str> for LdMicrochip {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 12h2" />
+  <path d="M18 16h2" />
+  <path d="M18 20h2" />
+  <path d="M18 4h2" />
+  <path d="M18 8h2" />
+  <path d="M4 12h2" />
+  <path d="M4 16h2" />
+  <path d="M4 20h2" />
+  <path d="M4 4h2" />
+  <path d="M4 8h2" />
+  <path d="M8 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-1.5c-.276 0-.494.227-.562.495a2 2 0 0 1-3.876 0C9.994 2.227 9.776 2 9.5 2z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMicroscope;
-impl IconShape for LdMicroscope {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMicroscope {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20802,8 +22958,8 @@ impl IconShape for LdMicroscope {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMicrowave;
-impl IconShape for LdMicrowave {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMicrowave {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20827,8 +22983,8 @@ impl IconShape for LdMicrowave {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMilestone;
-impl IconShape for LdMilestone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMilestone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20840,9 +22996,9 @@ impl IconShape for LdMilestone {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z" />
   <path d="M12 13v8" />
   <path d="M12 3v3" />
+  <path d="M4 6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h13a2 2 0 0 0 1.152-.365l3.424-2.317a1 1 0 0 0 0-1.635l-3.424-2.318A2 2 0 0 0 17 6z" />
 </svg>
 "#
     }
@@ -20850,8 +23006,8 @@ impl IconShape for LdMilestone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMilkOff;
-impl IconShape for LdMilkOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMilkOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20874,8 +23030,8 @@ impl IconShape for LdMilkOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMilk;
-impl IconShape for LdMilk {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMilk {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20897,8 +23053,8 @@ impl IconShape for LdMilk {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMinimize2;
-impl IconShape for LdMinimize2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMinimize2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20910,10 +23066,10 @@ impl IconShape for LdMinimize2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="4 14 10 14 10 20" />
-  <polyline points="20 10 14 10 14 4" />
-  <line x1="14" x2="21" y1="10" y2="3" />
-  <line x1="3" x2="10" y1="21" y2="14" />
+  <path d="m14 10 7-7" />
+  <path d="M20 10h-6V4" />
+  <path d="m3 21 7-7" />
+  <path d="M4 14h6v6" />
 </svg>
 "#
     }
@@ -20921,8 +23077,8 @@ impl IconShape for LdMinimize2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMinimize;
-impl IconShape for LdMinimize {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMinimize {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20945,8 +23101,8 @@ impl IconShape for LdMinimize {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMinus;
-impl IconShape for LdMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20966,8 +23122,8 @@ impl IconShape for LdMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorCheck;
-impl IconShape for LdMonitorCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -20989,9 +23145,41 @@ impl IconShape for LdMonitorCheck {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMonitorCog;
+impl Into<&'static str> for LdMonitorCog {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 17v4" />
+  <path d="m14.305 7.53.923-.382" />
+  <path d="m15.228 4.852-.923-.383" />
+  <path d="m16.852 3.228-.383-.924" />
+  <path d="m16.852 8.772-.383.923" />
+  <path d="m19.148 3.228.383-.924" />
+  <path d="m19.53 9.696-.382-.924" />
+  <path d="m20.772 4.852.924-.383" />
+  <path d="m20.772 7.148.924.383" />
+  <path d="M22 13v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7" />
+  <path d="M8 21h8" />
+  <circle cx="18" cy="6" r="3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorDot;
-impl IconShape for LdMonitorDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21014,8 +23202,8 @@ impl IconShape for LdMonitorDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorDown;
-impl IconShape for LdMonitorDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21039,8 +23227,8 @@ impl IconShape for LdMonitorDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorOff;
-impl IconShape for LdMonitorOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21064,8 +23252,8 @@ impl IconShape for LdMonitorOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorPause;
-impl IconShape for LdMonitorPause {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorPause {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21089,8 +23277,8 @@ impl IconShape for LdMonitorPause {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorPlay;
-impl IconShape for LdMonitorPlay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorPlay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21113,8 +23301,8 @@ impl IconShape for LdMonitorPlay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorSmartphone;
-impl IconShape for LdMonitorSmartphone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorSmartphone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21137,8 +23325,8 @@ impl IconShape for LdMonitorSmartphone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorSpeaker;
-impl IconShape for LdMonitorSpeaker {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorSpeaker {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21162,8 +23350,8 @@ impl IconShape for LdMonitorSpeaker {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorStop;
-impl IconShape for LdMonitorStop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorStop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21186,8 +23374,8 @@ impl IconShape for LdMonitorStop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorUp;
-impl IconShape for LdMonitorUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21211,8 +23399,8 @@ impl IconShape for LdMonitorUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitorX;
-impl IconShape for LdMonitorX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitorX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21236,8 +23424,8 @@ impl IconShape for LdMonitorX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMonitor;
-impl IconShape for LdMonitor {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMonitor {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21259,8 +23447,8 @@ impl IconShape for LdMonitor {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoonStar;
-impl IconShape for LdMoonStar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoonStar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21272,9 +23460,9 @@ impl IconShape for LdMoonStar {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-  <path d="M19 3v4" />
-  <path d="M21 5h-4" />
+  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
+  <path d="M20 3v4" />
+  <path d="M22 5h-4" />
 </svg>
 "#
     }
@@ -21282,8 +23470,8 @@ impl IconShape for LdMoonStar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoon;
-impl IconShape for LdMoon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21303,8 +23491,8 @@ impl IconShape for LdMoon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMountainSnow;
-impl IconShape for LdMountainSnow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMountainSnow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21325,8 +23513,8 @@ impl IconShape for LdMountainSnow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMountain;
-impl IconShape for LdMountain {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMountain {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21346,8 +23534,8 @@ impl IconShape for LdMountain {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMouseOff;
-impl IconShape for LdMouseOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMouseOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21370,8 +23558,8 @@ impl IconShape for LdMouseOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMousePointer2;
-impl IconShape for LdMousePointer2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMousePointer2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21383,7 +23571,30 @@ impl IconShape for LdMousePointer2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m4 4 7.07 17 2.51-7.39L21 11.07z" />
+  <path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdMousePointerBan;
+impl Into<&'static str> for LdMousePointerBan {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2.034 2.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.944L8.204 7.545a1 1 0 0 0-.66.66l-1.066 3.443a.5.5 0 0 1-.944.033z" />
+  <circle cx="16" cy="16" r="6" />
+  <path d="m11.8 11.8 8.4 8.4" />
 </svg>
 "#
     }
@@ -21391,8 +23602,8 @@ impl IconShape for LdMousePointer2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMousePointerClick;
-impl IconShape for LdMousePointerClick {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMousePointerClick {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21404,11 +23615,11 @@ impl IconShape for LdMousePointerClick {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m9 9 5 12 1.8-5.2L21 14Z" />
-  <path d="M7.2 2.2 8 5.1" />
-  <path d="m5.1 8-2.9-.8" />
   <path d="M14 4.1 12 6" />
+  <path d="m5.1 8-2.9-.8" />
   <path d="m6 12-1.9 2" />
+  <path d="M7.2 2.2 8 5.1" />
+  <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" />
 </svg>
 "#
     }
@@ -21416,8 +23627,8 @@ impl IconShape for LdMousePointerClick {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMousePointer;
-impl IconShape for LdMousePointer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMousePointer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21429,8 +23640,8 @@ impl IconShape for LdMousePointer {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />
-  <path d="m13 13 6 6" />
+  <path d="M12.586 12.586 19 19" />
+  <path d="M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.501.501 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.448-1.479l6.124-1.579a.5.5 0 0 0 .063-.947z" />
 </svg>
 "#
     }
@@ -21438,8 +23649,8 @@ impl IconShape for LdMousePointer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMouse;
-impl IconShape for LdMouse {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMouse {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21460,8 +23671,8 @@ impl IconShape for LdMouse {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMove3d;
-impl IconShape for LdMove3d {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMove3d {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21484,8 +23695,8 @@ impl IconShape for LdMove3d {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveDiagonal2;
-impl IconShape for LdMoveDiagonal2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveDiagonal2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21497,9 +23708,9 @@ impl IconShape for LdMoveDiagonal2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="5 11 5 5 11 5" />
-  <polyline points="19 13 19 19 13 19" />
-  <line x1="5" x2="19" y1="5" y2="19" />
+  <path d="M19 13v6h-6" />
+  <path d="M5 11V5h6" />
+  <path d="m5 5 14 14" />
 </svg>
 "#
     }
@@ -21507,8 +23718,8 @@ impl IconShape for LdMoveDiagonal2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveDiagonal;
-impl IconShape for LdMoveDiagonal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveDiagonal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21520,9 +23731,9 @@ impl IconShape for LdMoveDiagonal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="13 5 19 5 19 11" />
-  <polyline points="11 19 5 19 5 13" />
-  <line x1="19" x2="5" y1="5" y2="19" />
+  <path d="M11 19H5v-6" />
+  <path d="M13 5h6v6" />
+  <path d="M19 5 5 19" />
 </svg>
 "#
     }
@@ -21530,8 +23741,8 @@ impl IconShape for LdMoveDiagonal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveDownLeft;
-impl IconShape for LdMoveDownLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveDownLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21552,8 +23763,8 @@ impl IconShape for LdMoveDownLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveDownRight;
-impl IconShape for LdMoveDownRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveDownRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21574,8 +23785,8 @@ impl IconShape for LdMoveDownRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveDown;
-impl IconShape for LdMoveDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21596,8 +23807,8 @@ impl IconShape for LdMoveDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveHorizontal;
-impl IconShape for LdMoveHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21609,9 +23820,9 @@ impl IconShape for LdMoveHorizontal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="18 8 22 12 18 16" />
-  <polyline points="6 8 2 12 6 16" />
-  <line x1="2" x2="22" y1="12" y2="12" />
+  <path d="m18 8 4 4-4 4" />
+  <path d="M2 12h20" />
+  <path d="m6 8-4 4 4 4" />
 </svg>
 "#
     }
@@ -21619,8 +23830,8 @@ impl IconShape for LdMoveHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveLeft;
-impl IconShape for LdMoveLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21641,8 +23852,8 @@ impl IconShape for LdMoveLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveRight;
-impl IconShape for LdMoveRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21663,8 +23874,8 @@ impl IconShape for LdMoveRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveUpLeft;
-impl IconShape for LdMoveUpLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveUpLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21685,8 +23896,8 @@ impl IconShape for LdMoveUpLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveUpRight;
-impl IconShape for LdMoveUpRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveUpRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21707,8 +23918,8 @@ impl IconShape for LdMoveUpRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveUp;
-impl IconShape for LdMoveUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21729,8 +23940,8 @@ impl IconShape for LdMoveUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMoveVertical;
-impl IconShape for LdMoveVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMoveVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21742,9 +23953,9 @@ impl IconShape for LdMoveVertical {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="8 18 12 22 16 18" />
-  <polyline points="8 6 12 2 16 6" />
-  <line x1="12" x2="12" y1="2" y2="22" />
+  <path d="M12 2v20" />
+  <path d="m8 18 4 4 4-4" />
+  <path d="m8 6 4-4 4 4" />
 </svg>
 "#
     }
@@ -21752,8 +23963,8 @@ impl IconShape for LdMoveVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMove;
-impl IconShape for LdMove {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMove {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21765,12 +23976,12 @@ impl IconShape for LdMove {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="5 9 2 12 5 15" />
-  <polyline points="9 5 12 2 15 5" />
-  <polyline points="15 19 12 22 9 19" />
-  <polyline points="19 9 22 12 19 15" />
-  <line x1="2" x2="22" y1="12" y2="12" />
-  <line x1="12" x2="12" y1="2" y2="22" />
+  <path d="M12 2v20" />
+  <path d="m15 19-3 3-3-3" />
+  <path d="m19 9 3 3-3 3" />
+  <path d="M2 12h20" />
+  <path d="m5 9-3 3 3 3" />
+  <path d="m9 5 3-3 3 3" />
 </svg>
 "#
     }
@@ -21778,8 +23989,8 @@ impl IconShape for LdMove {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMusic2;
-impl IconShape for LdMusic2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMusic2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21800,8 +24011,8 @@ impl IconShape for LdMusic2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMusic3;
-impl IconShape for LdMusic3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMusic3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21822,8 +24033,8 @@ impl IconShape for LdMusic3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMusic4;
-impl IconShape for LdMusic4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMusic4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21846,8 +24057,8 @@ impl IconShape for LdMusic4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdMusic;
-impl IconShape for LdMusic {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdMusic {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21869,8 +24080,8 @@ impl IconShape for LdMusic {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNavigation2Off;
-impl IconShape for LdNavigation2Off {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNavigation2Off {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21892,8 +24103,8 @@ impl IconShape for LdNavigation2Off {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNavigation2;
-impl IconShape for LdNavigation2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNavigation2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21913,8 +24124,8 @@ impl IconShape for LdNavigation2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNavigationOff;
-impl IconShape for LdNavigationOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNavigationOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21936,8 +24147,8 @@ impl IconShape for LdNavigationOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNavigation;
-impl IconShape for LdNavigation {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNavigation {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21957,8 +24168,8 @@ impl IconShape for LdNavigation {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNetwork;
-impl IconShape for LdNetwork {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNetwork {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21982,8 +24193,8 @@ impl IconShape for LdNetwork {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNewspaper;
-impl IconShape for LdNewspaper {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNewspaper {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -21995,10 +24206,10 @@ impl IconShape for LdNewspaper {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
-  <path d="M18 14h-8" />
   <path d="M15 18h-5" />
-  <path d="M10 6h8v4h-8V6Z" />
+  <path d="M18 14h-8" />
+  <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" />
+  <rect width="8" height="4" x="10" y="6" rx="1" />
 </svg>
 "#
     }
@@ -22006,8 +24217,8 @@ impl IconShape for LdNewspaper {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNfc;
-impl IconShape for LdNfc {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNfc {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22029,9 +24240,33 @@ impl IconShape for LdNfc {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdNonBinary;
+impl Into<&'static str> for LdNonBinary {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2v10" />
+  <path d="m8.5 4 7 4" />
+  <path d="m8.5 8 7-4" />
+  <circle cx="12" cy="17" r="5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNotebookPen;
-impl IconShape for LdNotebookPen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNotebookPen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22048,7 +24283,7 @@ impl IconShape for LdNotebookPen {
   <path d="M2 10h4" />
   <path d="M2 14h4" />
   <path d="M2 18h4" />
-  <path d="M18.4 2.6a2.17 2.17 0 0 1 3 3L16 11l-4 1 1-4Z" />
+  <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
 </svg>
 "#
     }
@@ -22056,8 +24291,8 @@ impl IconShape for LdNotebookPen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNotebookTabs;
-impl IconShape for LdNotebookTabs {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNotebookTabs {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22085,8 +24320,8 @@ impl IconShape for LdNotebookTabs {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNotebookText;
-impl IconShape for LdNotebookText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNotebookText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22113,8 +24348,8 @@ impl IconShape for LdNotebookText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNotebook;
-impl IconShape for LdNotebook {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNotebook {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22139,8 +24374,8 @@ impl IconShape for LdNotebook {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNotepadTextDashed;
-impl IconShape for LdNotepadTextDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNotepadTextDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22172,8 +24407,8 @@ impl IconShape for LdNotepadTextDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNotepadText;
-impl IconShape for LdNotepadText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNotepadText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22199,8 +24434,8 @@ impl IconShape for LdNotepadText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNutOff;
-impl IconShape for LdNutOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNutOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22224,8 +24459,8 @@ impl IconShape for LdNutOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdNut;
-impl IconShape for LdNut {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdNut {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22247,8 +24482,8 @@ impl IconShape for LdNut {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOctagonAlert;
-impl IconShape for LdOctagonAlert {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOctagonAlert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22260,9 +24495,31 @@ impl IconShape for LdOctagonAlert {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" />
-  <line x1="12" x2="12" y1="8" y2="12" />
-  <line x1="12" x2="12.01" y1="16" y2="16" />
+  <path d="M12 16h.01" />
+  <path d="M12 8v4" />
+  <path d="M15.312 2a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586l-4.688-4.688A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdOctagonMinus;
+impl Into<&'static str> for LdOctagonMinus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z" />
+  <path d="M8 12h8" />
 </svg>
 "#
     }
@@ -22270,8 +24527,8 @@ impl IconShape for LdOctagonAlert {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOctagonPause;
-impl IconShape for LdOctagonPause {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOctagonPause {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22285,7 +24542,7 @@ impl IconShape for LdOctagonPause {
 >
   <path d="M10 15V9" />
   <path d="M14 15V9" />
-  <path d="M7.714 2h8.572L22 7.714v8.572L16.286 22H7.714L2 16.286V7.714z" />
+  <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z" />
 </svg>
 "#
     }
@@ -22293,8 +24550,8 @@ impl IconShape for LdOctagonPause {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOctagonX;
-impl IconShape for LdOctagonX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOctagonX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22306,8 +24563,8 @@ impl IconShape for LdOctagonX {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" />
   <path d="m15 9-6 6" />
+  <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z" />
   <path d="m9 9 6 6" />
 </svg>
 "#
@@ -22316,8 +24573,8 @@ impl IconShape for LdOctagonX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOctagon;
-impl IconShape for LdOctagon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOctagon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22329,7 +24586,28 @@ impl IconShape for LdOctagon {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" />
+  <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdOmega;
+impl Into<&'static str> for LdOmega {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 20h4.5a.5.5 0 0 0 .5-.5v-.282a.52.52 0 0 0-.247-.437 8 8 0 1 1 8.494-.001.52.52 0 0 0-.247.438v.282a.5.5 0 0 0 .5.5H21" />
 </svg>
 "#
     }
@@ -22337,8 +24615,8 @@ impl IconShape for LdOctagon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOption;
-impl IconShape for LdOption {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOption {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22359,8 +24637,8 @@ impl IconShape for LdOption {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOrbit;
-impl IconShape for LdOrbit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOrbit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22372,11 +24650,11 @@ impl IconShape for LdOrbit {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+  <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
   <circle cx="12" cy="12" r="3" />
   <circle cx="19" cy="5" r="2" />
   <circle cx="5" cy="19" r="2" />
-  <path d="M10.4 21.9a10 10 0 0 0 9.941-15.416" />
-  <path d="M13.5 2.1a10 10 0 0 0-9.841 15.416" />
 </svg>
 "#
     }
@@ -22384,8 +24662,8 @@ impl IconShape for LdOrbit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdOrigami;
-impl IconShape for LdOrigami {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdOrigami {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22407,8 +24685,8 @@ impl IconShape for LdOrigami {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackage2;
-impl IconShape for LdPackage2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackage2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22420,9 +24698,9 @@ impl IconShape for LdPackage2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
-  <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9" />
   <path d="M12 3v6" />
+  <path d="M16.76 3a2 2 0 0 1 1.8 1.1l2.23 4.479a2 2 0 0 1 .21.891V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.472a2 2 0 0 1 .211-.894L5.45 4.1A2 2 0 0 1 7.24 3z" />
+  <path d="M3.054 9.013h17.893" />
 </svg>
 "#
     }
@@ -22430,8 +24708,8 @@ impl IconShape for LdPackage2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackageCheck;
-impl IconShape for LdPackageCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackageCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22455,8 +24733,8 @@ impl IconShape for LdPackageCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackageMinus;
-impl IconShape for LdPackageMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackageMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22480,8 +24758,8 @@ impl IconShape for LdPackageMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackageOpen;
-impl IconShape for LdPackageOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackageOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22504,8 +24782,8 @@ impl IconShape for LdPackageOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackagePlus;
-impl IconShape for LdPackagePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackagePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22530,8 +24808,8 @@ impl IconShape for LdPackagePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackageSearch;
-impl IconShape for LdPackageSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackageSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22556,8 +24834,8 @@ impl IconShape for LdPackageSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackageX;
-impl IconShape for LdPackageX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackageX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22581,8 +24859,8 @@ impl IconShape for LdPackageX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPackage;
-impl IconShape for LdPackage {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPackage {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22594,10 +24872,10 @@ impl IconShape for LdPackage {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m7.5 4.27 9 5.15" />
-  <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-  <path d="m3.3 7 8.7 5 8.7-5" />
+  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
   <path d="M12 22V12" />
+  <polyline points="3.29 7 12 12 20.71 7" />
+  <path d="m7.5 4.27 9 5.15" />
 </svg>
 "#
     }
@@ -22605,8 +24883,8 @@ impl IconShape for LdPackage {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPaintBucket;
-impl IconShape for LdPaintBucket {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPaintBucket {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22629,8 +24907,8 @@ impl IconShape for LdPaintBucket {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPaintRoller;
-impl IconShape for LdPaintRoller {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPaintRoller {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22651,9 +24929,9 @@ impl IconShape for LdPaintRoller {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdPaintbrush2;
-impl IconShape for LdPaintbrush2 {
-    fn content(&self) -> &'static str {
+pub struct LdPaintbrushVertical;
+impl Into<&'static str> for LdPaintbrushVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22665,10 +24943,10 @@ impl IconShape for LdPaintbrush2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z" />
-  <path d="M6 12V2h12v10" />
-  <path d="M14 2v4" />
   <path d="M10 2v2" />
+  <path d="M14 2v4" />
+  <path d="M17 2a1 1 0 0 1 1 1v9H6V3a1 1 0 0 1 1-1z" />
+  <path d="M6 12a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2h2a1 1 0 0 1 1 1v2.9a2 2 0 1 0 4 0V17a1 1 0 0 1 1-1h2a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1" />
 </svg>
 "#
     }
@@ -22676,8 +24954,8 @@ impl IconShape for LdPaintbrush2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPaintbrush;
-impl IconShape for LdPaintbrush {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPaintbrush {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22689,9 +24967,9 @@ impl IconShape for LdPaintbrush {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z" />
-  <path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7" />
-  <path d="M14.5 17.5 4.5 15" />
+  <path d="m14.622 17.897-10.68-2.913" />
+  <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z" />
+  <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15" />
 </svg>
 "#
     }
@@ -22699,8 +24977,8 @@ impl IconShape for LdPaintbrush {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPalette;
-impl IconShape for LdPalette {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPalette {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22712,11 +24990,37 @@ impl IconShape for LdPalette {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
   <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
   <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
-  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
   <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
-  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdPanda;
+impl Into<&'static str> for LdPanda {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.25 17.25h1.5L12 18z" />
+  <path d="m15 12 2 2" />
+  <path d="M18 6.5a.5.5 0 0 0-.5-.5" />
+  <path d="M20.69 9.67a4.5 4.5 0 1 0-7.04-5.5 8.35 8.35 0 0 0-3.3 0 4.5 4.5 0 1 0-7.04 5.5C2.49 11.2 2 12.88 2 14.5 2 19.47 6.48 22 12 22s10-2.53 10-7.5c0-1.62-.48-3.3-1.3-4.83" />
+  <path d="M6 6.5a.495.495 0 0 1 .5-.5" />
+  <path d="m9 12-2 2" />
 </svg>
 "#
     }
@@ -22724,8 +25028,8 @@ impl IconShape for LdPalette {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelBottomClose;
-impl IconShape for LdPanelBottomClose {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelBottomClose {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22747,8 +25051,8 @@ impl IconShape for LdPanelBottomClose {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelBottomDashed;
-impl IconShape for LdPanelBottomDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelBottomDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22772,8 +25076,8 @@ impl IconShape for LdPanelBottomDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelBottomOpen;
-impl IconShape for LdPanelBottomOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelBottomOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22795,8 +25099,8 @@ impl IconShape for LdPanelBottomOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelBottom;
-impl IconShape for LdPanelBottom {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelBottom {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22817,8 +25121,8 @@ impl IconShape for LdPanelBottom {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelLeftClose;
-impl IconShape for LdPanelLeftClose {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelLeftClose {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22840,8 +25144,8 @@ impl IconShape for LdPanelLeftClose {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelLeftDashed;
-impl IconShape for LdPanelLeftDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelLeftDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22865,8 +25169,8 @@ impl IconShape for LdPanelLeftDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelLeftOpen;
-impl IconShape for LdPanelLeftOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelLeftOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22888,8 +25192,8 @@ impl IconShape for LdPanelLeftOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelLeft;
-impl IconShape for LdPanelLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22910,8 +25214,8 @@ impl IconShape for LdPanelLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelRightClose;
-impl IconShape for LdPanelRightClose {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelRightClose {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22933,8 +25237,8 @@ impl IconShape for LdPanelRightClose {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelRightDashed;
-impl IconShape for LdPanelRightDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelRightDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22958,8 +25262,8 @@ impl IconShape for LdPanelRightDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelRightOpen;
-impl IconShape for LdPanelRightOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelRightOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -22981,8 +25285,8 @@ impl IconShape for LdPanelRightOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelRight;
-impl IconShape for LdPanelRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23003,8 +25307,8 @@ impl IconShape for LdPanelRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelTopClose;
-impl IconShape for LdPanelTopClose {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelTopClose {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23026,8 +25330,8 @@ impl IconShape for LdPanelTopClose {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelTopDashed;
-impl IconShape for LdPanelTopDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelTopDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23051,8 +25355,8 @@ impl IconShape for LdPanelTopDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelTopOpen;
-impl IconShape for LdPanelTopOpen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelTopOpen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23074,8 +25378,8 @@ impl IconShape for LdPanelTopOpen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelTop;
-impl IconShape for LdPanelTop {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelTop {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23096,8 +25400,8 @@ impl IconShape for LdPanelTop {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelsLeftBottom;
-impl IconShape for LdPanelsLeftBottom {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelsLeftBottom {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23119,8 +25423,8 @@ impl IconShape for LdPanelsLeftBottom {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelsRightBottom;
-impl IconShape for LdPanelsRightBottom {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelsRightBottom {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23142,8 +25446,8 @@ impl IconShape for LdPanelsRightBottom {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPanelsTopLeft;
-impl IconShape for LdPanelsTopLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPanelsTopLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23165,8 +25469,8 @@ impl IconShape for LdPanelsTopLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPaperclip;
-impl IconShape for LdPaperclip {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPaperclip {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23178,7 +25482,7 @@ impl IconShape for LdPaperclip {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48" />
+  <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551" />
 </svg>
 "#
     }
@@ -23186,8 +25490,8 @@ impl IconShape for LdPaperclip {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdParentheses;
-impl IconShape for LdParentheses {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdParentheses {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23208,8 +25512,8 @@ impl IconShape for LdParentheses {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdParkingMeter;
-impl IconShape for LdParkingMeter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdParkingMeter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23221,11 +25525,11 @@ impl IconShape for LdParkingMeter {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9 9a3 3 0 1 1 6 0" />
-  <path d="M12 12v3" />
   <path d="M11 15h2" />
-  <path d="M19 9a7 7 0 1 0-13.6 2.3C6.4 14.4 8 19 8 19h8s1.6-4.6 2.6-7.7c.3-.8.4-1.5.4-2.3" />
+  <path d="M12 12v3" />
   <path d="M12 19v3" />
+  <path d="M15.282 19a1 1 0 0 0 .948-.68l2.37-6.988a7 7 0 1 0-13.2 0l2.37 6.988a1 1 0 0 0 .948.68z" />
+  <path d="M9 9a3 3 0 1 1 6 0" />
 </svg>
 "#
     }
@@ -23233,8 +25537,8 @@ impl IconShape for LdParkingMeter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPartyPopper;
-impl IconShape for LdPartyPopper {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPartyPopper {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23251,9 +25555,9 @@ impl IconShape for LdPartyPopper {
   <path d="M22 8h.01" />
   <path d="M15 2h.01" />
   <path d="M22 20h.01" />
-  <path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12v0c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10" />
-  <path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11v0c-.11.7-.72 1.22-1.43 1.22H17" />
-  <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98v0C9.52 4.9 9 5.52 9 6.23V7" />
+  <path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10" />
+  <path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17" />
+  <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7" />
   <path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z" />
 </svg>
 "#
@@ -23262,8 +25566,8 @@ impl IconShape for LdPartyPopper {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPause;
-impl IconShape for LdPause {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPause {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23284,8 +25588,8 @@ impl IconShape for LdPause {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPawPrint;
-impl IconShape for LdPawPrint {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPawPrint {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23308,8 +25612,8 @@ impl IconShape for LdPawPrint {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPcCase;
-impl IconShape for LdPcCase {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPcCase {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23332,8 +25636,8 @@ impl IconShape for LdPcCase {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPenLine;
-impl IconShape for LdPenLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPenLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23346,7 +25650,30 @@ impl IconShape for LdPenLine {
   stroke-linejoin="round"
 >
   <path d="M12 20h9" />
-  <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+  <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdPenOff;
+impl Into<&'static str> for LdPenOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m10 10-6.157 6.162a2 2 0 0 0-.5.833l-1.322 4.36a.5.5 0 0 0 .622.624l4.358-1.323a2 2 0 0 0 .83-.5L14 13.982" />
+  <path d="m12.829 7.172 4.359-4.346a1 1 0 1 1 3.986 3.986l-4.353 4.353" />
+  <path d="m2 2 20 20" />
 </svg>
 "#
     }
@@ -23354,8 +25681,8 @@ impl IconShape for LdPenLine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPenTool;
-impl IconShape for LdPenTool {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPenTool {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23378,8 +25705,8 @@ impl IconShape for LdPenTool {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPen;
-impl IconShape for LdPen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23391,7 +25718,7 @@ impl IconShape for LdPen {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
 </svg>
 "#
     }
@@ -23399,8 +25726,8 @@ impl IconShape for LdPen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPencilLine;
-impl IconShape for LdPencilLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPencilLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23413,7 +25740,7 @@ impl IconShape for LdPencilLine {
   stroke-linejoin="round"
 >
   <path d="M12 20h9" />
-  <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+  <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" />
   <path d="m15 5 3 3" />
 </svg>
 "#
@@ -23421,9 +25748,9 @@ impl IconShape for LdPencilLine {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdPencilRuler;
-impl IconShape for LdPencilRuler {
-    fn content(&self) -> &'static str {
+pub struct LdPencilOff;
+impl Into<&'static str> for LdPencilOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23435,12 +25762,36 @@ impl IconShape for LdPencilRuler {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m10 10-6.157 6.162a2 2 0 0 0-.5.833l-1.322 4.36a.5.5 0 0 0 .622.624l4.358-1.323a2 2 0 0 0 .83-.5L14 13.982" />
+  <path d="m12.829 7.172 4.359-4.346a1 1 0 1 1 3.986 3.986l-4.353 4.353" />
   <path d="m15 5 4 4" />
+  <path d="m2 2 20 20" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdPencilRuler;
+impl Into<&'static str> for LdPencilRuler {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
   <path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
   <path d="m8 6 2-2" />
-  <path d="m2 22 5.5-1.5L21.17 6.83a2.82 2.82 0 0 0-4-4L3.5 16.5Z" />
   <path d="m18 16 2-2" />
   <path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+  <path d="m15 5 4 4" />
 </svg>
 "#
     }
@@ -23448,8 +25799,8 @@ impl IconShape for LdPencilRuler {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPencil;
-impl IconShape for LdPencil {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPencil {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23461,7 +25812,7 @@ impl IconShape for LdPencil {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
   <path d="m15 5 4 4" />
 </svg>
 "#
@@ -23470,8 +25821,8 @@ impl IconShape for LdPencil {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPentagon;
-impl IconShape for LdPentagon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPentagon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23483,7 +25834,7 @@ impl IconShape for LdPentagon {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M3.5 8.7c-.7.5-1 1.4-.7 2.2l2.8 8.7c.3.8 1 1.4 1.9 1.4h9.1c.9 0 1.6-.6 1.9-1.4l2.8-8.7c.3-.8 0-1.7-.7-2.2l-7.4-5.3a2.1 2.1 0 0 0-2.4 0Z" />
+  <path d="M10.83 2.38a2 2 0 0 1 2.34 0l8 5.74a2 2 0 0 1 .73 2.25l-3.04 9.26a2 2 0 0 1-1.9 1.37H7.04a2 2 0 0 1-1.9-1.37L2.1 10.37a2 2 0 0 1 .73-2.25z" />
 </svg>
 "#
     }
@@ -23491,8 +25842,8 @@ impl IconShape for LdPentagon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPercent;
-impl IconShape for LdPercent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPercent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23514,8 +25865,8 @@ impl IconShape for LdPercent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPersonStanding;
-impl IconShape for LdPersonStanding {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPersonStanding {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23537,9 +25888,9 @@ impl IconShape for LdPersonStanding {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdPhoneCall;
-impl IconShape for LdPhoneCall {
-    fn content(&self) -> &'static str {
+pub struct LdPhilippinePeso;
+impl Into<&'static str> for LdPhilippinePeso {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23551,9 +25902,32 @@ impl IconShape for LdPhoneCall {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-  <path d="M14.05 2a9 9 0 0 1 8 7.94" />
-  <path d="M14.05 6A5 5 0 0 1 18 10" />
+  <path d="M20 11H4" />
+  <path d="M20 7H4" />
+  <path d="M7 21V4a1 1 0 0 1 1-1h4a1 1 0 0 1 0 12H7" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdPhoneCall;
+impl Into<&'static str> for LdPhoneCall {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 2a9 9 0 0 1 9 9" />
+  <path d="M13 6a5 5 0 0 1 5 5" />
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
 </svg>
 "#
     }
@@ -23561,8 +25935,8 @@ impl IconShape for LdPhoneCall {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPhoneForwarded;
-impl IconShape for LdPhoneForwarded {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPhoneForwarded {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23574,9 +25948,9 @@ impl IconShape for LdPhoneForwarded {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="18 2 22 6 18 10" />
-  <line x1="14" x2="22" y1="6" y2="6" />
-  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  <path d="M14 6h8" />
+  <path d="m18 2 4 4-4 4" />
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
 </svg>
 "#
     }
@@ -23584,8 +25958,8 @@ impl IconShape for LdPhoneForwarded {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPhoneIncoming;
-impl IconShape for LdPhoneIncoming {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPhoneIncoming {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23597,9 +25971,9 @@ impl IconShape for LdPhoneIncoming {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="16 2 16 8 22 8" />
-  <line x1="22" x2="16" y1="2" y2="8" />
-  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  <path d="M16 2v6h6" />
+  <path d="m22 2-6 6" />
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
 </svg>
 "#
     }
@@ -23607,8 +25981,8 @@ impl IconShape for LdPhoneIncoming {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPhoneMissed;
-impl IconShape for LdPhoneMissed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPhoneMissed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23620,9 +25994,9 @@ impl IconShape for LdPhoneMissed {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="22" x2="16" y1="2" y2="8" />
-  <line x1="16" x2="22" y1="2" y2="8" />
-  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  <path d="m16 2 6 6" />
+  <path d="m22 2-6 6" />
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
 </svg>
 "#
     }
@@ -23630,8 +26004,8 @@ impl IconShape for LdPhoneMissed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPhoneOff;
-impl IconShape for LdPhoneOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPhoneOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23643,8 +26017,9 @@ impl IconShape for LdPhoneOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91" />
-  <line x1="22" x2="2" y1="2" y2="22" />
+  <path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" />
+  <path d="M22 2 2 22" />
+  <path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" />
 </svg>
 "#
     }
@@ -23652,8 +26027,8 @@ impl IconShape for LdPhoneOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPhoneOutgoing;
-impl IconShape for LdPhoneOutgoing {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPhoneOutgoing {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23665,9 +26040,9 @@ impl IconShape for LdPhoneOutgoing {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="22 8 22 2 16 2" />
-  <line x1="16" x2="22" y1="8" y2="2" />
-  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  <path d="m16 8 6-6" />
+  <path d="M22 8V2h-6" />
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
 </svg>
 "#
     }
@@ -23675,8 +26050,8 @@ impl IconShape for LdPhoneOutgoing {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPhone;
-impl IconShape for LdPhone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPhone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23688,7 +26063,7 @@ impl IconShape for LdPhone {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
 </svg>
 "#
     }
@@ -23696,8 +26071,8 @@ impl IconShape for LdPhone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPi;
-impl IconShape for LdPi {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPi {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23719,8 +26094,8 @@ impl IconShape for LdPi {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPiano;
-impl IconShape for LdPiano {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPiano {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23745,8 +26120,8 @@ impl IconShape for LdPiano {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPickaxe;
-impl IconShape for LdPickaxe {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPickaxe {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23769,8 +26144,8 @@ impl IconShape for LdPickaxe {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPictureInPicture2;
-impl IconShape for LdPictureInPicture2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPictureInPicture2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23791,8 +26166,8 @@ impl IconShape for LdPictureInPicture2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPictureInPicture;
-impl IconShape for LdPictureInPicture {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPictureInPicture {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23804,30 +26179,11 @@ impl IconShape for LdPictureInPicture {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M8 4.5v5H3m-1-6 6 6m13 0v-3c0-1.16-.84-2-2-2h-7m-9 9v2c0 1.05.95 2 2 2h3" />
-  <rect width="10" height="7" x="12" y="13.5" ry="2" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdPieChart;
-impl IconShape for LdPieChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
-  <path d="M22 12A10 10 0 0 0 12 2v10z" />
+  <path d="M2 10h6V4" />
+  <path d="m2 4 6 6" />
+  <path d="M21 10V7a2 2 0 0 0-2-2h-7" />
+  <path d="M3 14v2a2 2 0 0 0 2 2h3" />
+  <rect x="12" y="14" width="10" height="7" rx="1" />
 </svg>
 "#
     }
@@ -23835,8 +26191,8 @@ impl IconShape for LdPieChart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPiggyBank;
-impl IconShape for LdPiggyBank {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPiggyBank {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23848,9 +26204,9 @@ impl IconShape for LdPiggyBank {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2h0V5z" />
-  <path d="M2 9v1c0 1.1.9 2 2 2h1" />
-  <path d="M16 11h0" />
+  <path d="M11 17h3v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a3.16 3.16 0 0 0 2-2h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1a5 5 0 0 0-2-4V3a4 4 0 0 0-3.2 1.6l-.3.4H11a6 6 0 0 0-6 6v1a5 5 0 0 0 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z" />
+  <path d="M16 10h.01" />
+  <path d="M2 8v1a2 2 0 0 0 2 2h1" />
 </svg>
 "#
     }
@@ -23858,8 +26214,8 @@ impl IconShape for LdPiggyBank {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPilcrowLeft;
-impl IconShape for LdPilcrowLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPilcrowLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23883,8 +26239,8 @@ impl IconShape for LdPilcrowLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPilcrowRight;
-impl IconShape for LdPilcrowRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPilcrowRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23907,8 +26263,8 @@ impl IconShape for LdPilcrowRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPilcrow;
-impl IconShape for LdPilcrow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPilcrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23929,9 +26285,32 @@ impl IconShape for LdPilcrow {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdPillBottle;
+impl Into<&'static str> for LdPillBottle {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 11h-4a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4" />
+  <path d="M6 7v13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7" />
+  <rect  height="5" x="4" y="2" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPill;
-impl IconShape for LdPill {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPill {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23952,8 +26331,8 @@ impl IconShape for LdPill {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPinOff;
-impl IconShape for LdPinOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPinOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23965,10 +26344,10 @@ impl IconShape for LdPinOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="2" x2="22" y1="2" y2="22" />
-  <line x1="12" x2="12" y1="17" y2="22" />
-  <path d="M9 9v1.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V17h12" />
-  <path d="M15 9.34V6h1a2 2 0 0 0 0-4H7.89" />
+  <path d="M12 17v5" />
+  <path d="M15 9.34V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H7.89" />
+  <path d="m2 2 20 20" />
+  <path d="M9 9v1.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h11" />
 </svg>
 "#
     }
@@ -23976,8 +26355,8 @@ impl IconShape for LdPinOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPin;
-impl IconShape for LdPin {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPin {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -23989,8 +26368,8 @@ impl IconShape for LdPin {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="12" x2="12" y1="17" y2="22" />
-  <path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z" />
+  <path d="M12 17v5" />
+  <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
 </svg>
 "#
     }
@@ -23998,8 +26377,8 @@ impl IconShape for LdPin {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPipette;
-impl IconShape for LdPipette {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPipette {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24011,9 +26390,9 @@ impl IconShape for LdPipette {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m2 22 1-1h3l9-9" />
-  <path d="M3 21v-3l9-9" />
-  <path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z" />
+  <path d="m12 9-8.414 8.414A2 2 0 0 0 3 18.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 3.828 21h1.344a2 2 0 0 0 1.414-.586L15 12" />
+  <path d="m18 9 .4.4a1 1 0 1 1-3 3l-3.8-3.8a1 1 0 1 1 3-3l.4.4 3.4-3.4a1 1 0 1 1 3 3z" />
+  <path d="m2 22 .414-.414" />
 </svg>
 "#
     }
@@ -24021,8 +26400,8 @@ impl IconShape for LdPipette {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPizza;
-impl IconShape for LdPizza {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPizza {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24034,11 +26413,11 @@ impl IconShape for LdPizza {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 11h.01" />
-  <path d="M11 15h.01" />
-  <path d="M16 16h.01" />
-  <path d="m2 16 20 6-6-20A20 20 0 0 0 2 16" />
-  <path d="M5.71 17.11a17.04 17.04 0 0 1 11.4-11.4" />
+  <path d="m12 14-1 1" />
+  <path d="m13.75 18.25-1.25 1.42" />
+  <path d="M17.775 5.654a15.68 15.68 0 0 0-12.121 12.12" />
+  <path d="M18.8 9.3a1 1 0 0 0 2.1 7.7" />
+  <path d="M21.964 20.732a1 1 0 0 1-1.232 1.232l-18-5a1 1 0 0 1-.695-1.232A19.68 19.68 0 0 1 15.732 2.037a1 1 0 0 1 1.232.695z" />
 </svg>
 "#
     }
@@ -24046,8 +26425,8 @@ impl IconShape for LdPizza {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlaneLanding;
-impl IconShape for LdPlaneLanding {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlaneLanding {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24068,8 +26447,8 @@ impl IconShape for LdPlaneLanding {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlaneTakeoff;
-impl IconShape for LdPlaneTakeoff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlaneTakeoff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24090,8 +26469,8 @@ impl IconShape for LdPlaneTakeoff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlane;
-impl IconShape for LdPlane {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlane {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24111,8 +26490,8 @@ impl IconShape for LdPlane {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlay;
-impl IconShape for LdPlay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24132,8 +26511,8 @@ impl IconShape for LdPlay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlug2;
-impl IconShape for LdPlug2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlug2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24149,32 +26528,7 @@ impl IconShape for LdPlug2 {
   <path d="M15 2v6" />
   <path d="M12 17v5" />
   <path d="M5 8h14" />
-  <path d="M6 11V8h12v3a6 6 0 1 1-12 0v0Z" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdPlugZap2;
-impl IconShape for LdPlugZap2 {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m13 2-2 2.5h3L12 7" />
-  <path d="M10 14v-3" />
-  <path d="M14 14v-3" />
-  <path d="M11 19c-1.7 0-3-1.3-3-3v-2h8v2c0 1.7-1.3 3-3 3Z" />
-  <path d="M12 22v-3" />
+  <path d="M6 11V8h12v3a6 6 0 1 1-12 0Z" />
 </svg>
 "#
     }
@@ -24182,8 +26536,8 @@ impl IconShape for LdPlugZap2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlugZap;
-impl IconShape for LdPlugZap {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlugZap {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24207,8 +26561,8 @@ impl IconShape for LdPlugZap {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlug;
-impl IconShape for LdPlug {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlug {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24231,8 +26585,8 @@ impl IconShape for LdPlug {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPlus;
-impl IconShape for LdPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24253,8 +26607,8 @@ impl IconShape for LdPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPocketKnife;
-impl IconShape for LdPocketKnife {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPocketKnife {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24278,8 +26632,8 @@ impl IconShape for LdPocketKnife {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPocket;
-impl IconShape for LdPocket {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPocket {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24300,8 +26654,8 @@ impl IconShape for LdPocket {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPodcast;
-impl IconShape for LdPodcast {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPodcast {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24324,8 +26678,8 @@ impl IconShape for LdPodcast {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPointerOff;
-impl IconShape for LdPointerOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPointerOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24350,8 +26704,8 @@ impl IconShape for LdPointerOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPointer;
-impl IconShape for LdPointer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPointer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24364,9 +26718,9 @@ impl IconShape for LdPointer {
   stroke-linejoin="round"
 >
   <path d="M22 14a8 8 0 0 1-8 8" />
-  <path d="M18 11v-1a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
-  <path d="M14 10V9a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v1" />
-  <path d="M10 9.5V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v10" />
+  <path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+  <path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1" />
+  <path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10" />
   <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
 </svg>
 "#
@@ -24375,8 +26729,8 @@ impl IconShape for LdPointer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPopcorn;
-impl IconShape for LdPopcorn {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPopcorn {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24399,8 +26753,8 @@ impl IconShape for LdPopcorn {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPopsicle;
-impl IconShape for LdPopsicle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPopsicle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24421,8 +26775,8 @@ impl IconShape for LdPopsicle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPoundSterling;
-impl IconShape for LdPoundSterling {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPoundSterling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24445,8 +26799,8 @@ impl IconShape for LdPoundSterling {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPowerOff;
-impl IconShape for LdPowerOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPowerOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24469,8 +26823,8 @@ impl IconShape for LdPowerOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPower;
-impl IconShape for LdPower {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPower {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24491,8 +26845,8 @@ impl IconShape for LdPower {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPresentation;
-impl IconShape for LdPresentation {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPresentation {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24513,9 +26867,9 @@ impl IconShape for LdPresentation {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdPrinter;
-impl IconShape for LdPrinter {
-    fn content(&self) -> &'static str {
+pub struct LdPrinterCheck;
+impl Into<&'static str> for LdPrinterCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24527,9 +26881,33 @@ impl IconShape for LdPrinter {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="6 9 6 2 18 2 18 9" />
+  <path d="M13.5 22H7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v.5" />
+  <path d="m16 19 2 2 4-4" />
+  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdPrinter;
+impl Into<&'static str> for LdPrinter {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
   <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-  <rect width="12" height="8" x="6" y="14" />
+  <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+  <rect x="6" y="14" width="12" height="8" rx="1" />
 </svg>
 "#
     }
@@ -24537,8 +26915,8 @@ impl IconShape for LdPrinter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdProjector;
-impl IconShape for LdProjector {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdProjector {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24563,8 +26941,8 @@ impl IconShape for LdProjector {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdProportions;
-impl IconShape for LdProportions {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdProportions {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24586,8 +26964,8 @@ impl IconShape for LdProportions {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPuzzle;
-impl IconShape for LdPuzzle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPuzzle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24599,7 +26977,7 @@ impl IconShape for LdPuzzle {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z" />
+  <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z" />
 </svg>
 "#
     }
@@ -24607,8 +26985,8 @@ impl IconShape for LdPuzzle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdPyramid;
-impl IconShape for LdPyramid {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdPyramid {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24629,8 +27007,8 @@ impl IconShape for LdPyramid {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdQrCode;
-impl IconShape for LdQrCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdQrCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24661,8 +27039,8 @@ impl IconShape for LdQrCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdQuote;
-impl IconShape for LdQuote {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdQuote {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24674,8 +27052,8 @@ impl IconShape for LdQuote {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
-  <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+  <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+  <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
 </svg>
 "#
     }
@@ -24683,8 +27061,8 @@ impl IconShape for LdQuote {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRabbit;
-impl IconShape for LdRabbit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRabbit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24708,8 +27086,8 @@ impl IconShape for LdRabbit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadar;
-impl IconShape for LdRadar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24736,8 +27114,8 @@ impl IconShape for LdRadar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadiation;
-impl IconShape for LdRadiation {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadiation {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24749,7 +27127,7 @@ impl IconShape for LdRadiation {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 12h0.01" />
+  <path d="M12 12h.01" />
   <path d="M7.5 4.2c-.3-.5-.9-.7-1.3-.4C3.9 5.5 2.3 8.1 2 11c-.1.5.4 1 1 1h5c0-1.5.8-2.8 2-3.4-1.1-1.9-2-3.5-2.5-4.4z" />
   <path d="M21 12c.6 0 1-.4 1-1-.3-2.9-1.8-5.5-4.1-7.1-.4-.3-1.1-.2-1.3.3-.6.9-1.5 2.5-2.6 4.3 1.2.7 2 2 2 3.5h5z" />
   <path d="M7.5 19.8c-.3.5-.1 1.1.4 1.3 2.6 1.2 5.6 1.2 8.2 0 .5-.2.7-.8.4-1.3-.5-.9-1.4-2.5-2.5-4.3-1.2.7-2.8.7-4 0-1.1 1.8-2 3.4-2.5 4.3z" />
@@ -24760,8 +27138,8 @@ impl IconShape for LdRadiation {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadical;
-impl IconShape for LdRadical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24773,7 +27151,7 @@ impl IconShape for LdRadical {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M3 12h4l3 9 4-17h7" />
+  <path d="M3 12h3.28a1 1 0 0 1 .948.684l2.298 7.934a.5.5 0 0 0 .96-.044L13.82 4.771A1 1 0 0 1 14.792 4H21" />
 </svg>
 "#
     }
@@ -24781,8 +27159,8 @@ impl IconShape for LdRadical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadioReceiver;
-impl IconShape for LdRadioReceiver {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadioReceiver {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24797,7 +27175,7 @@ impl IconShape for LdRadioReceiver {
   <path d="M5 16v2" />
   <path d="M19 16v2" />
   <rect width="20" height="8" x="2" y="8" rx="2" />
-  <path d="M18 12h0" />
+  <path d="M18 12h.01" />
 </svg>
 "#
     }
@@ -24805,8 +27183,8 @@ impl IconShape for LdRadioReceiver {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadioTower;
-impl IconShape for LdRadioTower {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadioTower {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24832,8 +27210,8 @@ impl IconShape for LdRadioTower {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadio;
-impl IconShape for LdRadio {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadio {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24857,8 +27235,8 @@ impl IconShape for LdRadio {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRadius;
-impl IconShape for LdRadius {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRadius {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24881,8 +27259,8 @@ impl IconShape for LdRadius {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRailSymbol;
-impl IconShape for LdRailSymbol {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRailSymbol {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24904,8 +27282,8 @@ impl IconShape for LdRailSymbol {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRainbow;
-impl IconShape for LdRainbow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRainbow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24927,8 +27305,8 @@ impl IconShape for LdRainbow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRat;
-impl IconShape for LdRat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24940,11 +27318,11 @@ impl IconShape for LdRat {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17 5c0-1.7-1.3-3-3-3s-3 1.3-3 3c0 .8.3 1.5.8 2H11c-3.9 0-7 3.1-7 7v0c0 2.2 1.8 4 4 4" />
-  <path d="M16.8 3.9c.3-.3.6-.5 1-.7 1.5-.6 3.3.1 3.9 1.6.6 1.5-.1 3.3-1.6 3.9l1.6 2.8c.2.3.2.7.2 1-.2.8-.9 1.2-1.7 1.1 0 0-1.6-.3-2.7-.6H17c-1.7 0-3 1.3-3 3" />
-  <path d="M13.2 18a3 3 0 0 0-2.2-5" />
   <path d="M13 22H4a2 2 0 0 1 0-4h12" />
+  <path d="M13.236 18a3 3 0 0 0-2.2-5" />
   <path d="M16 9h.01" />
+  <path d="M16.82 3.94a3 3 0 1 1 3.237 4.868l1.815 2.587a1.5 1.5 0 0 1-1.5 2.1l-2.872-.453a3 3 0 0 0-3.5 3" />
+  <path d="M17 4.988a3 3 0 1 0-5.2 2.052A7 7 0 0 0 4 14.015 4 4 0 0 0 8 18" />
 </svg>
 "#
     }
@@ -24952,8 +27330,8 @@ impl IconShape for LdRat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRatio;
-impl IconShape for LdRatio {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRatio {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24974,8 +27352,8 @@ impl IconShape for LdRatio {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptCent;
-impl IconShape for LdReceiptCent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptCent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -24997,8 +27375,8 @@ impl IconShape for LdReceiptCent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptEuro;
-impl IconShape for LdReceiptEuro {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptEuro {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25020,8 +27398,8 @@ impl IconShape for LdReceiptEuro {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptIndianRupee;
-impl IconShape for LdReceiptIndianRupee {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptIndianRupee {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25044,8 +27422,8 @@ impl IconShape for LdReceiptIndianRupee {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptJapaneseYen;
-impl IconShape for LdReceiptJapaneseYen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptJapaneseYen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25069,8 +27447,8 @@ impl IconShape for LdReceiptJapaneseYen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptPoundSterling;
-impl IconShape for LdReceiptPoundSterling {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptPoundSterling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25093,8 +27471,8 @@ impl IconShape for LdReceiptPoundSterling {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptRussianRuble;
-impl IconShape for LdReceiptRussianRuble {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptRussianRuble {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25116,8 +27494,8 @@ impl IconShape for LdReceiptRussianRuble {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptSwissFranc;
-impl IconShape for LdReceiptSwissFranc {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptSwissFranc {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25140,8 +27518,8 @@ impl IconShape for LdReceiptSwissFranc {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceiptText;
-impl IconShape for LdReceiptText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceiptText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25164,8 +27542,8 @@ impl IconShape for LdReceiptText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReceipt;
-impl IconShape for LdReceipt {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReceipt {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25187,8 +27565,8 @@ impl IconShape for LdReceipt {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRectangleEllipsis;
-impl IconShape for LdRectangleEllipsis {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRectangleEllipsis {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25210,9 +27588,30 @@ impl IconShape for LdRectangleEllipsis {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdRectangleGoggles;
+impl Into<&'static str> for LdRectangleGoggles {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4a2 2 0 0 1-1.6-.8l-1.6-2.13a1 1 0 0 0-1.6 0L9.6 17.2A2 2 0 0 1 8 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRectangleHorizontal;
-impl IconShape for LdRectangleHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRectangleHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25232,8 +27631,8 @@ impl IconShape for LdRectangleHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRectangleVertical;
-impl IconShape for LdRectangleVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRectangleVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25253,8 +27652,8 @@ impl IconShape for LdRectangleVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRecycle;
-impl IconShape for LdRecycle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRecycle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25279,8 +27678,8 @@ impl IconShape for LdRecycle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRedo2;
-impl IconShape for LdRedo2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRedo2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25293,7 +27692,7 @@ impl IconShape for LdRedo2 {
   stroke-linejoin="round"
 >
   <path d="m15 14 5-5-5-5" />
-  <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5v0A5.5 5.5 0 0 0 9.5 20H13" />
+  <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13" />
 </svg>
 "#
     }
@@ -25301,8 +27700,8 @@ impl IconShape for LdRedo2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRedoDot;
-impl IconShape for LdRedoDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRedoDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25324,8 +27723,8 @@ impl IconShape for LdRedoDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRedo;
-impl IconShape for LdRedo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRedo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25346,8 +27745,8 @@ impl IconShape for LdRedo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRefreshCcwDot;
-impl IconShape for LdRefreshCcwDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRefreshCcwDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25371,8 +27770,8 @@ impl IconShape for LdRefreshCcwDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRefreshCcw;
-impl IconShape for LdRefreshCcw {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRefreshCcw {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25395,8 +27794,8 @@ impl IconShape for LdRefreshCcw {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRefreshCwOff;
-impl IconShape for LdRefreshCwOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRefreshCwOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25422,8 +27821,8 @@ impl IconShape for LdRefreshCwOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRefreshCw;
-impl IconShape for LdRefreshCw {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRefreshCw {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25446,8 +27845,8 @@ impl IconShape for LdRefreshCw {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRefrigerator;
-impl IconShape for LdRefrigerator {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRefrigerator {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25469,8 +27868,8 @@ impl IconShape for LdRefrigerator {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRegex;
-impl IconShape for LdRegex {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRegex {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25493,8 +27892,8 @@ impl IconShape for LdRegex {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRemoveFormatting;
-impl IconShape for LdRemoveFormatting {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRemoveFormatting {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25518,8 +27917,8 @@ impl IconShape for LdRemoveFormatting {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRepeat1;
-impl IconShape for LdRepeat1 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRepeat1 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25543,8 +27942,8 @@ impl IconShape for LdRepeat1 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRepeat2;
-impl IconShape for LdRepeat2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRepeat2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25567,8 +27966,8 @@ impl IconShape for LdRepeat2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRepeat;
-impl IconShape for LdRepeat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRepeat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25591,8 +27990,8 @@ impl IconShape for LdRepeat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReplaceAll;
-impl IconShape for LdReplaceAll {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReplaceAll {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25604,15 +28003,15 @@ impl IconShape for LdReplaceAll {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 4c0-1.1.9-2 2-2" />
-  <path d="M20 2c1.1 0 2 .9 2 2" />
-  <path d="M22 8c0 1.1-.9 2-2 2" />
-  <path d="M16 10c-1.1 0-2-.9-2-2" />
+  <path d="M14 14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
+  <path d="M14 4a2 2 0 0 1 2-2" />
+  <path d="M16 10a2 2 0 0 1-2-2" />
+  <path d="M20 14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
+  <path d="M20 2a2 2 0 0 1 2 2" />
+  <path d="M22 8a2 2 0 0 1-2 2" />
   <path d="m3 7 3 3 3-3" />
-  <path d="M6 10V5c0-1.7 1.3-3 3-3h1" />
-  <rect width="8" height="8" x="2" y="14" rx="2" />
-  <path d="M14 14c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
-  <path d="M20 14c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
+  <path d="M6 10V5a 3 3 0 0 1 3-3h1" />
+  <rect x="2" y="14" width="8" height="8" rx="2" />
 </svg>
 "#
     }
@@ -25620,8 +28019,8 @@ impl IconShape for LdReplaceAll {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReplace;
-impl IconShape for LdReplace {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReplace {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25633,13 +28032,13 @@ impl IconShape for LdReplace {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14 4c0-1.1.9-2 2-2" />
-  <path d="M20 2c1.1 0 2 .9 2 2" />
-  <path d="M22 8c0 1.1-.9 2-2 2" />
-  <path d="M16 10c-1.1 0-2-.9-2-2" />
+  <path d="M14 4a2 2 0 0 1 2-2" />
+  <path d="M16 10a2 2 0 0 1-2-2" />
+  <path d="M20 2a2 2 0 0 1 2 2" />
+  <path d="M22 8a2 2 0 0 1-2 2" />
   <path d="m3 7 3 3 3-3" />
-  <path d="M6 10V5c0-1.7 1.3-3 3-3h1" />
-  <rect width="8" height="8" x="2" y="14" rx="2" />
+  <path d="M6 10V5a3 3 0 0 1 3-3h1" />
+  <rect x="2" y="14" width="8" height="8" rx="2" />
 </svg>
 "#
     }
@@ -25647,8 +28046,8 @@ impl IconShape for LdReplace {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReplyAll;
-impl IconShape for LdReplyAll {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReplyAll {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25660,9 +28059,9 @@ impl IconShape for LdReplyAll {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="7 17 2 12 7 7" />
-  <polyline points="12 17 7 12 12 7" />
+  <path d="m12 17-5-5 5-5" />
   <path d="M22 18v-2a4 4 0 0 0-4-4H7" />
+  <path d="m7 17-5-5 5-5" />
 </svg>
 "#
     }
@@ -25670,8 +28069,8 @@ impl IconShape for LdReplyAll {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdReply;
-impl IconShape for LdReply {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdReply {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25683,8 +28082,8 @@ impl IconShape for LdReply {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="9 17 4 12 9 7" />
   <path d="M20 18v-2a4 4 0 0 0-4-4H4" />
+  <path d="m9 17-5-5 5-5" />
 </svg>
 "#
     }
@@ -25692,8 +28091,8 @@ impl IconShape for LdReply {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRewind;
-impl IconShape for LdRewind {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRewind {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25714,8 +28113,8 @@ impl IconShape for LdRewind {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRibbon;
-impl IconShape for LdRibbon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRibbon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25727,11 +28126,11 @@ impl IconShape for LdRibbon {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17.75 9.01c-.52 2.08-1.83 3.64-3.18 5.49l-2.6 3.54-2.97 4-3.5-2.54 3.85-4.97c-1.86-2.61-2.8-3.77-3.16-5.44" />
-  <path d="M17.75 9.01A7 7 0 0 0 6.2 9.1C6.06 8.5 6 7.82 6 7c0-3.5 2.83-5 5.98-5C15.24 2 18 3.5 18 7c0 .73-.09 1.4-.25 2.01Z" />
-  <path d="m9.35 14.53 2.64-3.31" />
-  <path d="m11.97 18.04 2.99 4 3.54-2.54-3.93-5" />
-  <path d="M14 8c0 1-1 2-2.01 3.22C11 10 10 9 10 8a2 2 0 1 1 4 0" />
+  <path d="M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22" />
+  <path d="m12 18 2.57-3.5" />
+  <path d="M6.243 9.016a7 7 0 0 1 11.507-.009" />
+  <path d="M9.35 14.53 12 11.22" />
+  <path d="M9.35 14.53C7.728 12.246 6 10.221 6 7a6 5 0 0 1 12 0c-.005 3.22-1.778 5.235-3.43 7.5l3.557 4.527a1 1 0 0 1-.203 1.43l-1.894 1.36a1 1 0 0 1-1.384-.215L12 18l-2.679 3.593a1 1 0 0 1-1.39.213l-1.865-1.353a1 1 0 0 1-.203-1.422z" />
 </svg>
 "#
     }
@@ -25739,8 +28138,8 @@ impl IconShape for LdRibbon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRocket;
-impl IconShape for LdRocket {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRocket {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25763,8 +28162,8 @@ impl IconShape for LdRocket {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRockingChair;
-impl IconShape for LdRockingChair {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRockingChair {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25787,8 +28186,8 @@ impl IconShape for LdRockingChair {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRollerCoaster;
-impl IconShape for LdRollerCoaster {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRollerCoaster {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25814,8 +28213,8 @@ impl IconShape for LdRollerCoaster {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRotate3d;
-impl IconShape for LdRotate3d {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRotate3d {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25836,9 +28235,34 @@ impl IconShape for LdRotate3d {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdRotateCcwKey;
+impl Into<&'static str> for LdRotateCcwKey {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m14.5 9.5 1 1" />
+  <path d="m15.5 8.5-4 4" />
+  <path d="M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8" />
+  <path d="M3 3v5h5" />
+  <circle cx="10" cy="14" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRotateCcwSquare;
-impl IconShape for LdRotateCcwSquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRotateCcwSquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25860,8 +28284,8 @@ impl IconShape for LdRotateCcwSquare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRotateCcw;
-impl IconShape for LdRotateCcw {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRotateCcw {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25882,8 +28306,8 @@ impl IconShape for LdRotateCcw {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRotateCwSquare;
-impl IconShape for LdRotateCwSquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRotateCwSquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25905,8 +28329,8 @@ impl IconShape for LdRotateCwSquare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRotateCw;
-impl IconShape for LdRotateCw {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRotateCw {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25927,8 +28351,8 @@ impl IconShape for LdRotateCw {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRouteOff;
-impl IconShape for LdRouteOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRouteOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25954,8 +28378,8 @@ impl IconShape for LdRouteOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRoute;
-impl IconShape for LdRoute {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRoute {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -25977,8 +28401,8 @@ impl IconShape for LdRoute {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRouter;
-impl IconShape for LdRouter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRouter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26003,8 +28427,8 @@ impl IconShape for LdRouter {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRows2;
-impl IconShape for LdRows2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRows2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26025,8 +28449,8 @@ impl IconShape for LdRows2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRows3;
-impl IconShape for LdRows3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRows3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26048,8 +28472,8 @@ impl IconShape for LdRows3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRows4;
-impl IconShape for LdRows4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRows4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26072,8 +28496,8 @@ impl IconShape for LdRows4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRss;
-impl IconShape for LdRss {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRss {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26094,9 +28518,36 @@ impl IconShape for LdRss {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdRulerDimensionLine;
+impl Into<&'static str> for LdRulerDimensionLine {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15v-3.014" />
+  <path d="M16 15v-3.014" />
+  <path d="M20 6H4" />
+  <path d="M20 8V4" />
+  <path d="M4 8V4" />
+  <path d="M8 15v-3.014" />
+  <rect x="3" y="12" width="18" height="7" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRuler;
-impl IconShape for LdRuler {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRuler {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26120,8 +28571,8 @@ impl IconShape for LdRuler {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdRussianRuble;
-impl IconShape for LdRussianRuble {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdRussianRuble {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26142,8 +28593,8 @@ impl IconShape for LdRussianRuble {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSailboat;
-impl IconShape for LdSailboat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSailboat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26165,8 +28616,8 @@ impl IconShape for LdSailboat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSalad;
-impl IconShape for LdSalad {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSalad {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26190,8 +28641,8 @@ impl IconShape for LdSalad {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSandwich;
-impl IconShape for LdSandwich {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSandwich {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26203,10 +28654,11 @@ impl IconShape for LdSandwich {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M3 11v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3" />
-  <path d="M12 19H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3.83" />
-  <path d="m3 11 7.77-6.04a2 2 0 0 1 2.46 0L21 11H3Z" />
-  <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z" />
+  <path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" />
+  <path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" />
+  <path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" />
+  <path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" />
+  <rect width="20" height="4" x="2" y="11" rx="1" />
 </svg>
 "#
     }
@@ -26214,8 +28666,8 @@ impl IconShape for LdSandwich {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSatelliteDish;
-impl IconShape for LdSatelliteDish {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSatelliteDish {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26238,8 +28690,8 @@ impl IconShape for LdSatelliteDish {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSatellite;
-impl IconShape for LdSatellite {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSatellite {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26251,11 +28703,35 @@ impl IconShape for LdSatellite {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M13 7 9 3 5 7l4 4" />
-  <path d="m17 11 4 4-4 4-4-4" />
-  <path d="m8 12 4 4 6-6-4-4Z" />
-  <path d="m16 8 3-3" />
+  <path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5" />
+  <path d="M16.5 7.5 19 5" />
+  <path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5" />
   <path d="M9 21a6 6 0 0 0-6-6" />
+  <path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSaudiRiyal;
+impl Into<&'static str> for LdSaudiRiyal {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m20 19.5-5.5 1.2" />
+  <path d="M14.5 4v11.22a1 1 0 0 0 1.242.97L20 15.2" />
+  <path d="m2.978 19.351 5.549-1.363A2 2 0 0 0 10 16V2" />
+  <path d="M20 10 4 13.5" />
 </svg>
 "#
     }
@@ -26263,8 +28739,8 @@ impl IconShape for LdSatellite {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSaveAll;
-impl IconShape for LdSaveAll {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSaveAll {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26276,10 +28752,37 @@ impl IconShape for LdSaveAll {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M6 4a2 2 0 0 1 2-2h10l4 4v10.2a2 2 0 0 1-2 1.8H8a2 2 0 0 1-2-2Z" />
-  <path d="M10 2v4h6" />
-  <path d="M18 18v-7h-8v7" />
+  <path d="M10 2v3a1 1 0 0 0 1 1h5" />
+  <path d="M18 18v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6" />
   <path d="M18 22H4a2 2 0 0 1-2-2V6" />
+  <path d="M8 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9.172a2 2 0 0 1 1.414.586l2.828 2.828A2 2 0 0 1 22 6.828V16a2 2 0 0 1-2.01 2z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSaveOff;
+impl Into<&'static str> for LdSaveOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 13H8a1 1 0 0 0-1 1v7" />
+  <path d="M14 8h1" />
+  <path d="M17 21v-4" />
+  <path d="m2 2 20 20" />
+  <path d="M20.41 20.41A2 2 0 0 1 19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 .59-1.41" />
+  <path d="M29.5 11.5s5 5 4 5" />
+  <path d="M9 3h6.2a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V15" />
 </svg>
 "#
     }
@@ -26287,8 +28790,8 @@ impl IconShape for LdSaveAll {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSave;
-impl IconShape for LdSave {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSave {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26310,8 +28813,8 @@ impl IconShape for LdSave {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScale3d;
-impl IconShape for LdScale3d {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScale3d {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26323,10 +28826,10 @@ impl IconShape for LdScale3d {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M5 7v11a1 1 0 0 0 1 1h11" />
+  <path d="M5.293 18.707 11 13" />
   <circle cx="19" cy="19" r="2" />
   <circle cx="5" cy="5" r="2" />
-  <path d="M5 7v12h12" />
-  <path d="m5 19 6-6" />
 </svg>
 "#
     }
@@ -26334,8 +28837,8 @@ impl IconShape for LdScale3d {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScale;
-impl IconShape for LdScale {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScale {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26359,8 +28862,8 @@ impl IconShape for LdScale {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScaling;
-impl IconShape for LdScaling {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScaling {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26383,8 +28886,8 @@ impl IconShape for LdScaling {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScanBarcode;
-impl IconShape for LdScanBarcode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScanBarcode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26410,8 +28913,8 @@ impl IconShape for LdScanBarcode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScanEye;
-impl IconShape for LdScanEye {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScanEye {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26428,7 +28931,7 @@ impl IconShape for LdScanEye {
   <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
   <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
   <circle cx="12" cy="12" r="1" />
-  <path d="M5 12s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5" />
+  <path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0" />
 </svg>
 "#
     }
@@ -26436,8 +28939,8 @@ impl IconShape for LdScanEye {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScanFace;
-impl IconShape for LdScanFace {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScanFace {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26462,9 +28965,34 @@ impl IconShape for LdScanFace {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdScanHeart;
+impl Into<&'static str> for LdScanHeart {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.246 16.657a1 1 0 0 0 1.508 0l3.57-4.101A2.75 2.75 0 1 0 12 9.168a2.75 2.75 0 1 0-4.324 3.388z" />
+  <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+  <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+  <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+  <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScanLine;
-impl IconShape for LdScanLine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScanLine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26487,9 +29015,37 @@ impl IconShape for LdScanLine {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdScanQrCode;
+impl Into<&'static str> for LdScanQrCode {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M17 12v4a1 1 0 0 1-1 1h-4" />
+  <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+  <path d="M17 8V7" />
+  <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+  <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+  <path d="M7 17h.01" />
+  <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+  <rect x="7" y="7" width="5" height="5" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScanSearch;
-impl IconShape for LdScanSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScanSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26514,8 +29070,8 @@ impl IconShape for LdScanSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScanText;
-impl IconShape for LdScanText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScanText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26541,8 +29097,8 @@ impl IconShape for LdScanText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScan;
-impl IconShape for LdScan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26564,35 +29120,9 @@ impl IconShape for LdScan {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdScatterChart;
-impl IconShape for LdScatterChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-  <circle cx="18.5" cy="5.5" r=".5" fill="currentColor" />
-  <circle cx="11.5" cy="11.5" r=".5" fill="currentColor" />
-  <circle cx="7.5" cy="16.5" r=".5" fill="currentColor" />
-  <circle cx="17.5" cy="14.5" r=".5" fill="currentColor" />
-  <path d="M3 3v18h18" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSchool;
-impl IconShape for LdSchool {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSchool {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26605,9 +29135,9 @@ impl IconShape for LdSchool {
   stroke-linejoin="round"
 >
   <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
-  <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
+  <path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10" />
   <path d="M18 5v17" />
-  <path d="m4 6 8-4 8 4" />
+  <path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6" />
   <path d="M6 5v17" />
   <circle cx="12" cy="9" r="2" />
 </svg>
@@ -26617,8 +29147,8 @@ impl IconShape for LdSchool {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScissorsLineDashed;
-impl IconShape for LdScissorsLineDashed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScissorsLineDashed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26644,8 +29174,8 @@ impl IconShape for LdScissorsLineDashed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScissors;
-impl IconShape for LdScissors {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScissors {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26669,8 +29199,8 @@ impl IconShape for LdScissors {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScreenShareOff;
-impl IconShape for LdScreenShareOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScreenShareOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26694,8 +29224,8 @@ impl IconShape for LdScreenShareOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScreenShare;
-impl IconShape for LdScreenShare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScreenShare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26719,8 +29249,8 @@ impl IconShape for LdScreenShare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScrollText;
-impl IconShape for LdScrollText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScrollText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26743,8 +29273,8 @@ impl IconShape for LdScrollText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdScroll;
-impl IconShape for LdScroll {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdScroll {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26765,8 +29295,8 @@ impl IconShape for LdScroll {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSearchCheck;
-impl IconShape for LdSearchCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSearchCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26788,8 +29318,8 @@ impl IconShape for LdSearchCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSearchCode;
-impl IconShape for LdSearchCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSearchCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26801,10 +29331,10 @@ impl IconShape for LdSearchCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m9 9-2 2 2 2" />
-  <path d="m13 13 2-2-2-2" />
-  <circle cx="11" cy="11" r="8" />
+  <path d="m13 13.5 2-2.5-2-2.5" />
   <path d="m21 21-4.3-4.3" />
+  <path d="M9 8.5 7 11l2 2.5" />
+  <circle cx="11" cy="11" r="8" />
 </svg>
 "#
     }
@@ -26812,8 +29342,8 @@ impl IconShape for LdSearchCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSearchSlash;
-impl IconShape for LdSearchSlash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSearchSlash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26835,8 +29365,8 @@ impl IconShape for LdSearchSlash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSearchX;
-impl IconShape for LdSearchX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSearchX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26859,8 +29389,8 @@ impl IconShape for LdSearchX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSearch;
-impl IconShape for LdSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26872,8 +29402,30 @@ impl IconShape for LdSearch {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m21 21-4.34-4.34" />
   <circle cx="11" cy="11" r="8" />
-  <path d="m21 21-4.3-4.3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSection;
+impl Into<&'static str> for LdSection {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0" />
+  <path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0" />
 </svg>
 "#
     }
@@ -26881,8 +29433,8 @@ impl IconShape for LdSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSendHorizontal;
-impl IconShape for LdSendHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSendHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26894,7 +29446,7 @@ impl IconShape for LdSendHorizontal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m3 3 3 9-3 9 19-9Z" />
+  <path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z" />
   <path d="M6 12h16" />
 </svg>
 "#
@@ -26903,8 +29455,8 @@ impl IconShape for LdSendHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSendToBack;
-impl IconShape for LdSendToBack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSendToBack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26927,8 +29479,8 @@ impl IconShape for LdSendToBack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSend;
-impl IconShape for LdSend {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSend {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26940,8 +29492,8 @@ impl IconShape for LdSend {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m22 2-7 20-4-9-9-4Z" />
-  <path d="M22 2 11 13" />
+  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+  <path d="m21.854 2.147-10.94 10.939" />
 </svg>
 "#
     }
@@ -26949,8 +29501,8 @@ impl IconShape for LdSend {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSeparatorHorizontal;
-impl IconShape for LdSeparatorHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSeparatorHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26962,9 +29514,9 @@ impl IconShape for LdSeparatorHorizontal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="3" x2="21" y1="12" y2="12" />
-  <polyline points="8 8 12 4 16 8" />
-  <polyline points="16 16 12 20 8 16" />
+  <path d="m16 16-4 4-4-4" />
+  <path d="M3 12h18" />
+  <path d="m8 8 4-4 4 4" />
 </svg>
 "#
     }
@@ -26972,8 +29524,8 @@ impl IconShape for LdSeparatorHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSeparatorVertical;
-impl IconShape for LdSeparatorVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSeparatorVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -26985,9 +29537,9 @@ impl IconShape for LdSeparatorVertical {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="12" x2="12" y1="3" y2="21" />
-  <polyline points="8 8 4 12 8 16" />
-  <polyline points="16 16 20 12 16 8" />
+  <path d="M12 3v18" />
+  <path d="m16 16 4-4-4-4" />
+  <path d="m8 8-4 4 4 4" />
 </svg>
 "#
     }
@@ -26995,8 +29547,8 @@ impl IconShape for LdSeparatorVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdServerCog;
-impl IconShape for LdServerCog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdServerCog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27008,19 +29560,18 @@ impl IconShape for LdServerCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="12" cy="12" r="3" />
+  <path d="m10.852 14.772-.383.923" />
+  <path d="M13.148 14.772a3 3 0 1 0-2.296-5.544l-.383-.923" />
+  <path d="m13.148 9.228.383-.923" />
+  <path d="m13.53 15.696-.382-.924a3 3 0 1 1-2.296-5.544" />
+  <path d="m14.772 10.852.923-.383" />
+  <path d="m14.772 13.148.923.383" />
   <path d="M4.5 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.5" />
   <path d="M4.5 14H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-.5" />
-  <path d="M6 6h.01" />
   <path d="M6 18h.01" />
-  <path d="m15.7 13.4-.9-.3" />
-  <path d="m9.2 10.9-.9-.3" />
-  <path d="m10.6 15.7.3-.9" />
-  <path d="m13.6 15.7-.4-1" />
-  <path d="m10.8 9.3-.4-1" />
-  <path d="m8.3 13.6 1-.4" />
-  <path d="m14.7 10.8 1-.4" />
-  <path d="m13.4 8.3-.3.9" />
+  <path d="M6 6h.01" />
+  <path d="m9.228 10.852-.923-.383" />
+  <path d="m9.228 13.148-.923.383" />
 </svg>
 "#
     }
@@ -27028,8 +29579,8 @@ impl IconShape for LdServerCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdServerCrash;
-impl IconShape for LdServerCrash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdServerCrash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27053,8 +29604,8 @@ impl IconShape for LdServerCrash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdServerOff;
-impl IconShape for LdServerOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdServerOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27079,8 +29630,8 @@ impl IconShape for LdServerOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdServer;
-impl IconShape for LdServer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdServer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27103,8 +29654,8 @@ impl IconShape for LdServer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSettings2;
-impl IconShape for LdSettings2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSettings2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27127,8 +29678,8 @@ impl IconShape for LdSettings2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSettings;
-impl IconShape for LdSettings {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSettings {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27149,8 +29700,8 @@ impl IconShape for LdSettings {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShapes;
-impl IconShape for LdShapes {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShapes {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27172,8 +29723,8 @@ impl IconShape for LdShapes {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShare2;
-impl IconShape for LdShare2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShare2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27197,8 +29748,8 @@ impl IconShape for LdShare2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShare;
-impl IconShape for LdShare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27210,9 +29761,9 @@ impl IconShape for LdShare {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 2v13" />
+  <path d="m16 6-4-4-4 4" />
   <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-  <polyline points="16 6 12 2 8 6" />
-  <line x1="12" x2="12" y1="2" y2="15" />
 </svg>
 "#
     }
@@ -27220,8 +29771,8 @@ impl IconShape for LdShare {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSheet;
-impl IconShape for LdSheet {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSheet {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27245,8 +29796,8 @@ impl IconShape for LdSheet {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShell;
-impl IconShape for LdShell {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShell {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27266,8 +29817,8 @@ impl IconShape for LdShell {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldAlert;
-impl IconShape for LdShieldAlert {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldAlert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27289,8 +29840,8 @@ impl IconShape for LdShieldAlert {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldBan;
-impl IconShape for LdShieldBan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldBan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27311,8 +29862,8 @@ impl IconShape for LdShieldBan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldCheck;
-impl IconShape for LdShieldCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27333,8 +29884,8 @@ impl IconShape for LdShieldCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldEllipsis;
-impl IconShape for LdShieldEllipsis {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldEllipsis {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27357,8 +29908,8 @@ impl IconShape for LdShieldEllipsis {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldHalf;
-impl IconShape for LdShieldHalf {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldHalf {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27379,8 +29930,8 @@ impl IconShape for LdShieldHalf {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldMinus;
-impl IconShape for LdShieldMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27401,8 +29952,8 @@ impl IconShape for LdShieldMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldOff;
-impl IconShape for LdShieldOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27424,8 +29975,8 @@ impl IconShape for LdShieldOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldPlus;
-impl IconShape for LdShieldPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27447,8 +29998,8 @@ impl IconShape for LdShieldPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldQuestion;
-impl IconShape for LdShieldQuestion {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldQuestion {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27469,9 +30020,32 @@ impl IconShape for LdShieldQuestion {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdShieldUser;
+impl Into<&'static str> for LdShieldUser {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="M6.376 18.91a6 6 0 0 1 11.249.003" />
+  <circle cx="12" cy="11" r="4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShieldX;
-impl IconShape for LdShieldX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShieldX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27493,8 +30067,8 @@ impl IconShape for LdShieldX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShield;
-impl IconShape for LdShield {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShield {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27514,8 +30088,8 @@ impl IconShape for LdShield {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShipWheel;
-impl IconShape for LdShipWheel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShipWheel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27544,8 +30118,8 @@ impl IconShape for LdShipWheel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShip;
-impl IconShape for LdShip {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShip {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27557,11 +30131,11 @@ impl IconShape for LdShip {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
-  <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76" />
-  <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" />
-  <path d="M12 10v4" />
+  <path d="M12 10.189V14" />
   <path d="M12 2v3" />
+  <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" />
+  <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76" />
+  <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
 </svg>
 "#
     }
@@ -27569,8 +30143,8 @@ impl IconShape for LdShip {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShirt;
-impl IconShape for LdShirt {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShirt {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27590,8 +30164,8 @@ impl IconShape for LdShirt {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShoppingBag;
-impl IconShape for LdShoppingBag {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShoppingBag {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27613,8 +30187,8 @@ impl IconShape for LdShoppingBag {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShoppingBasket;
-impl IconShape for LdShoppingBasket {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShoppingBasket {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27640,8 +30214,8 @@ impl IconShape for LdShoppingBasket {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShoppingCart;
-impl IconShape for LdShoppingCart {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShoppingCart {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27663,8 +30237,8 @@ impl IconShape for LdShoppingCart {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShovel;
-impl IconShape for LdShovel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShovel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27686,8 +30260,8 @@ impl IconShape for LdShovel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShowerHead;
-impl IconShape for LdShowerHead {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShowerHead {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27715,9 +30289,61 @@ impl IconShape for LdShowerHead {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdShredder;
+impl Into<&'static str> for LdShredder {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 22v-5" />
+  <path d="M14 19v-2" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="M18 20v-3" />
+  <path d="M2 13h20" />
+  <path d="M20 13V7l-5-5H6a2 2 0 0 0-2 2v9" />
+  <path d="M6 20v-3" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdShrimp;
+impl Into<&'static str> for LdShrimp {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 12h.01" />
+  <path d="M13 22c.5-.5 1.12-1 2.5-1-1.38 0-2-.5-2.5-1" />
+  <path d="M14 2a3.28 3.28 0 0 1-3.227 1.798l-6.17-.561A2.387 2.387 0 1 0 4.387 8H15.5a1 1 0 0 1 0 13 1 1 0 0 0 0-5H12a7 7 0 0 1-7-7V8" />
+  <path d="M14 8a8.5 8.5 0 0 1 0 8" />
+  <path d="M16 16c2 0 4.5-4 4-6" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShrink;
-impl IconShape for LdShrink {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShrink {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27740,8 +30366,8 @@ impl IconShape for LdShrink {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShrub;
-impl IconShape for LdShrub {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShrub {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27754,7 +30380,7 @@ impl IconShape for LdShrub {
   stroke-linejoin="round"
 >
   <path d="M12 22v-7l-2-2" />
-  <path d="M17 8v.8A6 6 0 0 1 13.8 20v0H10v0A6.5 6.5 0 0 1 7 8h0a5 5 0 0 1 10 0Z" />
+  <path d="M17 8v.8A6 6 0 0 1 13.8 20H10A6.5 6.5 0 0 1 7 8a5 5 0 0 1 10 0Z" />
   <path d="m14 14-2 2" />
 </svg>
 "#
@@ -27763,8 +30389,8 @@ impl IconShape for LdShrub {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdShuffle;
-impl IconShape for LdShuffle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdShuffle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27776,11 +30402,11 @@ impl IconShape for LdShuffle {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22" />
-  <path d="m18 2 4 4-4 4" />
-  <path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2" />
-  <path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8" />
   <path d="m18 14 4 4-4 4" />
+  <path d="m18 2 4 4-4 4" />
+  <path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22" />
+  <path d="M2 6h1.972a4 4 0 0 1 3.6 2.2" />
+  <path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" />
 </svg>
 "#
     }
@@ -27788,8 +30414,8 @@ impl IconShape for LdShuffle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSigma;
-impl IconShape for LdSigma {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSigma {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27801,7 +30427,7 @@ impl IconShape for LdSigma {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M18 7V4H6l6 8-6 8h12v-3" />
+  <path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2" />
 </svg>
 "#
     }
@@ -27809,8 +30435,8 @@ impl IconShape for LdSigma {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignalHigh;
-impl IconShape for LdSignalHigh {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignalHigh {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27833,8 +30459,8 @@ impl IconShape for LdSignalHigh {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignalLow;
-impl IconShape for LdSignalLow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignalLow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27855,8 +30481,8 @@ impl IconShape for LdSignalLow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignalMedium;
-impl IconShape for LdSignalMedium {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignalMedium {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27878,8 +30504,8 @@ impl IconShape for LdSignalMedium {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignalZero;
-impl IconShape for LdSignalZero {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignalZero {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27899,8 +30525,8 @@ impl IconShape for LdSignalZero {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignal;
-impl IconShape for LdSignal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27923,9 +30549,31 @@ impl IconShape for LdSignal {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSignature;
+impl Into<&'static str> for LdSignature {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
+  <path d="M3 21h18" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignpostBig;
-impl IconShape for LdSignpostBig {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignpostBig {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27948,8 +30596,8 @@ impl IconShape for LdSignpostBig {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSignpost;
-impl IconShape for LdSignpost {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSignpost {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27961,9 +30609,9 @@ impl IconShape for LdSignpost {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 3v3" />
-  <path d="M18.5 13h-13L2 9.5 5.5 6h13L22 9.5Z" />
   <path d="M12 13v8" />
+  <path d="M12 3v3" />
+  <path d="M18 6a2 2 0 0 1 1.387.56l2.307 2.22a1 1 0 0 1 0 1.44l-2.307 2.22A2 2 0 0 1 18 13H6a2 2 0 0 1-1.387-.56l-2.306-2.22a1 1 0 0 1 0-1.44l2.306-2.22A2 2 0 0 1 6 6z" />
 </svg>
 "#
     }
@@ -27971,8 +30619,8 @@ impl IconShape for LdSignpost {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSiren;
-impl IconShape for LdSiren {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSiren {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -27999,8 +30647,8 @@ impl IconShape for LdSiren {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSkipBack;
-impl IconShape for LdSkipBack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSkipBack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28021,8 +30669,8 @@ impl IconShape for LdSkipBack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSkipForward;
-impl IconShape for LdSkipForward {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSkipForward {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28043,8 +30691,8 @@ impl IconShape for LdSkipForward {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSkull;
-impl IconShape for LdSkull {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSkull {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28056,11 +30704,10 @@ impl IconShape for LdSkull {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="9" cy="12" r="1" />
-  <circle cx="15" cy="12" r="1" />
-  <path d="M8 20v2h8v-2" />
   <path d="m12.5 17-.5-1-.5 1h1z" />
-  <path d="M16 20a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20" />
+  <path d="M15 22a1 1 0 0 0 1-1v-1a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20v1a1 1 0 0 0 1 1z" />
+  <circle cx="15" cy="12" r="1" />
+  <circle cx="9" cy="12" r="1" />
 </svg>
 "#
     }
@@ -28068,8 +30715,8 @@ impl IconShape for LdSkull {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSlack;
-impl IconShape for LdSlack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSlack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28096,8 +30743,8 @@ impl IconShape for LdSlack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSlash;
-impl IconShape for LdSlash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSlash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28117,8 +30764,8 @@ impl IconShape for LdSlash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSlice;
-impl IconShape for LdSlice {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSlice {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28130,8 +30777,7 @@ impl IconShape for LdSlice {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m8 14-6 6h9v-3" />
-  <path d="M18.37 3.63 8 14l3 3L21.37 6.63a2.12 2.12 0 1 0-3-3Z" />
+  <path d="M11 16.586V19a1 1 0 0 1-1 1H2L18.37 3.63a1 1 0 1 1 3 3l-9.663 9.663a1 1 0 0 1-1.414 0L8 14" />
 </svg>
 "#
     }
@@ -28139,8 +30785,8 @@ impl IconShape for LdSlice {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSlidersHorizontal;
-impl IconShape for LdSlidersHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSlidersHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28168,8 +30814,8 @@ impl IconShape for LdSlidersHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSlidersVertical;
-impl IconShape for LdSlidersVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSlidersVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28197,8 +30843,8 @@ impl IconShape for LdSlidersVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSmartphoneCharging;
-impl IconShape for LdSmartphoneCharging {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSmartphoneCharging {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28219,8 +30865,8 @@ impl IconShape for LdSmartphoneCharging {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSmartphoneNfc;
-impl IconShape for LdSmartphoneNfc {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSmartphoneNfc {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28243,8 +30889,8 @@ impl IconShape for LdSmartphoneNfc {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSmartphone;
-impl IconShape for LdSmartphone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSmartphone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28265,8 +30911,8 @@ impl IconShape for LdSmartphone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSmilePlus;
-impl IconShape for LdSmilePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSmilePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28291,8 +30937,8 @@ impl IconShape for LdSmilePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSmile;
-impl IconShape for LdSmile {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSmile {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28315,8 +30961,8 @@ impl IconShape for LdSmile {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSnail;
-impl IconShape for LdSnail {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSnail {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28340,8 +30986,8 @@ impl IconShape for LdSnail {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSnowflake;
-impl IconShape for LdSnowflake {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSnowflake {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28353,12 +30999,42 @@ impl IconShape for LdSnowflake {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="2" x2="22" y1="12" y2="12" />
-  <line x1="12" x2="12" y1="2" y2="22" />
-  <path d="m20 16-4-4 4-4" />
-  <path d="m4 8 4 4-4 4" />
-  <path d="m16 4-4 4-4-4" />
-  <path d="m8 20 4-4 4 4" />
+  <path d="m10 20-1.25-2.5L6 18" />
+  <path d="M10 4 8.75 6.5 6 6" />
+  <path d="m14 20 1.25-2.5L18 18" />
+  <path d="m14 4 1.25 2.5L18 6" />
+  <path d="m17 21-3-6h-4" />
+  <path d="m17 3-3 6 1.5 3" />
+  <path d="M2 12h6.5L10 9" />
+  <path d="m20 10-1.5 2 1.5 2" />
+  <path d="M22 12h-6.5L14 15" />
+  <path d="m4 10 1.5 2L4 14" />
+  <path d="m7 21 3-6-1.5-3" />
+  <path d="m7 3 3 6h4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSoapDispenserDroplet;
+impl Into<&'static str> for LdSoapDispenserDroplet {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 2v4" />
+  <path d="M14 2H7a2 2 0 0 0-2 2" />
+  <path d="M19.29 14.76A6.67 6.67 0 0 1 17 11a6.6 6.6 0 0 1-2.29 3.76c-1.15.92-1.71 2.04-1.71 3.19 0 2.22 1.8 4.05 4 4.05s4-1.83 4-4.05c0-1.16-.57-2.26-1.71-3.19" />
+  <path d="M9.607 21H6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h7V7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
 </svg>
 "#
     }
@@ -28366,8 +31042,8 @@ impl IconShape for LdSnowflake {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSofa;
-impl IconShape for LdSofa {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSofa {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28380,7 +31056,7 @@ impl IconShape for LdSofa {
   stroke-linejoin="round"
 >
   <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" />
-  <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z" />
+  <path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" />
   <path d="M4 18v2" />
   <path d="M20 18v2" />
   <path d="M12 4v9" />
@@ -28391,8 +31067,8 @@ impl IconShape for LdSofa {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSoup;
-impl IconShape for LdSoup {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSoup {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28417,8 +31093,8 @@ impl IconShape for LdSoup {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpace;
-impl IconShape for LdSpace {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpace {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28438,8 +31114,8 @@ impl IconShape for LdSpace {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpade;
-impl IconShape for LdSpade {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpade {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28460,8 +31136,8 @@ impl IconShape for LdSpade {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSparkle;
-impl IconShape for LdSparkle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSparkle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28473,15 +31149,16 @@ impl IconShape for LdSparkle {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z" />
-</svg>"#
+  <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+</svg>
+"#
     }
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSparkles;
-impl IconShape for LdSparkles {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSparkles {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28493,11 +31170,11 @@ impl IconShape for LdSparkles {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-  <path d="M5 3v4" />
-  <path d="M19 17v4" />
-  <path d="M3 5h4" />
-  <path d="M17 19h4" />
+  <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+  <path d="M20 3v4" />
+  <path d="M22 5h-4" />
+  <path d="M4 17v2" />
+  <path d="M5 18H3" />
 </svg>
 "#
     }
@@ -28505,8 +31182,8 @@ impl IconShape for LdSparkles {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpeaker;
-impl IconShape for LdSpeaker {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpeaker {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28529,8 +31206,8 @@ impl IconShape for LdSpeaker {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpeech;
-impl IconShape for LdSpeech {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpeech {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28552,8 +31229,8 @@ impl IconShape for LdSpeech {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpellCheck2;
-impl IconShape for LdSpellCheck2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpellCheck2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28575,8 +31252,8 @@ impl IconShape for LdSpellCheck2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpellCheck;
-impl IconShape for LdSpellCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpellCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28597,9 +31274,32 @@ impl IconShape for LdSpellCheck {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSplinePointer;
+impl Into<&'static str> for LdSplinePointer {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z" />
+  <path d="M5 17A12 12 0 0 1 17 5" />
+  <circle cx="19" cy="5" r="2" />
+  <circle cx="5" cy="19" r="2" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSpline;
-impl IconShape for LdSpline {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSpline {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28621,8 +31321,8 @@ impl IconShape for LdSpline {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSplit;
-impl IconShape for LdSplit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSplit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28645,8 +31345,8 @@ impl IconShape for LdSplit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSprayCan;
-impl IconShape for LdSprayCan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSprayCan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28675,8 +31375,8 @@ impl IconShape for LdSprayCan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSprout;
-impl IconShape for LdSprout {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSprout {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28699,8 +31399,8 @@ impl IconShape for LdSprout {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareActivity;
-impl IconShape for LdSquareActivity {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareActivity {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28721,8 +31421,8 @@ impl IconShape for LdSquareActivity {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowDownLeft;
-impl IconShape for LdSquareArrowDownLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowDownLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28744,8 +31444,8 @@ impl IconShape for LdSquareArrowDownLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowDownRight;
-impl IconShape for LdSquareArrowDownRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowDownRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28767,8 +31467,8 @@ impl IconShape for LdSquareArrowDownRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowDown;
-impl IconShape for LdSquareArrowDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28790,8 +31490,8 @@ impl IconShape for LdSquareArrowDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowLeft;
-impl IconShape for LdSquareArrowLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28813,8 +31513,8 @@ impl IconShape for LdSquareArrowLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowOutDownLeft;
-impl IconShape for LdSquareArrowOutDownLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowOutDownLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28836,8 +31536,8 @@ impl IconShape for LdSquareArrowOutDownLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowOutDownRight;
-impl IconShape for LdSquareArrowOutDownRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowOutDownRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28859,8 +31559,8 @@ impl IconShape for LdSquareArrowOutDownRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowOutUpLeft;
-impl IconShape for LdSquareArrowOutUpLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowOutUpLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28882,8 +31582,8 @@ impl IconShape for LdSquareArrowOutUpLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowOutUpRight;
-impl IconShape for LdSquareArrowOutUpRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowOutUpRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28905,8 +31605,8 @@ impl IconShape for LdSquareArrowOutUpRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowRight;
-impl IconShape for LdSquareArrowRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28928,8 +31628,8 @@ impl IconShape for LdSquareArrowRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowUpLeft;
-impl IconShape for LdSquareArrowUpLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowUpLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28951,8 +31651,8 @@ impl IconShape for LdSquareArrowUpLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowUpRight;
-impl IconShape for LdSquareArrowUpRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowUpRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28974,8 +31674,8 @@ impl IconShape for LdSquareArrowUpRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareArrowUp;
-impl IconShape for LdSquareArrowUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareArrowUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -28997,8 +31697,8 @@ impl IconShape for LdSquareArrowUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareAsterisk;
-impl IconShape for LdSquareAsterisk {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareAsterisk {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29021,8 +31721,8 @@ impl IconShape for LdSquareAsterisk {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareBottomDashedScissors;
-impl IconShape for LdSquareBottomDashedScissors {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareBottomDashedScissors {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29048,9 +31748,9 @@ impl IconShape for LdSquareBottomDashedScissors {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdSquareCheckBig;
-impl IconShape for LdSquareCheckBig {
-    fn content(&self) -> &'static str {
+pub struct LdSquareChartGantt;
+impl Into<&'static str> for LdSquareChartGantt {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29062,8 +31762,32 @@ impl IconShape for LdSquareCheckBig {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <rect width="18" height="18" x="3" y="3" rx="2" />
+  <path d="M9 8h7" />
+  <path d="M8 12h6" />
+  <path d="M11 16h5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquareCheckBig;
+impl Into<&'static str> for LdSquareCheckBig {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344" />
   <path d="m9 11 3 3L22 4" />
-  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
 </svg>
 "#
     }
@@ -29071,8 +31795,8 @@ impl IconShape for LdSquareCheckBig {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareCheck;
-impl IconShape for LdSquareCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29093,8 +31817,8 @@ impl IconShape for LdSquareCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareChevronDown;
-impl IconShape for LdSquareChevronDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareChevronDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29115,8 +31839,8 @@ impl IconShape for LdSquareChevronDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareChevronLeft;
-impl IconShape for LdSquareChevronLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareChevronLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29137,8 +31861,8 @@ impl IconShape for LdSquareChevronLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareChevronRight;
-impl IconShape for LdSquareChevronRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareChevronRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29159,8 +31883,8 @@ impl IconShape for LdSquareChevronRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareChevronUp;
-impl IconShape for LdSquareChevronUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareChevronUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29181,8 +31905,8 @@ impl IconShape for LdSquareChevronUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareCode;
-impl IconShape for LdSquareCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29194,9 +31918,9 @@ impl IconShape for LdSquareCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="18" height="18" x="3" y="3" rx="2" />
-  <path d="m10 10-2 2 2 2" />
-  <path d="m14 14 2-2-2-2" />
+  <path d="m10 9-3 3 3 3" />
+  <path d="m14 15 3-3-3-3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
 </svg>
 "#
     }
@@ -29204,8 +31928,8 @@ impl IconShape for LdSquareCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareDashedBottomCode;
-impl IconShape for LdSquareDashedBottomCode {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareDashedBottomCode {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29217,11 +31941,11 @@ impl IconShape for LdSquareDashedBottomCode {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m10 10-2 2 2 2" />
-  <path d="m14 14 2-2-2-2" />
+  <path d="M10 9.5 8 12l2 2.5" />
+  <path d="M14 21h1" />
+  <path d="m14 9.5 2 2.5-2 2.5" />
   <path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2" />
   <path d="M9 21h1" />
-  <path d="M14 21h1" />
 </svg>
 "#
     }
@@ -29229,8 +31953,8 @@ impl IconShape for LdSquareDashedBottomCode {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareDashedBottom;
-impl IconShape for LdSquareDashedBottom {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareDashedBottom {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29252,8 +31976,8 @@ impl IconShape for LdSquareDashedBottom {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareDashedKanban;
-impl IconShape for LdSquareDashedKanban {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareDashedKanban {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29287,8 +32011,8 @@ impl IconShape for LdSquareDashedKanban {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareDashedMousePointer;
-impl IconShape for LdSquareDashedMousePointer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareDashedMousePointer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29300,9 +32024,9 @@ impl IconShape for LdSquareDashedMousePointer {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z" />
   <path d="M5 3a2 2 0 0 0-2 2" />
   <path d="M19 3a2 2 0 0 1 2 2" />
-  <path d="m12 12 4 10 1.7-4.3L22 16Z" />
   <path d="M5 21a2 2 0 0 1-2-2" />
   <path d="M9 3h1" />
   <path d="M9 21h2" />
@@ -29316,9 +32040,70 @@ impl IconShape for LdSquareDashedMousePointer {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquareDashedTopSolid;
+impl Into<&'static str> for LdSquareDashedTopSolid {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 21h1" />
+  <path d="M21 14v1" />
+  <path d="M21 19a2 2 0 0 1-2 2" />
+  <path d="M21 9v1" />
+  <path d="M3 14v1" />
+  <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+  <path d="M3 9v1" />
+  <path d="M5 21a2 2 0 0 1-2-2" />
+  <path d="M9 21h1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquareDashed;
+impl Into<&'static str> for LdSquareDashed {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 3a2 2 0 0 0-2 2" />
+  <path d="M19 3a2 2 0 0 1 2 2" />
+  <path d="M21 19a2 2 0 0 1-2 2" />
+  <path d="M5 21a2 2 0 0 1-2-2" />
+  <path d="M9 3h1" />
+  <path d="M9 21h1" />
+  <path d="M14 3h1" />
+  <path d="M14 21h1" />
+  <path d="M3 9v1" />
+  <path d="M21 9v1" />
+  <path d="M3 14v1" />
+  <path d="M21 14v1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareDivide;
-impl IconShape for LdSquareDivide {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareDivide {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29341,8 +32126,8 @@ impl IconShape for LdSquareDivide {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareDot;
-impl IconShape for LdSquareDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29363,8 +32148,8 @@ impl IconShape for LdSquareDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareEqual;
-impl IconShape for LdSquareEqual {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareEqual {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29386,8 +32171,8 @@ impl IconShape for LdSquareEqual {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareFunction;
-impl IconShape for LdSquareFunction {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareFunction {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29408,33 +32193,9 @@ impl IconShape for LdSquareFunction {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdSquareGanttChart;
-impl IconShape for LdSquareGanttChart {
-    fn content(&self) -> &'static str {
-        r#"<svg
-  xmlns="http://www.w3.org/2000/svg"
-  
-  
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <rect width="18" height="18" x="3" y="3" rx="2" />
-  <path d="M9 8h7" />
-  <path d="M8 12h6" />
-  <path d="M11 16h5" />
-</svg>
-"#
-    }
-}
-
-#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareKanban;
-impl IconShape for LdSquareKanban {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareKanban {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29457,8 +32218,8 @@ impl IconShape for LdSquareKanban {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareLibrary;
-impl IconShape for LdSquareLibrary {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareLibrary {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29481,8 +32242,8 @@ impl IconShape for LdSquareLibrary {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareM;
-impl IconShape for LdSquareM {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareM {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29503,8 +32264,8 @@ impl IconShape for LdSquareM {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareMenu;
-impl IconShape for LdSquareMenu {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareMenu {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29527,8 +32288,8 @@ impl IconShape for LdSquareMenu {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareMinus;
-impl IconShape for LdSquareMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29549,8 +32310,8 @@ impl IconShape for LdSquareMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareMousePointer;
-impl IconShape for LdSquareMousePointer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareMousePointer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29562,8 +32323,8 @@ impl IconShape for LdSquareMousePointer {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z" />
   <path d="M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6" />
-  <path d="m12 12 4 10 1.7-4.3L22 16Z" />
 </svg>
 "#
     }
@@ -29571,8 +32332,8 @@ impl IconShape for LdSquareMousePointer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareParkingOff;
-impl IconShape for LdSquareParkingOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareParkingOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29596,8 +32357,8 @@ impl IconShape for LdSquareParkingOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareParking;
-impl IconShape for LdSquareParking {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareParking {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29618,8 +32379,8 @@ impl IconShape for LdSquareParking {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePen;
-impl IconShape for LdSquarePen {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePen {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29632,7 +32393,7 @@ impl IconShape for LdSquarePen {
   stroke-linejoin="round"
 >
   <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-  <path d="M18.375 2.625a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z" />
+  <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
 </svg>
 "#
     }
@@ -29640,8 +32401,8 @@ impl IconShape for LdSquarePen {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePercent;
-impl IconShape for LdSquarePercent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePercent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29664,8 +32425,8 @@ impl IconShape for LdSquarePercent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePi;
-impl IconShape for LdSquarePi {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePi {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29688,8 +32449,8 @@ impl IconShape for LdSquarePi {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePilcrow;
-impl IconShape for LdSquarePilcrow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePilcrow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29712,8 +32473,8 @@ impl IconShape for LdSquarePilcrow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePlay;
-impl IconShape for LdSquarePlay {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePlay {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29734,8 +32495,8 @@ impl IconShape for LdSquarePlay {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePlus;
-impl IconShape for LdSquarePlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29757,8 +32518,8 @@ impl IconShape for LdSquarePlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquarePower;
-impl IconShape for LdSquarePower {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquarePower {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29770,9 +32531,9 @@ impl IconShape for LdSquarePower {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="18" height="18" x="3" y="3" rx="2" />
-  <path d="M12 7v5" />
-  <path d="M8 9a5.14 5.14 0 0 0 4 8 4.95 4.95 0 0 0 4-8" />
+  <path d="M12 7v4" />
+  <path d="M7.998 9.003a5 5 0 1 0 8-.005" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
 </svg>
 "#
     }
@@ -29780,8 +32541,8 @@ impl IconShape for LdSquarePower {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareRadical;
-impl IconShape for LdSquareRadical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareRadical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29801,9 +32562,31 @@ impl IconShape for LdSquareRadical {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquareRoundCorner;
+impl Into<&'static str> for LdSquareRoundCorner {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M21 11a8 8 0 0 0-8-8" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareScissors;
-impl IconShape for LdSquareScissors {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareScissors {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29828,8 +32611,8 @@ impl IconShape for LdSquareScissors {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareSigma;
-impl IconShape for LdSquareSigma {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareSigma {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29850,8 +32633,8 @@ impl IconShape for LdSquareSigma {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareSlash;
-impl IconShape for LdSquareSlash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareSlash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29872,8 +32655,8 @@ impl IconShape for LdSquareSlash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareSplitHorizontal;
-impl IconShape for LdSquareSplitHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareSplitHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29895,8 +32678,8 @@ impl IconShape for LdSquareSplitHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareSplitVertical;
-impl IconShape for LdSquareSplitVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareSplitVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29917,9 +32700,31 @@ impl IconShape for LdSquareSplitVertical {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquareSquare;
+impl Into<&'static str> for LdSquareSquare {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <rect x="8" y="8" width="8" height="8" rx="1" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareStack;
-impl IconShape for LdSquareStack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareStack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29941,8 +32746,8 @@ impl IconShape for LdSquareStack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareTerminal;
-impl IconShape for LdSquareTerminal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareTerminal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29964,8 +32769,8 @@ impl IconShape for LdSquareTerminal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareUserRound;
-impl IconShape for LdSquareUserRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareUserRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -29987,8 +32792,8 @@ impl IconShape for LdSquareUserRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareUser;
-impl IconShape for LdSquareUser {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareUser {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30010,8 +32815,8 @@ impl IconShape for LdSquareUser {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquareX;
-impl IconShape for LdSquareX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquareX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30033,8 +32838,8 @@ impl IconShape for LdSquareX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquare;
-impl IconShape for LdSquare {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquare {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30053,9 +32858,105 @@ impl IconShape for LdSquare {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquaresExclude;
+impl Into<&'static str> for LdSquaresExclude {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 12v2a2 2 0 0 1-2 2H9a1 1 0 0 0-1 1v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h0" />
+  <path d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1h-5a2 2 0 0 0-2 2v2" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquaresIntersect;
+impl Into<&'static str> for LdSquaresIntersect {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 22a2 2 0 0 1-2-2" />
+  <path d="M14 2a2 2 0 0 1 2 2" />
+  <path d="M16 22h-2" />
+  <path d="M2 10V8" />
+  <path d="M2 4a2 2 0 0 1 2-2" />
+  <path d="M20 8a2 2 0 0 1 2 2" />
+  <path d="M22 14v2" />
+  <path d="M22 20a2 2 0 0 1-2 2" />
+  <path d="M4 16a2 2 0 0 1-2-2" />
+  <path d="M8 10a2 2 0 0 1 2-2h5a1 1 0 0 1 1 1v5a2 2 0 0 1-2 2H9a1 1 0 0 1-1-1z" />
+  <path d="M8 2h2" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquaresSubtract;
+impl Into<&'static str> for LdSquaresSubtract {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 22a2 2 0 0 1-2-2" />
+  <path d="M16 22h-2" />
+  <path d="M16 4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-5a2 2 0 0 1 2-2h5a1 1 0 0 0 1-1z" />
+  <path d="M20 8a2 2 0 0 1 2 2" />
+  <path d="M22 14v2" />
+  <path d="M22 20a2 2 0 0 1-2 2" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdSquaresUnite;
+impl Into<&'static str> for LdSquaresUnite {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3a1 1 0 0 0 1 1h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-3a1 1 0 0 0-1-1z" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquircle;
-impl IconShape for LdSquircle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquircle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30075,8 +32976,8 @@ impl IconShape for LdSquircle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSquirrel;
-impl IconShape for LdSquirrel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSquirrel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30099,8 +33000,8 @@ impl IconShape for LdSquirrel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStamp;
-impl IconShape for LdStamp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStamp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30122,8 +33023,8 @@ impl IconShape for LdStamp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStarHalf;
-impl IconShape for LdStarHalf {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStarHalf {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30135,7 +33036,7 @@ impl IconShape for LdStarHalf {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M12 17.8 5.8 21 7 14.1 2 9.3l7-1L12 2" />
+  <path d="M12 18.338a2.1 2.1 0 0 0-.987.244L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16l2.309-4.679A.53.53 0 0 1 12 2" />
 </svg>
 "#
     }
@@ -30143,8 +33044,8 @@ impl IconShape for LdStarHalf {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStarOff;
-impl IconShape for LdStarOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStarOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30166,8 +33067,8 @@ impl IconShape for LdStarOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStar;
-impl IconShape for LdStar {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStar {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30179,7 +33080,7 @@ impl IconShape for LdStar {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
 </svg>
 "#
     }
@@ -30187,8 +33088,8 @@ impl IconShape for LdStar {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStepBack;
-impl IconShape for LdStepBack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStepBack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30209,8 +33110,8 @@ impl IconShape for LdStepBack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStepForward;
-impl IconShape for LdStepForward {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStepForward {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30231,8 +33132,8 @@ impl IconShape for LdStepForward {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStethoscope;
-impl IconShape for LdStethoscope {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStethoscope {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30244,8 +33145,10 @@ impl IconShape for LdStethoscope {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
-  <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+  <path d="M11 2v2" />
+  <path d="M5 2v2" />
+  <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" />
+  <path d="M8 15a6 6 0 0 0 12 0v-3" />
   <circle cx="20" cy="10" r="2" />
 </svg>
 "#
@@ -30254,8 +33157,8 @@ impl IconShape for LdStethoscope {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSticker;
-impl IconShape for LdSticker {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSticker {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30269,8 +33172,8 @@ impl IconShape for LdSticker {
 >
   <path d="M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z" />
   <path d="M14 3v4a2 2 0 0 0 2 2h4" />
-  <path d="M8 13h0" />
-  <path d="M16 13h0" />
+  <path d="M8 13h.01" />
+  <path d="M16 13h.01" />
   <path d="M10 16s.8 1 2 1c1.3 0 2-1 2-1" />
 </svg>
 "#
@@ -30279,8 +33182,8 @@ impl IconShape for LdSticker {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStickyNote;
-impl IconShape for LdStickyNote {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStickyNote {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30301,8 +33204,8 @@ impl IconShape for LdStickyNote {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStore;
-impl IconShape for LdStore {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStore {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30318,7 +33221,7 @@ impl IconShape for LdStore {
   <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
   <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
   <path d="M2 7h20" />
-  <path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7" />
+  <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" />
 </svg>
 "#
     }
@@ -30326,8 +33229,8 @@ impl IconShape for LdStore {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStretchHorizontal;
-impl IconShape for LdStretchHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStretchHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30348,8 +33251,8 @@ impl IconShape for LdStretchHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStretchVertical;
-impl IconShape for LdStretchVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStretchVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30370,8 +33273,8 @@ impl IconShape for LdStretchVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdStrikethrough;
-impl IconShape for LdStrikethrough {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdStrikethrough {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30393,8 +33296,8 @@ impl IconShape for LdStrikethrough {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSubscript;
-impl IconShape for LdSubscript {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSubscript {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30416,8 +33319,8 @@ impl IconShape for LdSubscript {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSunDim;
-impl IconShape for LdSunDim {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSunDim {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30445,8 +33348,8 @@ impl IconShape for LdSunDim {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSunMedium;
-impl IconShape for LdSunMedium {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSunMedium {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30474,8 +33377,8 @@ impl IconShape for LdSunMedium {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSunMoon;
-impl IconShape for LdSunMoon {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSunMoon {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30503,8 +33406,8 @@ impl IconShape for LdSunMoon {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSunSnow;
-impl IconShape for LdSunSnow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSunSnow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30516,17 +33419,17 @@ impl IconShape for LdSunSnow {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 9a3 3 0 1 0 0 6" />
-  <path d="M2 12h1" />
-  <path d="M14 21V3" />
-  <path d="M10 4V3" />
   <path d="M10 21v-1" />
+  <path d="M10 4V3" />
+  <path d="M10 9a3 3 0 0 0 0 6" />
+  <path d="m14 20 1.25-2.5L18 18" />
+  <path d="m14 4 1.25 2.5L18 6" />
+  <path d="m17 21-3-6 1.5-3H22" />
+  <path d="m17 3-3 6 1.5 3" />
+  <path d="M2 12h1" />
+  <path d="m20 10-1.5 2 1.5 2" />
   <path d="m3.64 18.36.7-.7" />
   <path d="m4.34 6.34-.7-.7" />
-  <path d="M14 12h8" />
-  <path d="m17 4-3 3" />
-  <path d="m14 17 3 3" />
-  <path d="m21 15-3-3 3-3" />
 </svg>
 "#
     }
@@ -30534,8 +33437,8 @@ impl IconShape for LdSunSnow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSun;
-impl IconShape for LdSun {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSun {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30563,8 +33466,8 @@ impl IconShape for LdSun {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSunrise;
-impl IconShape for LdSunrise {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSunrise {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30591,8 +33494,8 @@ impl IconShape for LdSunrise {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSunset;
-impl IconShape for LdSunset {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSunset {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30619,8 +33522,8 @@ impl IconShape for LdSunset {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSuperscript;
-impl IconShape for LdSuperscript {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSuperscript {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30642,8 +33545,8 @@ impl IconShape for LdSuperscript {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSwatchBook;
-impl IconShape for LdSwatchBook {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSwatchBook {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30657,7 +33560,7 @@ impl IconShape for LdSwatchBook {
 >
   <path d="M11 17a4 4 0 0 1-8 0V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2Z" />
   <path d="M16.7 13H19a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H7" />
-  <path d="M 7 17h0.01" />
+  <path d="M 7 17h.01" />
   <path d="m11 8 2.3-2.3a2.4 2.4 0 0 1 3.404.004L18.6 7.6a2.4 2.4 0 0 1 .026 3.434L9.9 19.8" />
 </svg>
 "#
@@ -30666,8 +33569,8 @@ impl IconShape for LdSwatchBook {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSwissFranc;
-impl IconShape for LdSwissFranc {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSwissFranc {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30689,8 +33592,8 @@ impl IconShape for LdSwissFranc {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSwitchCamera;
-impl IconShape for LdSwitchCamera {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSwitchCamera {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30714,8 +33617,8 @@ impl IconShape for LdSwitchCamera {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSword;
-impl IconShape for LdSword {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSword {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30738,8 +33641,8 @@ impl IconShape for LdSword {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSwords;
-impl IconShape for LdSwords {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSwords {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30766,8 +33669,8 @@ impl IconShape for LdSwords {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdSyringe;
-impl IconShape for LdSyringe {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdSyringe {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30792,8 +33695,8 @@ impl IconShape for LdSyringe {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTable2;
-impl IconShape for LdTable2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTable2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30813,8 +33716,8 @@ impl IconShape for LdTable2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTableCellsMerge;
-impl IconShape for LdTableCellsMerge {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTableCellsMerge {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30838,8 +33741,8 @@ impl IconShape for LdTableCellsMerge {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTableCellsSplit;
-impl IconShape for LdTableCellsSplit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTableCellsSplit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30862,8 +33765,8 @@ impl IconShape for LdTableCellsSplit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTableColumnsSplit;
-impl IconShape for LdTableColumnsSplit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTableColumnsSplit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30892,9 +33795,35 @@ impl IconShape for LdTableColumnsSplit {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTableOfContents;
+impl Into<&'static str> for LdTableOfContents {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 12H3" />
+  <path d="M16 18H3" />
+  <path d="M16 6H3" />
+  <path d="M21 12h.01" />
+  <path d="M21 18h.01" />
+  <path d="M21 6h.01" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTableProperties;
-impl IconShape for LdTableProperties {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTableProperties {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30917,8 +33846,8 @@ impl IconShape for LdTableProperties {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTableRowsSplit;
-impl IconShape for LdTableRowsSplit {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTableRowsSplit {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30948,8 +33877,8 @@ impl IconShape for LdTableRowsSplit {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTable;
-impl IconShape for LdTable {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTable {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30972,8 +33901,8 @@ impl IconShape for LdTable {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTabletSmartphone;
-impl IconShape for LdTabletSmartphone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTabletSmartphone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -30995,8 +33924,8 @@ impl IconShape for LdTabletSmartphone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTablet;
-impl IconShape for LdTablet {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTablet {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31017,8 +33946,8 @@ impl IconShape for LdTablet {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTablets;
-impl IconShape for LdTablets {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTablets {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31041,8 +33970,8 @@ impl IconShape for LdTablets {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTag;
-impl IconShape for LdTag {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTag {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31063,8 +33992,8 @@ impl IconShape for LdTag {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTags;
-impl IconShape for LdTags {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTags {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31086,8 +34015,8 @@ impl IconShape for LdTags {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTally1;
-impl IconShape for LdTally1 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTally1 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31107,8 +34036,8 @@ impl IconShape for LdTally1 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTally2;
-impl IconShape for LdTally2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTally2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31129,8 +34058,8 @@ impl IconShape for LdTally2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTally3;
-impl IconShape for LdTally3 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTally3 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31152,8 +34081,8 @@ impl IconShape for LdTally3 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTally4;
-impl IconShape for LdTally4 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTally4 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31176,8 +34105,8 @@ impl IconShape for LdTally4 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTally5;
-impl IconShape for LdTally5 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTally5 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31201,8 +34130,8 @@ impl IconShape for LdTally5 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTangent;
-impl IconShape for LdTangent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTangent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31225,8 +34154,8 @@ impl IconShape for LdTangent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTarget;
-impl IconShape for LdTarget {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTarget {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31248,8 +34177,8 @@ impl IconShape for LdTarget {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTelescope;
-impl IconShape for LdTelescope {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTelescope {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31275,8 +34204,8 @@ impl IconShape for LdTelescope {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTentTree;
-impl IconShape for LdTentTree {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTentTree {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31302,8 +34231,8 @@ impl IconShape for LdTentTree {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTent;
-impl IconShape for LdTent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31326,8 +34255,8 @@ impl IconShape for LdTent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTerminal;
-impl IconShape for LdTerminal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTerminal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31339,8 +34268,8 @@ impl IconShape for LdTerminal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="4 17 10 11 4 5" />
-  <line x1="12" x2="20" y1="19" y2="19" />
+  <path d="M12 19h8" />
+  <path d="m4 17 6-6-6-6" />
 </svg>
 "#
     }
@@ -31348,8 +34277,8 @@ impl IconShape for LdTerminal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTestTubeDiagonal;
-impl IconShape for LdTestTubeDiagonal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTestTubeDiagonal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31361,7 +34290,7 @@ impl IconShape for LdTestTubeDiagonal {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M21 7 6.82 21.18a2.83 2.83 0 0 1-3.99-.01v0a2.83 2.83 0 0 1 0-4L17 3" />
+  <path d="M21 7 6.82 21.18a2.83 2.83 0 0 1-3.99-.01a2.83 2.83 0 0 1 0-4L17 3" />
   <path d="m16 2 6 6" />
   <path d="M12 16H4" />
 </svg>
@@ -31371,8 +34300,8 @@ impl IconShape for LdTestTubeDiagonal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTestTube;
-impl IconShape for LdTestTube {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTestTube {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31384,7 +34313,7 @@ impl IconShape for LdTestTube {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5h0c-1.4 0-2.5-1.1-2.5-2.5V2" />
+  <path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2" />
   <path d="M8.5 2h7" />
   <path d="M14.5 16h-5" />
 </svg>
@@ -31394,8 +34323,8 @@ impl IconShape for LdTestTube {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTestTubes;
-impl IconShape for LdTestTubes {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTestTubes {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31407,8 +34336,8 @@ impl IconShape for LdTestTubes {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9 2v17.5A2.5 2.5 0 0 1 6.5 22v0A2.5 2.5 0 0 1 4 19.5V2" />
-  <path d="M20 2v17.5a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1-2.5-2.5V2" />
+  <path d="M9 2v17.5A2.5 2.5 0 0 1 6.5 22A2.5 2.5 0 0 1 4 19.5V2" />
+  <path d="M20 2v17.5a2.5 2.5 0 0 1-2.5 2.5a2.5 2.5 0 0 1-2.5-2.5V2" />
   <path d="M3 2h7" />
   <path d="M14 2h7" />
   <path d="M9 16H4" />
@@ -31420,8 +34349,8 @@ impl IconShape for LdTestTubes {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTextCursorInput;
-impl IconShape for LdTextCursorInput {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTextCursorInput {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31433,11 +34362,11 @@ impl IconShape for LdTextCursorInput {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1" />
-  <path d="M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5" />
-  <path d="M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1" />
+  <path d="M12 20h-1a2 2 0 0 1-2-2 2 2 0 0 1-2 2H6" />
   <path d="M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7" />
-  <path d="M9 7v10" />
+  <path d="M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1" />
+  <path d="M6 4h1a2 2 0 0 1 2 2 2 2 0 0 1 2-2h1" />
+  <path d="M9 6v12" />
 </svg>
 "#
     }
@@ -31445,8 +34374,8 @@ impl IconShape for LdTextCursorInput {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTextCursor;
-impl IconShape for LdTextCursor {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTextCursor {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31468,8 +34397,8 @@ impl IconShape for LdTextCursor {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTextQuote;
-impl IconShape for LdTextQuote {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTextQuote {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31492,8 +34421,8 @@ impl IconShape for LdTextQuote {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTextSearch;
-impl IconShape for LdTextSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTextSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31517,8 +34446,8 @@ impl IconShape for LdTextSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTextSelect;
-impl IconShape for LdTextSelect {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTextSelect {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31530,21 +34459,21 @@ impl IconShape for LdTextSelect {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M5 3a2 2 0 0 0-2 2" />
-  <path d="M19 3a2 2 0 0 1 2 2" />
-  <path d="M21 19a2 2 0 0 1-2 2" />
-  <path d="M5 21a2 2 0 0 1-2-2" />
-  <path d="M9 3h1" />
-  <path d="M9 21h1" />
-  <path d="M14 3h1" />
   <path d="M14 21h1" />
-  <path d="M3 9v1" />
+  <path d="M14 3h1" />
+  <path d="M19 3a2 2 0 0 1 2 2" />
+  <path d="M21 14v1" />
+  <path d="M21 19a2 2 0 0 1-2 2" />
   <path d="M21 9v1" />
   <path d="M3 14v1" />
-  <path d="M21 14v1" />
-  <line x1="7" x2="15" y1="8" y2="8" />
-  <line x1="7" x2="17" y1="12" y2="12" />
-  <line x1="7" x2="13" y1="16" y2="16" />
+  <path d="M3 9v1" />
+  <path d="M5 21a2 2 0 0 1-2-2" />
+  <path d="M5 3a2 2 0 0 0-2 2" />
+  <path d="M7 12h10" />
+  <path d="M7 16h6" />
+  <path d="M7 8h8" />
+  <path d="M9 21h1" />
+  <path d="M9 3h1" />
 </svg>
 "#
     }
@@ -31552,8 +34481,8 @@ impl IconShape for LdTextSelect {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdText;
-impl IconShape for LdText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31565,9 +34494,9 @@ impl IconShape for LdText {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17 6.1H3" />
-  <path d="M21 12.1H3" />
-  <path d="M15.1 18H3" />
+  <path d="M15 18H3" />
+  <path d="M17 6H3" />
+  <path d="M21 12H3" />
 </svg>
 "#
     }
@@ -31575,8 +34504,8 @@ impl IconShape for LdText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTheater;
-impl IconShape for LdTheater {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTheater {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31604,8 +34533,8 @@ impl IconShape for LdTheater {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdThermometerSnowflake;
-impl IconShape for LdThermometerSnowflake {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdThermometerSnowflake {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31617,12 +34546,14 @@ impl IconShape for LdThermometerSnowflake {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 12h10" />
-  <path d="M9 4v16" />
-  <path d="m3 9 3 3-3 3" />
-  <path d="M12 6 9 9 6 6" />
-  <path d="m6 18 3-3 1.5 1.5" />
-  <path d="M20 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" />
+  <path d="m10 20-1.25-2.5L6 18" />
+  <path d="M10 4 8.75 6.5 6 6" />
+  <path d="M10.585 15H10" />
+  <path d="M2 12h6.5L10 9" />
+  <path d="M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z" />
+  <path d="m4 10 1.5 2L4 14" />
+  <path d="m7 21 3-6-1.5-3" />
+  <path d="m7 3 3 6h2" />
 </svg>
 "#
     }
@@ -31630,8 +34561,8 @@ impl IconShape for LdThermometerSnowflake {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdThermometerSun;
-impl IconShape for LdThermometerSun {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdThermometerSun {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31656,8 +34587,8 @@ impl IconShape for LdThermometerSun {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdThermometer;
-impl IconShape for LdThermometer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdThermometer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31677,8 +34608,8 @@ impl IconShape for LdThermometer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdThumbsDown;
-impl IconShape for LdThumbsDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdThumbsDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31691,7 +34622,7 @@ impl IconShape for LdThumbsDown {
   stroke-linejoin="round"
 >
   <path d="M17 14V2" />
-  <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22h0a3.13 3.13 0 0 1-3-3.88Z" />
+  <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z" />
 </svg>
 "#
     }
@@ -31699,8 +34630,8 @@ impl IconShape for LdThumbsDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdThumbsUp;
-impl IconShape for LdThumbsUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdThumbsUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31713,7 +34644,7 @@ impl IconShape for LdThumbsUp {
   stroke-linejoin="round"
 >
   <path d="M7 10v12" />
-  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
+  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
 </svg>
 "#
     }
@@ -31721,8 +34652,8 @@ impl IconShape for LdThumbsUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicketCheck;
-impl IconShape for LdTicketCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicketCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31743,8 +34674,8 @@ impl IconShape for LdTicketCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicketMinus;
-impl IconShape for LdTicketMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicketMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31765,8 +34696,8 @@ impl IconShape for LdTicketMinus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicketPercent;
-impl IconShape for LdTicketPercent {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicketPercent {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31789,8 +34720,8 @@ impl IconShape for LdTicketPercent {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicketPlus;
-impl IconShape for LdTicketPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicketPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31812,8 +34743,8 @@ impl IconShape for LdTicketPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicketSlash;
-impl IconShape for LdTicketSlash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicketSlash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31834,8 +34765,8 @@ impl IconShape for LdTicketSlash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicketX;
-impl IconShape for LdTicketX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicketX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31857,8 +34788,8 @@ impl IconShape for LdTicketX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTicket;
-impl IconShape for LdTicket {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTicket {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31880,9 +34811,61 @@ impl IconShape for LdTicket {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTicketsPlane;
+impl Into<&'static str> for LdTicketsPlane {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 17h1.227a2 2 0 0 0 1.345-.52L18 12" />
+  <path d="m12 13.5 3.75.5" />
+  <path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8" />
+  <path d="M6 10V8" />
+  <path d="M6 14v1" />
+  <path d="M6 19v2" />
+  <rect x="2" y="8" width="20" height="13" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTickets;
+impl Into<&'static str> for LdTickets {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8" />
+  <path d="M6 10V8" />
+  <path d="M6 14v1" />
+  <path d="M6 19v2" />
+  <rect x="2" y="8" width="20" height="13" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTimerOff;
-impl IconShape for LdTimerOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTimerOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31906,8 +34889,8 @@ impl IconShape for LdTimerOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTimerReset;
-impl IconShape for LdTimerReset {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTimerReset {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31930,8 +34913,8 @@ impl IconShape for LdTimerReset {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTimer;
-impl IconShape for LdTimer {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTimer {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31953,8 +34936,8 @@ impl IconShape for LdTimer {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdToggleLeft;
-impl IconShape for LdToggleLeft {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdToggleLeft {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31966,8 +34949,8 @@ impl IconShape for LdToggleLeft {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="20" height="12" x="2" y="6" rx="6" ry="6" />
-  <circle cx="8" cy="12" r="2" />
+  <circle cx="9" cy="12" r="3" />
+  <rect width="20" height="14" x="2" y="5" rx="7" />
 </svg>
 "#
     }
@@ -31975,8 +34958,8 @@ impl IconShape for LdToggleLeft {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdToggleRight;
-impl IconShape for LdToggleRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdToggleRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -31988,17 +34971,38 @@ impl IconShape for LdToggleRight {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="20" height="12" x="2" y="6" rx="6" ry="6" />
-  <circle cx="16" cy="12" r="2" />
+  <circle cx="15" cy="12" r="3" />
+  <rect width="20" height="14" x="2" y="5" rx="7" />
 </svg>
 "#
     }
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdToilet;
+impl Into<&'static str> for LdToilet {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18" />
+  <path d="M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8" />
+</svg>"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTornado;
-impl IconShape for LdTornado {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTornado {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32022,8 +35026,8 @@ impl IconShape for LdTornado {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTorus;
-impl IconShape for LdTorus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTorus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32044,8 +35048,8 @@ impl IconShape for LdTorus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTouchpadOff;
-impl IconShape for LdTouchpadOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTouchpadOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32057,12 +35061,12 @@ impl IconShape for LdTouchpadOff {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16" />
-  <path d="M2 14h12" />
-  <path d="M22 14h-2" />
   <path d="M12 20v-6" />
+  <path d="M19.656 14H22" />
+  <path d="M2 14h12" />
   <path d="m2 2 20 20" />
-  <path d="M22 16V6a2 2 0 0 0-2-2H10" />
+  <path d="M20 20H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
+  <path d="M9.656 4H20a2 2 0 0 1 2 2v10.344" />
 </svg>
 "#
     }
@@ -32070,8 +35074,8 @@ impl IconShape for LdTouchpadOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTouchpad;
-impl IconShape for LdTouchpad {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTouchpad {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32093,8 +35097,8 @@ impl IconShape for LdTouchpad {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTowerControl;
-impl IconShape for LdTowerControl {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTowerControl {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32120,8 +35124,8 @@ impl IconShape for LdTowerControl {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdToyBrick;
-impl IconShape for LdToyBrick {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdToyBrick {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32143,8 +35147,8 @@ impl IconShape for LdToyBrick {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTractor;
-impl IconShape for LdTractor {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTractor {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32156,10 +35160,10 @@ impl IconShape for LdTractor {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1" />
+  <path d="m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20" />
   <path d="M16 18h-5" />
   <path d="M18 5a1 1 0 0 0-1 1v5.573" />
-  <path d="M3 4h9l1 7.246" />
+  <path d="M3 4h8.129a1 1 0 0 1 .99.863L13 11.246" />
   <path d="M4 11V4" />
   <path d="M7 15h.01" />
   <path d="M8 10.1V4" />
@@ -32172,8 +35176,8 @@ impl IconShape for LdTractor {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrafficCone;
-impl IconShape for LdTrafficCone {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrafficCone {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32185,10 +35189,10 @@ impl IconShape for LdTrafficCone {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M9.3 6.2a4.55 4.55 0 0 0 5.4 0" />
-  <path d="M7.9 10.7c.9.8 2.4 1.3 4.1 1.3s3.2-.5 4.1-1.3" />
-  <path d="M13.9 3.5a1.93 1.93 0 0 0-3.8-.1l-3 10c-.1.2-.1.4-.1.6 0 1.7 2.2 3 5 3s5-1.3 5-3c0-.2 0-.4-.1-.5Z" />
-  <path d="m7.5 12.2-4.7 2.7c-.5.3-.8.7-.8 1.1s.3.8.8 1.1l7.6 4.5c.9.5 2.1.5 3 0l7.6-4.5c.7-.3 1-.7 1-1.1s-.3-.8-.8-1.1l-4.7-2.8" />
+  <path d="M16.05 10.966a5 2.5 0 0 1-8.1 0" />
+  <path d="m16.923 14.049 4.48 2.04a1 1 0 0 1 .001 1.831l-8.574 3.9a2 2 0 0 1-1.66 0l-8.574-3.91a1 1 0 0 1 0-1.83l4.484-2.04" />
+  <path d="M16.949 14.14a5 2.5 0 1 1-9.9 0L10.063 3.5a2 2 0 0 1 3.874 0z" />
+  <path d="M9.194 6.57a5 2.5 0 0 0 5.61 0" />
 </svg>
 "#
     }
@@ -32196,8 +35200,8 @@ impl IconShape for LdTrafficCone {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrainFrontTunnel;
-impl IconShape for LdTrainFrontTunnel {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrainFrontTunnel {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32223,8 +35227,8 @@ impl IconShape for LdTrainFrontTunnel {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrainFront;
-impl IconShape for LdTrainFront {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrainFront {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32249,8 +35253,8 @@ impl IconShape for LdTrainFront {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrainTrack;
-impl IconShape for LdTrainTrack {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrainTrack {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32276,8 +35280,8 @@ impl IconShape for LdTrainTrack {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTramFront;
-impl IconShape for LdTramFront {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTramFront {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32302,9 +35306,37 @@ impl IconShape for LdTramFront {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTransgender;
+impl Into<&'static str> for LdTransgender {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 16v6" />
+  <path d="M14 20h-4" />
+  <path d="M18 2h4v4" />
+  <path d="m2 2 7.17 7.17" />
+  <path d="M2 5.355V2h3.357" />
+  <path d="m22 2-7.17 7.17" />
+  <path d="M8 5 5 8" />
+  <circle cx="12" cy="12" r="4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrash2;
-impl IconShape for LdTrash2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrash2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32328,8 +35360,8 @@ impl IconShape for LdTrash2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrash;
-impl IconShape for LdTrash {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrash {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32351,8 +35383,8 @@ impl IconShape for LdTrash {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTreeDeciduous;
-impl IconShape for LdTreeDeciduous {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTreeDeciduous {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32373,8 +35405,8 @@ impl IconShape for LdTreeDeciduous {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTreePalm;
-impl IconShape for LdTreePalm {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTreePalm {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32397,8 +35429,8 @@ impl IconShape for LdTreePalm {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTreePine;
-impl IconShape for LdTreePine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTreePine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32419,8 +35451,8 @@ impl IconShape for LdTreePine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrees;
-impl IconShape for LdTrees {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrees {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32432,7 +35464,7 @@ impl IconShape for LdTrees {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" />
+  <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" />
   <path d="M7 16v6" />
   <path d="M13 19v3" />
   <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" />
@@ -32443,8 +35475,8 @@ impl IconShape for LdTrees {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrello;
-impl IconShape for LdTrello {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrello {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32466,8 +35498,8 @@ impl IconShape for LdTrello {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrendingDown;
-impl IconShape for LdTrendingDown {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrendingDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32479,8 +35511,32 @@ impl IconShape for LdTrendingDown {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
-  <polyline points="16 17 22 17 22 11" />
+  <path d="M16 17h6v-6" />
+  <path d="m22 17-8.5-8.5-5 5L2 7" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTrendingUpDown;
+impl Into<&'static str> for LdTrendingUpDown {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14.828 14.828 21 21" />
+  <path d="M21 16v5h-5" />
+  <path d="m21 3-9 9-4-4-6 6" />
+  <path d="M21 8V3h-5" />
 </svg>
 "#
     }
@@ -32488,8 +35544,8 @@ impl IconShape for LdTrendingDown {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrendingUp;
-impl IconShape for LdTrendingUp {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrendingUp {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32501,8 +35557,8 @@ impl IconShape for LdTrendingUp {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-  <polyline points="16 7 22 7 22 13" />
+  <path d="M16 7h6v6" />
+  <path d="m22 7-8.5 8.5-5-5L2 17" />
 </svg>
 "#
     }
@@ -32510,8 +35566,8 @@ impl IconShape for LdTrendingUp {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTriangleAlert;
-impl IconShape for LdTriangleAlert {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTriangleAlert {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32532,9 +35588,38 @@ impl IconShape for LdTriangleAlert {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTriangleDashed;
+impl Into<&'static str> for LdTriangleDashed {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.17 4.193a2 2 0 0 1 3.666.013" />
+  <path d="M14 21h2" />
+  <path d="m15.874 7.743 1 1.732" />
+  <path d="m18.849 12.952 1 1.732" />
+  <path d="M21.824 18.18a2 2 0 0 1-1.835 2.824" />
+  <path d="M4.024 21a2 2 0 0 1-1.839-2.839" />
+  <path d="m5.136 12.952-1 1.732" />
+  <path d="M8 21h2" />
+  <path d="m8.102 7.743-1 1.732" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTriangleRight;
-impl IconShape for LdTriangleRight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTriangleRight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32554,8 +35639,8 @@ impl IconShape for LdTriangleRight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTriangle;
-impl IconShape for LdTriangle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTriangle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32575,8 +35660,8 @@ impl IconShape for LdTriangle {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTrophy;
-impl IconShape for LdTrophy {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTrophy {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32600,9 +35685,36 @@ impl IconShape for LdTrophy {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTruckElectric;
+impl Into<&'static str> for LdTruckElectric {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 19V7a2 2 0 0 0-2-2H9" />
+  <path d="M15 19H9" />
+  <path d="M19 19h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14" />
+  <path d="M2 13v5a1 1 0 0 0 1 1h2" />
+  <path d="M4 3 2.15 5.15a.495.495 0 0 0 .35.86h2.15a.47.47 0 0 1 .35.86L3 9.02" />
+  <circle cx="17" cy="19" r="2" />
+  <circle cx="7" cy="19" r="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTruck;
-impl IconShape for LdTruck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTruck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32625,8 +35737,8 @@ impl IconShape for LdTruck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTurtle;
-impl IconShape for LdTurtle {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTurtle {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32648,9 +35760,32 @@ impl IconShape for LdTurtle {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdTv2;
-impl IconShape for LdTv2 {
-    fn content(&self) -> &'static str {
+pub struct LdTvMinimalPlay;
+impl Into<&'static str> for LdTvMinimalPlay {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 7.75a.75.75 0 0 1 1.142-.638l3.664 2.249a.75.75 0 0 1 0 1.278l-3.664 2.25a.75.75 0 0 1-1.142-.64z" />
+  <path d="M7 21h10" />
+  <rect width="20" height="14" x="2" y="3" rx="2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdTvMinimal;
+impl Into<&'static str> for LdTvMinimal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32671,8 +35806,8 @@ impl IconShape for LdTv2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTv;
-impl IconShape for LdTv {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTv {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32684,8 +35819,8 @@ impl IconShape for LdTv {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <rect width="20" height="15" x="2" y="7" rx="2" ry="2" />
-  <polyline points="17 2 12 7 7 2" />
+  <path d="m17 2-5 5-5-5" />
+  <rect width="20" height="15" x="2" y="7" rx="2" />
 </svg>
 "#
     }
@@ -32693,8 +35828,8 @@ impl IconShape for LdTv {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTwitch;
-impl IconShape for LdTwitch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTwitch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32714,8 +35849,8 @@ impl IconShape for LdTwitch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdTwitter;
-impl IconShape for LdTwitter {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdTwitter {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32734,9 +35869,9 @@ impl IconShape for LdTwitter {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdType;
-impl IconShape for LdType {
-    fn content(&self) -> &'static str {
+pub struct LdTypeOutline;
+impl Into<&'static str> for LdTypeOutline {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32748,9 +35883,30 @@ impl IconShape for LdType {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polyline points="4 7 4 4 20 4 20 7" />
-  <line x1="9" x2="15" y1="20" y2="20" />
-  <line x1="12" x2="12" y1="4" y2="20" />
+  <path d="M14 16.5a.5.5 0 0 0 .5.5h.5a2 2 0 0 1 0 4H9a2 2 0 0 1 0-4h.5a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V8a2 2 0 0 1-4 0V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-4 0v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5Z" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdType;
+impl Into<&'static str> for LdType {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 4v16" />
+  <path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2" />
+  <path d="M9 20h6" />
 </svg>
 "#
     }
@@ -32758,8 +35914,8 @@ impl IconShape for LdType {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUmbrellaOff;
-impl IconShape for LdUmbrellaOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUmbrellaOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32782,8 +35938,8 @@ impl IconShape for LdUmbrellaOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUmbrella;
-impl IconShape for LdUmbrella {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUmbrella {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32805,8 +35961,8 @@ impl IconShape for LdUmbrella {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUnderline;
-impl IconShape for LdUnderline {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUnderline {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32827,8 +35983,8 @@ impl IconShape for LdUnderline {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUndo2;
-impl IconShape for LdUndo2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUndo2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32841,7 +35997,7 @@ impl IconShape for LdUndo2 {
   stroke-linejoin="round"
 >
   <path d="M9 14 4 9l5-5" />
-  <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />
+  <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
 </svg>
 "#
     }
@@ -32849,8 +36005,8 @@ impl IconShape for LdUndo2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUndoDot;
-impl IconShape for LdUndoDot {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUndoDot {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32862,9 +36018,9 @@ impl IconShape for LdUndoDot {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="12" cy="17" r="1" />
+  <path d="M21 17a9 9 0 0 0-15-6.7L3 13" />
   <path d="M3 7v6h6" />
-  <path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13" />
+  <circle cx="12" cy="17" r="1" />
 </svg>
 "#
     }
@@ -32872,8 +36028,8 @@ impl IconShape for LdUndoDot {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUndo;
-impl IconShape for LdUndo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUndo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32894,8 +36050,8 @@ impl IconShape for LdUndo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUnfoldHorizontal;
-impl IconShape for LdUnfoldHorizontal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUnfoldHorizontal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32922,8 +36078,8 @@ impl IconShape for LdUnfoldHorizontal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUnfoldVertical;
-impl IconShape for LdUnfoldVertical {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUnfoldVertical {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32950,8 +36106,8 @@ impl IconShape for LdUnfoldVertical {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUngroup;
-impl IconShape for LdUngroup {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUngroup {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32972,8 +36128,8 @@ impl IconShape for LdUngroup {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUniversity;
-impl IconShape for LdUniversity {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUniversity {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -32985,13 +36141,13 @@ impl IconShape for LdUniversity {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <circle cx="12" cy="10" r="1" />
-  <path d="M22 20V8h-4l-6-4-6 4H2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2" />
-  <path d="M6 17v.01" />
-  <path d="M6 13v.01" />
-  <path d="M18 17v.01" />
-  <path d="M18 13v.01" />
-  <path d="M14 22v-5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5" />
+  <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+  <path d="M18 12h.01" />
+  <path d="M18 16h.01" />
+  <path d="M22 7a1 1 0 0 0-1-1h-2a2 2 0 0 1-1.143-.359L13.143 2.36a2 2 0 0 0-2.286-.001L6.143 5.64A2 2 0 0 1 5 6H3a1 1 0 0 0-1 1v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z" />
+  <path d="M6 12h.01" />
+  <path d="M6 16h.01" />
+  <circle cx="12" cy="10" r="2" />
 </svg>
 "#
     }
@@ -32999,8 +36155,8 @@ impl IconShape for LdUniversity {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUnlink2;
-impl IconShape for LdUnlink2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUnlink2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33020,8 +36176,8 @@ impl IconShape for LdUnlink2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUnlink;
-impl IconShape for LdUnlink {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUnlink {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33046,8 +36202,8 @@ impl IconShape for LdUnlink {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUnplug;
-impl IconShape for LdUnplug {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUnplug {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33072,8 +36228,8 @@ impl IconShape for LdUnplug {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUpload;
-impl IconShape for LdUpload {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUpload {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33085,9 +36241,9 @@ impl IconShape for LdUpload {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M12 3v12" />
+  <path d="m17 8-5-5-5 5" />
   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <polyline points="17 8 12 3 7 8" />
-  <line x1="12" x2="12" y1="3" y2="15" />
 </svg>
 "#
     }
@@ -33095,8 +36251,8 @@ impl IconShape for LdUpload {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUsb;
-impl IconShape for LdUsb {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUsb {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33122,8 +36278,8 @@ impl IconShape for LdUsb {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserCheck;
-impl IconShape for LdUserCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33135,9 +36291,9 @@ impl IconShape for LdUserCheck {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m16 11 2 2 4-4" />
   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
   <circle cx="9" cy="7" r="4" />
-  <polyline points="16 11 18 13 22 9" />
 </svg>
 "#
     }
@@ -33145,8 +36301,8 @@ impl IconShape for LdUserCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserCog;
-impl IconShape for LdUserCog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserCog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33158,17 +36314,41 @@ impl IconShape for LdUserCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M10 15H6a4 4 0 0 0-4 4v2" />
+  <path d="m14.305 16.53.923-.382" />
+  <path d="m15.228 13.852-.923-.383" />
+  <path d="m16.852 12.228-.383-.923" />
+  <path d="m16.852 17.772-.383.924" />
+  <path d="m19.148 12.228.383-.923" />
+  <path d="m19.53 18.696-.382-.924" />
+  <path d="m20.772 13.852.924-.383" />
+  <path d="m20.772 16.148.924.383" />
   <circle cx="18" cy="15" r="3" />
   <circle cx="9" cy="7" r="4" />
-  <path d="M10 15H6a4 4 0 0 0-4 4v2" />
-  <path d="m21.7 16.4-.9-.3" />
-  <path d="m15.2 13.9-.9-.3" />
-  <path d="m16.6 18.7.3-.9" />
-  <path d="m19.1 12.2.3-.9" />
-  <path d="m19.6 18.7-.4-1" />
-  <path d="m16.8 12.3-.4-1" />
-  <path d="m14.3 16.6 1-.4" />
-  <path d="m20.7 13.8 1-.4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdUserLock;
+impl Into<&'static str> for LdUserLock {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="10" cy="7" r="4" />
+  <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
+  <path d="M15 15.5V14a2 2 0 0 1 4 0v1.5" />
+  <rect width="8" height="5" x="13" y="16" rx=".899" />
 </svg>
 "#
     }
@@ -33176,8 +36356,8 @@ impl IconShape for LdUserCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserMinus;
-impl IconShape for LdUserMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33198,9 +36378,32 @@ impl IconShape for LdUserMinus {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdUserPen;
+impl Into<&'static str> for LdUserPen {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.5 15H7a4 4 0 0 0-4 4v2" />
+  <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+  <circle cx="10" cy="7" r="4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserPlus;
-impl IconShape for LdUserPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33223,8 +36426,8 @@ impl IconShape for LdUserPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRoundCheck;
-impl IconShape for LdUserRoundCheck {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRoundCheck {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33246,8 +36449,8 @@ impl IconShape for LdUserRoundCheck {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRoundCog;
-impl IconShape for LdUserRoundCog {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRoundCog {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33259,17 +36462,17 @@ impl IconShape for LdUserRoundCog {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="m14.305 19.53.923-.382" />
+  <path d="m15.228 16.852-.923-.383" />
+  <path d="m16.852 15.228-.383-.923" />
+  <path d="m16.852 20.772-.383.924" />
+  <path d="m19.148 15.228.383-.923" />
+  <path d="m19.53 21.696-.382-.924" />
   <path d="M2 21a8 8 0 0 1 10.434-7.62" />
+  <path d="m20.772 16.852.924-.383" />
+  <path d="m20.772 19.148.924.383" />
   <circle cx="10" cy="8" r="5" />
   <circle cx="18" cy="18" r="3" />
-  <path d="m19.5 14.3-.4.9" />
-  <path d="m16.9 20.8-.4.9" />
-  <path d="m21.7 19.5-.9-.4" />
-  <path d="m15.2 16.9-.9-.4" />
-  <path d="m21.7 16.5-.9.4" />
-  <path d="m15.2 19.1-.9.4" />
-  <path d="m19.5 21.7-.4-.9" />
-  <path d="m16.9 15.2-.4-.9" />
 </svg>
 "#
     }
@@ -33277,8 +36480,8 @@ impl IconShape for LdUserRoundCog {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRoundMinus;
-impl IconShape for LdUserRoundMinus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRoundMinus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33299,9 +36502,32 @@ impl IconShape for LdUserRoundMinus {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdUserRoundPen;
+impl Into<&'static str> for LdUserRoundPen {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 21a8 8 0 0 1 10.821-7.487" />
+  <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+  <circle cx="10" cy="8" r="5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRoundPlus;
-impl IconShape for LdUserRoundPlus {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRoundPlus {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33324,8 +36550,8 @@ impl IconShape for LdUserRoundPlus {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRoundSearch;
-impl IconShape for LdUserRoundSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRoundSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33348,8 +36574,8 @@ impl IconShape for LdUserRoundSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRoundX;
-impl IconShape for LdUserRoundX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRoundX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33372,8 +36598,8 @@ impl IconShape for LdUserRoundX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserRound;
-impl IconShape for LdUserRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33394,8 +36620,8 @@ impl IconShape for LdUserRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserSearch;
-impl IconShape for LdUserSearch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserSearch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33418,8 +36644,8 @@ impl IconShape for LdUserSearch {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUserX;
-impl IconShape for LdUserX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUserX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33442,8 +36668,8 @@ impl IconShape for LdUserX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUser;
-impl IconShape for LdUser {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUser {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33464,8 +36690,8 @@ impl IconShape for LdUser {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUsersRound;
-impl IconShape for LdUsersRound {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUsersRound {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33487,8 +36713,8 @@ impl IconShape for LdUsersRound {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUsers;
-impl IconShape for LdUsers {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUsers {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33501,9 +36727,9 @@ impl IconShape for LdUsers {
   stroke-linejoin="round"
 >
   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-  <circle cx="9" cy="7" r="4" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
   <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  <circle cx="9" cy="7" r="4" />
 </svg>
 "#
     }
@@ -33511,8 +36737,8 @@ impl IconShape for LdUsers {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUtensilsCrossed;
-impl IconShape for LdUtensilsCrossed {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUtensilsCrossed {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33535,8 +36761,8 @@ impl IconShape for LdUtensilsCrossed {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUtensils;
-impl IconShape for LdUtensils {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUtensils {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33550,7 +36776,7 @@ impl IconShape for LdUtensils {
 >
   <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
   <path d="M7 2v20" />
-  <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+  <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
 </svg>
 "#
     }
@@ -33558,8 +36784,8 @@ impl IconShape for LdUtensils {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdUtilityPole;
-impl IconShape for LdUtilityPole {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdUtilityPole {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33585,8 +36811,8 @@ impl IconShape for LdUtilityPole {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVariable;
-impl IconShape for LdVariable {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVariable {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33609,8 +36835,8 @@ impl IconShape for LdVariable {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVault;
-impl IconShape for LdVault {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVault {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33639,8 +36865,8 @@ impl IconShape for LdVault {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVegan;
-impl IconShape for LdVegan {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVegan {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33652,9 +36878,9 @@ impl IconShape for LdVegan {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
+  <path d="M16 8q6 0 6-6-6 0-6 6" />
+  <path d="M17.41 3.59a10 10 0 1 0 3 3" />
   <path d="M2 2a26.6 26.6 0 0 1 10 20c.9-6.82 1.5-9.5 4-14" />
-  <path d="M16 8c4 0 6-2 6-6-4 0-6 2-6 6" />
-  <path d="M17.41 3.6a10 10 0 1 0 3 3" />
 </svg>
 "#
     }
@@ -33662,8 +36888,8 @@ impl IconShape for LdVegan {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVenetianMask;
-impl IconShape for LdVenetianMask {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVenetianMask {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33675,9 +36901,57 @@ impl IconShape for LdVenetianMask {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M2 12a5 5 0 0 0 5 5 8 8 0 0 1 5 2 8 8 0 0 1 5-2 5 5 0 0 0 5-5V7h-5a8 8 0 0 0-5 2 8 8 0 0 0-5-2H2Z" />
-  <path d="M6 11c1.5 0 3 .5 3 2-2 0-3 0-3-2Z" />
-  <path d="M18 11c-1.5 0-3 .5-3 2 2 0 3 0 3-2Z" />
+  <path d="M18 11c-1.5 0-2.5.5-3 2" />
+  <path d="M4 6a2 2 0 0 0-2 2v4a5 5 0 0 0 5 5 8 8 0 0 1 5 2 8 8 0 0 1 5-2 5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3a8 8 0 0 0-5 2 8 8 0 0 0-5-2z" />
+  <path d="M6 11c1.5 0 2.5.5 3 2" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdVenusAndMars;
+impl Into<&'static str> for LdVenusAndMars {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 20h4" />
+  <path d="M12 16v6" />
+  <path d="M17 2h4v4" />
+  <path d="m21 2-5.46 5.46" />
+  <circle cx="12" cy="11" r="5" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdVenus;
+impl Into<&'static str> for LdVenus {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15v7" />
+  <path d="M9 19h6" />
+  <circle cx="12" cy="9" r="6" />
 </svg>
 "#
     }
@@ -33685,8 +36959,8 @@ impl IconShape for LdVenetianMask {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVibrateOff;
-impl IconShape for LdVibrateOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVibrateOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33710,8 +36984,8 @@ impl IconShape for LdVibrateOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVibrate;
-impl IconShape for LdVibrate {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVibrate {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33733,8 +37007,8 @@ impl IconShape for LdVibrate {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVideoOff;
-impl IconShape for LdVideoOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVideoOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33756,8 +37030,8 @@ impl IconShape for LdVideoOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVideo;
-impl IconShape for LdVideo {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVideo {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33778,8 +37052,8 @@ impl IconShape for LdVideo {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVideotape;
-impl IconShape for LdVideotape {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVideotape {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33803,8 +37077,8 @@ impl IconShape for LdVideotape {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdView;
-impl IconShape for LdView {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdView {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33816,10 +37090,10 @@ impl IconShape for LdView {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M5 12s2.545-5 7-5c4.454 0 7 5 7 5s-2.546 5-7 5c-4.455 0-7-5-7-5z" />
-  <path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
   <path d="M21 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2" />
   <path d="M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2" />
+  <circle cx="12" cy="12" r="1" />
+  <path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0" />
 </svg>
 "#
     }
@@ -33827,8 +37101,8 @@ impl IconShape for LdView {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVoicemail;
-impl IconShape for LdVoicemail {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVoicemail {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33849,9 +37123,9 @@ impl IconShape for LdVoicemail {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdVolume1;
-impl IconShape for LdVolume1 {
-    fn content(&self) -> &'static str {
+pub struct LdVolleyball;
+impl Into<&'static str> for LdVolleyball {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33863,8 +37137,34 @@ impl IconShape for LdVolume1 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-  <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+  <path d="M11.1 7.1a16.55 16.55 0 0 1 10.9 4" />
+  <path d="M12 12a12.6 12.6 0 0 1-8.7 5" />
+  <path d="M16.8 13.6a16.55 16.55 0 0 1-9 7.5" />
+  <path d="M20.7 17a12.8 12.8 0 0 0-8.7-5 13.3 13.3 0 0 1 0-10" />
+  <path d="M6.3 3.8a16.55 16.55 0 0 0 1.9 11.5" />
+  <circle cx="12" cy="12" r="10" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdVolume1;
+impl Into<&'static str> for LdVolume1 {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
+  <path d="M16 9a5 5 0 0 1 0 6" />
 </svg>
 "#
     }
@@ -33872,8 +37172,8 @@ impl IconShape for LdVolume1 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVolume2;
-impl IconShape for LdVolume2 {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVolume2 {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33885,9 +37185,34 @@ impl IconShape for LdVolume2 {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-  <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-  <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+  <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
+  <path d="M16 9a5 5 0 0 1 0 6" />
+  <path d="M19.364 18.364a9 9 0 0 0 0-12.728" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdVolumeOff;
+impl Into<&'static str> for LdVolumeOff {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 9a5 5 0 0 1 .95 2.293" />
+  <path d="M19.364 5.636a9 9 0 0 1 1.889 9.96" />
+  <path d="m2 2 20 20" />
+  <path d="m7 7-.587.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298V11" />
+  <path d="M9.828 4.172A.686.686 0 0 1 11 4.657v.686" />
 </svg>
 "#
     }
@@ -33895,8 +37220,8 @@ impl IconShape for LdVolume2 {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVolumeX;
-impl IconShape for LdVolumeX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVolumeX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33908,7 +37233,7 @@ impl IconShape for LdVolumeX {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+  <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
   <line x1="22" x2="16" y1="9" y2="15" />
   <line x1="16" x2="22" y1="9" y2="15" />
 </svg>
@@ -33918,8 +37243,8 @@ impl IconShape for LdVolumeX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVolume;
-impl IconShape for LdVolume {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVolume {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33931,7 +37256,7 @@ impl IconShape for LdVolume {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+  <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
 </svg>
 "#
     }
@@ -33939,8 +37264,8 @@ impl IconShape for LdVolume {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdVote;
-impl IconShape for LdVote {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdVote {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33962,8 +37287,8 @@ impl IconShape for LdVote {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWalletCards;
-impl IconShape for LdWalletCards {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWalletCards {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -33985,8 +37310,8 @@ impl IconShape for LdWalletCards {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWalletMinimal;
-impl IconShape for LdWalletMinimal {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWalletMinimal {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34007,8 +37332,8 @@ impl IconShape for LdWalletMinimal {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWallet;
-impl IconShape for LdWallet {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWallet {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34029,8 +37354,8 @@ impl IconShape for LdWallet {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWallpaper;
-impl IconShape for LdWallpaper {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWallpaper {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34053,8 +37378,8 @@ impl IconShape for LdWallpaper {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWandSparkles;
-impl IconShape for LdWandSparkles {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWandSparkles {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34081,8 +37406,8 @@ impl IconShape for LdWandSparkles {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWand;
-impl IconShape for LdWand {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWand {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34099,7 +37424,7 @@ impl IconShape for LdWand {
   <path d="M8 9h2" />
   <path d="M20 9h2" />
   <path d="M17.8 11.8 19 13" />
-  <path d="M15 9h0" />
+  <path d="M15 9h.01" />
   <path d="M17.8 6.2 19 5" />
   <path d="m3 21 9-9" />
   <path d="M12.2 6.2 11 5" />
@@ -34110,8 +37435,8 @@ impl IconShape for LdWand {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWarehouse;
-impl IconShape for LdWarehouse {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWarehouse {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34123,10 +37448,10 @@ impl IconShape for LdWarehouse {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z" />
-  <path d="M6 18h12" />
-  <path d="M6 14h12" />
-  <rect width="12" height="12" x="6" y="10" />
+  <path d="M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11" />
+  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z" />
+  <path d="M6 13h12" />
+  <path d="M6 17h12" />
 </svg>
 "#
     }
@@ -34134,8 +37459,8 @@ impl IconShape for LdWarehouse {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWashingMachine;
-impl IconShape for LdWashingMachine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWashingMachine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34159,8 +37484,8 @@ impl IconShape for LdWashingMachine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWatch;
-impl IconShape for LdWatch {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWatch {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34182,9 +37507,34 @@ impl IconShape for LdWatch {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdWavesLadder;
+impl Into<&'static str> for LdWavesLadder {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 5a2 2 0 0 0-2 2v11" />
+  <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+  <path d="M7 13h10" />
+  <path d="M7 9h10" />
+  <path d="M9 5a2 2 0 0 0-2 2v11" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWaves;
-impl IconShape for LdWaves {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWaves {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34206,8 +37556,8 @@ impl IconShape for LdWaves {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWaypoints;
-impl IconShape for LdWaypoints {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWaypoints {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34233,8 +37583,8 @@ impl IconShape for LdWaypoints {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWebcam;
-impl IconShape for LdWebcam {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWebcam {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34257,8 +37607,8 @@ impl IconShape for LdWebcam {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWebhookOff;
-impl IconShape for LdWebhookOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWebhookOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34284,8 +37634,8 @@ impl IconShape for LdWebhookOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWebhook;
-impl IconShape for LdWebhook {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWebhook {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34307,8 +37657,8 @@ impl IconShape for LdWebhook {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWeight;
-impl IconShape for LdWeight {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWeight {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34329,8 +37679,8 @@ impl IconShape for LdWeight {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWheatOff;
-impl IconShape for LdWheatOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWheatOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34359,8 +37709,8 @@ impl IconShape for LdWheatOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWheat;
-impl IconShape for LdWheat {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWheat {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34387,8 +37737,8 @@ impl IconShape for LdWheat {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWholeWord;
-impl IconShape for LdWholeWord {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWholeWord {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34411,9 +37761,54 @@ impl IconShape for LdWholeWord {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdWifiHigh;
+impl Into<&'static str> for LdWifiHigh {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 20h.01" />
+  <path d="M5 12.859a10 10 0 0 1 14 0" />
+  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdWifiLow;
+impl Into<&'static str> for LdWifiLow {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 20h.01" />
+  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWifiOff;
-impl IconShape for LdWifiOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWifiOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34438,9 +37833,54 @@ impl IconShape for LdWifiOff {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdWifiPen;
+impl Into<&'static str> for LdWifiPen {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 8.82a15 15 0 0 1 20 0" />
+  <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+  <path d="M5 12.859a10 10 0 0 1 10.5-2.222" />
+  <path d="M8.5 16.429a5 5 0 0 1 3-1.406" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdWifiZero;
+impl Into<&'static str> for LdWifiZero {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 20h.01" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWifi;
-impl IconShape for LdWifi {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWifi {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34462,9 +37902,9 @@ impl IconShape for LdWifi {
 }
 
 #[derive(Copy, Clone, Debug, PartialEq)]
-pub struct LdWind;
-impl IconShape for LdWind {
-    fn content(&self) -> &'static str {
+pub struct LdWindArrowDown;
+impl Into<&'static str> for LdWindArrowDown {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34476,9 +37916,33 @@ impl IconShape for LdWind {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2" />
-  <path d="M9.6 4.6A2 2 0 1 1 11 8H2" />
-  <path d="M12.6 19.4A2 2 0 1 0 14 16H2" />
+  <path d="M10 2v8" />
+  <path d="M12.8 21.6A2 2 0 1 0 14 18H2" />
+  <path d="M17.5 10a2.5 2.5 0 1 1 2 4H2" />
+  <path d="m6 6 4 4 4-4" />
+</svg>
+"#
+    }
+}
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+pub struct LdWind;
+impl Into<&'static str> for LdWind {
+    fn into(self) -> &'static str {
+        r#"<svg
+  xmlns="http://www.w3.org/2000/svg"
+  
+  
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+  <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+  <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
 </svg>
 "#
     }
@@ -34486,8 +37950,8 @@ impl IconShape for LdWind {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWineOff;
-impl IconShape for LdWineOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWineOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34511,8 +37975,8 @@ impl IconShape for LdWineOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWine;
-impl IconShape for LdWine {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWine {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34535,8 +37999,8 @@ impl IconShape for LdWine {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWorkflow;
-impl IconShape for LdWorkflow {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWorkflow {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34558,8 +38022,8 @@ impl IconShape for LdWorkflow {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWorm;
-impl IconShape for LdWorm {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWorm {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34581,8 +38045,8 @@ impl IconShape for LdWorm {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWrapText;
-impl IconShape for LdWrapText {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWrapText {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34594,10 +38058,10 @@ impl IconShape for LdWrapText {
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <line x1="3" x2="21" y1="6" y2="6" />
+  <path d="m16 16-2 2 2 2" />
   <path d="M3 12h15a3 3 0 1 1 0 6h-4" />
-  <polyline points="16 16 14 18 16 20" />
-  <line x1="3" x2="10" y1="18" y2="18" />
+  <path d="M3 18h7" />
+  <path d="M3 6h18" />
 </svg>
 "#
     }
@@ -34605,8 +38069,8 @@ impl IconShape for LdWrapText {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdWrench;
-impl IconShape for LdWrench {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdWrench {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34626,8 +38090,8 @@ impl IconShape for LdWrench {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdX;
-impl IconShape for LdX {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdX {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34648,8 +38112,8 @@ impl IconShape for LdX {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdYoutube;
-impl IconShape for LdYoutube {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdYoutube {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34670,8 +38134,8 @@ impl IconShape for LdYoutube {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdZapOff;
-impl IconShape for LdZapOff {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdZapOff {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34694,8 +38158,8 @@ impl IconShape for LdZapOff {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdZap;
-impl IconShape for LdZap {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdZap {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34715,8 +38179,8 @@ impl IconShape for LdZap {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdZoomIn;
-impl IconShape for LdZoomIn {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdZoomIn {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   
@@ -34739,8 +38203,8 @@ impl IconShape for LdZoomIn {
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub struct LdZoomOut;
-impl IconShape for LdZoomOut {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for LdZoomOut {
+    fn into(self) -> &'static str {
         r#"<svg
   xmlns="http://www.w3.org/2000/svg"
   

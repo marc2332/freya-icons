@@ -1,24 +1,34 @@
 use freya::prelude::*;
-
-use freya_icons::icons::bs_icons::BsAlarm;
-use freya_icons::Icon;
+use freya_icons::prelude::{
+    bs_icons::{Bs123, BsActivity, BsApp},
+    Icon,
+};
 
 fn main() {
     launch(app);
 }
 
 fn app() -> Element {
+    use_init_theme(|| DARK_THEME);
+    let icons: [&'static str; 2] = [Bs123.into(), BsActivity.into()];
+
     rsx!(
-        rect {
-            width: "fill",
-            height: "fill",
-            main_align: "center",
-            cross_align: "center",
-            Icon {
-                width: 200,
-                height: 200,
-                fill: "#007FFF",
-                icon: BsAlarm,
+        Body {
+            rect {
+                width: "fill",
+                height: "fill",
+                main_align: "center",
+                cross_align: "center",
+                Icon {
+                    width: "48",
+                    height: "48",
+                    icon: BsApp
+                }
+                for icon in icons {
+                    Icon {
+                        icon
+                    }
+                }
             }
         }
     )

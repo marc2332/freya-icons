@@ -1,13 +1,13 @@
-//! # dioxus-free-icons
+//! # freya-icons
 //!
-//! Use free svg icons in your Dioxus projects easily with dioxus-free-icons.
-//! This library provides Icon component, which will generate SVG for a Font Awesome icon.
+//! Use svg icons in your Freya projects easily with freya-icons.
+//! This library provides Icon component, which will generate a `svg` element.
 //!
 //! Basic usage:
 //! ```ignore
-//! use dioxus::prelude::*;
-//! use freya_icons::icons::fa_brands_icons::FaRust;
-//! use freya_icons::Icon;
+//! use freya::prelude::*;
+//! use freya_icons::prelude::fa_brands_icons::FaRust;
+//! use freya_icons::prelude::Icon;
 //!
 //! fn RustIcon() -> Element {
 //!     rsx!(
@@ -15,13 +15,17 @@
 //!             width: 30,
 //!             height: 30,
 //!             fill: "black",
-//!             icon: Icon::FaRust,
+//!             icon: FaRust,
 //!         }
 //!     )
 //! }
 //! ```
-mod icon_component;
+pub mod icon_component;
 
-/// a collections of free icons
+/// Collections of icons.
 pub mod icons;
-pub use crate::icon_component::{Icon, IconProps, IconShape};
+
+pub mod prelude {
+    pub use crate::icon_component::*;
+    pub use crate::icons::*;
+}

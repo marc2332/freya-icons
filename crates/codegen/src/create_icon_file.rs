@@ -10,8 +10,8 @@ use walkdir::WalkDir;
 
 const ICON_TEMPLATE: &str = r#"#[derive(Copy, Clone, Debug, PartialEq)]
 pub struct {ICON_NAME};
-impl IconShape for {ICON_NAME} {
-    fn content(&self) -> &'static str {
+impl Into<&'static str> for {ICON_NAME} {
+    fn into(self) -> &'static str {
         {ICON_CONTENT}
     }
 }
@@ -50,8 +50,7 @@ pub fn create_icon_file(svg_path: &str, output_path: &str, icon_prefix: &str) {
 
     // write to file
     let mut file = File::create(output_path).unwrap();
-    file.write_all(format!("{}\n\n{}", "use super::super::IconShape;", icon_file).as_bytes())
-        .unwrap();
+    file.write_all(icon_file.as_bytes()).unwrap();
     file.flush().unwrap();
 }
 
@@ -67,14 +66,14 @@ fn collect_svg_files(svg_path: &str, icon_prefix: &str) -> Vec<PathBuf> {
         .filter(|e| match icon_prefix {
             "Go" => {
                 let re = Regex::new(r".*-16.svg$").unwrap();
-                return re.is_match(e.path().to_str().unwrap());
+                re.is_match(e.path().to_str().unwrap())
             }
             "Md" => {
                 let split_vec = e.path().components().collect::<Vec<_>>();
-                return split_vec.iter().any(|c| c.as_os_str() == "materialicons")
-                    && e.file_name().to_str().unwrap() == "24px.svg";
+                split_vec.iter().any(|c| c.as_os_str() == "materialicons")
+                    && e.file_name().to_str().unwrap() == "24px.svg"
             }
-            _ => return e.path().extension() == Some(OsStr::new("svg")),
+            _ => e.path().extension() == Some(OsStr::new("svg")),
         })
         .map(|dir| PathBuf::from(dir.path()))
         .collect::<Vec<_>>()
